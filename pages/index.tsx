@@ -32,13 +32,13 @@ export default function Home() {
       <Head>
         <title>Demos de Obelisco</title>
         <meta name="description" content="Ejemplso de diferentes formatos para web utilizando Obelisco" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/obelisco-demo/favicon.ico" />
       </Head>
 
       <nav className="navbar">
         <div className="container my-2">
           <span className="navbar-brand">
-            <img src="/logos.png" alt="logo" height={34} width={133} />
+            <img src="/obelisco-demo/logos.png" alt="logo" height={34} width={133} />
           </span>
         </div>
       </nav>
