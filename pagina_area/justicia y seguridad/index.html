@@ -15,9 +15,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <!-- 
-  Los accesos tienen los iconos de redes sociales.
   El tamaño de las cards al final de la pagina no me termina de convencer.
-  Rompe en mobile.
   -->
   <body>
     <header class="navbar navbar-light search-active">
@@ -34,7 +32,7 @@
     </header>
 
     <main>
-      <article>
+      <article class="pb-5">
         <header class="bg-light pt-4 pb-3 mb-4">
           <div class="container">
             <nav aria-label="breadcrumb">
@@ -61,11 +59,9 @@
             </div>
           </div>
         </header>
-      </article>
       
-      <div class="container">
-        <div class="mb-5">
-          <div class="card-deck max-cards-3">
+        <div class="container pt-4">
+          <div class="card-deck max-cards-3 mb-5">
             <a class="card" href="#">
               <img src="../../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
               <div class="card-body">
@@ -94,104 +90,117 @@
               </div>
             </a>
           </div>
-        </div>
 
-        <div class="mb-5">
-          <div class="card-deck">
-            <a class="card" href="#">
+          <div class="card-deck mb-5 py-5">
+            <div class="card card-simple">
               <div class="card-body">
                 <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-                <h3 class="card-title">Título de tarjeta</h3>
+                <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
                 <p class="card-text">
                   Recomendamos en este espacio no utilizar más de 3 líneas, para generar
                   una lectura óptima.
                 </p>
               </div>
-            </a>
-            <a class="card" href="#">
+            </div>
+            <div class="card card-simple">
               <div class="card-body">
                 <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-                <h3 class="card-title">Título de tarjeta</h3>
+                <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
                 <p class="card-text">
                   Recomendamos en este espacio no utilizar más de 3 líneas, para generar
                   una lectura óptima.
                 </p>
               </div>
-            </a>
-            <a class="card" href="#">
+            </div>
+            <div class="card card-simple">
               <div class="card-body">
                 <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-                <h3 class="card-title">Título de tarjeta</h3>
+                <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
                 <p class="card-text">
                   Recomendamos en este espacio no utilizar más de 3 líneas, para generar
                   una lectura óptima.
                 </p>
               </div>
-            </a>
-            <a class="card" href="#">
+            </div>
+            <div class="card card-simple">
               <div class="card-body">
                 <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-                <h3 class="card-title">Título de tarjeta</h3>
+                <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
                 <p class="card-text">
                   Recomendamos en este espacio no utilizar más de 3 líneas, para generar
                   una lectura óptima.
                 </p>
               </div>
-            </a>
+            </div>
           </div>
-        </div>
 
-        <div class="row mb-5">
-          <div class="col-4">
-            <h2>Encabezado</h2>
-            <div class="horizontal-container">
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h3 class="card-title">Título tarjeta</h3>
-                  <p class="card-text">
-                    Recomendamos no utilizar más de 3 líneas.
-                  </p>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <h2>Encabezado</h2>
+              <div class="card-deck max-cards-1">
+                <a class="card card-horizontal" href="#">
+                  <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
+                  <div class="card-body">
+                    <h3 class="card-title">Título tarjeta</h3>
+                    <p class="card-text">
+                      Recomendamos no utilizar más de 3 líneas.
+                    </p>
+                  </div>
+                </a>
+                <a class="card card-horizontal" href="#">
+                  <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
+                  <div class="card-body">
+                    <h3 class="card-title">Título tarjeta</h3>
+                    <p class="card-text">
+                      Recomendamos no utilizar más de 3 líneas.
+                    </p>
+                  </div>
+                </a>
+                <a class="card card-horizontal" href="#">
+                  <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
+                  <div class="card-body">
+                    <h3 class="card-title">Título tarjeta</h3>
+                    <p class="card-text">
+                      Recomendamos no utilizar más de 3 líneas.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <h2>Encabezado</h2>
+              <div class="list-group-container">
+                <div class="list-group list-group-sm">
+                  <a href="#" class="list-group-item">Acceso Pequeño</a>
+                  <a href="#" class="list-group-item">Acceso Pequeño</a>
+                  <a href="#" class="list-group-item">Acceso Pequeño</a>
+                  <a href="#" class="list-group-item">Acceso Pequeño</a>
+                  <a href="#" class="list-group-item">Acceso Pequeño</a>
                 </div>
-              </a>
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <h2>Encabezado</h2>
-            <div class="list-group-container">
-              <div class="list-group list-group-sm">
-                <a href="#" class="list-group-item">Acceso Pequeño</a>
-                <a href="#" class="list-group-item">Acceso Pequeño</a>
-                <a href="#" class="list-group-item">Acceso Pequeño</a>
-                <a href="#" class="list-group-item">Acceso Pequeño</a>
-                <a href="#" class="list-group-item">Acceso Pequeño</a>
+            <div class="col-12 col-md-4">
+              <h2>Encabezado</h2>
+              <div class="list-group list-group-sm mb-4">
+                <a href="#" class="list-group-item"><i class="bx bx-sm align-middle mr-1 bxl-facebook-circle"></i> Acceso Pequeño</a>
+                <a href="#" class="list-group-item"><i class="bx bx-sm align-middle mr-1 bxl-twitter"></i>Acceso Pequeño</a>
+              </div>
+              <div class="horizontal-container">
+                <a class="card card-horizontal" href="#">
+                  <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
+                  <div class="card-body">
+                    <h3 class="card-title">Título tarjeta</h3>
+                    <p class="card-text">
+                      Recomendamos no utilizar más de 3 líneas.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <h2>Encabezado</h2>
-            <div class="list-group list-group-sm">
-              <a href="#" class="list-group-item">Acceso Pequeño</a>
-              <a href="#" class="list-group-item">Acceso Pequeño</a>
-            </div>
-            <div class="horizontal-container">
-              <a class="card card-horizontal" href="#">
-                <img src="../../assets/noticias/noticias-2.png" class="card-img-left" alt="descripción alternativa" width="168" />
-                <div class="card-body">
-                  <h3 class="card-title">Título tarjeta</h3>
-                  <p class="card-text">
-                    Recomendamos no utilizar más de 3 líneas.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
+
         </div>
-
-
-      </div>
-
-
+      </article>
     </main>
 
     <footer class="main-footer">
