@@ -19,15 +19,73 @@
 </head>
 
 <body>
-  <header class="navbar navbar-light search-active">
+  <header class="navbar navbar-light navbar-md">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img class="header-logo" src="../../assets/header/header-logo.svg" alt="Logo de la ciudad de buenos aires">
+      <a href="#" class="navbar-brand">
+        <img
+          class="header-logo"
+          src="../../assets/header/header-logo.svg"
+          alt="Ciudad de buenos aires"
+        />
       </a>
-      <div class="navbar-search">
-        <form class="form-inline">
-          <input type="search" class="form-control input-search" id="name-input" name="name" placeholder="Buscar..." />
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm">
+          <div class="form-group">
+            <input
+              type="search"
+              class="form-control form-control-sm input-search"
+              id="header-search-example-1"
+              name="header-search"
+              placeholder="Buscar..."
+              aria-label="Ingrese su búsqueda"
+            />
+            <button class="reset" type="reset"></button>
+          </div>
         </form>
+      </div>
+      <button
+        class="navbar-toggler collapsed ml-2"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+      >
+        Menú
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm active">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm">
+              <span>Chateá con BOTI</span>
+            </a>
+          </li>
+          <li class="nav-item d-responsive">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    class="form-control form-control-sm input-search"
+                    id="header-search-example-2"
+                    name="header-search"
+                    placeholder="Buscar..."
+                    aria-label="Ingrese su búsqueda"
+                  />
+                  <button class="reset" type="reset"></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
@@ -348,68 +406,113 @@
       <section>
         <h4>Teléfonos útiles</h4>
         <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="tel:102">102 - Niñez y Adolesencia</a>
+          <li class="list-inline-item phone-items">
+            <a href="tel:102">102 - Niñez y Adolescencia</a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item phone-items">
             <a href="tel:103">103 - Emergencias</a>
           </li>
-          <li class="list-inline-item"><a href="tel:107">107 - SAME</a></li>
-          <li class="list-inline-item"><a href="tel:911">911 - Policía</a></li>
-          <li class="list-inline-item">
+          <li class="list-inline-item phone-items">
+            <a href="tel:107">107 - SAME</a>
+          </li>
+          <li class="list-inline-item phone-items">
+            <a href="tel:911">911 - Policía</a>
+          </li>
+          <li class="list-inline-item phone-items">
             <a href="tel:144">144 - Violencia de género</a>
           </li>
-          <li class="list-inline-item">
+          <li class="list-inline-item phone-items">
             <a href="tel:147">147 - Atención ciudadana</a>
           </li>
         </ul>
-        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">Ver todos los teléfonos</a>
+        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+          Ver todos los teléfonos
+        </a>
       </section>
-
       <section>
         <h4>Redes de la ciudad</h4>
         <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/GCBA"><i class="bx bxl-facebook"></i>Facebook</a>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.facebook.com/GCBA">
+              <i class="bx bxl-facebook"></i>
+              Facebook
+            </a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/buenosaires"><i class="bx bxl-instagram"></i>Instagram</a>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.instagram.com/buenosaires">
+              <i class="bx bxl-instagram"></i>
+              Instagram
+            </a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/gcba"><i class="bx bxl-twitter"></i>Twitter</a>
+          <li class="list-inline-item redes-items">
+            <a href="https://twitter.com/gcba">
+              <i class="bx bxl-twitter"></i>
+              Twitter
+            </a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://www.youtube.com/user/GCBA"><i class="bx bxl-youtube"></i>YouTube</a>
+          <li class="list-inline-item redes-items">
+            <a href="https://www.youtube.com/user/GCBA">
+              <i class="bx bxl-youtube"></i>
+              YouTube
+            </a>
           </li>
-          <li class="list-inline-item">
-            <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"><i
-                class="bx bxl-linkedin"></i>LinkedIn</a>
+          <li class="list-inline-item redes-items">
+            <a
+              href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+            >
+              <i class="bx bxl-linkedin"></i>
+              LinkedIn
+            </a>
           </li>
         </ul>
       </section>
-
+    </div>
+    <hr class="divider" />
+    <div class="container">
       <section class="footer-legal-section">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
-            <img class="mr-3 d-lg-none" src="../../assets/footer/ciudad-ba-sm.svg"
-              alt="Logo de la Ciudad de Buenos Aires" /><img class="mr-3 d-none d-lg-inline"
-              src="../../assets/footer/ciudad-ba.svg" alt="Logo de la Ciudad de Buenos Aires" /><img
-              src="../../assets/footer/vamos-ba.svg" alt="Logo de Vamos Buenos Aires" />
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
+            <img
+              class="d-lg-none"
+              src="../../assets/footer/ciudad-ba-sm.svg"
+              alt="Ciudad de Buenos Aires"
+              height="48"
+            />
+            <img
+              class="d-none d-lg-inline"
+              src="../../assets/footer/ciudad-ba.svg"
+              alt="Ciudad de Buenos Aires"
+              height="40"
+            />
+            <img
+              class="img-vamos-ba"
+              src="../../assets/footer/vamos-ba.svg"
+              alt="Vamos Buenos Aires"
+            />
           </div>
-          <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+          <div class="col-12 col-md-7 col-xl-8">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones">Términos y
-                  condiciones</a>
+                <a
+                  href="https://www.buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones"
+                >
+                  Términos y condiciones
+                </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/privacidad">Política de privacidad</a>
+                <a href="https://www.buenosaires.gob.ar/privacidad">
+                  Política de privacidad
+                </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">Oficios judiciales</a>
+                <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                  Oficios judiciales
+                </a>
               </li>
             </ul>
           </div>
