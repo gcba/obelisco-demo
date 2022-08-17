@@ -92,7 +92,7 @@
 
   <main>
     <article>
-      <header class="bg-light pt-4 pb-3 mb-4">
+      <header class="bg-light pt-4 pb-3 mb-5">
         <div class="container">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -109,13 +109,32 @@
                 en el barrio de Congreso.
               </p>
 
-              <div class="d-flex flex-row mt-4">
-                <ul class="list-inline">
-                  <li class="list-inline-item mr-1"><button type="button" class="btn btn-link btn-sm">Botón</button></li>
-                  <li class="list-inline-item mr-1"><button type="button" class="btn btn-link btn-sm">Botón</button></li>
-                  <li class="list-inline-item mr-1"><button type="button" class="btn btn-link btn-sm">Botón</button></li>
-                  <li class="list-inline-item mr-1"><button type="button" class="btn btn-link btn-sm">Botón</button></li>
-                </ul>
+              <div class="d-flex mt-4">
+                <div class="dropdown mb-3 mr-1">
+                  <button
+                    type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-sm dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Link
+                  </button>
+                  <div class="dropdown-menu">
+                    <button class="dropdown-item" type="button">Opción 1</button>
+                    <button class="dropdown-item" type="button">Opción 2</button>
+                    <button class="dropdown-item" type="button">Opción 3</button>
+                  </div>
+                </div>
+                <nav class="ml-2">
+                  <ul class="nav flex-row nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link border-link nav-link-sm" href="#"><span>Link</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border-link nav-link-sm" href="#"><span>Link</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border-link nav-link-sm" href="#"><span>Link</span></a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
 
             </div>
@@ -165,7 +184,27 @@
         <div class="card-deck mb-5 py-5">
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
+              <i class="bx bx-news card-icon"></i>
+              <h4 class="card-title"><a href="#">Título de tarjeta</a></h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-news card-icon"></i>
+              <h4 class="card-title"><a href="#">Título de tarjeta</a></h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple">
+            <div class="card-body">
+              <i class="bx bx-news card-icon"></i>
               <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
               <p class="card-text">
                 Recomendamos en este espacio no utilizar más de 3 líneas, para generar
@@ -175,27 +214,7 @@
           </div>
           <div class="card card-simple">
             <div class="card-body">
-              <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-              <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
-              <p class="card-text">
-                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-                una lectura óptima.
-              </p>
-            </div>
-          </div>
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
-              <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
-              <p class="card-text">
-                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-                una lectura óptima.
-              </p>
-            </div>
-          </div>
-          <div class="card card-simple">
-            <div class="card-body">
-              <i class="bx bx-news card-icon" style="color: rgb(0, 154, 253);"></i>
+              <i class="bx bx-news card-icon"></i>
               <h3 class="card-title"><a href="#">Título de tarjeta</a></h3>
               <p class="card-text">
                 Recomendamos en este espacio no utilizar más de 3 líneas, para generar
@@ -233,7 +252,7 @@
           <div class="col-12 col-md-4 mb-5">
             <h2>Encabezado</h2>
             <div class="list-group mb-4">             
-              <a href="#" class="list-group-item item-sm mb-3">
+              <a href="#" class="list-group-item item-sm">
                 <span class="access-title"><i class="bx bx-sm align-middle mr-1 bxl-facebook-circle"></i>Acceso chico</span>
               </a>
               <a href="#" class="list-group-item item-sm">
