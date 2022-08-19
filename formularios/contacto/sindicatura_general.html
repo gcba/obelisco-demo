@@ -7,14 +7,14 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
 
-  <title>Página Simple</title>
+  <title>Contacto</title>
 
   <!-- Obelisco -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
-  <link rel="stylesheet" href="/node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -22,8 +22,50 @@
   <header class="navbar navbar-light navbar-md">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <img class="header-logo" src="/assets/header/header-logo.svg" alt="Ciudad de buenos aires" />
+        <img class="header-logo" src="../../assets/header/header-logo.svg" alt="Ciudad de buenos aires" />
       </a>
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm">
+          <div class="form-group">
+            <input type="search" class="form-control form-control-sm input-search" id="header-search-example-1"
+              name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+            <button class="reset" type="reset"></button>
+          </div>
+        </form>
+      </div>
+      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false">
+        Menú
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm active">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm">
+              <span>Chateá con BOTI</span>
+            </a>
+          </li>
+          <li class="nav-item d-responsive">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm">
+                <div class="form-group">
+                  <input type="search" class="form-control form-control-sm input-search" id="header-search-example-2"
+                    name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+                  <button class="reset" type="reset"></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -83,10 +125,10 @@
       <section class="footer-legal-section">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
-            <img class="d-lg-none" src="../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
-            <img class="d-none d-lg-inline" src="../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+            <img class="d-lg-none" src="../../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
+            <img class="d-none d-lg-inline" src="../../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
               height="40" />
-            <img class="img-vamos-ba" src="../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+            <img class="img-vamos-ba" src="../../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
           </div>
           <div class="col-12 col-md-7 col-xl-8">
             <ul class="list-inline">
