@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png" type="image/png">
+
+  <title>Web 1366</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header class="navbar navbar-light navbar-md">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img class="header-logo" src="../../assets/header/header-logo.svg" alt="Ciudad de buenos aires" />
+      </a>
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm">
+          <div class="form-group">
+            <input type="search" class="form-control form-control-sm input-search" id="header-search-example-1"
+              name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+            <button class="reset" type="reset"></button>
+          </div>
+        </form>
+      </div>
+      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false">
+        Menú
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm active">
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link-sm">
+              <span>Chateá con BOTI</span>
+            </a>
+          </li>
+          <li class="nav-item d-responsive">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm">
+                <div class="form-group">
+                  <input type="search" class="form-control form-control-sm input-search" id="header-search-example-2"
+                    name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+                  <button class="reset" type="reset"></button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="bg-light pt-3 pb-4 mb-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mt-1">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Subte</a></li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h1>Trabajá con nosotros</h1>
+            <p class="lead">Cargá tus datos y te contactaremos si tu perfil se ajusta a alguna de nuestras búsquedas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="form-wrapper pb-5">
+
+            <h2 class="pb-3">Datos personales</h2>
+
+            <div class="form-group pb-3 mb-3">
+              <label for="name-input" class="pb-2">Nombre y Apellido*</label>
+              <input type="text" class="form-control" id="name-input" name="name" placeholder="" />
+            </div>
+
+            <div class="row pb-3">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Tipo de documento*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="number-input" class="pb-2">Número de documento*</label>
+                  <input type="number" class="form-control" id="number-input" name="number"
+                    placeholder="Ejemplo: 38129329" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="lista-de-seleccion" class="pb-2">Género*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="date-input" class="pb-2">Fecha de nacimiento*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="lista-de-seleccion" class="pb-2">Estado civil*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Ciudad*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="number-input" class="pb-2">Código postal*</label>
+                  <input type="number" class="form-control" id="number-input" name="number"
+                    placeholder="Ejemplo: 1428" />
+                </div>
+              </div>
+            </div>
+
+            <h2 class="pb-3 mt-1 pt-3">Datos de contacto</h2>
+            <div class="row mb-4">
+              <div class="col-12 col-md-12">
+                <div class="form-group pb-3 mb-3">
+                  <label for="number-input" class="pb-2">Número de teléfono*</label>
+                  <input type="number" class="form-control" id="number-input" name="number"
+                    placeholder="Ejemplo: 11 2378 3282" />
+                </div>
+                <div class="form-group">
+                  <label for="email-input" class="pb-2">Correo electrónico*</label>
+                  <input type="email" class="form-control" id="email-input" name="email" aria-describedby="email-help"
+                    placeholder="Ejemplo: correo@gmail.com" />
+                </div>
+              </div>
+            </div>
+
+            <h2 class="pb-3 mt-1 pt-3">Nivel de estudios</h2>
+            <div class="row mb-3">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Nivel alcanzado*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Estado en que se encuentra*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group pb-4">
+              <label for="lista-de-seleccion" class="pb-2">Área de estudio*</label>
+              <select class="custom-select" id="lista-de-seleccion">
+                <option hidden class="text-">Seleccionar…</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+
+            <h2 class="pb-3 mt-1 pt-3">Idiomas</h2>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Idioma*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-group">
+                  <label for="lista-de-seleccion" class="pb-2">Nivel alcanzado*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 d-flex align-items-end justify-content-bottom pb-3">
+                <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between">
+                <p class="lead">Alemán - Avanzado</p>
+                <p class="text-danger"><strong>Eliminar idioma</strong></p>
+              </div>
+            </div>
+
+            <h2 class="pb-3 mt-5">Experiencia laboral</h2>
+            <div class="form-group mb-3 pb-3">
+              <label for="name-input" class="pb-2">Nombre de la primer empresa*</label>
+              <input type="text" class="form-control" id="name-input" name="name" />
+            </div>
+            <div class="row mb-2">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="date-input" class="pb-2">Fecha de comienzo*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="date-input" class="pb-2">Fecha de finalización*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox mb-2 ">
+              <input class="custom-control-input" type="checkbox" id="current-job-input" name="job" value="current" />
+              <label class="custom-control-label" for="current-job-input">
+                Es mi trabajo actual
+              </label>
+            </div>
+            <div class="form-group mb-2">
+              <label for="text-area" class="pb-2">Descripción de tareas*</label>
+              <textarea class="form-control" id="text-area" rows="4"
+                placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
+            </div>
+            <p class="text-danger font-weight-bold mt-4">Eliminar empresa</p>
+            <hr class="mt-5 mb-5">
+            <div class="form-group mb-3 pb-3">
+              <label for="name-input" class="pb-2">Nombre de la segunda empresa*</label>
+              <input type="text" class="form-control" id="name-input" name="name" />
+            </div>
+            <div class="row mb-2">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="date-input" class="pb-2">Fecha de comienzo*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="date-input" class="pb-2">Fecha de finalización*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input" type="checkbox" id="current-job-input" name="job" value="current" />
+              <label class="custom-control-label" for="current-job-input">
+                Es mi trabajo actual
+              </label>
+            </div>
+            <div class="form-group mt-3">
+              <label for="text-area" class="pb-2">Descripción de tareas*</label>
+              <textarea class="form-control" id="text-area" rows="4"
+                placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
+            </div>
+            <p class="text-danger font-weight-bold pt-3">Eliminar empresa</p>
+            <div class="form-group mt-5 pb-4">
+              <label for="lista-de-seleccion" class="pb-2">Agregar experiencia laboral</label>
+              <select class="custom-select" id="lista-de-seleccion">
+                <option hidden class="text-">Seleccionar…</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <h2 class="mb-3 mt-1 py-3 ">Curriculum Vitae (CV)</h2>
+            <div class="form-group">
+              <label for="file-input" class="pb-2">Adjuntá tu CV</label>
+              <input type="file" class="form-control-file" id="file-input" />
+            </div>
+            <button type="button" class="btn btn-primary btn-lg mt-5 mb-3">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="main-footer mt-3">
+    <div class="container">
+      <section class="footer-legal-section">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
+            <img class="d-lg-none" src="../../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires"
+              height="48" />
+            <img class="d-none d-lg-inline" src="../../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+              height="40" />
+            <img class="img-vamos-ba" src="../../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+          </div>
+          <div class="col-12 col-md-7 col-xl-8">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones">
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                  Oficios judiciales
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo
+          <br class="d-none d-sm-inline" />
+          Creative Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
