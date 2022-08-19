@@ -70,17 +70,17 @@
   </header>
 
   <main>
-    <div class="bg-light pt-4 pb-4 mb-5">
+    <div class="bg-light pt-3 pb-4 mb-5">
       <div class="container">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
+          <ol class="breadcrumb mt-1">
             <li class="breadcrumb-item"><a href="#">Inicio</a></li>
             <li class="breadcrumb-item"><a href="#">Subte</a></li>
           </ol>
         </nav>
         <div class="row">
           <div class="col-12 col-lg-8">
-            <h1 class="mb-3">Trabajá con nosotros</h1>
+            <h1>Trabajá con nosotros</h1>
             <p class="lead">Cargá tus datos y te contactaremos si tu perfil se ajusta a alguna de nuestras búsquedas.
             </p>
           </div>
@@ -91,11 +91,14 @@
       <div class="row">
         <div class="col-12 col-lg-8">
           <div class="form-wrapper pb-5">
-            <h2 class="pb-4">Datos personales</h2>
+
+            <h2 class="pb-3">Datos personales</h2>
+
             <div class="form-group pb-3 mb-3">
               <label for="name-input" class="pb-2">Nombre y Apellido*</label>
               <input type="text" class="form-control" id="name-input" name="name" placeholder="" />
             </div>
+
             <div class="row pb-3">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -118,32 +121,45 @@
                 </div>
               </div>
             </div>
-            <div class="form-group pb-3 mb-3">
-              <label for="lista-de-seleccion" class="pb-2">Género*</label>
-              <select class="custom-select" id="lista-de-seleccion">
-                <option hidden class="text-">Seleccionar…</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="lista-de-seleccion" class="pb-2">Género*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="date-input" class="pb-2">Fecha de nacimiento*</label>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
             </div>
-            <div class="form-group pb-3 mb-3">
-              <label for="date-input" class="pb-2">Fecha de nacimiento*</label>
-              <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-group pb-3 mb-3">
+                  <label for="lista-de-seleccion" class="pb-2">Estado civil*</label>
+                  <select class="custom-select" id="lista-de-seleccion">
+                    <option hidden class="text-">Seleccionar…</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class="form-group pb-3 mb-3">
-              <label for="lista-de-seleccion" class="pb-2">Estado civil*</label>
-              <select class="custom-select" id="lista-de-seleccion">
-                <option hidden class="text-">Seleccionar…</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
+
             <div class="row mb-4">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -166,7 +182,8 @@
                 </div>
               </div>
             </div>
-            <h2 class="pb-4 mt-1 pt-3">Datos de contacto</h2>
+
+            <h2 class="pb-3 mt-1 pt-3">Datos de contacto</h2>
             <div class="row mb-4">
               <div class="col-12 col-md-12">
                 <div class="form-group pb-3 mb-3">
@@ -181,7 +198,8 @@
                 </div>
               </div>
             </div>
-            <h2 class="pb-4 mt-1 pt-3">Nivel de estudios</h2>
+
+            <h2 class="pb-3 mt-1 pt-3">Nivel de estudios</h2>
             <div class="row mb-3">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -221,8 +239,9 @@
                 <option>5</option>
               </select>
             </div>
-            <h2 class="pb-4 mt-1 pt-3">Idiomas</h2>
-            <div class="row pb-3">
+
+            <h2 class="pb-3 mt-1 pt-3">Idiomas</h2>
+            <div class="row">
               <div class="col-12 col-md-4">
                 <div class="form-group">
                   <label for="lista-de-seleccion" class="pb-2">Idioma*</label>
@@ -249,29 +268,24 @@
                   </select>
                 </div>
               </div>
-              <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                <p class="text-danger font-weight-bold mt-3 ">
-                  Eliminar
-                  idioma</p>
+              <div class="col-12 col-md-4 d-flex align-items-end justify-content-bottom pb-3">
+                <button type="button" class="btn btn-primary btn-sm">Guardar</button>
               </div>
             </div>
-            <div class="form-group pb-4">
-              <label for="lista-de-seleccion" class="pb-2">Agregar idioma*</label>
-              <select class="custom-select" id="lista-de-seleccion">
-                <option hidden class="text-">Seleccionar…</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+            <hr>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between">
+                <p class="lead">Alemán - Avanzado</p>
+                <p class="text-danger"><strong>Eliminar idioma</strong></p>
+              </div>
             </div>
-            <h2 class="pb-4 mt-1 pt-3">Experiencia laboral</h2>
+
+            <h2 class="pb-3 mt-5">Experiencia laboral</h2>
             <div class="form-group mb-3 pb-3">
               <label for="name-input" class="pb-2">Nombre de la primer empresa*</label>
               <input type="text" class="form-control" id="name-input" name="name" />
             </div>
-            <div class="row  mb-3">
+            <div class="row mb-2">
               <div class="col-12 col-md-6">
                 <div class="form-group">
                   <label for="date-input" class="pb-2">Fecha de comienzo*</label>
@@ -285,24 +299,24 @@
                 </div>
               </div>
             </div>
-            <div class="custom-control custom-checkbox mb-3 pb-3">
+            <div class="custom-control custom-checkbox mb-2 ">
               <input class="custom-control-input" type="checkbox" id="current-job-input" name="job" value="current" />
               <label class="custom-control-label" for="current-job-input">
                 Es mi trabajo actual
               </label>
             </div>
-            <div class="form-group mb-4">
+            <div class="form-group mb-2">
               <label for="text-area" class="pb-2">Descripción de tareas*</label>
               <textarea class="form-control" id="text-area" rows="4"
                 placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
             </div>
-            <p class="text-danger font-weight-bold">Eliminar empresa</p>
+            <p class="text-danger font-weight-bold mt-4">Eliminar empresa</p>
             <hr class="mt-5 mb-5">
             <div class="form-group mb-3 pb-3">
               <label for="name-input" class="pb-2">Nombre de la segunda empresa*</label>
               <input type="text" class="form-control" id="name-input" name="name" />
             </div>
-            <div class="row  mb-3">
+            <div class="row mb-2">
               <div class="col-12 col-md-6">
                 <div class="form-group">
                   <label for="date-input" class="pb-2">Fecha de comienzo*</label>
@@ -316,18 +330,18 @@
                 </div>
               </div>
             </div>
-            <div class="custom-control custom-checkbox mb-3 pb-3">
+            <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" id="current-job-input" name="job" value="current" />
               <label class="custom-control-label" for="current-job-input">
                 Es mi trabajo actual
               </label>
             </div>
-            <div class="form-group mb-4">
+            <div class="form-group mt-3">
               <label for="text-area" class="pb-2">Descripción de tareas*</label>
               <textarea class="form-control" id="text-area" rows="4"
                 placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
             </div>
-            <p class="text-danger font-weight-bold">Eliminar empresa</p>
+            <p class="text-danger font-weight-bold pt-3">Eliminar empresa</p>
             <div class="form-group mt-5 pb-4">
               <label for="lista-de-seleccion" class="pb-2">Agregar experiencia laboral</label>
               <select class="custom-select" id="lista-de-seleccion">
@@ -340,7 +354,7 @@
               </select>
             </div>
             <h2 class="mb-3 mt-1 py-3 ">Curriculum Vitae (CV)</h2>
-            <div class="form-group mb-2 pb-1">
+            <div class="form-group">
               <label for="file-input" class="pb-2">Adjuntá tu CV</label>
               <input type="file" class="form-control-file" id="file-input" />
             </div>

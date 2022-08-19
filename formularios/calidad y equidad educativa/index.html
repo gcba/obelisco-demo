@@ -70,7 +70,7 @@
   </header>
 
   <main>
-    <div class="bg-light pt-4 pb-4 mb-5">
+    <div class="bg-light pt-3 pb-4 mb-5">
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -81,7 +81,7 @@
         </nav>
         <div class="row">
           <div class="col-12 col-lg-8">
-            <h1 class="mb-3">Solicitud de información</h1>
+            <h1>Solicitud de información</h1>
             <p class="lead">Si necesitas información de estadística, investigación o evaluación educativa de la Ciudad
               podés realizar tu consulta en este formulario.</p>
           </div>
@@ -92,7 +92,23 @@
       <div class="row">
         <div class="col-12 col-lg-8">
           <div class="form-wrapper pb-5">
-            <h2 class="pb-4">Datos personales</h2>
+            <div class="alert-wrapper mb-5 pb-2">
+              <div class="alert alert-danger fade show" role="alert">
+                <p><strong>Por favor arreglá los siguientes errores para continuar:</strong></p>
+                <ol class="list-links">
+                  <li>
+                    <a href="#">Correo electrónico*</a>
+                  </li>
+                  <li>
+                    <a href="#">Nombre de la institución*</a>
+                  </li>
+                  <li>
+                    <a href="#">Tipo de información requerida*</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <h2 class="pb-3 mt-1">Datos personales</h2>
             <div class="form-group pb-3 mb-3">
               <label for="name-input" class="pb-2">Nombre y Apellido*</label>
               <input type="text" class="form-control" id="name-input" name="name" placeholder="" value="Heraldo Paez" />
@@ -148,7 +164,7 @@
                 Otra
               </label>
             </div>
-            <div class="form-group pt-3 my-3 ">
+            <div class="form-group pt-2 my-3 ">
               <label for="name-input" class="pb-2">Nombre de la institución*</label>
               <input type="text" class="form-control is-invalid" id="name-input" name="name" required="" />
               <div class="valid-feedback">Nombre de la institución es aceptado</div>
@@ -193,7 +209,7 @@
               </label>
             </div>
             <div class="mb-5 pb-2">
-              <div class="form-group pt-3 mt-3">
+              <div class="form-group pt-2 mt-3">
                 <label>Tipo de información requerida*</label>
               </div>
               <div class=" custom-control custom-checkbox">
@@ -228,28 +244,14 @@
               </div>
             </div>
             <h2 class="mt-1 pb-3">Comentarios generales</h2>
-            <div class="form-group">
+            <div class="form-group ">
               <label for="text-area" class="pb-2">¿Hay algo que quieras agregar?</label>
               <textarea class="form-control" id="text-area" rows="3"
                 placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
             </div>
-            <div class="alert-wrapper pt-3">
-              <div class="alert alert-danger fade show" role="alert">
-                <p><strong>Por favor arreglá los siguientes errores para continuar:</strong></p>
-                <ol class="list-links">
-                  <li>
-                    <a href="#">Correo electrónico*</a>
-                  </li>
-                  <li>
-                    <a href="#">Nombre de la institución*</a>
-                  </li>
-                  <li>
-                    <a href="#">Tipo de información requerida*</a>
-                  </li>
-                </ol>
-              </div>
+            <div class="pt-4 mt-1 ">
+              <button type="button" class="btn btn-primary btn-lg mt-3 mb-3">Enviar</button>
             </div>
-            <button type="button" class="btn btn-primary btn-lg mt-2 mb-3 pb-3">Enviar</button>
           </div>
         </div>
       </div>
