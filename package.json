@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gcba/obelisco": "^1.38.3"
+    "@gcba/obelisco": "^1.39.0"
   },
   "devDependencies": {}
 }
