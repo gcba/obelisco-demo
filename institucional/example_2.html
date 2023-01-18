@@ -19,50 +19,93 @@
 </head>
 
 <body>
-  <header class="navbar navbar-light navbar-md">
+  <header class="navbar navbar-light navbar-lg">
     <div class="container">
-      <a href="#" class="navbar-brand">
-        <img class="header-logo" src="../assets/header/header-logo.svg" alt="Ciudad de buenos aires" />
+      <a class="navbar-brand" href="#">
+        <img
+          class="header-logo"
+          src="../../assets/header/logoBA.svg"
+          alt="Ciudad de buenos aires"
+        />
       </a>
       <div class="navbar-search d-responsive ml-auto">
         <form class="form-search form-search-sm">
           <div class="form-group">
-            <input type="search" class="form-control form-control-sm input-search" id="header-search-example-1"
-              name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+            <input
+              type="search"
+              class="form-control form-control-sm input-search"
+              id="header-search-example-3"
+              name="header-search"
+              aria-label="Ingrese su búsqueda"
+              placeholder="Buscar..."
+            />
             <button class="reset" type="reset"></button>
           </div>
         </form>
       </div>
-      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false">
+      <button
+        class="navbar-toggler collapsed ml-2"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+      >
         Menú
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="list-group-content d-responsive ml-2">
+        <a
+          href="#"
+          aria-label="Cerrar sesión"
+          class="list-group-item list-group-item-logout logout-sm"
+        >
+          &nbsp;
+        </a>
+      </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-sm active">
-              <span>Inicio</span>
-            </a>
+            <a href="#" class="nav-link active"><span>Inicio</span></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-sm">
-              <span>Chateá con BOTI</span>
+            <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi actividad</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" aria-label="Notificaciones" class="nav-link">
+              <i class="bx bxs-bell"></i>
             </a>
           </li>
           <li class="nav-item d-responsive">
             <div class="navbar-search">
               <form class="form-search form-search-sm">
                 <div class="form-group">
-                  <input type="search" class="form-control form-control-sm input-search" id="header-search-example-2"
-                    name="header-search" placeholder="Buscar..." aria-label="Ingrese su búsqueda" />
+                  <input
+                    type="search"
+                    class="form-control form-control-sm input-search"
+                    id="header-search-example-4"
+                    name="header-search"
+                    aria-label="Ingrese su búsqueda"
+                    placeholder="Buscar..."
+                  />
                   <button class="reset" type="reset"></button>
                 </div>
               </form>
             </div>
           </li>
-          <li class="nav-item">
-            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
+          <li class="nav-item d-responsive">
+            <a
+              href="#"
+              aria-label="Cerrar sesión"
+              class="list-group-item list-group-item-logout logout-sm"
+            >
+              &nbsp;
+            </a>
           </li>
         </ul>
       </div>
@@ -70,9 +113,9 @@
   </header>
 
   <main>
-    <article>
-      <header class="bg-light pt-4 pb-3 mb-5">
-        <div class="container">
+    <article class="pb-5 mb-4">
+      <header class="bg-light pt-3 pb-5 mb-5">
+        <div class="container pt-1">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
@@ -82,15 +125,17 @@
 
           <div class="row">
             <div class="col-12 col-lg-8">
-              <h1 class="mb-3">Desarrollo Económico y producción</h1>
-              <p class="lead">Desarrollo del talento y la búsqueda de inversiones con el objetivo de fomentar
-                el empleo y contribuir a una mejor calidad de vida de los vecinos de la Ciudad.</p>
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Desarrollo Económico y producción</h1>
+                <p class="lead">Desarrollo del talento y la búsqueda de inversiones con el objetivo de fomentar
+                  el empleo y contribuir a una mejor calidad de vida de los vecinos de la Ciudad.</p>
+              </div>
             </div>
           </div>
         </div>
       </header>
 
-      <div class="container pt-4 mb-5">
+      <div class="container pt-3 mb-5">
         <div class="card-deck mb-5">
           <div class="card card-simple">
             <div class="card-body">
@@ -135,62 +180,60 @@
         </div>
       </div>
 
-      <section class="bg-light pt-5 pb-3">
-        <div class="container">
-          <div class="mb-5">
-            <h2 class="mt-2">Agenda 2022</h2>
-            <p class="mb-4">Enterate y participá de todas las actividades económicas de la Ciudad</p>
-            <div class="card-deck mb-5">
-              <a class="card" href="#">
-                <div class="card-event-top">
-                  <img src="../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
-                  <div class="card-event-img">
-                    <img src="../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
-                  </div>
-                  <p class="card-event-name">Actividades y clases en polideportivos</p>
+      <section class="bg-light py-5 mb-5">
+        <div class="container my-1 py-2">
+          <h2 class="mb-4">Agenda 2022</h2>
+          <p class="mb-4">Enterate y participá de todas las actividades económicas de la Ciudad</p>
+          <div class="card-deck mb-5">
+            <a class="card" href="#">
+              <div class="card-event-top">
+                <img src="../../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
+                <div class="card-event-img">
+                  <img src="../../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
                 </div>
-                <div class="card-body">
-                  <p class="card-headline">18 de Enero al 1 de Febrero</p>
-                  <h4 class="card-title">
-                    Comienza una nueva edición de actividades en polideportivos
-                  </h4>
+                <p class="card-event-name">Actividades y clases en polideportivos</p>
+              </div>
+              <div class="card-body">
+                <p class="card-headline">18 de Enero al 1 de Febrero</p>
+                <h4 class="card-title">
+                  Comienza una nueva edición de actividades en polideportivos
+                </h4>
+              </div>
+            </a>
+            <a class="card d-none d-sm-block" href="#">
+              <div class="card-event-top">
+                <img src="../../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
+                <div class="card-event-img">
+                  <img src="../../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
                 </div>
-              </a>
-              <a class="card" href="#">
-                <div class="card-event-top">
-                  <img src="../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
-                  <div class="card-event-img">
-                    <img src="../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
-                  </div>
-                  <p class="card-event-name">Actividades y clases en polideportivos</p>
+                <p class="card-event-name">Actividades y clases en polideportivos</p>
+              </div>
+              <div class="card-body">
+                <p class="card-headline">18 de Enero al 1 de Febrero</p>
+                <h4 class="card-title">
+                  Comienza una nueva edición de actividades en polideportivos
+                </h4>
+              </div>
+            </a>
+            <a class="card d-none d-lg-block" href="#">
+              <div class="card-event-top">
+                <img src="../../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
+                <div class="card-event-img">
+                  <img src="../../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
                 </div>
-                <div class="card-body">
-                  <p class="card-headline">18 de Enero al 1 de Febrero</p>
-                  <h4 class="card-title">
-                    Comienza una nueva edición de actividades en polideportivos
-                  </h4>
-                </div>
-              </a>
-              <a class="card" href="#">
-                <div class="card-event-top">
-                  <img src="../assets/eventos/evento-bg.jpg" class="card-event-bg" alt="descripción alternativa" />
-                  <div class="card-event-img">
-                    <img src="../assets/eventos/evento-thumb.jpg" alt="descripción alternativa" />
-                  </div>
-                  <p class="card-event-name">Actividades y clases en polideportivos</p>
-                </div>
-                <div class="card-body">
-                  <p class="card-headline">18 de Enero al 1 de Febrero</p>
-                  <h4 class="card-title">
-                    Comienza una nueva edición de actividades en polideportivos
-                  </h4>
-                </div>
-              </a>
-            </div>
-            <a class="access" href="#" target="_blank" rel="noreferrer">
-              Ver todos los eventos
+                <p class="card-event-name">Actividades y clases en polideportivos</p>
+              </div>
+              <div class="card-body">
+                <p class="card-headline">18 de Enero al 1 de Febrero</p>
+                <h4 class="card-title">
+                  Comienza una nueva edición de actividades en polideportivos
+                </h4>
+              </div>
             </a>
           </div>
+          <a class="access" href="#" target="_blank" rel="noreferrer">
+            Ver todos los eventos
+          </a>
         </div>
       </section>
 
@@ -199,7 +242,7 @@
           <div class="row">
             <div class="card-deck max-cards-2">
               <div class="card card-simple panel-vertical">
-                <img src="../assets/noticias/noticias-3.png" class="card-img" alt="descripción alternativa" />
+                <img src="../../assets/noticias/noticias-3.png" class="card-img" alt="descripción alternativa" />
                 <div class="card-body">
                   <h2 class="card-title">Encabezado</h2>
                   <p class="card-text">
@@ -211,7 +254,7 @@
                 </div>
               </div>
               <div class="card card-simple panel-vertical">
-                <img src="../assets/noticias/noticias-3.png" class="card-img" alt="descripción alternativa" />
+                <img src="../../assets/noticias/noticias-3.png" class="card-img" alt="descripción alternativa" />
                 <div class="card-body">
                   <h2 class="card-title">Encabezado</h2>
                   <p class="card-text">
@@ -225,10 +268,9 @@
             </div>
           </div>
         </div>
-
       </div>
 
-      <div class="container pt-4 mb-5">
+      <div class="container pt-4 ">
         <h3 class="mb-4">Espacios destacados de la Ciudad</h3>
         <div class="card-deck max-cards-3">
           <a class="card" href="#">
@@ -290,7 +332,7 @@
         <h2 class="my-5">Noticias</h2>
         <div class="card-deck max-cards-3">
           <a class="card" href="#">
-            <img src="../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
+            <img src="../../assets/noticias/noticias-2.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-info">Etiqueta 1</span>
@@ -305,8 +347,8 @@
               <small>Fecha de publicación: 22/04/2022</small>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
+          <a class="card d-none d-sm-block" href="#">
+            <img src="../../assets/noticias/noticias-3.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-primary">Etiqueta 1</span>
@@ -321,8 +363,8 @@
               <small>Fecha de publicación: 22/04/2022</small>
             </div>
           </a>
-          <a class="card" href="#">
-            <img src="../assets/noticias/noticias-4.png" class="card-img-top" alt="descripción alternativa" />
+          <a class="card d-none d-lg-block" href="#">
+            <img src="../../assets/noticias/noticias-4.png" class="card-img-top" alt="descripción alternativa" />
             <div class="card-body">
               <div class="mb-2">
                 <span class="badge badge-secondary">Etiqueta 1</span>
@@ -344,99 +386,97 @@
           </a>
         </div>
       </div>
-
-      <section class="bg-light pt-5 pb-3">
-        <div class="container">
-          <div class="mb-5">
-            <h2 class="mt-2 mb-5">Información institucional</h2>
-            <div class="col-lg-4 col-md-6 col-xs-12">
-              <div class="panel-deck max-cards-1">
-                <div class="card card-simple card-horizontal">
-                  <img src="../assets/Icono4.svg" class="card-img-left-panel" alt="descripción alternativa" />
-                  <div class="card-body">
-                    <h4 class="card-title">José Luis Giusti</h4>
-                    <p class="card-text-panel">
-                      Ministro de Desarrollo Económico y Producción
-                    </p>
-                  </div>
-                </div>
+    </article>
+    <section class="bg-light py-5 ">
+      <div class="container my-1 py-2">
+        <h2 class="mb-4">Información institucional</h2>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="panel-deck max-cards-1">
+            <div class="card card-simple card-horizontal">
+              <img src="../../assets/institucional/joseLuisGiusti.png  " class="card-img-left-panel" alt="descripción alternativa" />
+              <div class="card-body">
+                <h4 class="card-title">José Luis Giusti</h4>
+                <p class="card-text-panel">
+                  Ministro de Desarrollo Económico y Producción
+                </p>
               </div>
             </div>
-            <div class="card-deck my-5">
-              <a class="card" href="#">
-                <div class="card-body">
-                  <h4 class="card-title">Título de tarjeta</h4>
-                  <p class="card-text">
-                    Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-                    una lectura óptima.
-                  </p>
-                </div>
-              </a>
-              <a class="card" href="#">
-                <div class="card-body">
-                  <h4 class="card-title">Título de tarjeta</h4>
-                  <p class="card-text">
-                    Recomendamos en este espacio no utilizar más de 3 líneas, para generar
-                    una lectura óptima.
-                  </p>
-                </div>
-              </a>
+          </div>
+        </div>
+        <div class="card-deck my-5">
+          <a class="card" href="#">
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
             </div>
-            <div class="row">
-              <div class="col-12 col-md-4">
-                <div class="group-access bg-white">
-                  <div class="card-access">
-                    <div class="card-access-body p-list">
-                      <div class="">
-                        <h3 class="card-access-title">Redes sociales</h3>
-                      </div>
-                    </div>
-                    <div class="container-access">
-                      <hr class="clearfix" />
-                      <div class="access-option">
-                        <a href="#" class="list-group-item item-sm">
-                          <span class="access-title">Facebook</span>
-                        </a>
-                        <a href="#" class="list-group-item item-sm">
-                          <span class="access-title">Instagram</span>
-                        </a>
-                        <a href="#" class="list-group-item item-sm">
-                          <span class="access-title">Twitter</span>
-                        </a>
-                      </div>
-                    </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card-body">
+              <h4 class="card-title">Título de tarjeta</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas, para generar
+                una lectura óptima.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="group-access bg-white ">
+              <div class="card-access">
+                <div class="card-access-body p-list">
+                  <div class="">
+                    <h3 class="card-access-title">Redes sociales</h3>
+                    <p class="card-access-text"></p>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="card">
-                  <h3 class="ml-4 pt-4">Ubicación</h3>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label for="search-input">Dirección</label>
-                      <input type="search" class="form-control input-search" id="name-input" name="name"
-                        placeholder="Buscar..." />
-                    </div>
-                    <h4>MAPA</h4>
-                    <button type="button" class="btn btn-primary btn-block">Cómo llego</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <div class="mb-5">
-                  <div class="card bg-white rounded-lg p-4">
-                    <h3>Contacto</h3>
-                    <p class="mb-0">Telefono: <a class="" href="#" target="_blank" rel="noreferrer">1122-3344</a></p>
-                    <p class="mb-0">Mail: <a class="" href="#" target="_blank"
-                        rel="noreferrer">jlgiusti@buenosaires.gob.ar</a></p>
+                <div class="container-access">
+                  <hr class="clearfix" />
+                  <div class="access-option">
+                    <a href="#" class="list-group-item item-sm">
+                      <span class="access-title">Facebook</span>
+                    </a>
+                    <a href="#" class="list-group-item item-sm">
+                      <span class="access-title">Instagram</span>
+                    </a>
+                    <a href="#" class="list-group-item item-sm">
+                      <span class="access-title">Twitter</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <div class="card">
+              <h3 class="ml-4 pt-4">Ubicación</h3>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="search-input">Dirección</label>
+                  <input type="search" class="form-control input-search" id="name-input" name="name"
+                    placeholder="Buscar..." />
+                </div>
+                <h4>MAPA</h4>
+                <button type="button" class="btn btn-primary btn-block">Cómo llego</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mb-5">
+              <div class="card bg-white rounded-lg p-4">
+                <h3>Contacto</h3>
+                <p class="mb-0">Telefono: <a class="" href="#" target="_blank" rel="noreferrer">1122-3344</a></p>
+                <p class="mb-0">Mail: <a class="" href="#" target="_blank"
+                    rel="noreferrer">jlgiusti@buenosaires.gob.ar</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-    </article>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -508,10 +548,10 @@
       <section class="footer-legal-section">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
-            <img class="d-lg-none" src="../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
-            <img class="d-none d-lg-inline" src="../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+            <img class="d-lg-none" src="../../assets/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
+            <img class="d-none d-lg-inline" src="../../assets/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
               height="40" />
-            <img class="img-vamos-ba" src="../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+            <img class="img-vamos-ba" src="../../assets/footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
           </div>
           <div class="col-12 col-md-7 col-xl-8">
             <ul class="list-inline">
