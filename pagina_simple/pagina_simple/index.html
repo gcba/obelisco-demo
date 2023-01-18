@@ -14,7 +14,7 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
-  <link rel="stylesheet" href="../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -24,8 +24,8 @@
       <a href="#" class="navbar-brand">
         <img
           class="header-logo"
-          src="../assets/header/header-logo.svg"
-          alt="Ciudad de buenos aires"
+          src="../../assets/header/logoBA.svg"
+          alt="Ciudad de Buenos Aires"
         />
       </a>
       <div class="navbar-search d-responsive ml-auto">
@@ -91,24 +91,25 @@
   </header>
 
   <main>
-    <article class="pt-4 pb-5">
-      
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
-            <li class="breadcrumb-item"><a href="#">Página anterior</a></li>
-          </ol>
-        </nav>
+    <article class="pb-5 mb-4">
+      <header class="pt-3 pb-5">
+        <div class="container pt-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              <li class="breadcrumb-item"><a href="#">Página Anterior</a></li>
+            </ol>
+          </nav>
 
-        <div class="row">
-          <div class="col-12 col-lg-8">
-            <header>
-              <h1 class="mb-3">Página simple</h1>
-              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum a ducimus eveniet
-                explicabo, repudiandae ab ipsam, quibusdam tenetur odit quod molestiae consectetur ex error.              
-              </p>
-              <div class="d-flex flex-row mt-4">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="mt-3">
+                <h1 class="mb-3">Preguntas frecuentes</h1>
+                <p class="lead">Encontrá aquí las respuestas a las consultas más comunes que tiene la población migrante sobre las elecciones de la Ciudad.              
+                </p>
+              </div>
+
+              <div class="d-flex flex-row pt-3">
                 Compartir en redes
                 <ul class="list-inline ml-2">
                   <li class="list-inline-item mr-1"><a href="#" target="_blank"><i
@@ -121,108 +122,117 @@
                         class='bx bx-sm bxl-linkedin-square'></i></a></li>
                 </ul>
               </div>
-            </header>
-            
-            <hr />
+            </div>
+          </div>
+        </div>
+      </header>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8">            
+            <hr class="mt-0 mb-5" />
             <section>
-              <h2>Encabezado</h2>
+              <h2 class="mb-4">Generales</h2>
               <div id="accordion">
                 <div class="accordion-wrapper">
                   <div class="accordion" id="accordionExample">
                     <div class="card">
                       <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
-                        Colapsable
+                        ¿Hay diferencia en los términos migrante (internacional) y extranjero/a?
                       </button>
                       <div id="collapseOne" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                          Este es el área descriptiva de un colapsable de selección única. Una
-                          vez que se accione sobre el área de títulos, se abrirá el componente
-                          mostrando el área descriptiva.
+                          Los dos términos refieren a personas que se trasladaron desde su país de origen a otro. El término migrante tiene un carácter más inclusivo en el lenguaje cotidiano al aglutinar todas las formas de movimiento de personas. El término extranjero, si bien suele utilizarse de forma extendida, en ciertos contextos se lo hace con una connotación negativa en un sentido de alteridad. A continuación, definiciones de términos de la Organización Mundial para las Migraciones (OIM):
+                          <ul class="mb-0">
+                            <li><strong>Migrante:</strong> designa a toda persona que se traslada fuera de su lugar de residencia habitual, ya sea dentro de un país o a través de una frontera internacional, de manera temporal o permanente, y por diversas razones.
+                            </li>
+                            <li><strong>Extranjero/a:</strong>Persona que no es nacional de un Estado determinado en cuyo territorio se encuentra.</li>
+                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.iom.int</a></small>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class="card">
                       <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
-                        Colapsable
+                        ¿Cuántas personas migrantes vivimos en la Ciudad Autónoma de Buenos Aires?
                       </button>
                       <div id="collapseTwo" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                          Este es el área descriptiva de un colapsable de selección única. Una
-                          vez que se accione sobre el área de títulos, se abrirá el componente
-                          mostrando el área descriptiva.
+                          La Encuesta Anual de Hogares (2021) de la Dirección General de Estadísticas y Censos del Gobierno de la Ciudad, estimó que el 12,2% del total de habitantes del distrito son migrantes.
                         </div>
                       </div>
                     </div>
                     <div class="card">
                       <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
-                        Colapsable
+                        ¿Qué significa que la Ciudad de Buenos Aires es autónoma?
                       </button>
                       <div id="collapseThree" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                          Este es el área descriptiva de un colapsable de selección única. Una
-                          vez que se accione sobre el área de títulos, se abrirá el componente
-                          mostrando el área descriptiva.
+                          Esto significa que tiene su propia Constitución y dicta sus propias leyes. En este sentido, la autonomía de la Ciudad consiste en:
+                          <ul class="mb-0">
+                            <li>Elegir autoridades locales.</li>
+                            <li>Sancionar nuestras leyes.</li>
+                            <li>Contar con un sistema de justicia propio.</li>
+                            <li>Administrar los hospitales, las escuelas, el transporte público, la policía de la Ciudad, la recolección de residuos, etc.</li>
+                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.buenosaires.gob.ar/gobierno/autonomia</a></small>
+                          </ul>
                         </div>
                       </div>
                     </div>
                     <div class="card">
                       <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFour">
-                        Colapsable
+                        ¿Las personas migrantes podemos votar en la Ciudad de Buenos Aires?
                       </button>
                       <div id="collapseFour" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                          Este es el área descriptiva de un colapsable de selección única. Una
-                          vez que se accione sobre el área de títulos, se abrirá el componente
-                          mostrando el área descriptiva.
+                          <strong>Sí</strong>, las personas migrantes que cumplen los requisitos establecidos en el Código Electoral de la Ciudad pueden votar cargos locales en la Ciudad de Buenos Aires.
                         </div>
                       </div>
                     </div>
                     <div class="card">
                       <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFive">
-                        Colapsable
+                        ¿Qué cargos podemos votar las personas migrantes?
                       </button>
                       <div id="collapseFive" class="collapse" data-parent="#accordion">
                         <div class="card-body">
-                          Este es el área descriptiva de un colapsable de selección única. Una
-                          vez que se accione sobre el área de títulos, se abrirá el componente
-                          mostrando el área descriptiva.
+                          Las personas migrantes podemos votar los cargos locales de la Ciudad de Buenos Aires:
+                          <ul class="mb-0">
+                            <li>Jefe/a de Gobierno</li>
+                            <li>Legisladores/as</li>
+                            <li>Miembros de la Junta Comunal</li>
+                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">Constitución de la Ciudad Autónoma de Buenos Aires</a> Art. 62</small>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <h2>Encabezado</h2>             
+              <h2 class="mb-4 mt-5">Día de la elección</h2>             
               <div class="accordion-wrapper">
                 <div class="accordion" id="accordionExample">
                   <div class="card">
                     <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix">
-                      Colapsable
+                      ¿Cómo denunciar anomalías en el proceso electoral?
                     </button>
                     <div id="collapseSix" class="collapse" data-parent="#accordion">
                       <div class="card-body">
-                        Este es el área descriptiva de un colapsable de selección única. Una
-                        vez que se accione sobre el área de títulos, se abrirá el componente
-                        mostrando el área descriptiva.
+                        Deben dirigirse al <em>delegado electoral</em> presente en cada establecimiento de votación o ponerse en contacto con la <strong>Justicia Electoral</strong>.
                       </div>
                     </div>
                   </div>
                   <div class="card">
                     <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSeven">
-                      Colapsable
+                      ¿En qué horario se vota?
                     </button>
                     <div id="collapseSeven" class="collapse" data-parent="#accordion">
                       <div class="card-body">
-                        Este es el área descriptiva de un colapsable de selección única. Una
-                        vez que se accione sobre el área de títulos, se abrirá el componente
-                        mostrando el área descriptiva.
+                        Los comicios comienzan a las 8:00 y cierran a las 18:00 horas. A esa hora se clausura el acceso, pero si hubiera electores o electoras en la fila de la mesa esperando para emitir el sufragio el presidente de mesa debe continuar recibiendo los votos hasta que todas las personas presentes en la fila hayan votado.
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
             </section>
           </div>
         </div>
@@ -304,19 +314,19 @@
           <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
             <img
               class="d-lg-none"
-              src="../assets/footer/ciudad-ba-sm.svg"
+              src="../../assets/footer/ciudad-ba-sm.svg"
               alt="Ciudad de Buenos Aires"
               height="48"
             />
             <img
               class="d-none d-lg-inline"
-              src="../assets/footer/ciudad-ba.svg"
+              src="../../assets/footer/ciudad-ba.svg"
               alt="Ciudad de Buenos Aires"
               height="40"
             />
             <img
               class="img-vamos-ba"
-              src="../assets/footer/vamos-ba.svg"
+              src="../../assets/footer/vamos-ba.svg"
               alt="Vamos Buenos Aires"
             />
           </div>
