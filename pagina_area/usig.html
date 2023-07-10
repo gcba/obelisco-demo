@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link
+      rel="shortcut icon"
+      href="https://www.buenosaires.gob.ar/sites/gcaba/files/favicon.png"
+      type="image/png"
+    />
+
+    <title>API USIG | Buenos Aires Cuidad</title>
+
+    <!-- Obelisco -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@gcba/obelisco/dist/obelisco.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar navbar-light navbar-md">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            class="header-logo"
+            src="../assets/header/logoBA.svg"
+            alt="Ciudad de Buenos Aires"
+          />
+        </a>
+        <button
+          class="navbar-toggler collapsed ml-auto"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+        >
+          Menú
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="list-group-content d-responsive ml-2">
+          <a
+            href="#"
+            aria-label="Cerrar sesión"
+            class="list-group-item list-group-item-logout logout-sm"
+          >
+            &nbsp;
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active"><span>Inicio</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Mi cuenta</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" aria-label="Notificaciones" class="nav-link">
+                <i class="bx bxs-bell"></i>
+              </a>
+            </li>
+            <li class="nav-item d-responsive">
+              <a
+                href="#"
+                aria-label="Cerrar sesión"
+                class="list-group-item list-group-item-logout logout-sm"
+              >
+                &nbsp;
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="pb-5 mb-3">
+        <header class="bg-light pt-3 pb-5 mb-5">
+          <div class="container pt-1">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+              </ol>
+            </nav>
+
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="pt-1">
+                  <h1>Unidad de Sistemas de Información Geográfica</h1>
+                  <p class="lead">
+                    Aplicaciones y Servicios Geográficos del Gobierno de la
+                    Ciudad de Buenos Aires.
+                  </p>
+                </div>
+                <!-- <div class="d-block d-md-flex pt-3">
+                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Institucional
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Ministerio de Cultura</a></li>
+                    <li><a class="dropdown-item" href="#">Subsecretaría Gestión Cultural</a></li>
+                    <li><a class="dropdown-item" href="#">Organigrama</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Transparencia activa
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Escalas salariales</a></li>
+                    <li><a class="dropdown-item" href="#">Sueldos de funcionarios</a></li>
+                    <li><a class="dropdown-item" href="#">Concurso de personal</a></li>
+                    <li><a class="dropdown-item" href="#">Presupuesto abierto</a></li>
+                  </ul>
+                </div>
+                <nav>
+                  <ul class="nav flex-row nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link border-link nav-link-lg" href="#"><span>Protocolo de apertura</span></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div> -->
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- inicio: tarjetas/atajos -->
+        <div class="container">
+          <div class="card-deck max-cards-3 card-column mb-5">
+            <div class="card card-simple">
+              <div class="card-body">
+                <i class="bx bx-mobile-alt card-icon"></i>
+                <h4 class="card-title">
+                  <a href="#aplicaciones">Aplicaciones</a>
+                </h4>
+                <p class="card-text">
+                  Mapas Interactivos y Aplicaciones Geográficas.
+                </p>
+              </div>
+            </div>
+            <div class="card card-simple">
+              <div class="card-body">
+                <i class="bx bx-cloud card-icon"></i>
+                <h4 class="card-title"><a href="#api">API Manager</a></h4>
+                <p class="card-text">
+                  Servicios Geográficos para Integración con sistemas.
+                </p>
+              </div>
+            </div>
+            <div class="card card-simple">
+              <div class="card-body">
+                <i class="bx bx-wrench card-icon"></i>
+                <h4 class="card-title">
+                  <a href="#recursos">Recursos para Desarrolladores</a>
+                </h4>
+                <p class="card-text">
+                  Componentes Geográficos listos para usar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin: tarjetas/atajos -->
+
+        <!-- inicio: contenido -->
+        <div class="container pt-5">
+          <!-- inicio: Aplicaciones -->
+          <div id="aplicaciones">
+            <h2 class="mb-4">Aplicaciones</h2>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Mapa Interactivo de Buenos Aires</h3>
+                <p class="card-text">
+                  Brinda información geográfica de interés general a toda la
+                  ciudadanía, presenta los servicios que ofrece la Ciudad en los
+                  diferentes barrios, además de herramientas para la
+                  localización y búsqueda de recorridos en transporte público,
+                  auto, bici o a pie.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxs-map-alt"></i> Mapa Interactivo de Buenos
+                  Aires
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">BA Cómo Llego</h3>
+                <p class="card-text">
+                  Ayuda a los usuarios a moverse por la ciudad en transporte
+                  público, auto, bici o a pie, ofreciendo las mejores rutas,
+                  indicadores de tiempo y costo. Integra información de tiempo
+                  real de subtes, trenes y colectivos para conocer cuánto falta
+                  para que llegue el próximo transporte. Está disponible para
+                  iOS y Android en español y en inglés.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-android"></i> BA Cómo Llego (Android)
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-apple"></i> BA Cómo Llego (iOS)
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm">
+              <div class="card-body">
+                <h3 class="card-title">Normalizador de Bases de Direcciones</h3>
+                <p class="card-text">
+                  Una solución amigable y efectiva para la normalización
+                  automática de direcciones en conjuntos de datos. Incluye las
+                  herramientas necesarias para corregir interactivamente los
+                  registros erróneos y la posibilidad de geocodificar de forma
+                  rápida, sencilla y precisa.
+                </p>
+                <p class="card-text">
+                  <strong> Requerimientos: </strong> Windows XP o superior.
+                  Conexión a Internet
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-book-bookmark"></i>
+                  Manual
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxs-cloud-download"></i>
+                  Descargar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider my-5" />
+          <!-- fin: Aplicaciones -->
+
+          <!-- inicio: Api Manager -->
+          <div id="api">
+            <h2 class="mb-4">Api Manager</h2>
+            <div class="card card-simple panel-sm">
+              <div class="card-body">
+                <p class="card-text">
+                  Interfaz de acceso y exploración de los servicios Web
+                  disponibilizados para la ejecución de procesos geoespaciales
+                  desde otras aplicaciones. Los servicios Web brindan acceso a
+                  las soluciones de normalización, geocodificación, consulta de
+                  datos útiles y búsquedas personalizadas, entre otras.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-code"></i> Acceso a la API
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider my-5" />
+          <!-- fin: Api Manager -->
+
+          <!-- inicio: Componentes para Desarrolladores -->
+          <div id="recursos">
+            <h2 class="mb-4">Componentes para Desarrolladores</h2>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <p class="card-text">
+                  USIG cuenta con diferentes componentes para desarrolladores
+                  que permite recrear productos y contribuir con la comunidad a
+                  través de repositorios de código abierto.
+                </p>
+                <strong> Repositorios: </strong>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-github"></i> Github
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-package"></i> NPM
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Librería de Mapa interactivo</h3>
+                <p class="card-text">
+                  Permite crear de manera simple un mapa interactivo de la
+                  Ciudad de Buenos Aires y alrededores.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-github"></i> Github
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-package"></i> NPM
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Librería de Recorridos</h3>
+                <p class="card-text">
+                  Servicio para consultar recorridos en transporte público o
+                  bicicleta dentro de la ciudad de Buenos Aires
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-package"></i> NPM
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Librería de Gestor de Callejero</h3>
+                <p class="card-text">
+                  Esta librería cuenta con los datos de todas las calles de la
+                  Ciudad de Buenos Aires. Se puede utilizar tanto en el cliente
+                  como en Node.js.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-package"></i> NPM
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm mb-5">
+              <div class="card-body">
+                <h3 class="card-title">Librería de Autocompleter</h3>
+                <p class="card-text">
+                  Esta librería nos permite disponer dentro de nuestro
+                  desarrollos un componentes para autocompletar la búsqueda de
+                  direcciones.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bx-package"></i> NPM
+                </a>
+              </div>
+            </div>
+            <div class="card card-simple panel-sm">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Librería de Clientes de Normalizador de direcciones Python -
+                  AMBA
+                </h3>
+                <p class="card-text">
+                  Este componentes está desarrollado en python y nos permite de
+                  manera simple normalizar direcciones de AMBA y de CABA.
+                </p>
+              </div>
+              <div class="panel-footer">
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-secondary btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-github"></i> Github
+                </a>
+                <a
+                  href=""
+                  target="_blank"
+                  class="btn btn-link btn-sm btn-icon card-link"
+                >
+                  <i class="bx bxl-python"></i> PyPI
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="divider my-5" />
+          <!-- fin: Componentes para Desarrolladores -->
+
+          <!-- inicio: Componentes sin soporte -->
+          <h4>Componentes sin soporte</h4>
+
+          <ul>
+            <li>
+              <p>
+                <a href="https://servicios.usig.buenosaires.gob.ar/usig-js/3.1"
+                  >USIG-JS</a
+                >
+                <br />
+                Biblioteca de componentes Javascript reutilizables para
+                aplicaciones web que requieren interactuar con servicios de
+                USIG.
+                <br />
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/usig-js/3.1/doc"
+                  >Documentación</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/usig-js/3.1/demos"
+                  >Demos</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/usig-js/3.1/tests"
+                  >Tests</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/usig-js/3.1/ejemplos"
+                  >Ejemplos</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://servicios.usig.buenosaires.gob.ar/nd-js/1.4"
+                  >Normalizador de direcciones JS - CABA</a
+                >
+                <br />
+                Implementación Javascript de un normalizador de direcciones que
+                utiliza el callejero de USIG para transformar un string en una
+                dirección normalizada. Requiere jQuery.
+                <br />
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/doc"
+                  >Documentación</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/demo"
+                  >Demo</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/tests"
+                  >Tests</a
+                >
+                -
+                <a
+                  href="https://servicios.usig.buenosaires.gob.ar/nd-js/1.4/qmap"
+                  >Demo del Buscador</a
+                >
+              </p>
+            </li>
+          </ul>
+          <!-- fin: Componentes sin soporte -->
+        </div>
+        <!-- fin: Contenido -->
+      </article>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <section>
+          <h4>Teléfonos útiles</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item phone-items">
+              <a href="tel:102">102 - Niñez y Adolescencia</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:103">103 - Emergencias</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:107">107 - SAME</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:911">911 - Policía</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:144">144 - Violencia de género</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:147">147 - Atención ciudadana</a>
+            </li>
+          </ul>
+          <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+            Ver todos los teléfonos
+          </a>
+        </section>
+        <section>
+          <h4>Redes de la ciudad</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item redes-items">
+              <a href="https://www.facebook.com/GCBA">
+                <i class="bx bxl-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.instagram.com/buenosaires">
+                <i class="bx bxl-instagram"></i>
+                Instagram
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://twitter.com/gcba">
+                <i class="bx bxl-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.youtube.com/user/GCBA">
+                <i class="bx bxl-youtube"></i>
+                YouTube
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a
+                href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+              >
+                <i class="bx bxl-linkedin"></i>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr class="divider" />
+      <div class="container">
+        <section class="footer-legal-section">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+              <img
+                class="d-lg-none"
+                src="../assets/footer/ciudad-ba-sm.svg"
+                alt="Ciudad de Buenos Aires"
+                height="48"
+              />
+              <img
+                class="d-none d-lg-inline"
+                src="../assets/footer/ciudad-ba.svg"
+                alt="Ciudad de Buenos Aires"
+                height="40"
+              />
+              <img
+                class="img-vamos-ba"
+                src="../assets/footer/vamos-ba.svg"
+                alt="Vamos Buenos Aires"
+              />
+            </div>
+            <div class="col-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://boletinoficial.buenosaires.gob.ar">
+                    Boletín oficial
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
+                  >
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/privacidad">
+                    Política de privacidad
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                  >
+                    Oficios judiciales
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.buenosaires.gob.ar/gobierno/transparencia"
+                  >
+                    Transparencia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="footer-license-text">
+            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+            Commons Reconocimiento 2.5 Argentina License.
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
