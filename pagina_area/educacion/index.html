@@ -15,74 +15,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
   <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
-  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 
-<body>
-  <header class="navbar navbar-light navbar-lg">
-    <div class="container">
-      <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
-        <img class="header-logo" src="../../assets/header/logoBA.svg" alt="Ciudad de Buenos Aires" />
-      </a>
-      <div class="navbar-search d-responsive ml-auto">
-        <form class="form-search form-search-sm">
-          <div class="form-group">
-            <input type="search" class="form-control form-control-sm input-search" id="header-search-example-3"
-              name="header-search" aria-label="Ingrese su búsqueda" placeholder="Buscar..." />
-            <button class="reset" type="reset"></button>
-          </div>
-        </form>
-      </div>
-      <button class="navbar-toggler collapsed ml-2" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="list-group-content d-responsive ml-2">
-        <a href="#" aria-label="Cerrar sesión" class="list-group-item list-group-item-logout logout-sm">
-          &nbsp;
-        </a>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="../../index.html" class="nav-link active"><span>Inicio</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><span>Mi actividad</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link"><span>Mi cuenta</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" aria-label="Notificaciones" class="nav-link">
-              <i class="bx bxs-bell"></i>
-            </a>
-          </li>
-          <li class="nav-item d-responsive">
-            <div class="navbar-search">
-              <form class="form-search form-search-sm">
-                <div class="form-group">
-                  <input type="search" class="form-control form-control-sm input-search" id="header-search-example-4"
-                    name="header-search" aria-label="Ingrese su búsqueda" placeholder="Buscar..." />
-                  <button class="reset" type="reset"></button>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="nav-item d-responsive">
-            <a href="#" aria-label="Cerrar sesión" class="list-group-item list-group-item-logout logout-sm">
-              &nbsp;
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  
+<body>  
   <main>
     <article>
       <header class="bg-light pt-3 pb-5 mb-5">
@@ -101,26 +38,27 @@
                   primario, secundario y superior, que conformen un sistema educativo innovador, único e integrado.
                 </p>
               </div>
-              <div class="d-block d-md-flex pt-3">
-                <div class="dropdown mr-0 mr-md-3 mb-3 mb-md-0">
+              <div class="d-block d-md-flex flex-wrap pt-3">
+                <div class="dropdown mb-2 mb-md-3 mr-3">
                   <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Institucional
+                    <span class="btn-dropdown-text">Institucional</span>
+                    <span class="material-icons-round btn-dropdown-icon">expand_more</span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Ministerio de Educación</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Carrera Docente</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Coordinación Pedagógica y Equidad Educativa</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Tecnología Educativa y Sustentabilidad</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría Agencia de aprendizaje a lo largo de la vida</a></li>
-                    <li><a class="dropdown-item" href="#">Subsecretaría de Gestión Económico Financiera y Administración de Recursos</a></li>
-                    <li><a class="dropdown-item" href="#">Unidad de Evaluación Integral de la Calidad y Equidad Educativa</a></li>
-                    <li><a class="dropdown-item" href="#">Unidad de Coordinación del Sistema de Formación Docente</a></li>
-                    <li><a class="dropdown-item" href="#">Organigrama</a></li>
-                    <li><a class="dropdown-item" href="#">Guía de funcionarios</a></li>
-                  </ul>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><span class="item-text">Ministerio de Educación</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Subsecretaría de Carrera Docente</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Subsecretaría de Coordinación Pedagógica y Equidad Educativa</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Subsecretaría de Tecnología Educativa y Sustentabilidad</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Subsecretaría Agencia de aprendizaje a lo largo de la vida</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Subsecretaría de Gestión Económico Financiera y Administración de Recursos</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Unidad de Evaluación Integral de la Calidad y Equidad Educativa</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Unidad de Coordinación del Sistema de Formación Docente</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Organigrama</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Guía de funcionarios</span></a>
+                  </div>
                 </div>
-                <nav class="mr-3 ml-0 ml-md-2 mb-3">
+                <nav class="mb-2 mb-md-3 mr-3">
                   <ul class="nav flex-row nav-pills">
                     <li class="nav-item">
                       <a class="nav-link border-link nav-link-lg" href="#"><span>Agenda educativa
@@ -128,16 +66,17 @@
                     </li>
                   </ul>
                 </nav>
-                <div class="dropdown mr-1 ml-0 ml-md-2">
+                <div class="dropdown mb-0 mb-md-3">
                   <button type="button" class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Transparencia activa
+                    <span class="btn-dropdown-text">Transparencia activa</span>
+                    <span class="material-icons-round btn-dropdown-icon">expand_more</span>
                   </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Declaraciones juradas</a></li>
-                    <li><a class="dropdown-item" href="#">Trámites y servicios</a></li>
-                    <li><a class="dropdown-item" href="#">Compras y contrataciones de obra pública</a></li>
-                  </ul>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><span class="item-text">Declaraciones juradas</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Trámites y servicios</span></a>
+                    <a class="dropdown-item" href="#"><span class="item-text">Compras y contrataciones de obra pública</span></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -643,141 +582,11 @@
     <!-- fin: institucional -->
   </main>
 
-  <footer class="main-footer">
-    <div class="container">
-      <section>
-        <h4>Teléfonos útiles</h4>
-        <ul class="list-inline">
-          <li class="list-inline-item phone-items">
-            <a href="tel:102">102 - Niñez y Adolescencia</a>
-          </li>
-          <li class="list-inline-item phone-items">
-            <a href="tel:103">103 - Emergencias</a>
-          </li>
-          <li class="list-inline-item phone-items">
-            <a href="tel:107">107 - SAME</a>
-          </li>
-          <li class="list-inline-item phone-items">
-            <a href="tel:911">911 - Policía</a>
-          </li>
-          <li class="list-inline-item phone-items">
-            <a href="tel:144">144 - Violencia de género</a>
-          </li>
-          <li class="list-inline-item phone-items">
-            <a href="tel:147">147 - Atención ciudadana</a>
-          </li>
-        </ul>
-        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
-          Ver todos los teléfonos
-        </a>
-      </section>
-      <section>
-        <h4>Redes de la ciudad</h4>
-        <ul class="list-inline">
-          <li class="list-inline-item redes-items">
-            <a href="https://www.facebook.com/GCBA">
-              <i class="bx bxl-facebook"></i>
-              Facebook
-            </a>
-          </li>
-          <li class="list-inline-item redes-items">
-            <a href="https://www.instagram.com/buenosaires">
-              <i class="bx bxl-instagram"></i>
-              Instagram
-            </a>
-          </li>
-          <li class="list-inline-item redes-items">
-            <a href="https://twitter.com/gcba">
-              <i class="bx bxl-twitter"></i>
-              Twitter
-            </a>
-          </li>
-          <li class="list-inline-item redes-items">
-            <a href="https://www.youtube.com/user/GCBA">
-              <i class="bx bxl-youtube"></i>
-              YouTube
-            </a>
-          </li>
-          <li class="list-inline-item redes-items">
-            <a
-              href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-            >
-              <i class="bx bxl-linkedin"></i>
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <hr class="divider" />
-    <div class="container">
-      <section class="footer-legal-section">
-        <div class="row align-items-center">
-          <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-            <img
-              class="d-lg-none"
-              src="../../assets/footer/ciudad-ba-sm.svg"
-              alt="Ciudad de Buenos Aires"
-              height="48"
-            />
-            <img
-              class="d-none d-lg-inline"
-              src="../../assets/footer/ciudad-ba.svg"
-              alt="Ciudad de Buenos Aires"
-              height="40"
-            />
-            <img
-              class="img-vamos-ba"
-              src="../../assets/footer/vamos-ba.svg"
-              alt="Vamos Buenos Aires"
-            />
-          </div>
-          <div class="col-12">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="https://boletinoficial.buenosaires.gob.ar">
-                  Boletín oficial
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a
-                  href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
-                >
-                  Términos y condiciones
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/privacidad">
-                  Política de privacidad
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
-                  Oficios judiciales
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                  Transparencia
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="footer-license-text">
-          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-          Commons Reconocimiento 2.5 Argentina License.
-        </div>
-      </section>
-    </div>
-  </footer>
-  
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="../../shared/header-search-login.js"></script>
+  <script src="../../shared/footer.js"></script>
 </body>
 
 </html>
