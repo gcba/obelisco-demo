@@ -1,0 +1,94 @@
+$blue: #007bc7;
+$blue-light: #0088dd;
+$blue-hover: #005387;
+$blue-dark: #38485c;
+$gray-dark: #222529;
+
+$light: #e2e3e7;
+
+.navbar-custom {
+  max-height: 100px;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: $gray-dark;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 560px) {
+    padding: 1rem 2rem;
+
+    .nav-custom {
+      display: none;
+    }
+  }
+
+  .logo {
+    vertical-align: middle;
+    display: flex;
+    .header-logo-obelisco {
+      max-width: 8rem;
+    }
+  }
+
+  .nav-custom {
+    .nav-link {
+      background: transparent;
+      color: $light;
+
+      &:hover {
+        box-shadow: 0 0 0 0.125rem $light;
+        color: white;
+      }
+    }
+  }
+}
+
+//mobile
+
+.nav-custom-mobile {
+  display: none;
+
+  @media only screen and (max-width: 560px) {
+    display: block;
+  }
+
+  .btn {
+    background: transparent;
+    color: white;
+    border: none;
+
+    .nav-icon { 
+      display: flex;
+      
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  .drawer {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta el cajón fuera de la pantalla */
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agregamos la transición de opacidad */
+    z-index: 1;
+    padding-top: 2rem;
+  }
+  
+  .drawer.open {
+    left: 0;
+    opacity: 1;
+    pointer-events: all;
+    /* Muestra el cajón al hacer clic en el botón */
+  }
+}
+
+

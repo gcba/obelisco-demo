@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.navbar-custom {
+  max-height: 100px;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: #222529;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 560px) {
+  .navbar-custom {
+    padding: 1rem 2rem;
+  }
+  .navbar-custom .nav-custom {
+    display: none;
+  }
+}
+.navbar-custom .logo {
+  vertical-align: middle;
+  display: flex;
+}
+.navbar-custom .logo .header-logo-obelisco {
+  max-width: 8rem;
+}
+.navbar-custom .nav-custom .nav-link {
+  background: transparent;
+  color: #e2e3e7;
+}
+.navbar-custom .nav-custom .nav-link:hover {
+  box-shadow: 0 0 0 0.125rem #e2e3e7;
+  color: white;
+}
+
+.nav-custom-mobile {
+  display: none;
+}
+@media only screen and (max-width: 560px) {
+  .nav-custom-mobile {
+    display: block;
+  }
+}
+.nav-custom-mobile .btn {
+  background: transparent;
+  color: white;
+  border: none;
+}
+.nav-custom-mobile .btn .nav-icon {
+  display: flex;
+}
+.nav-custom-mobile .btn .nav-icon span {
+  font-size: 1.5rem;
+}
+.nav-custom-mobile .drawer {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculta el cajón fuera de la pantalla */
+  width: 280px;
+  height: 100%;
+  background-color: white;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agregamos la transición de opacidad */
+  z-index: 1;
+  padding-top: 2rem;
+}
+.nav-custom-mobile .drawer.open {
+  left: 0;
+  opacity: 1;
+  pointer-events: all;
+  /* Muestra el cajón al hacer clic en el botón */
+}
+
+/*# sourceMappingURL=nabvar.css.map */
