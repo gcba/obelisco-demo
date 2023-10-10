@@ -1,0 +1,91 @@
+$gray-dark: #222529;
+$blue: #007bc7;
+$blue-light: #0088dd;
+
+$light: #e2e3e7;
+
+.main {
+  // background-color: $gray-dark;
+  min-height: 100vh;
+
+  .box-preview {
+    padding-top: 4rem;
+    h1 {
+      // color: white;
+      margin-bottom: 1rem;
+    }
+
+    .box-img-preview {
+      width: 100%;
+      max-height: 500px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      &::after {
+        content: 'Ver Template';
+        color: white;
+        position: absolute;
+        z-index: 99;
+        background: $blue;
+        bottom: 50%;
+        left: 0;
+        right: 0; 
+        margin: 0 auto;
+        text-align: center; 
+        padding: 8px 1rem;
+        border-radius: 0.8rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        width: fit-content;
+      }
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #007bc73f;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 1rem 1rem 0px 0px;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+
+        &::before {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+      }
+    }
+  
+    .tab-content {
+      width: 100%;
+      left: 0;
+      margin: 0 auto;
+      justify-content: start;
+      padding-top: 2rem;
+  
+      .tab-pane {
+        &:not(.active, .show) {
+          display: none;
+        }
+      }
+    }
+  }
+}
