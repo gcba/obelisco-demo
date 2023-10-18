@@ -1,82 +1,153 @@
-const header = `<header class="navbar navbar-light navbar-lg">
-    <div class="container">
+const header = `  <header class="navbar navbar-light navbar-expand-lg">
+<div class="container header-container">
+  <a href="https://buenosaires.gob.ar" class="navbar-brand">
+    <img class="header-logo" src="https://gcba.github.io/obelisco-demo/assets/header/logoBA.svg" alt="Inicio" />
+  </a>
+  <div class="navbar-login-mobile">
+    <a
+      class="btn btn-lg btn-icon btn-outline-link"
+      href="#"
+      target="_blank"
+      aria-label="Acceder a mi cuenta"
+    >
+      <span class="material-icons-round">person</span>
+      <span class="btn-text">Ingresar</span>
+    </a>
+  </div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarContent"
+    aria-controls="navbarContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  ></button>
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <div class="navbar-content">
+      <div class="navbar-sections">
+        <nav aria-label="sections">
+          <h3 class="navbar-sections-title">Secciones</h3>
+          <ul class="nav nav-pills nav-sections">
+            <li class="dropdown">
+              <button
+                type="button"
+                class="btn btn-dropdown btn-dropdown-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="btn-dropdown-text">Navegación</span>
+                <span class="material-icons-round btn-dropdown-icon">
+                  expand_more
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item item-link" href="#">
+                  <span class="item-text">Navegación</span>
+                  <span class="material-icons-round">arrow_forward</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-lg" href="#">
+                <span>Navegación</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <button
+                type="button"
+                class="btn btn-dropdown btn-dropdown-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="btn-dropdown-text">Navegación</span>
+                <span class="material-icons-round btn-dropdown-icon">
+                  expand_more
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                  <span class="item-text">Navegación</span>
+                </a>
+                <a class="dropdown-item item-link" href="#">
+                  <span class="item-text">Navegación</span>
+                  <span class="material-icons-round">arrow_forward</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-search">
+        <form class="form-search">
+          <div class="form-group">
+            <label class="sr-only" for="search-input">Buscador</label>
+            <input
+              type="search"
+              class="form-control input-search"
+              id="search-input"
+              name="name"
+              placeholder="Buscar en Buenos Aires"
+            />
+            <button class="reset" type="reset" aria-label="Borrar"></button>
+            <button
+              class="submit-search"
+              type="submit"
+              aria-label="Buscar"
+            ></button>
+          </div>
+        </form>
+      </div>
+      <div class="navbar-login">
         <a
-        class="navbar-brand collapse multi-collapse show"
-        id="navbarBrand"
-        href="https://www.buenosaires.gob.ar/"
+          class="btn btn-lg btn-icon btn-outline-link"
+          href="#"
+          target="_blank"
+          aria-label="Acceder a mi cuenta"
         >
-        <img
-            class="header-logo"
-            src="https://gcba.github.io/obelisco-demo/assets/header/logoBA.svg"
-            alt="Logo de la Ciudad de Buenos Aires"
-        />
+          <span class="material-icons-round">person</span>
+          <span class="btn-text">Ingresar</span>
         </a>
-        <div class="navbar-btn-search">
-        <button
-            id="navbarTogglerBack"
-            class="navbar-toggler btn-icon"
-            data-toggle="collapse"
-            data-target=".multi-collapse"
-            aria-expanded="false"
-            aria-controls="navbarBrand navbarToggler"
-        >
-            <i class="bx bx-search collapse multi-collapse show"></i>
-            <i class="bx bx-left-arrow-alt collapse multi-collapse"></i>
-        </button>
-        <div class="collapse multi-collapse" id="navbarSearch">
-            <form class="form-search">
-            <div class="form-group">
-                <input
-                type="search"
-                class="form-control input-search"
-                id="name-input"
-                name="name"
-                placeholder="Buscar en Buenos Aires..."
-                />
-                <button class="reset" type="reset"></button>
-            </div>
-            </form>
-        </div>
-        </div>
-        <div class="collapse multi-collapse show" id="navbarToggler">
-        <button
-            class="navbar-toggler collapsed"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-            <a href="https://gcba.github.io/obelisco-demo/" class="nav-link active"><span>Inicio</span></a>
-            </li>
-            <li class="nav-item d-responsive">
-            <div class="navbar-search">
-                <form class="form-search form-search-sm">
-                <div class="form-group">
-                    <input
-                    type="search"
-                    class="form-control form-control-sm input-search"
-                    id="header-search-example-2"
-                    name="header-search"
-                    placeholder="Buscar en Buenos Aires..."
-                    aria-label="Ingrese su búsqueda"
-                    />
-                    <button class="reset" type="reset"></button>
-                </div>
-                </form>
-            </div>
-            </li>
-            <li class="nav-item">
-            <a href="#" class="btn btn-link"><span>Accedé a tu cuenta</span></a>
-            </li>
-        </ul>
-        </div>
+      </div>
     </div>
+  </div>
+</div>
+<div class="header-backdrop"></div>
 </header>`;
 
 document.body.insertAdjacentHTML("afterbegin", header);
