@@ -1,8 +1,6 @@
 .title-block {
   font-size: 3rem;
   font-weight: 800;
-  font-family: monospace;
-  color: white;
   text-align: center;
 }
 @media only screen and (max-width: 1000px) {
@@ -11,9 +9,6 @@
   }
 }
 
-.main {
-  background-color: #222529;
-}
 .main header {
   justify-content: center;
   text-align: center;
@@ -27,9 +22,6 @@
     font-size: 2.5rem;
   }
 }
-.main header .lead {
-  color: white;
-}
 .main header .bg-landing {
   height: 560px;
   width: 70%;
@@ -37,6 +29,7 @@
   background-image: url(../../assets/home/landing.svg);
   background-size: cover;
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .main .tabs-slider {
   justify-content: center;
@@ -59,9 +52,6 @@
 .main .tabs-slider .nav-pills.tabs::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
-.main .tabs-slider .nav.nav-pills.tabs > .nav-item > .nav-link {
-  color: white;
-}
 .main .tab-content {
   width: 100%;
   left: 0;
@@ -79,8 +69,8 @@
   display: none;
 }
 .main .tab-content .tab-pane .card-container {
-  padding: 0 2rem;
-  max-width: 370px;
+  padding: 0 1rem;
+  max-width: 300px;
 }
 .main .tab-content .tab-pane .card-container .thumbnail-image-card {
   width: fit-content;
@@ -88,7 +78,7 @@
   transition: transform 0.3s ease;
   border-radius: 20px;
   text-decoration: none;
-  box-shadow: 0px 3px 20px rgba(226, 227, 231, 0.0392156863);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .main .tab-content .tab-pane .card-container .thumbnail-image-card:hover, .main .tab-content .tab-pane .card-container .thumbnail-image-card:focus {
   transform: translateY(-10px);
@@ -140,16 +130,16 @@
   border-radius: 1rem 1rem 0px 0px;
 }
 .main .tab-content .tab-pane .card-container .thumbnail-image-card .thumbnail-image-card-body {
-  background-color: #191B1D;
+  background-color: #f3f6f9;
   padding: 20px;
   width: 100%;
   border-radius: 0px 0px 1rem 1rem;
 }
 .main .tab-content .tab-pane .card-container .thumbnail-image-card .thumbnail-image-card-body h3 {
-  color: white;
+  color: #38485c;
 }
 .main .tab-content .tab-pane .card-container .thumbnail-image-card .thumbnail-image-card-body small {
-  color: #e2e3e7;
+  color: #38485c;
 }
 
 /*# sourceMappingURL=home.css.map */

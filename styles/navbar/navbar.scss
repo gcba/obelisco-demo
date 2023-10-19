@@ -11,11 +11,13 @@ $light: #e2e3e7;
   height: 100%;
   width: 100%;
   padding: 2rem 4rem;
-  background-color: $gray-dark;
+  // background-color: $gray-dark;
   top: 0;
   z-index: 99;
   display: flex;
   justify-content: space-between;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
 
   @media only screen and (max-width: 560px) {
     padding: 1rem 2rem;
@@ -36,12 +38,12 @@ $light: #e2e3e7;
   .nav-custom {
     .nav-link {
       background: transparent;
-      color: $light;
+      // color: $light;
 
-      &:hover {
-        box-shadow: 0 0 0 0.125rem $light;
-        color: white;
-      }
+      // &:hover {
+      //   box-shadow: 0 0 0 0.125rem $light;
+      //   color: white;
+      // }
     }
   }
 }
@@ -57,7 +59,7 @@ $light: #e2e3e7;
 
   .btn {
     background: transparent;
-    color: white;
+    color: $blue-dark;
     border: none;
 
     .nav-icon { 
@@ -80,7 +82,7 @@ $light: #e2e3e7;
     background-color: white;
     transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Agregamos la transición de opacidad */
     z-index: 1;
-    padding-top: 2rem;
+    padding: 2rem;
   }
   
   .drawer.open {
