@@ -1,1 +1,742 @@
-<p>education works!</p>
+<o-navbar
+  logoRoute="/"
+  [routes]="routes"
+  [searchbarItems]="searchbarItems"
+></o-navbar>
+
+<article>
+  <header class="bg-light pt-3 pb-5 mb-5">
+    <div class="container pt-1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="https://buenosaires.gob.ar/inicio/">Buenos Aires</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="mt-2 pt-1">
+            <h1 class="mb-3">Educación</h1>
+            <p class="lead">
+              Nos ocupamos de crear, promover y ejecutar políticas educativas en
+              sus niveles inicial, primario, secundario y superior, que
+              conformen un sistema educativo innovador, único e integrado.
+            </p>
+          </div>
+          <div class="d-block d-md-flex flex-wrap pt-3">
+            <div class="dropdown mb-2 mb-md-3 mr-3">
+              <button
+                type="button"
+                class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="btn-dropdown-text">Institucional</span>
+                <span class="material-icons-round btn-dropdown-icon"
+                  >expand_more</span
+                >
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text">Ministerio de Educación</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Subsecretaría de Carrera Docente</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Subsecretaría de Coordinación Pedagógica y Equidad
+                    Educativa</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Subsecretaría de Tecnología Educativa y
+                    Sustentabilidad</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Subsecretaría Agencia de aprendizaje a lo largo de la
+                    vida</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Subsecretaría de Gestión Económico Financiera y
+                    Administración de Recursos</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Unidad de Evaluación Integral de la Calidad y Equidad
+                    Educativa</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Unidad de Coordinación del Sistema de Formación
+                    Docente</span
+                  ></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text">Organigrama</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text">Guía de funcionarios</span></a
+                >
+              </div>
+            </div>
+            <nav class="mb-2 mb-md-3 mr-3">
+              <ul class="nav flex-row nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link border-link nav-link-lg" href="#"
+                    ><span>Agenda educativa 2023</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="dropdown mb-0 mb-md-3">
+              <button
+                type="button"
+                class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="btn-dropdown-text">Transparencia activa</span>
+                <span class="material-icons-round btn-dropdown-icon"
+                  >expand_more</span
+                >
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text">Declaraciones juradas</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text">Trámites y servicios</span></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><span class="item-text"
+                    >Compras y contrataciones de obra pública</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- inicio: tarjetas / atajos -->
+  <div class="container mb-5">
+    <div class="card-deck max-cards-4 card-column mb-5">
+      <div class="card card-simple">
+        <div class="card-body">
+          <span class="material-icons-round card-icon">group</span>
+          <h4 class="card-title"><a href="#">Estudiantes</a></h4>
+          <p class="card-text">
+            Inscripción escolar, boleto estudiantil y programas.
+          </p>
+        </div>
+      </div>
+      <div class="card card-simple">
+        <div class="card-body">
+          <span class="material-icons-round card-icon">co_present</span>
+          <h4 class="card-title"><a href="#">Docentes</a></h4>
+          <p class="card-text">
+            Capacitación, información administrativa, beneficios.
+          </p>
+        </div>
+      </div>
+      <div class="card card-simple">
+        <div class="card-body">
+          <span class="material-icons-round card-icon">apartment</span>
+          <h3 class="card-title"><a href="#">Escuelas</a></h3>
+          <p class="card-text">Áreas y Programas.</p>
+        </div>
+      </div>
+      <div class="card card-simple">
+        <div class="card-body">
+          <span class="material-icons-round card-icon">family_restroom</span>
+          <h3 class="card-title"><a href="#">Familias</a></h3>
+          <p class="card-text">
+            Acompañamos a las familias en el recorrido educativo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin: tarjetas / atajos -->
+  <!-- inicio: panel -->
+  <div class="container py-5">
+    <div class="card card-simple panel-horizontal">
+      <img
+        src="https://gcba.github.io/obelisco-demo/assets/panel/educacion-panel.png"
+        class="card-img"
+        alt="miEscuela"
+      />
+      <div class="card-body">
+        <h2 class="card-title">miEscuela</h2>
+        <p class="card-text">
+          Permite gestionar las tareas administrativas y académicas de las
+          escuelas
+        </p>
+        <div class="panel-footer">
+          <a href="#" type="button" class="btn btn-lg btn-primary card-link">
+            Acceder a la plataforma
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin: panel -->
+  <!-- inicio: tarjetas / "Conocé nuestros programas" -->
+  <div class="container pt-2 mb-5">
+    <h2 class="my-4">Conocé nuestros programas</h2>
+    <div class="card-deck max-cards-3 card-column">
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Hablemos de educación: La escuela primaria que queremos"
+        />
+        <div class="card-body">
+          <h4 class="card-title">
+            Hablemos de educación: La escuela primaria que queremos
+          </h4>
+          <p class="card-text">
+            Más de 14.600 personas dejaron sus aportes en el proceso
+            participativo para la transformación de la escuela primaria en la
+            Ciudad
+          </p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Educación para el trabajo"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Educación para el trabajo</h4>
+          <p class="card-text">
+            Encontrá la formación para desarrollarte profesionalmente.
+            ¡Inscripciones abiertas!
+          </p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Fluidez y compresión lectora"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Fluidez y compresión lectora</h4>
+          <p class="card-text">
+            El Programa fortalece la lecto-comprensión de los niños y las niñas
+            en tercer grado.
+          </p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Práticas educativas"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Práticas educativas</h4>
+          <p class="card-text">
+            Experiencias pedagógicas para acompañar la transición al mundo del
+            trabajo y los estudiantes
+          </p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Educar en comunidad"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Educar en comunidad</h4>
+          <p class="card-text">
+            Conocé los aprendizajes esperados, los resultados de las
+            evaluaciones y explorá las propuestas para acompañar en casa.
+          </p>
+        </div>
+      </a>
+      <a class="card" href="#">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/tarjetas/educacion/card-1.png"
+          class="card-img-top"
+          alt="Terminá la secundaria"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Terminá la secundaria</h4>
+          <p class="card-text">
+            Conocé cómo sumarte para terminar la secundaria gratis, virtual y
+            desde donde vivas.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- fin: tarjetas / "Conocé nuestros programas" -->
+  <!-- inicio: tarjetas / "Lo más consultado" -->
+  <div class="container mb-4 pb-2 pt-2">
+    <h2 class="pt-4 mb-4">Lo más consultado</h2>
+    <div class="card-deck max-cards-3 card-column">
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2022/03/17/6a3ce1dc50b02a37feb1480cfb15aaaaed89ea5d.jpg?itok=X9g1z9JZ"
+          class="card-img-left"
+          alt="Aprendé Programando"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Aprendé Programando</h4>
+          <p class="card-text">
+            Sumate al mundo de la programación con nuestros cursos sobre
+            tecnología.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2017/10/24/42a68b5208b10851a686de34a99b08d8e7237de0.jpg?itok=_-RNYUHk"
+          class="card-img-left"
+          alt="Secundaria del Futuro"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Secundaria del Futuro</h4>
+          <p class="card-text">
+            Profundiza la NES y propone un modelo de escuela más inclusivo que
+            se adapte a las innovaciones tecnológicas y los nuevos formatos de
+            enseñanza/aprendizaje.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2015/08/11/4c97c15a4adba6043ae23b98dccf41f7d828f580.jpg?itok=00Opnd5E"
+          class="card-img-left"
+          alt="Escuela Abierta"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Escuela Abierta</h4>
+          <p class="card-text">
+            Es un espacio de encuentro entre chicos, familia y comunidad en la
+            escuela.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2022/08/10/cdfe8acc9199ca47d999175b3b4dc277daddbf4c.jpeg?itok=9mLlKMBj"
+          class="card-img-left"
+          alt="Plan Sarmiento"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Plan Sarmiento</h4>
+          <p class="card-text">
+            El camino hacia la innovación en los procesos de enseñanza y
+            aprendizaje en el marco de los desafíos de una sociedad digital en
+            continua expansión.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2021/06/24/a74cd6b53cbd6eed4a5306757729f3db99aa1ba5.jpg?itok=gELrXfOR"
+          class="card-img-left"
+          alt="Matriculación en escuelas privadas - Ley 2681"
+        />
+        <div class="card-body">
+          <h4 class="card-title">
+            Matriculación en escuelas privadas - Ley 2681
+          </h4>
+          <p class="card-text">
+            La matriculación o rematriculación no podrá negarse sin causa en
+            establecimientos educativos de gestión privada.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- fin: tarjetas / "Lo más consultado" -->
+  <!-- inicio: tarjetas / "Destacadas" -->
+  <div class="container mb-4 pb-2 pt-2">
+    <h2 class="pt-4 mb-4">Destacadas</h2>
+    <div class="card-deck max-cards-3 card-column">
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2021/08/27/34aa0800b616b5c2ac62ccd49de7fc6a13e2341f.jpg?itok=Lz284ZVV"
+          class="card-img-left"
+          alt="54 Nuevas Escuelas"
+        />
+        <div class="card-body">
+          <h4 class="card-title">54 Nuevas Escuelas</h4>
+          <p class="card-text">Mirá el Plan del Compromiso de Gobierno.</p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2018/10/02/14a5476e561c2c20c5c11c6c3b953ccc24e9d602.jpg?itok=5k9K7w92"
+          class="card-img-left"
+          alt="Materiales didácticos"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Materiales didácticos</h4>
+          <p class="card-text">
+            Elaboramos documentos curriculares, orientaciones y propuestas de
+            enseñanza para la comunidad educativa.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2020/06/25/63500184e1f870563cee23619d118178d2d97d33.jpg?itok=Oa5BffY5"
+          class="card-img-left"
+          alt="Agencia de Aprendizaje a lo Largo de la Vida"
+        />
+        <div class="card-body">
+          <h4 class="card-title">
+            Agencia de Aprendizaje a lo Largo de la Vida
+          </h4>
+          <p class="card-text">
+            Oferta de formación para jóvenes y adultos. Conocé nuestras
+            propuestas y desarrollá tu potencial.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2017/06/16/8efeb8cb0ebce7dbbb87d2f55a5a4f252f0d7c7e.jpg?itok=AOR-YFyt"
+          class="card-img-left"
+          alt="Escuelas Verdes"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Escuelas Verdes</h4>
+          <p class="card-text">
+            Fomentamos el desarrollo sustentable a través de la Educación y la
+            Gestión Ambiental en las escuelas.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2021/12/09/115e731405c32dd2d0ee87a17fe5113b3e0bf38d.jpg?itok=FaRpc7xp"
+          class="card-img-left"
+          alt="Presencialidad en las escuelas"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Presencialidad en las escuelas</h4>
+          <p class="card-text">
+            Balances y desafíos que abordamos durante 2020 y 2021.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2016/04/06/43b7fd1367af075d11e49728f3fc301fdc3e6350.jpg?itok=Yn3VuE5T"
+          class="card-img-left"
+          alt="Calidad y Equidad Educativa"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Calidad y Equidad Educativa</h4>
+          <p class="card-text">
+            Producimos estadísticas del sistema educativo para mejorar la
+            calidad y la equidad educativa de la Ciudad de Buenos Aires.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- fin: tarjetas / "Destacadas" -->
+  <!-- inicio: tarjetas / "Conocé más" -->
+  <div class="container mb-4 pb-2 pt-2">
+    <h2 class="pt-4 mb-4">Conocé más</h2>
+    <div class="card-deck max-cards-3 card-column">
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2019/10/08/b9403462cd681063f2a0eae62fec085e5d163680.jpg?itok=EM41P43H"
+          class="card-img-left"
+          alt="Ciudadanía Global"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Ciudadanía Global</h4>
+          <p class="card-text">
+            Promovemos diversos recorridos de enseñanza y aprendizaje
+            potenciados por tecnologías digitales y desde el enfoque de los
+            Objetivos del Desarrollo Sostenible.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2018/01/23/d74ac6d18c2aa55204dfbf798948f7affc7fcb8e.jpg?itok=N6bMb_al"
+          class="card-img-left"
+          alt="Consulta de Establecimientos"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Consulta de Establecimientos</h4>
+          <p class="card-text">
+            Buscador de instituciones educativas de gestión estatal y privada.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2017/01/23/eb73a9957901ae5bc466cad9ae759de4d2dce71a.jpg?itok=VKbf-5sr"
+          class="card-img-left"
+          alt="Centro de Reciclado Creativo"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Centro de Reciclado Creativo</h4>
+          <p class="card-text">
+            Destinado a docentes y estudiantes de nivel inicial y niños de 3 a 5
+            años. Fomenta como recurso valioso a los materiales de descarte.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2021/06/24/e6b8778b36448f4cf140d37a3d952e884363a9b1.jpg?itok=Z9rhjv8I"
+          class="card-img-left"
+          alt="Educación inclusiva en la escuela"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Educación inclusiva en la escuela</h4>
+          <p class="card-text">
+            Conocé los derechos de los niños, niñas y adolescentes con
+            discapacidad a ser matriculados en escuelas comunes de gestión
+            privada.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2014/09/26/762ef83a61cd612b2a8ce2642b48b4a2dfa2d0ff.jpg?itok=Rlvf2iSJ"
+          class="card-img-left"
+          alt="Gestión Cultural"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Gestión Cultural</h4>
+          <p class="card-text">
+            Visitá los Museos Quinquela Martín y Bernasconi, conocé el Programa
+            Huellas de la Escuela y el Museo de las Escuelas y todas nuestras
+            actividades culturales.
+          </p>
+        </div>
+      </a>
+      <a class="card card-horizontal" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_horizontal/public/media/image/2019/03/12/b997ac43ec48a30b263729696870a7bb99299530.jpg?itok=UlAgDGOv"
+          class="card-img-left"
+          alt="Pase Cultural"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Pase Cultural</h4>
+          <p class="card-text">
+            Descubrí la nueva tarjeta cultural que ofrece beneficios exclusivos
+            para estudiantes de 4º, 5º, 6º año y docentes de escuelas públicas
+            de la Ciudad.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- fin: tarjetas / "Conocé más" -->
+  <!-- inicio: noticias -->
+  <div class="container pt-4 mt-2">
+    <h2 class="mb-4">Noticias</h2>
+    <div class="card-deck max-cards-3 card-column">
+      <a class="card" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_img_top/public/2023-06/WhatsApp%20Image%202023-06-14%20at%2011.44.36.jpeg?itok=0oycMggq"
+          class="card-img-top"
+          alt="Inscripciones para las Tecnicaturas Superiores"
+        />
+        <div class="card-body">
+          <div class="mb-2">
+            <span class="badge badge-info">EDUCACIÓN</span>
+          </div>
+          <h4 class="card-title">
+            Inscripciones para las Tecnicaturas Superiores
+          </h4>
+          <p class="card-text">
+            Rodríguez Larreta les tomó la Promesa a la Bandera a más de 7.000
+            alumnos
+          </p>
+        </div>
+        <div class="card-footer">
+          <small>Fecha de publicación: 22/04/2022</small>
+        </div>
+      </a>
+      <a class="card d-none d-sm-block" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_img_top/public/2023-06/Iniciacion-a-la-programacion-1536x1024.jpg?itok=Yj3j60A2"
+          class="card-img-top"
+          alt="descripción alternativa"
+        />
+        <div class="card-body">
+          <div class="mb-2">
+            <span class="badge badge-primary">EDUCACIÓN</span>
+          </div>
+          <h4 class="card-title">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          </h4>
+          <p class="card-text">
+            Continúan abiertas las inscripciones para Codo a Codo 2023
+          </p>
+        </div>
+        <div class="card-footer">
+          <small>Fecha de publicación: 22/04/2022</small>
+        </div>
+      </a>
+      <a class="card d-none d-lg-block" href="#">
+        <img
+          src="https://buenosaires.gob.ar/sites/default/files/styles/card_img_top/public/2023-05/Feria%20Cre%C3%A1%20tu%20futuro%20D%C3%ADa%202_015.jpg?itok=FNgMQyvp"
+          class="card-img-top"
+          alt="Día Internacional contra el Bullying"
+        />
+        <div class="card-body">
+          <div class="mb-2">
+            <span class="badge badge-secondary">ETIQUETA</span>
+          </div>
+          <h4 class="card-title">Día Internacional contra el Bullying</h4>
+          <p class="card-text">
+            Creá Tu Futuro, la feria que busca mejorar la empleabilidad de
+            jóvenes y adultos
+          </p>
+        </div>
+        <div class="card-footer">
+          <small>Fecha de publicación: 22/04/2022</small>
+        </div>
+      </a>
+    </div>
+    <div class="mt-4 pt-2 mb-5">
+      <a class="access" href="#" target="_blank" rel="noreferrer">
+        Ver todas las noticias
+      </a>
+    </div>
+  </div>
+  <!-- fin: noticias -->
+  <!-- inicio: "Mapa de acceso al Ministerio de Educación" -->
+  <div class="container mb-5 pt-2">
+    <h2 class="pt-4 mb-2">Mapa de acceso al Ministerio de Educación</h2>
+    <div class="col-8 p-0">
+      <p>
+        Conocé todos los medios de transporte que te llevan al edificio del
+        Ministerio ubicado en Carlos H. Perette 750 en el barrio de Retiro.
+      </p>
+    </div>
+    <div class="gallery-grid gallery-max-1 mt-4 pt-2">
+      <div class="gallery-grid-item">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/galeria/mapa-educacion.png"
+          alt="Texto alternativo de la imagen"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- fin: "Mapa de acceso al Ministerio de Educación" -->
+</article>
+<!-- inicio institucional -->
+<section class="bg-light py-5">
+  <div class="container mb-3">
+    <h2 class="mb-4">Información institucional</h2>
+    <div class="card-deck max-cards-2 mb-3 pb-3 card-column">
+      <div class="card card-simple panel-sm-horizontal">
+        <img
+          src="https://gcba.github.io/obelisco-demo/assets/panel/soledadAcuna.png"
+          class="rounded-lg"
+          width="104"
+          height="104"
+          alt="Soledad Acuña"
+        />
+        <div class="card-body">
+          <h4 class="card-title">Soledad Acuña</h4>
+          <p class="card-text">Ministro de Educación</p>
+        </div>
+      </div>
+      <div class="card card-simple panel-sm-horizontal">
+        <div class="card-body">
+          <h4 class="card-title">Contacto</h4>
+          <p class="card-text">
+            Teléfono: 6076-6000 <br />
+            Email:
+            <a href="mailto:soledad@bue.edu.ar" target="_blank" rel="noreferrer"
+              >soledad@bue.edu.ar</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2 class="mb-4">Seguinos en</h2>
+        <div class="list-group mb-4 mb-md-0">
+          <a href="#" class="list-group-item">
+            <i class="bx bxl-facebook-circle"></i>
+            <div class="access-content">
+              <span class="access-title">Facebook</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bx bxl-instagram-alt"></i>
+            <div class="access-content">
+              <span class="access-title">Instagram</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bx bxl-youtube"></i>
+            <div class="access-content">
+              <span class="access-title">Youtube</span>
+            </div>
+          </a>
+          <a href="#" class="list-group-item">
+            <i class="bx bxl-twitter"></i>
+            <div class="access-content">
+              <span class="access-title">Twitter</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="mb-1">Ubicación</h4>
+            <p>Dirección: Carlos H. Perette 750.</p>
+            <div class="w-100 mb-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.888755725674!2d-58.38227022454956!3d-34.581681272962264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1fa6732c4b%3A0xe0081a9aaee2c67b!2sMinisterio%20de%20Educaci%C3%B3n%20de%20la%20Ciudad%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1686840819485!5m2!1ses!2sar"
+                width="100%;"
+                height="146"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <a
+              href="https://mapa.buenosaires.gob.ar/informacion/?lat=-34.581573&amp;lng=-58.380459&amp;zl=15&amp;modo=transporte&amp;dir=Ministerio+de+Educaci%C3%B3n+GCBA+(CABA%2C+CABA)&amp;ilat=-34.581573&amp;ilng=-58.380459&amp;fid=sitios_de_interes%7C2533"
+              class="btn btn-primary btn-lg mt-3"
+              target="_blank"
+              >Cómo llego</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<o-footer></o-footer>
