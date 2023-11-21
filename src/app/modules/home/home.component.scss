@@ -1,0 +1,166 @@
+@mixin desktop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 426px) {
+    @content;
+  }
+}
+
+:host {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 6rem;
+
+    .home-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4rem;
+
+      .logo-box {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+          height: 20vw;
+          width: 20vw;
+        }
+      }
+
+      .content-box {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 4rem;
+
+        h2 {
+          font-size: 1.375rem;
+        }
+
+        .home-buttons {
+          margin: 1rem 0;
+          & > *:last-child {
+            margin-left: 1rem;
+          }
+        }
+
+        .home-version {
+          color: #6c757d;
+        }
+      }
+    }
+
+    .home-description {
+      margin-bottom: 6rem;
+
+      .icon-component {
+        color: #f3c237;
+      }
+
+      .icon-guide {
+        color: #00bda7;
+      }
+
+      .icon-content {
+        color: #ff6940;
+      }
+    }
+
+    .home-footer {
+      p {
+        margin: 0px;
+      }
+    }
+
+    @include desktop {
+      padding: 2rem;
+      .home-header {
+        .logo {
+          width: 40vw;
+        }
+        .content-box {
+          padding: 3rem 1rem;
+        }
+      }
+    }
+
+    @include tablet {
+      padding: 2rem;
+
+      .home-header {
+        flex-direction: column;
+
+        .logo-box {
+          margin: 4rem 0rem;
+          .logo {
+            width: 160px;
+            height: 160px;
+          }
+        }
+
+        .content-box {
+          width: 100%;
+          padding: 0px;
+          align-items: center;
+          text-align: center;
+
+          .home-code {
+            align-items: flex-start;
+          }
+
+          .home-buttons {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            a {
+              width: 100%;
+            }
+
+            & > *:last-child {
+              margin-top: 1rem;
+              margin-left: 0rem;
+            }
+          }
+        }
+      }
+    }
+
+    @include mobile {
+      padding: 1rem;
+
+      .home-header {
+        .logo-box {
+          margin: 2rem 0rem;
+          .logo {
+            width: 130px;
+            height: 130px;
+          }
+        }
+
+        .content-box {
+          .home-code {
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+}

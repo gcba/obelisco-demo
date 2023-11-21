@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+  <title>Solicitud</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body>
+  <main id="main">
+    <article class="pb-5 mb-4">
+      <header class="bg-light pt-3 pb-5 mb-5">
+        <div class="container pt-1">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#">Educación</a></li>
+              <li class="breadcrumb-item"><a href="#">Calidad y equidad educativa</a></li>
+            </ol>
+          </nav>
+
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Solicitud de información</h1>
+                <p class="lead">Si necesitas información de estadística, investigación o evaluación educativa de la Ciudad podés realizar tu consulta en este formulario.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="form-wrapper pb-2">
+              <div class="alert-wrapper mb-5 pb-2">
+                <div class="alert alert-danger fade show" role="alert">
+                  <p><strong>Por favor arreglá los siguientes errores para continuar:</strong></p>
+                  <ol class="list-links">
+                    <li>
+                      <a href="#">Correo electrónico*</a>
+                    </li>
+                    <li>
+                      <a href="#">Nombre de la institución*</a>
+                    </li>
+                    <li>
+                      <a href="#">Tipo de información requerida*</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <h2 class="mb-4">Datos personales</h2>
+              <div class="form-group pb-3 mb-3">
+                <label for="name-input" class="pb-2">Nombre y Apellido*</label>
+                <input type="text" class="form-control" id="name-input" name="name" placeholder="" value="Heraldo Paez" />
+              </div>
+              <div class="form-group pb-3 mb-3">
+                <label for="number-input" class="pb-2">Número de teléfono*</label>
+                <input type="number" class="form-control" id="number-input" name="number" value="1164875842"
+                  placeholder="Ejemplo: 11 2378 3282" />
+              </div>
+              <div class="form-group mb-5 pb-2">
+                <label for="email-input" class="pb-2">Correo electrónico*</label>
+                <input type="email" class="form-control is-invalid" id="email-input" name="email"
+                  aria-describedby="email-help" placeholder="Ejemplo: correo@gmail.com" required="" />
+                <div class="valid-feedback">Correo electrónico aceptado</div>
+                <div class="invalid-feedback">Correo electrónico es requerido</div>
+              </div>
+              <h2 class="mb-4">Datos de la institución educativa</h2>
+              <div class="form-group">
+                <label>Tipo de institución desde la cual solicita información*</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Dependencia del Ministerio de Educación del GCBA
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" checked="" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Dependencia de otro ministerio u organismo del GCBA
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  ONG
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Empresa
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Otra
+                </label>
+              </div>
+              <div class="form-group pt-2 my-3 ">
+                <label for="name-input" class="pb-2">Nombre de la institución*</label>
+                <input type="text" class="form-control is-invalid" id="name-input" name="name" required="" />
+                <div class="valid-feedback">Nombre de la institución es aceptado</div>
+                <div class="invalid-feedback">Nombre de la institución es requerido</div>
+              </div>
+              <div class="form-group pt-3">
+                <label>Ocupación o función dentro de la institución educativa*</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Funcionario/a / Asesor/a / Coordinador/a
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Estudiante / Docente / Investigador/a
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" checked="" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Periodista
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Consultor/a
+                </label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="skills-copywrite-input" name="skills"
+                  value="copywrite" />
+                <label class="custom-control-label" for="skills-copywrite-input">
+                  Otra
+                </label>
+              </div>
+              <div class="mb-5 pb-2">
+                <div class="form-group pt-2 mt-3">
+                  <label>Tipo de información requerida*</label>
+                </div>
+                <div class=" custom-control custom-checkbox">
+                  <input class="custom-control-input is-invalid" type=" checkbox" id="skills-copywrite-input"
+                    name="skills" value="copywrite" />
+                  <label class="custom-control-label" for="skills-copywrite-input">
+                    Datos estadísticos educativos
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input is-invalid" type="checkbox" id="skills-copywrite-input" name="skills"
+                    value="copywrite" />
+                  <label class="custom-control-label" for="skills-copywrite-input">
+                    Listado de establecimientos educativos
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input class="custom-control-input is-invalid" type="checkbox" id="skills-copywrite-input" name="skills"
+                    value="copywrite" />
+                  <label class="custom-control-label" for="skills-copywrite-input">
+                    Listado de establecimientos educativos
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                  <input class="custom-control-input is-invalid" type="checkbox" id="skills-copywrite-input" name="skills"
+                    value="copywrite" />
+                  <label class="custom-control-label" for="skills-copywrite-input">
+                    Otra
+                  </label>
+                  <div class="valid-feedback">Tipo de información aceptado</div>
+                  <div class="invalid-feedback">Tipo de información requerida es un campo obligatorio</div>
+                </div>
+              </div>
+              <h2 class="mb-4">Comentarios generales</h2>
+              <div class="form-group ">
+                <label for="text-area" class="pb-2">¿Hay algo que quieras agregar?</label>
+                <textarea class="form-control" id="text-area" rows="3"
+                  placeholder="Sumá información que creas que pueda sumar valor a los datos cargados"></textarea>
+              </div>
+              <div class="pt-4 mt-1 ">
+                <button type="button" class="btn btn-primary btn-lg mt-3 mb-3">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="../../shared/header-search-login.js"></script>
+  <script src="../../shared/footer.js"></script>
+</body>
+
+</html>
