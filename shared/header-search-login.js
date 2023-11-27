@@ -6,7 +6,7 @@ const headerLogin = `<header class="navbar navbar-light navbar-expand-lg" role="
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
       <img
         class="header-logo"
-        src="https://gcba.github.io/obelisco-demo/assets/header/logoBA.svg"
+        src="https://gcba.github.io/obelisco-demo/assets/header/logotipo_ba.svg"
         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
       />
     </a>
