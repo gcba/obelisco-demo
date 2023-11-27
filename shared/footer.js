@@ -23,7 +23,7 @@ const footer = `
             <a href="tel:147">147 - Atención ciudadana</a>
           </li>
         </ul>
-        <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+        <a href="https://buenosaires.gob.ar/inicio/telefonos">
           Ver todos los teléfonos
         </a>
       </section>
@@ -109,13 +109,13 @@ const footer = `
               </li>
               <li class="list-inline-item">
                 <a
-                  href="https://buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones"
+                  href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
                 >
                   Términos y condiciones
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.buenosaires.gob.ar/privacidad">
+                <a href="https://buenosaires.gob.ar/inicio/privacidad">
                   Política de privacidad
                 </a>
               </li>
