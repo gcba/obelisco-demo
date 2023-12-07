@@ -1,0 +1,26 @@
+@media (max-width: 592px) {
+  .table tbody tr:first-of-type td {
+    border-top: 1px solid #e6ebf0;
+  }
+  .table tbody tr:not(:last-of-type) {
+    border-bottom: 2px solid #d1d8e0;
+  }
+}
+@media (min-width: 592.99px) and (max-width: 751.99px) {
+  .table tbody tr td:first-of-type,
+  .table thead tr th:first-of-type {
+    min-width: 33vw;
+  }
+  .table tbody tr td:nth-of-type(2),
+  .table thead tr th:nth-of-type(2) {
+    min-width: 35vw;
+  }
+}
+@media (min-width: 752px) and (max-width: 1119.99px) {
+  .table tbody tr td:first-of-type,
+  .table thead tr th:first-of-type,
+  .table tbody tr td:nth-of-type(2),
+  .table thead tr th:nth-of-type(2) {
+    min-width: 25vw;
+  }
+}
