@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SectionTemplatesComponent } from './modules/section-templates/section-templates.component';
 import { EducationComponent } from './modules/templates/education/education.component';
+import { CultureComponent } from './modules/templates/culture/culture.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'templates/education',
     component: EducationComponent,
+  },
+  {
+    path: 'templates/culture',
+    component: CultureComponent,
   },
   { path: '**', pathMatch: 'full', redirectTo: '' },
 ];

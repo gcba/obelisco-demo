@@ -27,10 +27,9 @@ export class SectionTemplatesComponent {
         route: '/templates/education',
       },
       {
-        title: 'Acceso',
-        description: 'Descripción (Opcional)',
+        title: 'Cultura',
         icon: 'bx bxs-tag-alt',
-        route: '/home',
+        route: '/templates/culture',
       },
       {
         title: 'Acceso',
