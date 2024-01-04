@@ -1,1 +1,285 @@
-<p>procedure works!</p>
+<o-navbar
+  logoRoute="/"
+  [routes]="routes"
+  [searchbarItems]="searchbarItems"
+></o-navbar>
+<main>
+  <header class="bg-light pt-3 pb-5 mb-5">
+    <div class="container pt-1">
+      <o-breadcrumb></o-breadcrumb>
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="pt-lg-1 pb-lg-2">
+            <h1 class="mb-3 mb-lg-2">Título del trámite</h1>
+            <p class="lead mb-4">
+              Descripción del trámite que sintetice para qué la persona deberá
+              realizarlo.
+            </p>
+          </div>
+          <div class="d-flex align-items-center">
+            <span class="mr-1">Modalidad: </span>
+            <span class="badge badge-secondary">Presencial</span>
+            <span class="badge badge-secondary">En línea</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article class="container pt-2 pt-lg-0 pb-lg-1 mb-5">
+    <div class="row flex-column-reverse flex-lg-row">
+      <div class="col-12 col-lg-8">
+        <!-- Lista informativa -->
+        <section class="pb-lg-4 pb-2">
+          <h2 class="mb-4">Requisitos para iniciar el trámite</h2>
+          <div class="list-informative mb-4 pb-lg-1 pb-0">
+            <h3 class="list-informative-subtitle">
+              Subtítulo con lista de requisitos 1
+            </h3>
+            <ul class="list-informative-check">
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+                <a href="#" target="_blank" rel="noreferrer"
+                  >Aquí va un enlace pertinente</a
+                >
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+            </ul>
+          </div>
+          <div class="list-informative mb-4 pb-lg-1 pb-0">
+            <h3 class="list-informative-subtitle">
+              Subtítulo con lista de requisitos 2
+            </h3>
+            <ul class="list-informative-check">
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+                <a href="#" target="_blank" rel="noreferrer"
+                  >Aquí va un enlace pertinente</a
+                >
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+            </ul>
+          </div>
+          <div class="list-informative mb-4 pb-lg-1 pb-0">
+            <h3 class="list-informative-subtitle">
+              Subtítulo con lista de requisitos 3
+            </h3>
+            <ul class="list-informative-check">
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+                <a href="#" target="_blank" rel="noreferrer"
+                  >Aquí va un enlace pertinente</a
+                >
+              </li>
+              <li>
+                Descripción del tipo de requisito que necesita la persona
+                usuaria y que sea condicionante para poder avanzar con el
+                trámite.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Lista de pasos -->
+        <section class="mb-5">
+          <h2 class="mb-lg-4 mb-3">
+            Para realizar el trámite deberás completar estos pasos
+          </h2>
+          <o-list-step [steps]="stepItems"></o-list-step>
+        </section>
+
+        <section class="mb-4 mb-lg-3 pb-2 pb-lg-0">
+          <h2 class="mb-3">Costos del trámite</h2>
+          <div class="pb-0 pb-lg-1">
+            <div
+              class="col-12 col-lg-5 d-inline-block px-0 mr-lg-4 pr-lg-2 mb-3 mb-lg-4 pb-lg-2"
+            >
+              <h3 class="mb-1">$ 00,00</h3>
+              <p class="mb-0">Breve descripción del concepto</p>
+            </div>
+            <div
+              class="col-12 col-lg-5 d-inline-block px-0 mr-lg-4 pr-lg-2 mb-3 mb-lg-4 pb-lg-2"
+            >
+              <h3 class="mb-1">$ 00,00</h3>
+              <p class="mb-0">Breve descripción del concepto</p>
+            </div>
+          </div>
+          <div class="pb-0 pb-lg-1">
+            <div
+              class="col-12 col-lg-5 d-inline-block px-0 mr-lg-4 pr-lg-2 mb-3 mb-lg-4 pb-lg-2"
+            >
+              <h3 class="mb-1">$ 00,00</h3>
+              <p class="mb-0">Breve descripción del concepto</p>
+            </div>
+            <div class="col-12 col-lg-5 d-inline-block px-0 mr-lg-4 pr-lg-2">
+              <h3 class="mb-1">$ 00,00</h3>
+              <p class="mb-0">Breve descripción del concepto</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-5">
+          <h2 class="mb-3">Título referido a colapsables</h2>
+          <!-- Colapsable -->
+          <o-collapse
+            id="accordion"
+            [items]="collapseItems"
+            dataParent="selectionUnique"
+          >
+          </o-collapse>
+        </section>
+
+        <section class="mb-lg-5 mb-4 pb-2 pb-lg-0">
+          <h2 class="mb-4 pb-2">Más información</h2>
+          <div class="list-informative">
+            <ul class="list-informative-bullet">
+              <li>
+                Este es un ejemplo de como disponer mas información sobre el
+                trámite
+              </li>
+              <li>
+                Este es un ejemplo de como disponer mas información sobre el
+                trámite
+              </li>
+              <li>
+                Este es un ejemplo de como disponer mas información sobre el
+                trámite
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="mb-lg-5 mb-4 pb-2 pb-lg-0">
+          <h2 class="mb-4 pb-2">Título sobre archivos a descargar</h2>
+          <div class="list-link mb-4 pb-2">
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+          </div>
+
+          <h2 class="mb-4">Título sobre archivos a descargar</h2>
+          <div class="list-link mb-4 pb-lg-1">
+            <h3 class="list-link-title">Título sobre archivos a descargar</h3>
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+          </div>
+          <div class="list-link mb-4 pb-2">
+            <h3 class="list-link-title">Título sobre archivos a descargar</h3>
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+          </div>
+
+          <h2 class="mb-4 pb-2">Título sobre archivos a descargar</h2>
+          <div class="list-link">
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+            <a class="download" href="#" target="_blank" rel="noreferrer"
+              >Título del archivo a descargar</a
+            >
+          </div>
+        </section>
+
+        <section>
+          <h2 class="mb-3">Normativa</h2>
+          <h3 class="mb-0">N° de normativa</h3>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-4 mx-auto mb-4 mb-lg-0 pb-2 pb-lg-0">
+        <!-- Bloque de tramite -->
+        <o-block
+          title="Iniciá el trámite y completá todos los pasos"
+          [isBgLight]="true"
+        >
+          <o-button
+            button
+            text="Iniciar trámite"
+            size="lg"
+            [isExpandable]="true"
+            link="#"
+          ></o-button>
+        </o-block>
+      </div>
+    </div>
+  </article>
+
+  <!-- Organismo responsable -->
+  <section class="bg-light py-lg-5 py-4">
+    <div class="container">
+      <div class="mb-4 pb-lg-1">
+        <h2 class="mb-2">Organismo responsable</h2>
+        <h3 class="mb-0">Dirección general</h3>
+      </div>
+      <div class="mb-4">
+        <h4 class="mb-2">Ubicación</h4>
+        <a href="#" target="_blank" rel="noreferrer">Insertar dirección</a>
+      </div>
+      <div class="mb-4">
+        <h4 class="mb-2">Días y horarios de atención</h4>
+        <p class="mb-0">Lunes a viernes de 8:30 a 14:00 hs.</p>
+      </div>
+      <div>
+        <h4 class="mb-2">Contacto</h4>
+        <p class="mb-0">
+          Si tenés alguna duda, o necesitás información adicional, escribí a
+          <a href="mailto:correodeejemplo@buenosaires.gob.ar"
+            >correodeejemplo&#64;buenosaires.gob.ar</a
+          >
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+<o-footer></o-footer>
