@@ -45,4 +45,24 @@ export class SectionTemplatesComponent {
       route: '/home',
     },
   };
+  public itemsProcedure: AccessList = {
+    header: {
+      title: 'Trámites',
+      description: 'Modelo de ejemplo',
+      icon: 'bx bxs-spreadsheet',
+      iconPositionRight: true
+    },
+    children: [
+      {
+        title: 'Trámites',
+        icon: 'bx bxs-tag-alt',
+        route: '/templates/procedure',
+      }
+    ],
+    footer: {
+      title: 'Acceso grande',
+      icon: 'info',
+      route: '/home',
+    },
+  };
 }
