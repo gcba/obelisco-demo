@@ -34,291 +34,305 @@
     <!-- Componente Header -->
 
     <!-- Componente Miga de pan -->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/inicio/">Buenos Aires</a></li>
-            <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/seguridad">Justicia y Seguridad</a></li>
-            <li class="breadcrumb-item"><a
-                    href="https://buenosaires.gob.ar/justiciayseguridad/licencias-de-conducir">Licencias de Conducir</a>
-            </li>
-            <li class="breadcrumb-item"><a
-                    href="https://buenosaires.gob.ar/justiciayseguridad/licencias-de-conducir">Consulta de
-                    Infracciones</a></li>
-            <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/jefaturadegabinete/infracciones">Comprobante
-                    de legajos</a></li>
-        </ol>
-    </nav>
-    <!-- Componente Miga de pan -->
-
-    <!-- Hero - Main -->
-    <h1>Comprobante de legajo</h1>
-    <p>Consultá si tenes comprobantes pendientes de pago de legajos resueltos.</p>
-    <!-- Hero - Main -->
-
-
-    <!-- Componente Formulario -->
-    <div class="form-group">
-
-        <!-- DNI -->
-        <div class="form-group">
-            <label for="lista-de-seleccion">Tipo de documento</label>
-            <select class="custom-select" id="lista-de-seleccion">
-                <option>LE</option>
-                <option>LC</option>
-                <option selected="selected">DNI</option>
-                <option>PAS</option>
-                <option>CI</option>
-                <option>EXT</option>
-                <option>CUIT</option>
-            </select>
-        </div>
-        <!-- DNI -->
-
-        <!-- Número de Documento -->
-        <label for="number-input">Número de Documento</label>
-        <input type="number" class="form-control" id="number-input" name="number" />
-        <!-- Número de Documento -->
-
-        <p>También se pueden consultar patentes de motos. Tené en cuenta que pueden obtenerse distintos resultados al
-            consultar por DNI o por Patente. <a
-                href="https://buenosaires.gob.ar/terminos-y-condiciones-consulta-de-infracciones"
-                target="_blank">Términos y Condiciones</a> </p>
-
-
-        <!-- Boton Primario -->
-        <button type="button" class="btn btn-primary">Consultar</button>
-        <!-- Boton Primario -->
-
-
-    </div>
-    <!-- Componente Formulario -->
-
-    <!-- Lista - Advertencia -->
-    <ul>
-        <li>Utilizá las opciones de Libreta de Enrolamiento (LE) o Libreta Cívica (LC) si tu DNI es menor a 10.000.000
-        </li>
-        <li>Al escribir la patente no debe haber espacios.</li>
-    </ul>
-    <!-- Lista - Advertencia -->
-
-
-
-    <!-- Contenedor Tarjetas -->
     <div class="container">
-        <h2>Resolvé tus infracciones</h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/inicio/">Buenos Aires</a></li>
+                <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/seguridad">Justicia y Seguridad</a></li>
+                <li class="breadcrumb-item"><a
+                        href="https://buenosaires.gob.ar/justiciayseguridad/licencias-de-conducir">Licencias de
+                        Conducir</a>
+                </li>
+                <li class="breadcrumb-item"><a
+                        href="https://buenosaires.gob.ar/justiciayseguridad/licencias-de-conducir">Consulta de
+                        Infracciones</a></li>
+                <li class="breadcrumb-item"><a
+                        href="https://buenosaires.gob.ar/jefaturadegabinete/infracciones">Comprobante
+                        de legajos</a></li>
+            </ol>
+        </nav>
+    </div>
 
-        <div class="card-deck max-cards-3 card-column">
+    <!-- Componente Miga de pan -->
+    <main id="main">
 
-            <!-- Componente Tarjeta 1 -->
-            <div class="card card-horizontal">
-                <div class="card-body">
-                    <h3 class="card-title">
-                        <a href="#" class="card-title-link">
-                            Modo online con un controlador de faltas
-                        </a>
-                    </h3>
-                    <p class="card-text">Resolvé las actas solo si sos titular o autorizados con cédula azul.</p>
-                </div>
+        <!-- Hero -->
+        <div class="container">
+            <h1>Comprobante de legajo</h1>
+            <p>Consultá si tenes comprobantes pendientes de pago de legajos resueltos.</p>
+        </div>
+        <!-- Hero -->
+
+        <!-- Componente Formulario -->
+        <div class="container form-group">
+
+            <!-- DNI -->
+            <div class="form-group">
+                <label for="lista-de-seleccion">Tipo de documento</label>
+                <select class="custom-select" id="lista-de-seleccion">
+                    <option>LE</option>
+                    <option>LC</option>
+                    <option selected="selected">DNI</option>
+                    <option>PAS</option>
+                    <option>CI</option>
+                    <option>EXT</option>
+                    <option>CUIT</option>
+                </select>
             </div>
-            <!-- Componente Tarjeta 1 -->
+            <!-- DNI -->
 
-            <!-- Componente Tarjeta 2 -->
-            <div class="card card-horizontal">
-                <div class="card-body">
-                    <h3 class="card-title">
-                        <a href="#" class="card-title-link">
-                            Modo presencial con un controlador de faltas
-                        </a>
-                    </h3>
-                    <p class="card-text">Acercate a la sede central o en sedes comunales.</p>
-                </div>
-            </div>
-            <!-- Componente Tarjeta 2 -->
+            <!-- Número de Documento -->
+            <label for="number-input">Número de Documento</label>
+            <input type="number" class="form-control" id="number-input" name="number" />
+            <!-- Número de Documento -->
 
-            <!-- Componente Tarjeta 3 -->
-            <div class="card card-horizontal">
-                <div class="card-body">
-                    <h3 class="card-title">
-                        <a href="#" class="card-title-link">
-                            Consulta de infracciones
-                        </a>
-                    </h3>
-                    <p class="card-text">Accedé a la información sobre infracciones de tránsito pendientes de pago,
-                        en
-                        la Ciudad de Buenos Aires.</p>
-                </div>
-            </div>
-            <!-- Componente Tarjeta 3 -->
+            <p>También se pueden consultar patentes de motos. Tené en cuenta que pueden obtenerse distintos
+                resultados
+                al
+                consultar por DNI o por Patente. <a
+                    href="https://buenosaires.gob.ar/terminos-y-condiciones-consulta-de-infracciones"
+                    target="_blank">Términos y Condiciones</a> </p>
+
+
+            <!-- Boton Primario -->
+            <button type="button" class="btn btn-primary">Consultar</button>
+            <!-- Boton Primario -->
+
 
         </div>
-    </div>
-    <!-- Contenedor Tarjetas -->
+        <!-- Componente Formulario -->
 
-    <!-- Consultas y solicitudes -->
+        <!-- Lista - Advertencia -->
+        <div class="container">
+            <ul>
+                <li>Utilizá las opciones de Libreta de Enrolamiento (LE) o Libreta Cívica (LC) si tu DNI es menor a
+                    10.000.000
+                </li>
+                <li>Al escribir la patente no debe haber espacios.</li>
+            </ul>
+        </div>
+        <!-- Lista - Advertencia -->
 
-    <div class="panel-horizontal-content">
+        <!-- Contenedor Tarjetas -->
+        <div class="container">
+            <h2>Resolvé tus infracciones</h2>
+
+            <div class="card-deck max-cards-3 card-column">
+
+                <!-- Componente Tarjeta 1 -->
+                <div class="card card-horizontal">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <a href="#" class="card-title-link">
+                                Modo online con un controlador de faltas
+                            </a>
+                        </h3>
+                        <p class="card-text">Resolvé las actas solo si sos titular o autorizados con cédula azul.
+                        </p>
+                    </div>
+                </div>
+                <!-- Componente Tarjeta 1 -->
+
+                <!-- Componente Tarjeta 2 -->
+                <div class="card card-horizontal">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <a href="#" class="card-title-link">
+                                Modo presencial con un controlador de faltas
+                            </a>
+                        </h3>
+                        <p class="card-text">Acercate a la sede central o en sedes comunales.</p>
+                    </div>
+                </div>
+                <!-- Componente Tarjeta 2 -->
+
+                <!-- Componente Tarjeta 3 -->
+                <div class="card card-horizontal">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <a href="#" class="card-title-link">
+                                Consulta de infracciones
+                            </a>
+                        </h3>
+                        <p class="card-text">Accedé a la información sobre infracciones de tránsito pendientes de
+                            pago,
+                            en
+                            la Ciudad de Buenos Aires.</p>
+                    </div>
+                </div>
+                <!-- Componente Tarjeta 3 -->
+
+            </div>
+        </div>
+        <!-- Contenedor Tarjetas -->
+
+        <!-- Consultas y solicitudes -->
 
         <div class="panel-horizontal-content">
-            <div class="card card-simple panel-horizontal">
-                <div class="card-body">
-                    <h2 class="card-title">Realizá tus consultas y solicitudes</h2>
-                    <p class="card-text">
-                        Consultá en Gestión Colaborativa tus solicitudes relacionadas a Infracciones.
-                    </p>
-                    <div class="panel-footer">
-                        <button type="button" class="btn btn-primary"><a
-                                href="https://gestioncolaborativa.buenosaires.gob.ar/prestaciones">Ir a tu
-                                solicitud</a></button>
+
+            <div class="panel-horizontal-content">
+                <div class="card card-simple panel-horizontal">
+                    <div class="card-body">
+                        <h2 class="card-title">Realizá tus consultas y solicitudes</h2>
+                        <p class="card-text">
+                            Consultá en Gestión Colaborativa tus solicitudes relacionadas a Infracciones.
+                        </p>
+                        <div class="panel-footer">
+                            <button type="button" class="btn btn-primary"><a
+                                    href="https://gestioncolaborativa.buenosaires.gob.ar/prestaciones">Ir a tu
+                                    solicitud</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Consultas y solicitudes -->
+        <!-- Consultas y solicitudes -->
 
-    <!-- Botones  -->
-    <div class="contenedor_botones">
-        <button type="button" class="btn btn-primary"><a
-                href="https://buenosaires.gob.ar/tramites/denuncia-de-venta-de-dominio">Denuncia de Venta de Dominio
-            </a></button>
-        <button type="button" class="btn btn-primary"><a
-                href="https://buenosaires.gob.ar/tramites/inscripcion-de-personas-con-discapacidad-en-el-padron">Transporte
-                de personas con discapacidad</a></button>
-    </div>
-    <!-- Botones  -->
-
-
-    <!-- Componente Footer -->
-    <footer class="main-footer">
+        <!-- Botones  -->
         <div class="container">
-            <section>
-                <h4>Teléfonos útiles</h4>
-                <ul class="list-inline">
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:102">102 - Niñez y Adolescencia</a>
-                    </li>
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:103">103 - Emergencias</a>
-                    </li>
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:107">107 - SAME</a>
-                    </li>
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:911">911 - Policía</a>
-                    </li>
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:144">144 - Violencia de género</a>
-                    </li>
-                    <li class="list-inline-item phone-items">
-                        <a href="tel:147">147 - Atención ciudadana</a>
-                    </li>
-                </ul>
-                <a href="https://buenosaires.gob.ar/inicio/telefonos">
-                    Ver todos los teléfonos
-                </a>
-            </section>
-            <section>
-                <h4>Redes de la ciudad</h4>
-                <ul class="list-inline">
-                    <li class="list-inline-item redes-items">
-                        <a href="https://www.facebook.com/GCBA">
-                            <i class="bx bxl-facebook-circle"></i>
-                            Facebook
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://www.instagram.com/gcba/">
-                            <i class="bx bxl-instagram-alt"></i>
-                            Instagram
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://twitter.com/buenosaires">
-                            <i class="bx bxl-twitter"></i>
-                            Twitter
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://www.youtube.com/user/GCBA">
-                            <i class="bx bxl-youtube"></i>
-                            YouTube
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                            <i class="bx bxl-linkedin-square"></i>
-                            LinkedIn
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://www.tiktok.com/@buenosaires">
-                            <i class="bx bxl-tiktok"></i>
-                            TikTok
-                        </a>
-                    </li>
-                    <li class="list-inline-item redes-items">
-                        <a href="https://www.pinterest.es/buenosaires/">
-                            <i class="bx bxl-pinterest"></i>
-                            Pinterest
-                        </a>
-                    </li>
-                </ul>
-            </section>
+            <button type="button" class="btn btn-primary"><a
+                    href="https://buenosaires.gob.ar/tramites/denuncia-de-venta-de-dominio">Denuncia de Venta de
+                    Dominio
+                </a></button>
+            <button type="button" class="btn btn-primary"><a
+                    href="https://buenosaires.gob.ar/tramites/inscripcion-de-personas-con-discapacidad-en-el-padron">Transporte
+                    de personas con discapacidad</a></button>
         </div>
-        <hr class="divider" />
-        <div class="container">
-            <section class="footer-legal-section">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-                        <img class="d-lg-none" src="footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48" />
-                        <img class="d-none d-lg-inline" src="footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
-                            height="40" />
-                        <img class="img-vamos-ba" src="footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
-                    </div>
-                    <div class="col-12">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://boletinoficial.buenosaires.gob.ar">
-                                    Boletín oficial
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
-                                    Términos y condiciones
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                                    Política de privacidad
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
-                                    Oficios judiciales
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                                    Transparencia
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="footer-license-text">
-                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-                    Commons Reconocimiento 2.5 Argentina License.
-                </div>
-            </section>
-        </div>
-    </footer>
-    <!-- Componente Footer -->
+        <!-- Botones  -->
 
 
+        <!-- Componente Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <section>
+                    <h4>Teléfonos útiles</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:102">102 - Niñez y Adolescencia</a>
+                        </li>
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:103">103 - Emergencias</a>
+                        </li>
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:107">107 - SAME</a>
+                        </li>
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:911">911 - Policía</a>
+                        </li>
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:144">144 - Violencia de género</a>
+                        </li>
+                        <li class="list-inline-item phone-items">
+                            <a href="tel:147">147 - Atención ciudadana</a>
+                        </li>
+                    </ul>
+                    <a href="https://buenosaires.gob.ar/inicio/telefonos">
+                        Ver todos los teléfonos
+                    </a>
+                </section>
+                <section>
+                    <h4>Redes de la ciudad</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item redes-items">
+                            <a href="https://www.facebook.com/GCBA">
+                                <i class="bx bxl-facebook-circle"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://www.instagram.com/gcba/">
+                                <i class="bx bxl-instagram-alt"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://twitter.com/buenosaires">
+                                <i class="bx bxl-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://www.youtube.com/user/GCBA">
+                                <i class="bx bxl-youtube"></i>
+                                YouTube
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+                                <i class="bx bxl-linkedin-square"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://www.tiktok.com/@buenosaires">
+                                <i class="bx bxl-tiktok"></i>
+                                TikTok
+                            </a>
+                        </li>
+                        <li class="list-inline-item redes-items">
+                            <a href="https://www.pinterest.es/buenosaires/">
+                                <i class="bx bxl-pinterest"></i>
+                                Pinterest
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <hr class="divider" />
+            <div class="container">
+                <section class="footer-legal-section">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+                            <img class="d-lg-none" src="footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires"
+                                height="48" />
+                            <img class="d-none d-lg-inline" src="footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires"
+                                height="40" />
+                            <img class="img-vamos-ba" src="footer/vamos-ba.svg" alt="Vamos Buenos Aires" />
+                        </div>
+                        <div class="col-12">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="https://boletinoficial.buenosaires.gob.ar">
+                                        Boletín oficial
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
+                                        Términos y condiciones
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                                        Política de privacidad
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                                        Oficios judiciales
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                                        Transparencia
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="footer-license-text">
+                        Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+                        Commons Reconocimiento 2.5 Argentina License.
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <!-- Componente Footer -->
+
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
