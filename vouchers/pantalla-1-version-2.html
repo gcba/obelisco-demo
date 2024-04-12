@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link
+    rel="shortcut icon"
+    href="../../assets/favicon.ico"
+    type="image/x-icon"
+  />
+
+  <title>Pantalla - 1 version - 2</title>
+
+  <!-- Obelisco -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://gcba.github.io/Obelisco/obelisco.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <header class="navbar navbar-light navbar-expand-lg" role="banner">
+    <a href="#main" class="skip-to-main-content-link">Saltar al contenido principal</a>
+    <div class="container header-container">
+      <a href="https://buenosaires.gob.ar" class="navbar-brand">
+        <img class="header-logo" src="https://gcba.github.io/Obelisco/header/logotipo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio">
+      </a>
+    </div>
+    <div class="header-backdrop"></div>
+  </header>
+
+  <main id="main">
+    <section class="bg-light py-5">
+      <div class="col-12 col-sm-8 col-md-6 mx-auto">
+        <div class="mb-5">
+          <h1 class="h2 mb-3">Formulario de inscripción</h1>
+          <p class="lead mb-0">
+            Completá los siguientes campos de información para poder acceder al programa de Ayuda cuota escolar. 
+          </p>
+          <p class="lead">
+            En caso de dudas o consultas, podés visitar el <a href="https://buenosaires.gob.ar/educacion/ayudacuotaescolar" target="_blank">sitio web</a>. 
+          </p>
+          <hr>
+        </div>
+        <article class="mb-3 pb-3">
+          <form>
+            <div class="bg-white p-3 p-md-4 rounded-lg">
+              <div class="d-flex justify-content-between pb-2">
+                <h2 class="h3">Datos del estudiante</h2>
+                <div>
+                  <button type="button" class="btn btn-outline-danger btn-sm btn-icon">
+                    <span class="material-icons-round">
+                      delete
+                    </span>
+                    Eliminar
+                  </button>
+                </div>
+              </div>
+
+              <hr/>
+
+              <div class="col-12 col-lg-9 col-xl-7 px-0 pt-3">
+                <div class="form-group mb-4 pb-2">
+                  <label for="name" class="pb-2">Nombre/s *</label>
+                  <input type="text" class="form-control bg-light" id="name" name="name" placeholder="" value="">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="surname" class="pb-2">Apellido/s *</label>
+                  <input type="text" class="form-control bg-light" id="surname" name="surname" placeholder="" value="">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="document">Tipo de documento *</label>
+                  <select class="custom-select bg-light" id="document">
+                    <option value="">Seleccionar</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="cie">CIE (Cédula de Identidad Extranjera)</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="number">N° del documento*</label>
+                  <input type="number" class="form-control bg-light" id="number" name="number">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="date">Fecha de nacimiento *</label>
+                  <input type="date" class="form-control bg-light" id="date" name="date">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="gender">Sexo *</label>
+                  <select class="custom-select bg-light" id="gender">
+                    <option value="">Seleccionar</option>
+                    <option value="F">F</option>
+                    <option value="M">M</option>
+                    <option value="X">X</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="education">Nivel educativo *</label>
+                  <select class="custom-select bg-light" id="education">
+                    <option value="">Seleccionar</option>
+                    <option value="inicial">Inicial</option>
+                    <option value="medio">Medio</option>
+                    <option value="primario">Primario</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="commune">Comuna *</label>
+                  <select class="custom-select bg-light" id="commune">
+                    <option value="">Seleccionar</option>
+                    <option value="comuna_1">Comuna 1</option>
+                    <option value="comuna_2">Comuna 2</option>
+                    <option value="comuna_3">Comuna 3</option>
+                    <option value="comuna_4">Comuna 4</option>
+                    <option value="comuna_5">Comuna 5</option>
+                    <option value="comuna_6">Comuna 6</option>
+                    <option value="comuna_7">Comuna 7</option>
+                    <option value="comuna_8">Comuna 8</option>
+                    <option value="comuna_9">Comuna 9</option>
+                    <option value="comuna_10">Comuna 10</option>
+                    <option value="comuna_11">Comuna 11</option>
+                    <option value="comuna_12">Comuna 12</option>
+                    <option value="comuna_13">Comuna 13</option>
+                    <option value="comuna_14">Comuna 14</option>
+                    <option value="comuna_15">Comuna 15</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="establishment">Establecimieno educativo *</label>
+                  <select class="custom-select bg-light" id="establishment">
+                    <option value="">Seleccionar</option>
+                    <option value="aaron_angel">Aarón Ángel</option>
+                    <option value="asociacion_comunidad_israelita_sefaradi_argentina">Asociación Comunidad Israelita Sefaradí Argentina</option>
+                    <option value="calasanz">Calasanz</option>
+                    <option value="canto_a_la_vida">Canto a la Vida</option>
+                    <option value="carolina_estrada_de_martinez">Carolina Estrada de Martínez</option>
+                    <option value="centro_comunitario_san_cayetano">Centro Comunitario San Cayetano</option>
+                    <option value="centro_educativo_arquidiocesano_espiritu_santo">Centro Educativo Arquidiocesano Espíritu Santo</option>
+                    <option value="centro_educativo_san_francisco_javier">Centro Educativo San Francisco Javier</option>
+                    <option value="centro_educativo_toratenu">Centro Educativo Toratenu</option>
+                    <option value="colectividad_helenica">Colectividad Helénica</option>
+                    <option value="colegio_argentino_arabe_islamico_omar_bin_al_jattab">COLEGIO ARGENTINO ARABE ISLAMICO OMAR BIN AL JATTAB</option>
+                    <option value="colegio_argentino_baldomero_fernandez_moreno">Colegio Argentino Baldomero Fernandez Moreno</option>
+                    <option value="colegio_armenio_arzruni">Colegio Armenio Arzruni</option>
+                    <option value="colegio_aulanueva">Colegio Aulanueva</option>
+                    <option value="colegio_buenos_aires">Colegio Buenos Aires</option>
+                    <option value="colegio_canada">Colegio Canada</option>
+                    <option value="colegio_cardenal_copello">Colegio Cardenal Copello</option>
+                    <option value="colegio_corazon_de_jesus">Colegio Corazón de Jesús</option>
+                    <option value="colegio_de_las_victorias">Colegio de las Victorias</option>
+                    <option value="colegio_del_libertador">Colegio del Libertador</option>
+                    <option value="colegio_episcopal_de_buenos_aires">Colegio Episcopal de Buenos Aires</option>
+                    <option value="colegio_evangelico_buenos_aires">Colegio Evangelico Buenos Aires</option>
+                    <option value="colegio_f.a.s.t.a._san_vicente_de_paul">Colegio F.A.S.T.A. San Vicente de Paul</option>
+                    <option value="colegio_francesco_faa_di_bruno">Colegio Francesco Faa Di Bruno</option>
+                    <option value="colegio_galileo_galilei">Colegio Galileo Galilei</option>
+                    <option value="colegio_gonzalez_pecotche">Colegio González Pecotche</option>
+                    <option value="colegio_guadalupe">Colegio Guadalupe</option>
+                    <option value="colegio_la_anunciata">Colegio la Anunciata</option>
+                    <option value="colegio_logosofico_gonzalez_pecotche">Colegio Logosofico González Pecotche</option>
+                    <option value="colegio_maria_auxiliadora">Colegio María Auxiliadora</option>
+                    <option value="colegio_nuestra_senora_de_la_misericordia">Colegio Nuestra Señora de la Misericordia</option>
+                    <option value="colegio_nuevo_pensar">Colegio Nuevo Pensar</option>
+                    <option value="colegio_parroquial_nuestra_senora_de_la_anunciacion">Colegio Parroquial Nuestra Señora de la Anunciacion</option>
+                    <option value="colegio_presencia">Colegio Presencia</option>
+                    <option value="colegio_sagrada_familia">Colegio Sagrada Familia</option>
+                    <option value="colegio_san_francisco_coll">Colegio San Francisco Coll</option>
+                    <option value="colegio_san_luis_gonzaga">Colegio San Luis Gonzaga</option>
+                    <option value="colegio_san_maron">Colegio San Maron</option>
+                    <option value="colegio_san_martin_de_los_andes">Colegio San Martín de Los Andes</option>
+                    <option value="colegio_san_miguel">Colegio San Miguel</option>
+                    <option value="colegio_santo_tomas_de_aquino">Colegio Santo Tomás de Aquino</option>
+                    <option value="compania_de_maria">Compañía de María</option>
+                    <option value="complejo_educativo_nuevo_sol">Complejo Educativo Nuevo Sol</option>
+                    <option value="constanza_ramos_mejia_de_bunge">Constanza Ramos Mejia de Bunge</option>
+                    <option value="crecer_y_ser">Crecer y Ser</option>
+                    <option value="cristo_rey">Cristo Rey</option>
+                    <option value="del_carmen">Del Carmen</option>
+                    <option value="del_inmaculado_corazon_de_maria_adoratrices">Del Inmaculado Corazón de María Adoratrices</option>
+                    <option value="dr._dalmacio_velez_sarsfield">Dr. Dalmacio Vélez Sarsfield</option>
+                    <option value="dr._emilio_cardenas">Dr. Emilio Cardenas</option>
+                    <option value="educativo_modelo">Educativo Modelo</option>
+                    <option value="esclavas_del_sagrado_corazon_de_jesus">Esclavas del Sagrado Corazón de Jesús</option>
+                    <option value="escuela_argentina">Escuela Argentina</option>
+                    <option value="escuela_argentina_general_belgrano">Escuela Argentina General Belgrano</option>
+                    <option value="escuela_bami_marc_chagall">Escuela Bami Marc Chagall</option>
+                    <option value="escuela_cangallo">Escuela Cangallo</option>
+                    <option value="escuela_cristiana_de_la_puerta_abierta">Escuela Cristiana de la Puerta Abierta</option>
+                    <option value="escuela_cristiana_evangelica_argentina">Escuela Cristiana Evangélica Argentina</option>
+                    <option value="escuela_de_la_nueva_expresion">Escuela de la Nueva Expresión</option>
+                    <option value="escuela_de_la_paz">Escuela de la Paz</option>
+                    <option value="escuela_integral_casa_de_moises">Escuela Integral Casa de Moisés</option>
+                    <option value="escuela_integral_maimonides">Escuela Integral Maimónides</option>
+                    <option value="escuela_integral_rabino_elias_suli">Escuela Integral Rabino Elías Suli</option>
+                    <option value="escuela_miguel_hernandez">Escuela Miguel Hernandez</option>
+                    <option value="escuela_modelo_domingo_f._sarmiento">Escuela Modelo Domingo F. Sarmiento</option>
+                    <option value="escuela_nueva_esperanza">Escuela Nueva Esperanza</option>
+                    <option value="escuela_secundaria_integral_scholem_aleijem">Escuela Secundaria Integral Scholem Aleijem</option>
+                    <option value="esteban_echeverria">Esteban Echeverría</option>
+                    <option value="euskal_echea">Euskal Echea</option>
+                    <option value="generacion_del_futuro">Generacion del Futuro</option>
+                    <option value="general_justo_jose_de_de_urquiza">General Justo Jose de de Urquiza</option>
+                    <option value="hans_christian_andersen">Hans Christian Andersen</option>
+                    <option value="hogar_san_rafael">Hogar San Rafael</option>
+                    <option value="hull_cordell">Hull Cordell</option>
+                    <option value="inmaculada_concepcion">Inmaculada Concepción</option>
+                    <option value="inmaculada_concepcion_de_maria">Inmaculada Concepción de María</option>
+                    <option value="inmaculada_concepcion_de_nuestra_senora_de_lourdes">Inmaculada Concepción de Nuestra Señora de Lourdes</option>
+                    <option value="instituto_alberto_schweitzer">Instituto Alberto Schweitzer</option>
+                    <option value="instituto_amanecer">Instituto Amanecer</option>
+                    <option value="instituto_ambrosio_a._tognoni">Instituto Ambrosio A. Tognoni</option>
+                    <option value="instituto_ana_maria_janer">Instituto Ana María Janer</option>
+                    <option value="instituto_anunciacion_de_maria">Instituto Anunciación de María</option>
+                    <option value="instituto_argentino_arabe_islamico">Instituto Argentino Árabe Islámico</option>
+                    <option value="instituto_argentino_de_ensenanza_secundaria">Instituto Argentino de Enseñanza Secundaria</option>
+                    <option value="instituto_argentino_excelsior">Instituto Argentino Excelsior</option>
+                    <option value="instituto_beata_imelda">Instituto Beata Imelda</option>
+                    <option value="instituto_benito_nazar">Instituto Benito Nazar</option>
+                    <option value="instituto_bet_el">Instituto Bet El</option>
+                    <option value="instituto_betania">Instituto Betania</option>
+                    <option value="instituto_brotecitos">Instituto Brotecitos</option>
+                    <option value="instituto_cabrini">Instituto Cabrini</option>
+                    <option value="instituto_calasancio_divina_pastora">Instituto Calasancio Divina Pastora</option>
+                    <option value="instituto_calasanz">Instituto Calasanz</option>
+                    <option value="instituto_carlos_pellegrini">Instituto Carlos Pellegrini</option>
+                    <option value="instituto_carlos_steeb">Instituto Carlos Steeb</option>
+                    <option value="instituto_carolina_estrada_de_martinez">Instituto Carolina Estrada de Martinez</option>
+                    <option value="instituto_casa_de_jesus">Instituto Casa de Jesús</option>
+                    <option value="instituto_casa_de_la_educacion">Instituto Casa de la Educación</option>
+                    <option value="instituto_ceferino_namuncura">Instituto Ceferino Namuncurá</option>
+                    <option value="instituto_celia_martinez_de_varela">Instituto Celia Martínez de Varela</option>
+                    <option value="instituto_claret">Instituto Claret</option>
+                    <option value="instituto_colegio_de_nuestra_senora">Instituto Colegio de Nuestra Señora</option>
+                    <option value="instituto_corazon_de_jesus">Instituto Corazón de Jesús</option>
+                    <option value="instituto_corazon_de_maria">Instituto Corazón de María</option>
+                    <option value="instituto_cristiano_evangelico_devoto">Instituto Cristiano Evangélico Devoto</option>
+                    <option value="instituto_cristo_maestro">Instituto Cristo Maestro</option>
+                    <option value="instituto_cristo_rey">Instituto Cristo Rey</option>
+                    <option value="instituto_cruz_del_sur">Instituto Cruz del Sur</option>
+                    <option value="instituto_damasa_zelaya_de_saavedra">Instituto Dámasa Zelaya de Saavedra</option>
+                    <option value="instituto_de_educacion_tecnica_y_formacion_profesional_13_de_julio">Instituto de Educación Técnica y Formación Profesional 13 de Julio</option>
+                    <option value="instituto_de_estudios_superiores_de_buenos_aires">Instituto de Estudios Superiores de Buenos Aires</option>
+                    <option value="instituto_de_formacion_y_educacion_integral_i.f.e.i.">INSTITUTO DE FORMACION Y EDUCACION INTEGRAL I.F.E.I.</option>
+                    <option value="instituto_divina_providencia">Instituto Divina Providencia</option>
+                    <option value="instituto_divino_corazon">Instituto Divino Corazón</option>
+                    <option value="instituto_divino_rostro">Instituto Divino Rostro</option>
+                    <option value="instituto_don_orione">Instituto Don Orione</option>
+                    <option value="instituto_dr._jose_ingenieros">Instituto Dr. José Ingenieros</option>
+                    <option value="instituto_dr._miguel_viñas_loureyro">Instituto Dr. Miguel Viñas Loureyro</option>
+                    <option value="instituto_dulcísimo_nombre_de_jesus">Instituto Dulcísimo Nombre de Jesús</option>
+                    <option value="instituto_e.s.b.a._flores">Instituto E.S.B.A. Flores</option>
+                    <option value="instituto_educacional_argentino_nuestra_señora_de_luján">Instituto Educacional Argentino Nuestra Señora de Luján</option>
+                    <option value="instituto_educacional_duayen">Instituto Educacional Duayen</option>
+                    <option value="instituto_educacional_santa_teresita">Instituto Educacional Santa Teresita</option>
+                    <option value="instituto_educativo_alas">Instituto Educativo Alas</option>
+                    <option value="instituto_educativo_san_gregorio_el_iluminador">Instituto Educativo San Gregorio El Iluminador</option>
+                    <option value="instituto_elisa_harilaos">Instituto Elisa Harilaos</option>
+                    <option value="instituto_esba_-_villa_lugano">Instituto ESBA - Villa Lugano</option>
+                    <option value="instituto_español_virgen_del_pilar">Instituto Español Virgen del Pilar</option>
+                    <option value="instituto_espííritu_santo">Instituto Espííritu Santo</option>
+                    <option value="instituto_evangelico_americano">Instituto Evangélico Americano</option>
+                    <option value="instituto_evangelico_de_nueva_chicago">Instituto Evangélico de Nueva Chicago</option>
+                    <option value="instituto_felicia_ramon_de_palacios">Instituto Felicia Ramón de Palacios</option>
+                    <option value="instituto_formar_futuro">Instituto Formar Futuro</option>
+                    <option value="instituto_general_san_martín">Instituto General San Martín</option>
+                    <option value="instituto_griego_atenagoras_i">Instituto Griego Atenágoras I</option>
+                    <option value="instituto_guardia_de_honor_del_santisimo_rosario">Instituto Guardia de Honor del Santisimo Rosario</option>
+                    <option value="instituto_guillermo_rawson">Instituto Guillermo Rawson</option>
+                    <option value="instituto_gustavo_adolfo_becquer">Instituto Gustavo Adolfo Becquer</option>
+                    <option value="instituto_hans_christian_andersen">Instituto Hans Christian Andersen</option>
+                    <option value="instituto_hijas_de_jesus">Instituto Hijas de Jesús</option>
+                    <option value="instituto_hogar_de_niños_ramon_l._falcon">Instituto Hogar de Niños Ramon L. Falcón</option>
+                    <option value="instituto_hogar_del_pino">Instituto Hogar del Pino</option>
+                    <option value="instituto_hogar_san_benito">Instituto Hogar San Benito</option>
+                    <option value="instituto_incorporado_saint_jean">Instituto Incorporado Saint Jean</option>
+                    <option value="instituto_incorporado_san_francisco_de_sales">Instituto Incorporado San Francisco de Sales</option>
+                    <option value="instituto_inmaculada_concepcion">Instituto Inmaculada Concepción</option>
+                    <option value="instituto_inmaculada_concepcion_de_nuestra_señora_de_lourdes">Instituto Inmaculada Concepción de Nuestra Señora de Lourdes</option>
+                    <option value="instituto_integral_del_sud">Instituto Integral del Sud</option>
+                    <option value="instituto_integral_talpiot">Instituto Integral Talpiot</option>
+                    <option value="instituto_isaac_bakchellian">Instituto Isaac Bakchellian</option>
+                    <option value="instituto_isabel_conde_de_hernandez">Instituto Isabel Conde de Hernández</option>
+                    <option value="instituto_juan_bautista_berthier">Instituto Juan Bautista Berthier</option>
+                    <option value="instituto_la_candelaria">Instituto La Candelaria</option>
+                    <option value="instituto_la_inmaculada">Instituto La Inmaculada</option>
+                    <option value="instituto_la_providencia">Instituto La Providencia</option>
+                    <option value="instituto_la_salette">Instituto La Salette</option>
+                    <option value="instituto_leopoldo_marechal">Instituto Leopoldo Marechal</option>
+                    <option value="instituto_lujan_porteño">Instituto Lujan Porteño</option>
+                    <option value="instituto_maría_ana_mogas">Instituto María Ana Mogas</option>
+                    <option value="instituto_maría_auxiliadora">Instituto María Auxiliadora</option>
+                    <option value="instituto_maría_bianchi_de_copello">Instituto María Bianchi de Copello</option>
+                    <option value="instituto_marianista">Instituto Marianista</option>
+                    <option value="instituto_marie_manoogian">Instituto Marie Manoogian</option>
+                    <option value="instituto_martin_buber">Instituto Martin Buber</option>
+                    <option value="instituto_mater_dolorosa">Instituto Mater Dolorosa</option>
+                    <option value="instituto_medalla_milagrosa">Instituto Medalla Milagrosa</option>
+                    <option value="instituto_megly">Instituto Megly</option>
+                    <option value="instituto_mekhitarista">Instituto Mekhitarista</option>
+                    <option value="instituto_mercedes_pacheco">Instituto Mercedes Pacheco</option>
+                    <option value="instituto_monseñor_dillon">Instituto Monseñor Dillon</option>
+                    <option value="instituto_moruli">Instituto Moruli</option>
+                    <option value="instituto_naciones_unidas">Instituto Naciones Unidas</option>
+                    <option value="instituto_natan_gesang">Instituto Natan Gesang</option>
+                    <option value="instituto_nuestra_señora_de_la_misericordia">Instituto Nuestra Señora de la Misericordia</option>
+                    <option value="instituto_nuestra_señora_de_las_gracias">Instituto Nuestra Señora de las Gracias</option>
+                    <option value="instituto_nuestra_señora_de_las_nieves">Instituto Nuestra Señora de las Nieves</option>
+                    <option value="instituto_nuestra_señora_de_los_remedios">Instituto Nuestra Señora de Los Remedios</option>
+                    <option value="instituto_nuestra_señora_de_lujan">Instituto Nuestra Señora de Lujan</option>
+                    <option value="instituto_nuestra_señora_de_lujan_de_los_patriotas">Instituto Nuestra Señora de Luján de Los Patriotas</option>
+                    <option value="instituto_nuestra_señora_de_montserrat">Instituto Nuestra Señora de Montserrat</option>
+                    <option value="instituto_nuestra_señora_del_buen_y_perpetuo_socorro">Instituto Nuestra Señora del Buen y Perpetuo Socorro</option>
+                    <option value="instituto_nuestra_señora_del_carmen">Instituto Nuestra Señora del Carmen</option>
+                    <option value="instituto_nuestra_señora_del_huerto">Instituto Nuestra Señora del Huerto</option>
+                    <option value="instituto_nuestra_señora_del_pilar">Instituto Nuestra Señora del Pilar</option>
+                    <option value="instituto_nuestra_señora_del_rosario">Instituto Nuestra Señora del Rosario</option>
+                    <option value="instituto_nuestra_señora_del_valle">Instituto Nuestra Señora del Valle</option>
+                    <option value="instituto_nuevos_aires">Instituto Nuevos Aires</option>
+                    <option value="instituto_orsino">Instituto Orsino</option>
+                    <option value="instituto_oxford">Instituto Oxford</option>
+                    <option value="instituto_parroquial_cgo._hno._mario_f._alsina">Instituto Parroquial Cgo. Hno. Mario F. Alsina</option>
+                    <option value="instituto_parroquial_de_la_merced">Instituto Parroquial de la Merced</option>
+                    <option value="instituto_parroquial_la_piedad">Instituto Parroquial la Piedad</option>
+                    <option value="instituto_parroquial_madre_de_dios">Instituto Parroquial Madre de Dios</option>
+                    <option value="instituto_parroquial_nuestra_señora_de_la_unidad">Instituto Parroquial Nuestra Señora de la Unidad</option>
+                    <option value="instituto_parroquial_santa_elisa">Instituto Parroquial Santa Elisa</option>
+                    <option value="instituto_patrocinio_de_san_jose">Instituto Patrocinio de San José</option>
+                    <option value="instituto_politecnico_modelo">Instituto Politecnico Modelo</option>
+                    <option value="instituto_presbítero_manuel_alberti">Instituto Presbítero Manuel Alberti</option>
+                    <option value="instituto_privado_9_de_julio">Instituto Privado 9 de Julio</option>
+                    <option value="instituto_privado_arcangel_san_miguel">Instituto Privado Arcángel San Miguel</option>
+                    <option value="instituto_privado_argentino-japones_en_buenos_aires">Instituto Privado Argentino-Japonés en Buenos Aires</option>
+                    <option value="instituto_privado_david_wolfsohn">Instituto Privado David Wolfsohn</option>
+                    <option value="instituto_privado_don_bosco">Instituto Privado Don Bosco</option>
+                    <option value="instituto_privado_escuela_william_c._morris">Instituto Privado Escuela William C. Morris</option>
+                    <option value="instituto_privado_f.a.s.t.a._catherina">Instituto Privado F.A.S.T.A. Catherina</option>
+                    <option value="instituto_privado_nuestra_senora_de_la_misericordia">Instituto Privado Nuestra Señora de la Misericordia</option>
+                    <option value="instituto_resurreccion_del_señor">Instituto Resurrección del Señor</option>
+                    <option value="instituto_river_plate">Instituto River Plate</option>
+                    <option value="instituto_roberto_arlt">Instituto Roberto Arlt</option>
+                    <option value="instituto_rosa_anchorena_de_ibañez">Instituto Rosa Anchorena de Ibañez</option>
+                    <option value="instituto_sacratísimo_corazon_de_jesús">Instituto Sacratísimo Corazon de Jesús</option>
+                    <option value="instituto_sagrada_familia">Instituto Sagrada Familia</option>
+                    <option value="instituto_sagrado_corazon">Instituto Sagrado Corazón</option>
+                    <option value="instituto_saint_exupery">Instituto Saint Exupery</option>
+                    <option value="instituto_san_antonio_de_padua">Instituto San Antonio de Padua</option>
+                    <option value="instituto_san_antonio_obra_de_don_bosco">Instituto San Antonio Obra de Don Bosco</option>
+                    <option value="instituto_san_bartolome">Instituto San Bartolomé</option>
+                    <option value="instituto_san_cayetano">Instituto San Cayetano</option>
+                    <option value="instituto_san_felipe_neri">Instituto San Felipe Neri</option>
+                    <option value="instituto_san_francisco">Instituto San Francisco</option>
+                    <option value="instituto_san_francisco_de_asís">Instituto San Francisco de Asís</option>
+                    <option value="instituto_san_gregorio_el_iluminador">Instituto San Gregorio El Iluminador</option>
+                    <option value="instituto_san_isidro_labrador">Instituto San Isidro Labrador</option>
+                    <option value="instituto_san_jose">Instituto San José</option>
+                    <option value="instituto_san_jose_de_flores">Instituto San José de Flores</option>
+                    <option value="instituto_san_jose_de_villa_del_parque">Instituto San Jose de Villa del Parque</option>
+                    <option value="instituto_san_judas_tadeo">Instituto San Judas Tadeo</option>
+                    <option value="instituto_san_pablo_apostol">Instituto San Pablo Apóstol</option>
+                    <option value="instituto_san_pedro_nolasco">Instituto San Pedro Nolasco</option>
+                    <option value="instituto_san_pio_x">Instituto San Pio X</option>
+                    <option value="instituto_san_rafael">Instituto San Rafael</option>
+                    <option value="instituto_san_ramon_nonato">Instituto San Ramon Nonato</option>
+                    <option value="instituto_san_roberto">Instituto San Roberto</option>
+                    <option value="instituto_san_roque">Instituto San Roque</option>
+                    <option value="instituto_san_vicente_de_paul">Instituto San Vicente de Paul</option>
+                    <option value="instituto_san_vicente_pallotti">Instituto San Vicente Pallotti</option>
+                    <option value="instituto_santa_ana_y_san_joaquin">Instituto Santa Ana y San Joaquín</option>
+                    <option value="instituto_santa_clara_de_asis">Instituto Santa Clara de Asís</option>
+                    <option value="instituto_santa_cruz">Instituto Santa Cruz</option>
+                    <option value="instituto_santa_felicitas_de_san_vicente_de_paul">Instituto Santa Felicitas de San Vicente de Paul</option>
+                    <option value="instituto_santa_maria">Instituto Santa María</option>
+                    <option value="instituto_santa_maria_de_los_angeles">Instituto Santa María de los Ángeles</option>
+                    <option value="instituto_santa_maria_de_lujan">Instituto Santa María de Luján</option>
+                    <option value="instituto_santa_maria_de_nazareth">Instituto Santa María de Nazareth</option>
+                    <option value="instituto_santa_maria_del_rosario">Instituto Santa María del Rosario</option>
+                    <option value="instituto_santa_rita">Instituto Santa Rita</option>
+                    <option value="instituto_santa_rosa">Instituto Santa Rosa</option>
+                    <option value="instituto_santisima_virgen_niña">Instituto Santísima Virgen Niña</option>
+                    <option value="instituto_santisimo_sacramento">Instituto Santísimo Sacramento</option>
+                    <option value="instituto_sarmiento">Instituto Sarmiento</option>
+                    <option value="instituto_schiller">Instituto Schiller</option>
+                    <option value="instituto_scholem_aleijem">Instituto Scholem Aleijem</option>
+                    <option value="instituto_schonthal">Instituto Schonthal</option>
+                    <option value="instituto_summa">Instituto Summa</option>
+                    <option value="instituto_susini">Instituto Susini</option>
+                    <option value="instituto_tiempo_educativo">Instituto Tiempo Educativo</option>
+                    <option value="instituto_tierra_santa">Instituto Tierra Santa</option>
+                    <option value="instituto_tomas_devoto">Instituto Tomás Devoto</option>
+                    <option value="instituto_toratenu">Instituto Toratenu</option>
+                    <option value="instituto_virgen_del_valle">Instituto Virgen del Valle</option>
+                    <option value="instituto_virginio_f._grego">Instituto Virginio F. Grego</option>
+                    <option value="instituto_william_c_morris">Instituto William C. Morris</option>
+                    <option value="instituto_zaccaria">Instituto Zaccaria</option>
+                    <option value="integral_de_educacion">Integral de Educación</option>
+                    <option value="j.n._bialik">J.N. Bialik</option>
+                    <option value="jardin_cuentacuentos">Jardin Cuentacuentos</option>
+                    <option value="jardin_integral_maimonides">Jardín Integral Maimónides</option>
+                    <option value="jardin_maternal_san_jose">Jardín Maternal San José</option>
+                    <option value="jesus_maria_de_san_vicente_de_paul">Jesus Maria de San Vicente de Paul</option>
+                    <option value="jose_manuel_estrada">Jose Manuel Estrada</option>
+                    <option value="josefa_capdevila_de_gutierrez">Josefa Capdevila de Gutiérrez</option>
+                    <option value="juan_santos_gaynor">Juan Santos Gaynor</option>
+                    <option value="la_escuela_de_hilel">La Escuela de Hilel</option>
+                    <option value="leon_xiii">Leon XIII</option>
+                    <option value="luis_a._huergo">Luis A. Huergo</option>
+                    <option value="madre_de_los_emigrantes">Madre de los Emigrantes</option>
+                    <option value="madre_del_buen_consejo">Madre del Buen Consejo</option>
+                    <option value="marie_manoogian">Marie Manoogian</option>
+                    <option value="mater_ter_admirabilis">Mater Ter Admirabilis</option>
+                    <option value="miguel_hernandez">Miguel Hernandez</option>
+                    <option value="monseñor_aneiros_de_san_jose">Monseñor Aneiros de San José</option>
+                    <option value="monseñor_sabelli">Monseñor Sabelli</option>
+                    <option value="naciones_unidas">NACIONES UNIDAS</option>
+                    <option value="nuestra_señora_de_gracia_y_buen_remedio">Nuestra Señora de Gracia y Buen Remedio</option>
+                    <option value="nuestra_señora_de_la_divina_providencia">Nuestra Señora de la Divina Providencia</option>
+                    <option value="nuestra_señora_de_la_paz">Nuestra Señora de la Paz</option>
+                    <option value="nuestra_señora_de_lujan">Nuestra Señora de Luján</option>
+                    <option value="nuestra_señora_de_lujan_de_san_josé_de_flores">Nuestra Señora de Lujan de San José de Flores</option>
+                    <option value="nuestra_señora_del_buen_consejo">Nuestra Señora del Buen Consejo</option>
+                    <option value="nuestra_señora_del_huerto">Nuestra Señora del Huerto</option>
+                    <option value="nuestra_señora_del_milagro">Nuestra Señora del Milagro</option>
+                    <option value="nuestra_señora_del_sagrado_corazon">Nuestra Señora del Sagrado Corazón</option>
+                    <option value="nueva_escuela_argentina_2000">Nueva Escuela Argentina 2000</option>
+                    <option value="nueva_escuela_de_educacion_la_obra">Nueva Escuela de Educacion la Obra</option>
+                    <option value="nuevo_guido_spano">Nuevo Guido Spano</option>
+                    <option value="obra_conservacion_de_la_fe_nº_5_-_fundacion_macnab_bernal">Obra Conservación de la Fe Nº 5 - Fundación Macnab Bernal</option>
+                    <option value="padre_luis_maria_etcheverry_boneo">Padre Luis María Etcheverry Boneo</option>
+                    <option value="paula_montal">Paula Montal</option>
+                    <option value="pio_ix">Pio IX</option>
+                    <option value="placido_marin">Plácido Marín</option>
+                    <option value="profesional_san_jose">Profesional San José</option>
+                    <option value="puertas_de_sion">Puertas de Sión</option>
+                    <option value="rabino_jose_caro">Rabino José Caro</option>
+                    <option value="raul_scalabrini_ortiz">Raúl Scalabrini Ortiz</option>
+                    <option value="redemptrix_captivorum">Redemptrix Captivorum</option>
+                    <option value="regina_virginum">Regina Virginum</option>
+                    <option value="san_ambrosio">San Ambrosio</option>
+                    <option value="san_cayetano">San Cayetano</option>
+                    <option value="san_cosme_y_san_damian">San Cosme y San Damián</option>
+                    <option value="san_cristobal">San Cristobal</option>
+                    <option value="san_jose_de_la_palabra_de_dios">San José de la Palabra de Dios</option>
+                    <option value="san_juan_evangelista">San Juan Evangelista</option>
+                    <option value="san_juan_maria_vianney">San Juan Maria Vianney</option>
+                    <option value="san_pablo">San Pablo</option>
+                    <option value="san_pedro">San Pedro</option>
+                    <option value="san_rafael">San Rafael</option>
+                    <option value="san_roman">San Román</option>
+                    <option value="san_vicente_de_paul">San Vicente de Paul</option>
+                    <option value="santa_catalina">Santa Catalina</option>
+                    <option value="santa_felicitas_de_san_vicente_de_paul">Santa Felicitas de San Vicente de Paul</option>
+                    <option value="santa_maria">Santa María</option>
+                    <option value="santa_teresa_de_jesus">Santa Teresa de Jesús</option>
+                    <option value="simon_bolivar">Simon Bolivar</option>
+                    <option value="superior_porteño">Superior Porteño</option>
+                    <option value="tecnico_nuestra_señora_de_fatima">Técnico Nuestra Señora de Fátima</option>
+                    <option value="tiempo_educativo">Tiempo Educativo</option>
+                    <option value="vocacional_argentino">Vocacional Argentino</option>
+                  </select>
+
+                </div>
+
+                <div class="form-group mb-0">
+                  <label for="relationship">Vínculo con el menor *</label>
+                  <select class="custom-select bg-light" id="relationship">
+                    <option>Seleccionar</option>
+                    <option>Madre</option>
+                    <option>Padre</option>
+                    <option>Tutor u otros</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </article>
+
+        <article >
+          <form>
+            <div class="bg-white p-3 p-md-4 rounded-lg">
+              <div class="d-flex justify-content-between pb-2">
+                <h2 class="h3">Datos del estudiante</h2>
+                <div>
+                  <button type="button" class="btn btn-outline-danger btn-sm btn-icon">
+                    <span class="material-icons-round">
+                      delete
+                    </span>
+                    Eliminar
+                  </button>
+                </div>
+              </div>
+
+              <hr/>
+
+              <div class="col-12 col-lg-9 col-xl-7 px-0 pt-3">
+                <div class="form-group mb-4 pb-2">
+                  <label for="name" class="pb-2">Nombre/s *</label>
+                  <input type="text" class="form-control bg-light" id="name" name="name" placeholder="" value="">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="surname" class="pb-2">Apellido/s *</label>
+                  <input type="text" class="form-control bg-light" id="surname" name="surname" placeholder="" value="">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="document">Tipo de documento *</label>
+                  <select class="custom-select bg-light" id="document">
+                    <option value="">Seleccionar</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="cie">CIE (Cédula de Identidad Extranjera)</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="number">N° del documento*</label>
+                  <input type="number" class="form-control bg-light" id="number" name="number">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="date">Fecha de nacimiento *</label>
+                  <input type="date" class="form-control bg-light" id="date" name="date">
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="gender">Sexo *</label>
+                  <select class="custom-select bg-light" id="gender">
+                    <option value="">Seleccionar</option>
+                    <option value="F">F</option>
+                    <option value="M">M</option>
+                    <option value="X">X</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="education">Nivel educativo *</label>
+                  <select class="custom-select bg-light" id="education">
+                    <option value="">Seleccionar</option>
+                    <option value="inicial">Inicial</option>
+                    <option value="medio">Medio</option>
+                    <option value="primario">Primario</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="commune">Comuna *</label>
+                  <select class="custom-select bg-light" id="commune">
+                    <option value="">Seleccionar</option>
+                    <option value="comuna_1">Comuna 1</option>
+                    <option value="comuna_2">Comuna 2</option>
+                    <option value="comuna_3">Comuna 3</option>
+                    <option value="comuna_4">Comuna 4</option>
+                    <option value="comuna_5">Comuna 5</option>
+                    <option value="comuna_6">Comuna 6</option>
+                    <option value="comuna_7">Comuna 7</option>
+                    <option value="comuna_8">Comuna 8</option>
+                    <option value="comuna_9">Comuna 9</option>
+                    <option value="comuna_10">Comuna 10</option>
+                    <option value="comuna_11">Comuna 11</option>
+                    <option value="comuna_12">Comuna 12</option>
+                    <option value="comuna_13">Comuna 13</option>
+                    <option value="comuna_14">Comuna 14</option>
+                    <option value="comuna_15">Comuna 15</option>
+                  </select>
+                </div>
+                <div class="form-group mb-4 pb-2">
+                  <label for="establishment">Establecimieno educativo *</label>
+                  <select class="custom-select bg-light" id="establishment">
+                    <option value="">Seleccionar</option>
+                    <option value="aaron_angel">Aarón Ángel</option>
+                    <option value="asociacion_comunidad_israelita_sefaradi_argentina">Asociación Comunidad Israelita Sefaradí Argentina</option>
+                    <option value="calasanz">Calasanz</option>
+                    <option value="canto_a_la_vida">Canto a la Vida</option>
+                    <option value="carolina_estrada_de_martinez">Carolina Estrada de Martínez</option>
+                    <option value="centro_comunitario_san_cayetano">Centro Comunitario San Cayetano</option>
+                    <option value="centro_educativo_arquidiocesano_espiritu_santo">Centro Educativo Arquidiocesano Espíritu Santo</option>
+                    <option value="centro_educativo_san_francisco_javier">Centro Educativo San Francisco Javier</option>
+                    <option value="centro_educativo_toratenu">Centro Educativo Toratenu</option>
+                    <option value="colectividad_helenica">Colectividad Helénica</option>
+                    <option value="colegio_argentino_arabe_islamico_omar_bin_al_jattab">COLEGIO ARGENTINO ARABE ISLAMICO OMAR BIN AL JATTAB</option>
+                    <option value="colegio_argentino_baldomero_fernandez_moreno">Colegio Argentino Baldomero Fernandez Moreno</option>
+                    <option value="colegio_armenio_arzruni">Colegio Armenio Arzruni</option>
+                    <option value="colegio_aulanueva">Colegio Aulanueva</option>
+                    <option value="colegio_buenos_aires">Colegio Buenos Aires</option>
+                    <option value="colegio_canada">Colegio Canada</option>
+                    <option value="colegio_cardenal_copello">Colegio Cardenal Copello</option>
+                    <option value="colegio_corazon_de_jesus">Colegio Corazón de Jesús</option>
+                    <option value="colegio_de_las_victorias">Colegio de las Victorias</option>
+                    <option value="colegio_del_libertador">Colegio del Libertador</option>
+                    <option value="colegio_episcopal_de_buenos_aires">Colegio Episcopal de Buenos Aires</option>
+                    <option value="colegio_evangelico_buenos_aires">Colegio Evangelico Buenos Aires</option>
+                    <option value="colegio_f.a.s.t.a._san_vicente_de_paul">Colegio F.A.S.T.A. San Vicente de Paul</option>
+                    <option value="colegio_francesco_faa_di_bruno">Colegio Francesco Faa Di Bruno</option>
+                    <option value="colegio_galileo_galilei">Colegio Galileo Galilei</option>
+                    <option value="colegio_gonzalez_pecotche">Colegio González Pecotche</option>
+                    <option value="colegio_guadalupe">Colegio Guadalupe</option>
+                    <option value="colegio_la_anunciata">Colegio la Anunciata</option>
+                    <option value="colegio_logosofico_gonzalez_pecotche">Colegio Logosofico González Pecotche</option>
+                    <option value="colegio_maria_auxiliadora">Colegio María Auxiliadora</option>
+                    <option value="colegio_nuestra_senora_de_la_misericordia">Colegio Nuestra Señora de la Misericordia</option>
+                    <option value="colegio_nuevo_pensar">Colegio Nuevo Pensar</option>
+                    <option value="colegio_parroquial_nuestra_senora_de_la_anunciacion">Colegio Parroquial Nuestra Señora de la Anunciacion</option>
+                    <option value="colegio_presencia">Colegio Presencia</option>
+                    <option value="colegio_sagrada_familia">Colegio Sagrada Familia</option>
+                    <option value="colegio_san_francisco_coll">Colegio San Francisco Coll</option>
+                    <option value="colegio_san_luis_gonzaga">Colegio San Luis Gonzaga</option>
+                    <option value="colegio_san_maron">Colegio San Maron</option>
+                    <option value="colegio_san_martin_de_los_andes">Colegio San Martín de Los Andes</option>
+                    <option value="colegio_san_miguel">Colegio San Miguel</option>
+                    <option value="colegio_santo_tomas_de_aquino">Colegio Santo Tomás de Aquino</option>
+                    <option value="compania_de_maria">Compañía de María</option>
+                    <option value="complejo_educativo_nuevo_sol">Complejo Educativo Nuevo Sol</option>
+                    <option value="constanza_ramos_mejia_de_bunge">Constanza Ramos Mejia de Bunge</option>
+                    <option value="crecer_y_ser">Crecer y Ser</option>
+                    <option value="cristo_rey">Cristo Rey</option>
+                    <option value="del_carmen">Del Carmen</option>
+                    <option value="del_inmaculado_corazon_de_maria_adoratrices">Del Inmaculado Corazón de María Adoratrices</option>
+                    <option value="dr._dalmacio_velez_sarsfield">Dr. Dalmacio Vélez Sarsfield</option>
+                    <option value="dr._emilio_cardenas">Dr. Emilio Cardenas</option>
+                    <option value="educativo_modelo">Educativo Modelo</option>
+                    <option value="esclavas_del_sagrado_corazon_de_jesus">Esclavas del Sagrado Corazón de Jesús</option>
+                    <option value="escuela_argentina">Escuela Argentina</option>
+                    <option value="escuela_argentina_general_belgrano">Escuela Argentina General Belgrano</option>
+                    <option value="escuela_bami_marc_chagall">Escuela Bami Marc Chagall</option>
+                    <option value="escuela_cangallo">Escuela Cangallo</option>
+                    <option value="escuela_cristiana_de_la_puerta_abierta">Escuela Cristiana de la Puerta Abierta</option>
+                    <option value="escuela_cristiana_evangelica_argentina">Escuela Cristiana Evangélica Argentina</option>
+                    <option value="escuela_de_la_nueva_expresion">Escuela de la Nueva Expresión</option>
+                    <option value="escuela_de_la_paz">Escuela de la Paz</option>
+                    <option value="escuela_integral_casa_de_moises">Escuela Integral Casa de Moisés</option>
+                    <option value="escuela_integral_maimonides">Escuela Integral Maimónides</option>
+                    <option value="escuela_integral_rabino_elias_suli">Escuela Integral Rabino Elías Suli</option>
+                    <option value="escuela_miguel_hernandez">Escuela Miguel Hernandez</option>
+                    <option value="escuela_modelo_domingo_f._sarmiento">Escuela Modelo Domingo F. Sarmiento</option>
+                    <option value="escuela_nueva_esperanza">Escuela Nueva Esperanza</option>
+                    <option value="escuela_secundaria_integral_scholem_aleijem">Escuela Secundaria Integral Scholem Aleijem</option>
+                    <option value="esteban_echeverria">Esteban Echeverría</option>
+                    <option value="euskal_echea">Euskal Echea</option>
+                    <option value="generacion_del_futuro">Generacion del Futuro</option>
+                    <option value="general_justo_jose_de_de_urquiza">General Justo Jose de de Urquiza</option>
+                    <option value="hans_christian_andersen">Hans Christian Andersen</option>
+                    <option value="hogar_san_rafael">Hogar San Rafael</option>
+                    <option value="hull_cordell">Hull Cordell</option>
+                    <option value="inmaculada_concepcion">Inmaculada Concepción</option>
+                    <option value="inmaculada_concepcion_de_maria">Inmaculada Concepción de María</option>
+                    <option value="inmaculada_concepcion_de_nuestra_senora_de_lourdes">Inmaculada Concepción de Nuestra Señora de Lourdes</option>
+                    <option value="instituto_alberto_schweitzer">Instituto Alberto Schweitzer</option>
+                    <option value="instituto_amanecer">Instituto Amanecer</option>
+                    <option value="instituto_ambrosio_a._tognoni">Instituto Ambrosio A. Tognoni</option>
+                    <option value="instituto_ana_maria_janer">Instituto Ana María Janer</option>
+                    <option value="instituto_anunciacion_de_maria">Instituto Anunciación de María</option>
+                    <option value="instituto_argentino_arabe_islamico">Instituto Argentino Árabe Islámico</option>
+                    <option value="instituto_argentino_de_ensenanza_secundaria">Instituto Argentino de Enseñanza Secundaria</option>
+                    <option value="instituto_argentino_excelsior">Instituto Argentino Excelsior</option>
+                    <option value="instituto_beata_imelda">Instituto Beata Imelda</option>
+                    <option value="instituto_benito_nazar">Instituto Benito Nazar</option>
+                    <option value="instituto_bet_el">Instituto Bet El</option>
+                    <option value="instituto_betania">Instituto Betania</option>
+                    <option value="instituto_brotecitos">Instituto Brotecitos</option>
+                    <option value="instituto_cabrini">Instituto Cabrini</option>
+                    <option value="instituto_calasancio_divina_pastora">Instituto Calasancio Divina Pastora</option>
+                    <option value="instituto_calasanz">Instituto Calasanz</option>
+                    <option value="instituto_carlos_pellegrini">Instituto Carlos Pellegrini</option>
+                    <option value="instituto_carlos_steeb">Instituto Carlos Steeb</option>
+                    <option value="instituto_carolina_estrada_de_martinez">Instituto Carolina Estrada de Martinez</option>
+                    <option value="instituto_casa_de_jesus">Instituto Casa de Jesús</option>
+                    <option value="instituto_casa_de_la_educacion">Instituto Casa de la Educación</option>
+                    <option value="instituto_ceferino_namuncura">Instituto Ceferino Namuncurá</option>
+                    <option value="instituto_celia_martinez_de_varela">Instituto Celia Martínez de Varela</option>
+                    <option value="instituto_claret">Instituto Claret</option>
+                    <option value="instituto_colegio_de_nuestra_senora">Instituto Colegio de Nuestra Señora</option>
+                    <option value="instituto_corazon_de_jesus">Instituto Corazón de Jesús</option>
+                    <option value="instituto_corazon_de_maria">Instituto Corazón de María</option>
+                    <option value="instituto_cristiano_evangelico_devoto">Instituto Cristiano Evangélico Devoto</option>
+                    <option value="instituto_cristo_maestro">Instituto Cristo Maestro</option>
+                    <option value="instituto_cristo_rey">Instituto Cristo Rey</option>
+                    <option value="instituto_cruz_del_sur">Instituto Cruz del Sur</option>
+                    <option value="instituto_damasa_zelaya_de_saavedra">Instituto Dámasa Zelaya de Saavedra</option>
+                    <option value="instituto_de_educacion_tecnica_y_formacion_profesional_13_de_julio">Instituto de Educación Técnica y Formación Profesional 13 de Julio</option>
+                    <option value="instituto_de_estudios_superiores_de_buenos_aires">Instituto de Estudios Superiores de Buenos Aires</option>
+                    <option value="instituto_de_formacion_y_educacion_integral_i.f.e.i.">INSTITUTO DE FORMACION Y EDUCACION INTEGRAL I.F.E.I.</option>
+                    <option value="instituto_divina_providencia">Instituto Divina Providencia</option>
+                    <option value="instituto_divino_corazon">Instituto Divino Corazón</option>
+                    <option value="instituto_divino_rostro">Instituto Divino Rostro</option>
+                    <option value="instituto_don_orione">Instituto Don Orione</option>
+                    <option value="instituto_dr._jose_ingenieros">Instituto Dr. José Ingenieros</option>
+                    <option value="instituto_dr._miguel_viñas_loureyro">Instituto Dr. Miguel Viñas Loureyro</option>
+                    <option value="instituto_dulcísimo_nombre_de_jesus">Instituto Dulcísimo Nombre de Jesús</option>
+                    <option value="instituto_e.s.b.a._flores">Instituto E.S.B.A. Flores</option>
+                    <option value="instituto_educacional_argentino_nuestra_señora_de_luján">Instituto Educacional Argentino Nuestra Señora de Luján</option>
+                    <option value="instituto_educacional_duayen">Instituto Educacional Duayen</option>
+                    <option value="instituto_educacional_santa_teresita">Instituto Educacional Santa Teresita</option>
+                    <option value="instituto_educativo_alas">Instituto Educativo Alas</option>
+                    <option value="instituto_educativo_san_gregorio_el_iluminador">Instituto Educativo San Gregorio El Iluminador</option>
+                    <option value="instituto_elisa_harilaos">Instituto Elisa Harilaos</option>
+                    <option value="instituto_esba_-_villa_lugano">Instituto ESBA - Villa Lugano</option>
+                    <option value="instituto_español_virgen_del_pilar">Instituto Español Virgen del Pilar</option>
+                    <option value="instituto_espííritu_santo">Instituto Espííritu Santo</option>
+                    <option value="instituto_evangelico_americano">Instituto Evangélico Americano</option>
+                    <option value="instituto_evangelico_de_nueva_chicago">Instituto Evangélico de Nueva Chicago</option>
+                    <option value="instituto_felicia_ramon_de_palacios">Instituto Felicia Ramón de Palacios</option>
+                    <option value="instituto_formar_futuro">Instituto Formar Futuro</option>
+                    <option value="instituto_general_san_martín">Instituto General San Martín</option>
+                    <option value="instituto_griego_atenagoras_i">Instituto Griego Atenágoras I</option>
+                    <option value="instituto_guardia_de_honor_del_santisimo_rosario">Instituto Guardia de Honor del Santisimo Rosario</option>
+                    <option value="instituto_guillermo_rawson">Instituto Guillermo Rawson</option>
+                    <option value="instituto_gustavo_adolfo_becquer">Instituto Gustavo Adolfo Becquer</option>
+                    <option value="instituto_hans_christian_andersen">Instituto Hans Christian Andersen</option>
+                    <option value="instituto_hijas_de_jesus">Instituto Hijas de Jesús</option>
+                    <option value="instituto_hogar_de_niños_ramon_l._falcon">Instituto Hogar de Niños Ramon L. Falcón</option>
+                    <option value="instituto_hogar_del_pino">Instituto Hogar del Pino</option>
+                    <option value="instituto_hogar_san_benito">Instituto Hogar San Benito</option>
+                    <option value="instituto_incorporado_saint_jean">Instituto Incorporado Saint Jean</option>
+                    <option value="instituto_incorporado_san_francisco_de_sales">Instituto Incorporado San Francisco de Sales</option>
+                    <option value="instituto_inmaculada_concepcion">Instituto Inmaculada Concepción</option>
+                    <option value="instituto_inmaculada_concepcion_de_nuestra_señora_de_lourdes">Instituto Inmaculada Concepción de Nuestra Señora de Lourdes</option>
+                    <option value="instituto_integral_del_sud">Instituto Integral del Sud</option>
+                    <option value="instituto_integral_talpiot">Instituto Integral Talpiot</option>
+                    <option value="instituto_isaac_bakchellian">Instituto Isaac Bakchellian</option>
+                    <option value="instituto_isabel_conde_de_hernandez">Instituto Isabel Conde de Hernández</option>
+                    <option value="instituto_juan_bautista_berthier">Instituto Juan Bautista Berthier</option>
+                    <option value="instituto_la_candelaria">Instituto La Candelaria</option>
+                    <option value="instituto_la_inmaculada">Instituto La Inmaculada</option>
+                    <option value="instituto_la_providencia">Instituto La Providencia</option>
+                    <option value="instituto_la_salette">Instituto La Salette</option>
+                    <option value="instituto_leopoldo_marechal">Instituto Leopoldo Marechal</option>
+                    <option value="instituto_lujan_porteño">Instituto Lujan Porteño</option>
+                    <option value="instituto_maría_ana_mogas">Instituto María Ana Mogas</option>
+                    <option value="instituto_maría_auxiliadora">Instituto María Auxiliadora</option>
+                    <option value="instituto_maría_bianchi_de_copello">Instituto María Bianchi de Copello</option>
+                    <option value="instituto_marianista">Instituto Marianista</option>
+                    <option value="instituto_marie_manoogian">Instituto Marie Manoogian</option>
+                    <option value="instituto_martin_buber">Instituto Martin Buber</option>
+                    <option value="instituto_mater_dolorosa">Instituto Mater Dolorosa</option>
+                    <option value="instituto_medalla_milagrosa">Instituto Medalla Milagrosa</option>
+                    <option value="instituto_megly">Instituto Megly</option>
+                    <option value="instituto_mekhitarista">Instituto Mekhitarista</option>
+                    <option value="instituto_mercedes_pacheco">Instituto Mercedes Pacheco</option>
+                    <option value="instituto_monseñor_dillon">Instituto Monseñor Dillon</option>
+                    <option value="instituto_moruli">Instituto Moruli</option>
+                    <option value="instituto_naciones_unidas">Instituto Naciones Unidas</option>
+                    <option value="instituto_natan_gesang">Instituto Natan Gesang</option>
+                    <option value="instituto_nuestra_señora_de_la_misericordia">Instituto Nuestra Señora de la Misericordia</option>
+                    <option value="instituto_nuestra_señora_de_las_gracias">Instituto Nuestra Señora de las Gracias</option>
+                    <option value="instituto_nuestra_señora_de_las_nieves">Instituto Nuestra Señora de las Nieves</option>
+                    <option value="instituto_nuestra_señora_de_los_remedios">Instituto Nuestra Señora de Los Remedios</option>
+                    <option value="instituto_nuestra_señora_de_lujan">Instituto Nuestra Señora de Lujan</option>
+                    <option value="instituto_nuestra_señora_de_lujan_de_los_patriotas">Instituto Nuestra Señora de Luján de Los Patriotas</option>
+                    <option value="instituto_nuestra_señora_de_montserrat">Instituto Nuestra Señora de Montserrat</option>
+                    <option value="instituto_nuestra_señora_del_buen_y_perpetuo_socorro">Instituto Nuestra Señora del Buen y Perpetuo Socorro</option>
+                    <option value="instituto_nuestra_señora_del_carmen">Instituto Nuestra Señora del Carmen</option>
+                    <option value="instituto_nuestra_señora_del_huerto">Instituto Nuestra Señora del Huerto</option>
+                    <option value="instituto_nuestra_señora_del_pilar">Instituto Nuestra Señora del Pilar</option>
+                    <option value="instituto_nuestra_señora_del_rosario">Instituto Nuestra Señora del Rosario</option>
+                    <option value="instituto_nuestra_señora_del_valle">Instituto Nuestra Señora del Valle</option>
+                    <option value="instituto_nuevos_aires">Instituto Nuevos Aires</option>
+                    <option value="instituto_orsino">Instituto Orsino</option>
+                    <option value="instituto_oxford">Instituto Oxford</option>
+                    <option value="instituto_parroquial_cgo._hno._mario_f._alsina">Instituto Parroquial Cgo. Hno. Mario F. Alsina</option>
+                    <option value="instituto_parroquial_de_la_merced">Instituto Parroquial de la Merced</option>
+                    <option value="instituto_parroquial_la_piedad">Instituto Parroquial la Piedad</option>
+                    <option value="instituto_parroquial_madre_de_dios">Instituto Parroquial Madre de Dios</option>
+                    <option value="instituto_parroquial_nuestra_señora_de_la_unidad">Instituto Parroquial Nuestra Señora de la Unidad</option>
+                    <option value="instituto_parroquial_santa_elisa">Instituto Parroquial Santa Elisa</option>
+                    <option value="instituto_patrocinio_de_san_jose">Instituto Patrocinio de San José</option>
+                    <option value="instituto_politecnico_modelo">Instituto Politecnico Modelo</option>
+                    <option value="instituto_presbítero_manuel_alberti">Instituto Presbítero Manuel Alberti</option>
+                    <option value="instituto_privado_9_de_julio">Instituto Privado 9 de Julio</option>
+                    <option value="instituto_privado_arcangel_san_miguel">Instituto Privado Arcángel San Miguel</option>
+                    <option value="instituto_privado_argentino-japones_en_buenos_aires">Instituto Privado Argentino-Japonés en Buenos Aires</option>
+                    <option value="instituto_privado_david_wolfsohn">Instituto Privado David Wolfsohn</option>
+                    <option value="instituto_privado_don_bosco">Instituto Privado Don Bosco</option>
+                    <option value="instituto_privado_escuela_william_c._morris">Instituto Privado Escuela William C. Morris</option>
+                    <option value="instituto_privado_f.a.s.t.a._catherina">Instituto Privado F.A.S.T.A. Catherina</option>
+                    <option value="instituto_privado_nuestra_senora_de_la_misericordia">Instituto Privado Nuestra Señora de la Misericordia</option>
+                    <option value="instituto_resurreccion_del_señor">Instituto Resurrección del Señor</option>
+                    <option value="instituto_river_plate">Instituto River Plate</option>
+                    <option value="instituto_roberto_arlt">Instituto Roberto Arlt</option>
+                    <option value="instituto_rosa_anchorena_de_ibañez">Instituto Rosa Anchorena de Ibañez</option>
+                    <option value="instituto_sacratísimo_corazon_de_jesús">Instituto Sacratísimo Corazon de Jesús</option>
+                    <option value="instituto_sagrada_familia">Instituto Sagrada Familia</option>
+                    <option value="instituto_sagrado_corazon">Instituto Sagrado Corazón</option>
+                    <option value="instituto_saint_exupery">Instituto Saint Exupery</option>
+                    <option value="instituto_san_antonio_de_padua">Instituto San Antonio de Padua</option>
+                    <option value="instituto_san_antonio_obra_de_don_bosco">Instituto San Antonio Obra de Don Bosco</option>
+                    <option value="instituto_san_bartolome">Instituto San Bartolomé</option>
+                    <option value="instituto_san_cayetano">Instituto San Cayetano</option>
+                    <option value="instituto_san_felipe_neri">Instituto San Felipe Neri</option>
+                    <option value="instituto_san_francisco">Instituto San Francisco</option>
+                    <option value="instituto_san_francisco_de_asís">Instituto San Francisco de Asís</option>
+                    <option value="instituto_san_gregorio_el_iluminador">Instituto San Gregorio El Iluminador</option>
+                    <option value="instituto_san_isidro_labrador">Instituto San Isidro Labrador</option>
+                    <option value="instituto_san_jose">Instituto San José</option>
+                    <option value="instituto_san_jose_de_flores">Instituto San José de Flores</option>
+                    <option value="instituto_san_jose_de_villa_del_parque">Instituto San Jose de Villa del Parque</option>
+                    <option value="instituto_san_judas_tadeo">Instituto San Judas Tadeo</option>
+                    <option value="instituto_san_pablo_apostol">Instituto San Pablo Apóstol</option>
+                    <option value="instituto_san_pedro_nolasco">Instituto San Pedro Nolasco</option>
+                    <option value="instituto_san_pio_x">Instituto San Pio X</option>
+                    <option value="instituto_san_rafael">Instituto San Rafael</option>
+                    <option value="instituto_san_ramon_nonato">Instituto San Ramon Nonato</option>
+                    <option value="instituto_san_roberto">Instituto San Roberto</option>
+                    <option value="instituto_san_roque">Instituto San Roque</option>
+                    <option value="instituto_san_vicente_de_paul">Instituto San Vicente de Paul</option>
+                    <option value="instituto_san_vicente_pallotti">Instituto San Vicente Pallotti</option>
+                    <option value="instituto_santa_ana_y_san_joaquin">Instituto Santa Ana y San Joaquín</option>
+                    <option value="instituto_santa_clara_de_asis">Instituto Santa Clara de Asís</option>
+                    <option value="instituto_santa_cruz">Instituto Santa Cruz</option>
+                    <option value="instituto_santa_felicitas_de_san_vicente_de_paul">Instituto Santa Felicitas de San Vicente de Paul</option>
+                    <option value="instituto_santa_maria">Instituto Santa María</option>
+                    <option value="instituto_santa_maria_de_los_angeles">Instituto Santa María de los Ángeles</option>
+                    <option value="instituto_santa_maria_de_lujan">Instituto Santa María de Luján</option>
+                    <option value="instituto_santa_maria_de_nazareth">Instituto Santa María de Nazareth</option>
+                    <option value="instituto_santa_maria_del_rosario">Instituto Santa María del Rosario</option>
+                    <option value="instituto_santa_rita">Instituto Santa Rita</option>
+                    <option value="instituto_santa_rosa">Instituto Santa Rosa</option>
+                    <option value="instituto_santisima_virgen_niña">Instituto Santísima Virgen Niña</option>
+                    <option value="instituto_santisimo_sacramento">Instituto Santísimo Sacramento</option>
+                    <option value="instituto_sarmiento">Instituto Sarmiento</option>
+                    <option value="instituto_schiller">Instituto Schiller</option>
+                    <option value="instituto_scholem_aleijem">Instituto Scholem Aleijem</option>
+                    <option value="instituto_schonthal">Instituto Schonthal</option>
+                    <option value="instituto_summa">Instituto Summa</option>
+                    <option value="instituto_susini">Instituto Susini</option>
+                    <option value="instituto_tiempo_educativo">Instituto Tiempo Educativo</option>
+                    <option value="instituto_tierra_santa">Instituto Tierra Santa</option>
+                    <option value="instituto_tomas_devoto">Instituto Tomás Devoto</option>
+                    <option value="instituto_toratenu">Instituto Toratenu</option>
+                    <option value="instituto_virgen_del_valle">Instituto Virgen del Valle</option>
+                    <option value="instituto_virginio_f._grego">Instituto Virginio F. Grego</option>
+                    <option value="instituto_william_c_morris">Instituto William C. Morris</option>
+                    <option value="instituto_zaccaria">Instituto Zaccaria</option>
+                    <option value="integral_de_educacion">Integral de Educación</option>
+                    <option value="j.n._bialik">J.N. Bialik</option>
+                    <option value="jardin_cuentacuentos">Jardin Cuentacuentos</option>
+                    <option value="jardin_integral_maimonides">Jardín Integral Maimónides</option>
+                    <option value="jardin_maternal_san_jose">Jardín Maternal San José</option>
+                    <option value="jesus_maria_de_san_vicente_de_paul">Jesus Maria de San Vicente de Paul</option>
+                    <option value="jose_manuel_estrada">Jose Manuel Estrada</option>
+                    <option value="josefa_capdevila_de_gutierrez">Josefa Capdevila de Gutiérrez</option>
+                    <option value="juan_santos_gaynor">Juan Santos Gaynor</option>
+                    <option value="la_escuela_de_hilel">La Escuela de Hilel</option>
+                    <option value="leon_xiii">Leon XIII</option>
+                    <option value="luis_a._huergo">Luis A. Huergo</option>
+                    <option value="madre_de_los_emigrantes">Madre de los Emigrantes</option>
+                    <option value="madre_del_buen_consejo">Madre del Buen Consejo</option>
+                    <option value="marie_manoogian">Marie Manoogian</option>
+                    <option value="mater_ter_admirabilis">Mater Ter Admirabilis</option>
+                    <option value="miguel_hernandez">Miguel Hernandez</option>
+                    <option value="monseñor_aneiros_de_san_jose">Monseñor Aneiros de San José</option>
+                    <option value="monseñor_sabelli">Monseñor Sabelli</option>
+                    <option value="naciones_unidas">NACIONES UNIDAS</option>
+                    <option value="nuestra_señora_de_gracia_y_buen_remedio">Nuestra Señora de Gracia y Buen Remedio</option>
+                    <option value="nuestra_señora_de_la_divina_providencia">Nuestra Señora de la Divina Providencia</option>
+                    <option value="nuestra_señora_de_la_paz">Nuestra Señora de la Paz</option>
+                    <option value="nuestra_señora_de_lujan">Nuestra Señora de Luján</option>
+                    <option value="nuestra_señora_de_lujan_de_san_josé_de_flores">Nuestra Señora de Lujan de San José de Flores</option>
+                    <option value="nuestra_señora_del_buen_consejo">Nuestra Señora del Buen Consejo</option>
+                    <option value="nuestra_señora_del_huerto">Nuestra Señora del Huerto</option>
+                    <option value="nuestra_señora_del_milagro">Nuestra Señora del Milagro</option>
+                    <option value="nuestra_señora_del_sagrado_corazon">Nuestra Señora del Sagrado Corazón</option>
+                    <option value="nueva_escuela_argentina_2000">Nueva Escuela Argentina 2000</option>
+                    <option value="nueva_escuela_de_educacion_la_obra">Nueva Escuela de Educacion la Obra</option>
+                    <option value="nuevo_guido_spano">Nuevo Guido Spano</option>
+                    <option value="obra_conservacion_de_la_fe_nº_5_-_fundacion_macnab_bernal">Obra Conservación de la Fe Nº 5 - Fundación Macnab Bernal</option>
+                    <option value="padre_luis_maria_etcheverry_boneo">Padre Luis María Etcheverry Boneo</option>
+                    <option value="paula_montal">Paula Montal</option>
+                    <option value="pio_ix">Pio IX</option>
+                    <option value="placido_marin">Plácido Marín</option>
+                    <option value="profesional_san_jose">Profesional San José</option>
+                    <option value="puertas_de_sion">Puertas de Sión</option>
+                    <option value="rabino_jose_caro">Rabino José Caro</option>
+                    <option value="raul_scalabrini_ortiz">Raúl Scalabrini Ortiz</option>
+                    <option value="redemptrix_captivorum">Redemptrix Captivorum</option>
+                    <option value="regina_virginum">Regina Virginum</option>
+                    <option value="san_ambrosio">San Ambrosio</option>
+                    <option value="san_cayetano">San Cayetano</option>
+                    <option value="san_cosme_y_san_damian">San Cosme y San Damián</option>
+                    <option value="san_cristobal">San Cristobal</option>
+                    <option value="san_jose_de_la_palabra_de_dios">San José de la Palabra de Dios</option>
+                    <option value="san_juan_evangelista">San Juan Evangelista</option>
+                    <option value="san_juan_maria_vianney">San Juan Maria Vianney</option>
+                    <option value="san_pablo">San Pablo</option>
+                    <option value="san_pedro">San Pedro</option>
+                    <option value="san_rafael">San Rafael</option>
+                    <option value="san_roman">San Román</option>
+                    <option value="san_vicente_de_paul">San Vicente de Paul</option>
+                    <option value="santa_catalina">Santa Catalina</option>
+                    <option value="santa_felicitas_de_san_vicente_de_paul">Santa Felicitas de San Vicente de Paul</option>
+                    <option value="santa_maria">Santa María</option>
+                    <option value="santa_teresa_de_jesus">Santa Teresa de Jesús</option>
+                    <option value="simon_bolivar">Simon Bolivar</option>
+                    <option value="superior_porteño">Superior Porteño</option>
+                    <option value="tecnico_nuestra_señora_de_fatima">Técnico Nuestra Señora de Fátima</option>
+                    <option value="tiempo_educativo">Tiempo Educativo</option>
+                    <option value="vocacional_argentino">Vocacional Argentino</option>
+                  </select>
+
+                </div>
+
+                <div class="form-group mb-4 pb-2">
+                  <label for="relationship">Vínculo con el menor *</label>
+                  <select class="custom-select bg-light" id="relationship">
+                    <option>Seleccionar</option>
+                    <option>Madre</option>
+                    <option>Padre</option>
+                    <option>Tutor u otros</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <button type="button" class="btn btn-lg btn-link btn-icon">
+                  <span class="material-icons-round">add_circle</span>
+                    Agregar estudiante
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 pt-2 text-right">
+              <button type="reset" class="btn btn-secondary mr-3">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer"><div class="container">
+    <section class="footer-legal-section">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <img class="d-lg-none" src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg" alt="Ciudad de Buenos Aires" height="48">
+          <img class="d-none d-lg-inline" src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg" alt="Ciudad de Buenos Aires" height="40">
+          <img class="img-vamos-ba" src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg" alt="Vamos Buenos Aires">
+        </div>
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">Oficios judiciales</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">Transparencia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-license-text">
+        Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina License.
+      </div>
+    </section>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>
