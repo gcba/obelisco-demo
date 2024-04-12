@@ -66,8 +66,19 @@
         <article >
           <form>
             <div class="bg-white p-3 p-md-4 rounded-lg">
-              <h2 class="mb-4 pb-2">Datos del estudiante</h2>
-              <div class="col-12 col-lg-9 col-xl-7 px-0">
+              <div class="d-flex justify-content-between pb-2">
+                <h2 class="h3">Datos del estudiante</h2>
+                <div>
+                  <button type="button" class="btn btn-outline-danger btn-sm btn-icon">
+                    <span class="material-icons-round">
+                      delete
+                    </span>
+                    Eliminar
+                  </button>
+                </div>
+              </div>
+              <hr/>
+              <div class="col-12 col-lg-9 col-xl-7 px-0 pt-3">
                 <div class="form-group mb-4 pb-2">
                   <label for="name" class="pb-2">Nombre/s *</label>
                   <input type="text" class="form-control bg-light" id="name" name="name" placeholder="" value="">
@@ -87,7 +98,8 @@
                 </div>
                 <div class="form-group mb-4 pb-2">
                   <label for="number">N° de documento *</label>
-                  <input type="number" class="form-control bg-light" id="number" name="number">
+                  <input type="number" class="form-control bg-light is-invalid" id="number" name="number">
+                  <div class="invalid-feedback">Ya ingresaste este estudiante</div>
                 </div>
                 <div class="form-group mb-4 pb-2">
                   <label for="date">Fecha de nacimiento *</label>
