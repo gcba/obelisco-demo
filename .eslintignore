@@ -1,0 +1,5 @@
+dist
+.github
+node_modules
+old
+layout.tsx

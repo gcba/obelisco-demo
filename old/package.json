@@ -1,0 +1,13 @@
+{
+  "name": "obelisco-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gcba/obelisco": "^1.55.1"
+  },
+  "devDependencies": {}
+}
