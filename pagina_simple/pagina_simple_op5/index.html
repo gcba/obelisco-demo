@@ -11,12 +11,12 @@
 
   <!-- Obelisco -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet" />
+  rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
-  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <article class="pb-5 mb-4">
       <header class="pt-3 pb-5">
         <div class="container pt-1">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="Navegación secundaria" class="py-3">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
               <li class="breadcrumb-item"><a href="#">Página Anterior</a></li>
@@ -41,15 +41,23 @@
 
               <div class="d-flex flex-row pt-3">
                 Compartir en redes
-                <ul class="list-inline ml-2">
-                  <li class="list-inline-item mr-1"><a href="#" target="_blank"><i
-                        class='bx bx-sm bxl-facebook-circle'></i></a></li>
-                  <li class="list-inline-item mr-1"><a href="#" target="_blank"><i
-                        class='bx bx-sm bxl-instagram'></i></a></li>
-                  <li class="list-inline-item mr-1"><a href="#" target="_blank"><i class='bx bx-sm bxl-twitter'></i></a>
+                <ul class="list-inline ms-2">
+                  <li class="list-inline-item me-1">
+                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
+                    <i class='bx bx-sm bxl-facebook-circle'></i></a>
                   </li>
-                  <li class="list-inline-item mr-1"><a href="#" target="_blank"><i
-                        class='bx bx-sm bxl-linkedin-square'></i></a></li>
+                  <li class="list-inline-item me-1">
+                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
+                    <i class='bx bx-sm bxl-instagram'></i></a>
+                  </li>
+                  <li class="list-inline-item me-1">
+                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
+                    <i class='bx bx-sm bxl-twitter'></i></a>
+                  </li>
+                  <li class="list-inline-item me-1">
+                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
+                    <i class='bx bx-sm bxl-linkedin-square'></i></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -63,102 +71,147 @@
             <hr class="mt-0 mb-5" />
             <section>
               <h2 class="mb-4">Generales</h2>
-              <div id="accordion">
-                <div class="accordion-wrapper">
-                  <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseOne">
-                        ¿Hay diferencia en los términos migrante (internacional) y extranjero/a?
-                      </button>
-                      <div id="collapseOne" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          Los dos términos refieren a personas que se trasladaron desde su país de origen a otro. El término migrante tiene un carácter más inclusivo en el lenguaje cotidiano al aglutinar todas las formas de movimiento de personas. El término extranjero, si bien suele utilizarse de forma extendida, en ciertos contextos se lo hace con una connotación negativa en un sentido de alteridad. A continuación, definiciones de términos de la Organización Mundial para las Migraciones (OIM):
-                          <ul class="mb-0">
-                            <li><strong>Migrante:</strong> designa a toda persona que se traslada fuera de su lugar de residencia habitual, ya sea dentro de un país o a través de una frontera internacional, de manera temporal o permanente, y por diversas razones.
-                            </li>
-                            <li><strong>Extranjero/a:</strong>Persona que no es nacional de un Estado determinado en cuyo territorio se encuentra.</li>
-                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.iom.int</a></small>
-                          </ul>
-                        </div>
+              <div class="accordion" id="accordionUniqueSelection">
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneUniqueSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseOneUniqueSelection"
+                  >
+                    <span class="collapse-title">¿Hay diferencia en los términos migrante (internacional) y extranjero/a?</span>
+                  </button>
+                  <div id="collapseOneUniqueSelection" class="accordion-collapse collapse" data-bs-parent="#accordionUniqueSelection">
+                      <div class="accordion-body">
+                        <p>Los dos términos refieren a personas que se trasladaron desde su país de origen a otro. El término migrante tiene un carácter más inclusivo en el lenguaje cotidiano al aglutinar todas las formas de movimiento de personas. El término extranjero, si bien suele utilizarse de forma extendida, en ciertos contextos se lo hace con una connotación negativa en un sentido de alteridad. A continuación, definiciones de términos de la Organización Mundial para las Migraciones (OIM):</p>
+                        <ul class="mb-0">
+                          <li><strong>Migrante:</strong> designa a toda persona que se traslada fuera de su lugar de residencia habitual, ya sea dentro de un país o a través de una frontera internacional, de manera temporal o permanente, y por diversas razones.
+                          </li>
+                          <li><strong>Extranjero/a:</strong>Persona que no es nacional de un Estado determinado en cuyo territorio se encuentra.</li>
+                          <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.iom.int</a></small>
+                        </ul>
                       </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoUniqueSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseTwoUniqueSelection"
+                  >
+                    <span class="collapse-title">¿Cuántas personas migrantes vivimos en la Ciudad Autónoma de Buenos Aires?</span>
+                  </button>
+                  <div id="collapseTwoUniqueSelection" class="accordion-collapse collapse" data-bs-parent="#accordionUniqueSelection">
+                      <div class="accordion-body">
+                        <p>La Encuesta Anual de Hogares (2021) de la Dirección General de Estadísticas y Censos del Gobierno de la Ciudad, estimó que el 12,2% del total de habitantes del distrito son migrantes.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeUniqueSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseThreeUniqueSelection"
+                  >
+                    <span class="collapse-title">¿Qué significa que la Ciudad de Buenos Aires es autónoma?</span>
+                  </button>
+                  <div id="collapseThreeUniqueSelection" class="accordion-collapse collapse" data-bs-parent="#accordionUniqueSelection">
+                    <div class="accordion-body">
+                      <p>Esto significa que tiene su propia Constitución y dicta sus propias leyes. En este sentido, la autonomía de la Ciudad consiste en:</p>
+                      <ul>
+                        <li>Elegir autoridades locales.</li>
+                        <li>Sancionar nuestras leyes.</li>
+                        <li>Contar con un sistema de justicia propio.</li>
+                        <li>Administrar los hospitales, las escuelas, el transporte público, la policía de la Ciudad, la recolección de residuos, etc.</li>
+                        <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.buenosaires.gob.ar/gobierno/autonomia</a></small>
+                      </ul>
                     </div>
-                    <div class="card">
-                      <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseTwo">
-                        ¿Cuántas personas migrantes vivimos en la Ciudad Autónoma de Buenos Aires?
-                      </button>
-                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          La Encuesta Anual de Hogares (2021) de la Dirección General de Estadísticas y Censos del Gobierno de la Ciudad, estimó que el 12,2% del total de habitantes del distrito son migrantes.
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFourUniqueSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseFourUniqueSelection"
+                  >
+                    <span class="collapse-title">¿Las personas migrantes podemos votar en la Ciudad de Buenos Aires?</span>
+                  </button>
+                  <div id="collapseFourUniqueSelection" class="accordion-collapse collapse" data-bs-parent="#accordionUniqueSelection">
+                    <div class="accordion-body">
+                      <p><strong>Sí</strong>, las personas migrantes que cumplen los requisitos establecidos en el Código Electoral de la Ciudad pueden votar cargos locales en la Ciudad de Buenos Aires.</p>
                     </div>
-                    <div class="card">
-                      <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseThree">
-                        ¿Qué significa que la Ciudad de Buenos Aires es autónoma?
-                      </button>
-                      <div id="collapseThree" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          Esto significa que tiene su propia Constitución y dicta sus propias leyes. En este sentido, la autonomía de la Ciudad consiste en:
-                          <ul class="mb-0">
-                            <li>Elegir autoridades locales.</li>
-                            <li>Sancionar nuestras leyes.</li>
-                            <li>Contar con un sistema de justicia propio.</li>
-                            <li>Administrar los hospitales, las escuelas, el transporte público, la policía de la Ciudad, la recolección de residuos, etc.</li>
-                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">www.buenosaires.gob.ar/gobierno/autonomia</a></small>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFour">
-                        ¿Las personas migrantes podemos votar en la Ciudad de Buenos Aires?
-                      </button>
-                      <div id="collapseFour" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          <strong>Sí</strong>, las personas migrantes que cumplen los requisitos establecidos en el Código Electoral de la Ciudad pueden votar cargos locales en la Ciudad de Buenos Aires.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseFive">
-                        ¿Qué cargos podemos votar las personas migrantes?
-                      </button>
-                      <div id="collapseFive" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          Las personas migrantes podemos votar los cargos locales de la Ciudad de Buenos Aires:
-                          <ul class="mb-0">
-                            <li>Jefe/a de Gobierno</li>
-                            <li>Legisladores/as</li>
-                            <li>Miembros de la Junta Comunal</li>
-                            <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">Constitución de la Ciudad Autónoma de Buenos Aires</a> Art. 62</small>
-                          </ul>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFiveUniqueSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseFiveUniqueSelection"
+                  >
+                    <span class="collapse-title">¿Qué cargos podemos votar las personas migrantes?</span>
+                  </button>
+                  <div id="collapseFiveUniqueSelection" class="accordion-collapse collapse" data-bs-parent="#accordionUniqueSelection">
+                    <div class="accordion-body">
+                      <p>Las personas migrantes podemos votar los cargos locales de la Ciudad de Buenos Aires:</p>
+                      <ul class="mb-0">
+                        <li>Jefe/a de Gobierno</li>
+                        <li>Legisladores/as</li>
+                        <li>Miembros de la Junta Comunal</li>
+                        <small>Fuente: <a class="" href="#" target="_blank" rel="noreferrer">Constitución de la Ciudad Autónoma de Buenos Aires</a> Art. 62</small>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
-              <h2 class="mb-4 mt-5">Día de la elección</h2>             
-              <div class="accordion-wrapper">
-                <div class="accordion" id="accordionExample">
-                  <div class="card">
-                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSix">
-                      ¿Cómo denunciar anomalías en el proceso electoral?
-                    </button>
-                    <div id="collapseSix" class="collapse" data-parent="#accordion">
-                      <div class="card-body">
-                        Deben dirigirse al <em>delegado electoral</em> presente en cada establecimiento de votación o ponerse en contacto con la <strong>Justicia Electoral</strong>.
-                      </div>
+              
+              <h2 class="mb-4 mt-5">Día de la elección</h2>
+              
+              <div class="accordion">
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneMultipleSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseOneMultipleSelection"
+                  >
+                    <span class="collapse-title">¿Cómo denunciar anomalías en el proceso electoral?</span>
+                  </button>
+                  <div id="collapseOneMultipleSelection" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>Deben dirigirse al <em>delegado electoral</em> presente en cada establecimiento de votación o ponerse en contacto con la <strong>Justicia Electoral</strong>.</p>
                     </div>
                   </div>
-                  <div class="card">
-                    <button class="card-header collapsed card-link" data-toggle="collapse" data-target="#collapseSeven">
-                      ¿En qué horario se vota?
-                    </button>
-                    <div id="collapseSeven" class="collapse" data-parent="#accordion">
-                      <div class="card-body">
-                        Los comicios comienzan a las 8:00 y cierran a las 18:00 horas. A esa hora se clausura el acceso, pero si hubiera electores o electoras en la fila de la mesa esperando para emitir el sufragio el presidente de mesa debe continuar recibiendo los votos hasta que todas las personas presentes en la fila hayan votado.
-                      </div>
+                </div>
+                <div class="accordion-item">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoMultipleSelection"
+                    aria-expanded="false" 
+                    aria-controls="collapseTwoMultipleSelection"
+                  >
+                    <span class="collapse-title">¿En qué horario se vota?</span>
+                  </button>
+                  <div id="collapseTwoMultipleSelection" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>Los comicios comienzan a las 8:00 y cierran a las 18:00 horas. A esa hora se clausura el acceso, pero si hubiera electores o electoras en la fila de la mesa esperando para emitir el sufragio el presidente de mesa debe continuar recibiendo los votos hasta que todas las personas presentes en la fila hayan votado.</p>
                     </div>
                   </div>
                 </div>
@@ -171,8 +224,8 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
   <script src="../../shared/header-search.js"></script>
   <script src="../../shared/footer.js"></script>
 </body>

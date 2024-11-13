@@ -16,26 +16,13 @@
     <title>Área de gobierno 2do nivel - Opción 1</title>
 
     <!-- Obelisco -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="../../node_modules/@gcba/obelisco/dist/obelisco.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
   </head>
 
   <body>
@@ -43,7 +30,7 @@
       <article>
         <header class="bg-light pt-2 pt-lg-3 pb-4 pb-lg-5 mb-4 mb-lg-5">
           <div class="container pt-1">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="Navegación secundaria" class="py-3">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                 <li class="breadcrumb-item">
@@ -63,18 +50,20 @@
                   </p>
                 </div>
                 <div class="d-block d-md-flex flex-wrap pt-3">
-                  <div class="dropdown mb-2 mb-md-3 mr-3">
+                  <div class="dropdown mb-2 mb-md-3 me-3">
                     <button
                       type="button"
-                      class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
+                      class="btn btn-dropdown btn-dropdown-border btn-lg"
+                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <span class="btn-dropdown-text">Institucional</span>
-                      <span class="material-icons-round btn-dropdown-icon"
-                        >expand_more</span
+                      <span class="btn-dropdown-text ellipsis-1">Institucional</span>
+                      <span
+                        class="material-symbols-rounded btn-dropdown-icon"
+                        aria-label="hidden"
                       >
+                        expand_more
+                      </span>
                     </button>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#"
@@ -107,20 +96,20 @@
                       >
                     </div>
                   </div>
-                  <div class="dropdown mb-2 mb-md-3 mr-3">
+                  <div class="dropdown mb-2 mb-md-3 me-3">
                     <button
                       type="button"
-                      class="btn btn-dropdown btn-dropdown-border btn-dropdown-lg dropdown-toggle"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
+                      class="btn btn-dropdown btn-dropdown-border btn-lg"
+                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <span class="btn-dropdown-text"
-                        >Transparencia activa</span
+                      <span class="btn-dropdown-text ellipsis-1">Transparencia activa</span>
+                      <span
+                        class="material-symbols-rounded btn-dropdown-icon"
+                        aria-label="hidden"
                       >
-                      <span class="material-icons-round btn-dropdown-icon"
-                        >expand_more</span
-                      >
+                        expand_more
+                      </span>
                     </button>
                     <div class="dropdown-menu">
                       <a class="dropdown-item" href="#"
@@ -161,207 +150,189 @@
 
         <div class="container pb-4 pb-md-5">
           <h2 class="mb-3 mb-md-4">Destacados</h2>
-          <div class="card-deck max-cards-3 card-column mt-1">
-            <a class="card card-horizontal" href="#">
-              <span class="material-icons-round card-icon-left">
-                assignment
-              </span>
-              <div class="card-body">
-                <h4 class="card-title">Título del acceso</h4>
-                <p class="card-text">Descripción del acceso</p>
+          <div class="card-items-3">
+            <div class="col">
+              <div class="card card-horizontal">
+                <span class="material-symbols-rounded card-icon">assignment</span>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <span class="material-icons-round card-icon-left">
-                assignment
-              </span>
-              <div class="card-body">
-                <h4 class="card-title">Título del acceso</h4>
-                <p class="card-text">Descripción del acceso</p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <span class="material-symbols-rounded card-icon">assignment</span>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <span class="material-icons-round card-icon-left">
-                assignment
-              </span>
-              <div class="card-body">
-                <h4 class="card-title">Título del acceso</h4>
-                <p class="card-text">Descripción del acceso</p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <span class="material-symbols-rounded card-icon">assignment</span>
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
         <div class="container py-4 py-md-5">
           <h2 class="mb-3 mb-md-4">Tarjetas con imágenes para programas</h2>
-          <div class="card-deck max-cards-3 card-column mt-1">
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Lorem ipsum dolor sit</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="card-items-3 mt-1">
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Adolfo Trabocchi</h4>
-                <p class="card-text">
-                  Especialistas en WhatsApp Business de la ASEA.
-                </p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Adolfo Trabocchi</h4>
-                <p class="card-text">
-                  Especialistas en WhatsApp Business de la ASEA.
-                </p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Adolfo Trabocchi</h4>
-                <p class="card-text">
-                  Especialistas en WhatsApp Business de la ASEA.
-                </p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Adolfo Trabocchi</h4>
-                <p class="card-text">
-                  Especialistas en WhatsApp Business de la ASEA.
-                </p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
-            <a class="card card-horizontal" href="#">
-              <img
-                src="../../assets/panel/educacion-panel.png"
-                class="card-img-left"
-                alt="descripción alternativa"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Adolfo Trabocchi</h4>
-                <p class="card-text">
-                  Especialistas en WhatsApp Business de la ASEA.
-                </p>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <img src="../../assets/panel/educacion-panel.png" class="card-img" alt="descripción de imagen" />
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">Título de la tarjeta</a>
+                  </h3>
+                  <p class="card-text">Descripción de la tarjeta</p>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
 
         <div class="container py-4 py-md-5">
           <h2 class="mb-3 mb-md-4">Servicios</h2>
-          <div class="access-deck access-column max-cards-3">
-            <a href="#" class="list-group-item">
-              <span class="access-title">Testea tu local comercial</span>
-            </a>
-            <a href="#" class="list-group-item">
-              <span class="access-title">Turnos Web</span>
-            </a>
-            <a href="#" class="list-group-item">
-              <span class="access-title">Habilitaciones </span>
-            </a>
-            <a href="#" class="list-group-item">
-              <span class="access-title">Buscador de Inspectores </span>
-            </a>
-            <a href="#" class="list-group-item">
-              <span class="access-title">Información Etapa Habilitadora</span>
-            </a>
-            <a href="#" class="list-group-item">
-              <span class="access-title"
-                >Subsanación de Faltas documentales</span
-              >
-            </a>
+          <div class="access-items-3">
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Testea tu local comercial</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Turnos Web</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Habilitaciones</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Buscador de Inspectores</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Información Etapa Habilitadora</span>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#" class="list-group-item">
+                <div class="access-content">
+                  <span class="access-title">Subsanación de Faltas</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="container mt-2 mt-md-0 py-4 py-md-5">
-          <div class="container">
-            <div class="row">
-              <div class="card-deck max-cards-2">
-                <div class="card card-simple panel-vertical">
-                  <img
-                    src="../../assets/galeria/galeria-2.png"
-                    class="card-img"
-                    alt="descripción alternativa"
-                  />
-                  <div class="card-body">
-                    <h2 class="card-title">Destacado I</h2>
-                    <p class="card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Suscipit nostrum quo animi dignissimos omnis dicta quia
-                      placeat, nesciunt quasi hic autem iure eum necessitatibus
-                      ea expedita quas. Rem, aspernatur repudiandae.
-                    </p>
-                    <div class="panel-footer">
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-primary card-link"
-                      >
-                        Botón
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-secondary card-link"
-                      >
-                        Botón
-                      </button>
-                    </div>
+          <div class="highlighted-items-2">
+            <div class="col">
+              <div class="panel-vertical">
+                <img src="../../assets/galeria/galeria-2.png" alt="descripción de imagen" class="panel-img" />
+                <div class="panel-body">
+                  <h2 class="panel-title">Título del destacado I</h2>
+                  <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+                  <div class="panel-footer">
+                    <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+                      Botón
+                    </a>
                   </div>
                 </div>
-                <div class="card card-simple panel-vertical">
-                  <img
-                    src="../../assets/galeria/galeria-2.png"
-                    class="card-img"
-                    alt="descripción alternativa"
-                  />
-                  <div class="card-body">
-                    <h2 class="card-title">Destacado II</h2>
-                    <p class="card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Suscipit nostrum quo animi dignissimos omnis dicta quia
-                      placeat, nesciunt quasi hic autem iure eum necessitatibus
-                      ea expedita quas. Rem, aspernatur repudiandae.
-                    </p>
-                    <div class="panel-footer">
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-primary card-link"
-                      >
-                        Botón
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-secondary card-link"
-                      >
-                        Botón
-                      </button>
-                    </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="panel-vertical">
+                <img src="../../assets/galeria/galeria-2.png" alt="descripción de imagen" class="panel-img" />
+                <div class="panel-body">
+                  <h2 class="panel-title">Título del destacado II</h2>
+                  <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+                  <div class="panel-footer">
+                    <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+                      Botón
+                    </a>
                   </div>
                 </div>
               </div>
@@ -371,75 +342,69 @@
 
         <div class="container py-4 pt-md-4 pb-md-5 mt-md-2">
           <h2 class="mb-3 mb-md-4">Noticias</h2>
-          <div class="card-deck max-cards-3 mb-4">
-            <a class="card" href="#">
-              <img
-                src="../../assets/tarjetas/noticia-1.png"
-                class="card-img-top"
-                alt="descripción alternativa"
-              />
+          <div class="responsive-scroll vertical-cards-container" tabindex="0">
+            <div class="card">
+              <img class="card-img" src="../../assets/tarjetas/noticia-1.png" alt="descripción de imagen" />
               <div class="card-body">
-                <div class="mb-2">
-                  <span class="badge badge-info">ETIQUETA</span>
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta</span>
                 </div>
-                <h4 class="card-title">
-                  La Ciudad inauguró una nueva sede del SAME
-                </h4>
-                <p class="card-text">
-                  Descripción del titular de una tarjeta con contenedor que
-                  puede contener hasta 2 líneas.
-                </p>
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link">La Ciudad inauguró una nueva sede del SAME</a>
+                </h3>
+                <p class="card-text"> Descripción del titular de una tarjeta con contenedor que
+                  puede contener hasta 2 líneas.</p>
+                <div class="card-info">
+                  <div>
+                  <small>
+                    <span>Fecha de publicación: 22/04/2022</span>
+                  </small>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <small>Fecha de publicación: 22/04/2022</small>
-              </div>
-            </a>
-            <a class="card" href="#">
-              <img
-                src="../../assets/tarjetas/noticia-2.png"
-                class="card-img-top"
-                alt="descripción alternativa"
-              />
+            </div>
+            <div class="card">
+              <img class="card-img" src="../../assets/tarjetas/noticia-2.png" alt="descripción de imagen" />
               <div class="card-body">
-                <div class="mb-2">
-                  <span class="badge badge-danger">ETIQUETA</span>
-                  <span class="badge badge-danger">ETIQUETA</span>
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta</span>
+                  <span class="badge badge-default">etiqueta</span>
                 </div>
-                <h4 class="card-title">
-                  Representaciones de la Ciudad acompañó las clínicas deportivas
-                </h4>
-                <p class="card-text">
-                  Descripción del titular de una tarjeta con contenedor que
-                  puede contener hasta 2 líneas.
-                </p>
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link">Representaciones de la Ciudad acompañó las clínicas deportivas</a>
+                </h3>
+                <p class="card-text">Descripción del titular de una tarjeta con contenedor que
+                  puede contener hasta 2 líneas.</p>
+                <div class="card-info">
+                  <div>
+                  <small>
+                    <span>Fecha de publicación: 21/04/2022</span>
+                  </small>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <small>Fecha de publicación: 21/04/2022</small>
-              </div>
-            </a>
-            <a class="card" href="#">
-              <img
-                src="../../assets/tarjetas/noticia-3.png"
-                class="card-img-top"
-                alt="descripción alternativa"
-              />
+            </div>
+            <div class="card">
+              <img class="card-img" src="../../assets/tarjetas/noticia-3.png" alt="descripción de imagen" />
               <div class="card-body">
-                <div class="mb-2">
-                  <span class="badge badge-danger">ETIQUETA</span>
-                  <span class="badge badge-danger">ETIQUETA</span>
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta</span>
+                  <span class="badge badge-default">etiqueta</span>
                 </div>
-                <h4 class="card-title">
-                  El Registro Civil permite hacer trámites en forma 100% virtual
-                </h4>
-                <p class="card-text">
-                  Descripción del titular de una tarjeta con contenedor que
-                  puede contener hasta 2 líneas.
-                </p>
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link">El Registro Civil permite hacer trámites en forma 100% virtual</a>
+                </h3>
+                <p class="card-text">Descripción del titular de una tarjeta con contenedor que
+                  puede contener hasta 2 líneas.</p>
+                <div class="card-info">
+                  <div>
+                  <small>
+                    <span>Fecha de publicación: 20/04/2022</span>
+                  </small>
+                  </div>
+                </div>
               </div>
-              <div class="card-footer">
-                <small>Fecha de publicación: 20/04/2022</small>
-              </div>
-            </a>
+            </div>
           </div>
           <div class="pt-1">
             <a class="access" href="#" target="_blank" rel="noreferrer">
@@ -455,13 +420,13 @@
           <div class="row mb-4 mb-md-0 pb-2 pb-md-0">
             <div class="col-12 col-md-6 mb-2 mb-md-4 pb-2">
               <div>
-                <h3 class="mb-1">Nombre de Funcionario</h3>
+                <h3 class="mb-1 h4">Nombre de Funcionario</h3>
                 <p class="m-0">Secretaria Nivel II</p>
               </div>
             </div>
             <div class="col-12 col-md-6 mb-2 mb-md-4 pb-2">
               <div>
-                <h3 class="mb-1">Contacto</h3>
+                <h3 class="mb-1 h4">Contacto</h3>
                 <p class="m-0">Teléfono: 5030 9100</p>
                 <p class="m-0">Mail: nivelII@buenosaires.gob.ar</p>
               </div>
@@ -470,25 +435,31 @@
           <div class="row">
             <div class="col-12">
               <h2 class="mb-3 mb-md-4">Redes sociales</h2>
-              <div class="access-deck access-column max-cards-3">
-                <a href="#" class="list-group-item">
-                  <i class="bx bxl-facebook-circle"></i>
-                  <div class="access-content">
-                    <span class="access-title">Facebook</span>
-                  </div>
-                </a>
-                <a href="#" class="list-group-item">
-                  <i class="bx bxl-instagram-alt"></i>
-                  <div class="access-content">
-                    <span class="access-title">Instagram</span>
-                  </div>
-                </a>
-                <a href="#" class="list-group-item">
-                  <i class="bx bxl-twitter"></i>
-                  <div class="access-content">
-                    <span class="access-title">Twitter</span>
-                  </div>
-                </a>
+              <div class="access-items-3">
+                <div class="col">
+                  <a href="#" class="list-group-item">
+                    <i class="bx bxl-facebook-circle o-icon"></i>
+                    <div class="access-content">
+                      <span class="access-title">Facebook</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="list-group-item">
+                    <i class="bx bxl-instagram-alt o-icon"></i>
+                    <div class="access-content">
+                      <span class="access-title">Instagram</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#" class="list-group-item">
+                    <i class="bx bxl-twitter o-icon"></i>
+                    <div class="access-content">
+                      <span class="access-title">Twitter</span>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -496,16 +467,8 @@
       </section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
     <script src="../../shared/header-search-login.js"></script>
     <script src="../../shared/footer.js"></script>
   </body>

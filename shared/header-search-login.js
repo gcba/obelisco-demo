@@ -41,8 +41,20 @@ const headerLogin = `<header class="o-header navbar" role="banner">
                     <a class="dropdown-item" href="#">
                         <span class="item-text">Navegación</span>
                     </a>
-                    <a class="dropdown-item item-link" href="#">
+                    <a class="dropdown-item" href="#">
                         <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item item-link" href="#">
+                        <span class="item-text">Ver más</span>
                         <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
                     </a>
                     </div>
@@ -71,8 +83,20 @@ const headerLogin = `<header class="o-header navbar" role="banner">
                     <a class="dropdown-item" href="#">
                         <span class="item-text">Navegación</span>
                     </a>
-                    <a class="dropdown-item item-link" href="#">
+                    <a class="dropdown-item" href="#">
                         <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <span class="item-text">Navegación</span>
+                    </a>
+                    <a class="dropdown-item item-link" href="#">
+                        <span class="item-text">Ver más</span>
                         <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
                     </a>
                     </div>
