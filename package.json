@@ -8,6 +8,6 @@
   "license": "ISC",
   "dependencies": {
     "@gcba/obelisco": "^1.58.0",
-    "@gcba/obelisco-v2": "^1.4.0"
+    "@gcba/obelisco-v2": "^1.4.1"
   }
 }
