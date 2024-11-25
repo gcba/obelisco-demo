@@ -84,19 +84,19 @@ const footer = `
           <div class="col-12 col-md-5 col-xl-4 footer-content-img">
             <img
               class="d-lg-none"
-              src="https://gcba.github.io/obelisco-demo/assets/footer/ciudad-ba-sm.svg"
+              src="../../assets/footer/logo-footer-mobile.svg"
               alt="Ciudad de Buenos Aires"
               height="48"
             />
             <img
               class="d-none d-lg-inline"
-              src="https://gcba.github.io/obelisco-demo/assets/footer/ciudad-ba.svg"
+              src="../../assets/footer/logo-footer.svg"
               alt="Ciudad de Buenos Aires"
               height="40"
             />
             <img
               class="img-vamos-ba"
-              src="https://gcba.github.io/obelisco-demo/assets/footer/vamos-ba.svg"
+              src="../../assets/footer/logo-footer-ba.svg"
               alt="Vamos Buenos Aires"
             />
           </div>
