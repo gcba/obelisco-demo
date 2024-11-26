@@ -30,7 +30,6 @@
       }
     </style>
   </head>
-
   
   <body>    
     <header class="o-header navbar" role="banner">
@@ -38,7 +37,7 @@
         Saltar al contenido principal
       </a>
       <div class="container header-container">
-        <a href="/" class="navbar-brand">
+        <a href="https://gcba.github.io/" class="navbar-brand">
           <img
             class="d-none d-xl-block"
             src="/assets/header/logo_obelisco.svg"
@@ -79,6 +78,13 @@
                       ><span>Librería</span></a
                     >
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link-lg"
+                      href="https://gcba.github.io/obelisco-demo/"
+                      ><span>Plantillas</span></a
+                    >
+                  </li>
                   <li class="dropdown">
                     <button
                       type="button"
@@ -117,100 +123,133 @@
       </div>
       <div class="header-backdrop"></div>
     </header>
+    <div class="banner banner-dark">
+      <div class="banner-content">
+        <p class="banner-text">Obelisco V2 se encuentra disponible. Estaremos trabajando en las fichas de uso de los componentes.</p>
+      </div>
+    </div>
     <main id="main">
-      <article class="pb-5 mb-4">
-        <header class="mb-5">
-          <div class="container pt-1">
-            <div class="row my-5">
-              <div class="col-12 col-xl-7">
-                <div class="pt-5">
-                  <h1 class="mb-3 pt-4">Plantillas</h1>
-                  <p class="lead text-body-secondary">Las plantillas desarrolladas con la librería Obelisco v2 facilitan la creación de páginas al integrar componentes reutilizables y accesibles, garantizando un diseño coherente y funcional.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-8 mx-auto" style="margin-top: 64px;">
+            <section>
+              <h1 style="margin-bottom: 20px;" class="fw-semibold">Plantillas</h1>
+              <p style="margin-bottom: 20px;">Las plantillas son combinaciones de organismos y componentes que sirven como ejemplos y como guía para generar contenido. Son un buen punto de partida para construir nuevas páginas utilizando Obelisco como sistema de diseño.</p>
+              <hr style="margin-bottom: 32px; background-color: #E6EBF0;">
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Áreas de Gobierno</h2>
+              <p>Página principal de un ministerio, secretaría o subsecretaría. Es la puerta de acceso a los demás tipos de contenido (artículos, páginas, páginas de libro, etc.)</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <h3 class="text-xl mb-3">Plantilla de primer nivel</h3>
+                  <a href="./pagina_area/area_de_gobierno/op1.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de primer nivel</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <h3 class="text-xl mb-3">Plantilla de segundo nivel</h3>
+                  <a href="./pagina_area/area_de_gobierno/op2.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de segundo nivel</span>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="col-12 col-xl-5">
-                <div class="d-flex justify-content-start">
-                  <iframe src="https://lottie.host/embed/d145a510-22d0-4398-a85f-34317fea6400/uKRyXemqGM.lottie" class="home-iframe"></iframe>
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Página Simple</h2>
+              <p>Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <a href="./pagina_simple/pagina_simple_op5/index.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página simple</span>
+                    </div>
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </header>
-        <div class="container">
-          <div class="access-items-3 bg-neutral py-5 px-4 rounded-3">
-            <div class="col">
-              <a href="./pagina_area/area_de_gobierno/op1.html" class="list-group-item">
-                <i class="bx bxs-buildings o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Área de Gobierno</span>
-                  <p class="access-text">Primer nivel</p>
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Página de libro</h2>
+              <p>Las usamos para agrupar información sobre un mismo tema en subtemas. Los índices y las subpáginas deben tener como mínimo 2 párrafos de 5 líneas de información.</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <a href="./pagina_libro/index.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de libro</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./pagina_area/area_de_gobierno/op2.html" class="list-group-item">
-                <i class="bx bxs-buildings o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Área de Gobierno</span>
-                  <p class="access-text">Segundo nivel</p>
+              </div>
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Trámites</h2>
+              <p>Página que usamos para todos los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <a href="./pagina_simple/tramites/index.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de trámites</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./pagina_simple/tramites/index.html" class="list-group-item">
-                <span class="material-symbols-rounded o-icon" aria-hidden="true">text_snippet</span>
-                <div class="access-content">
-                  <span class="access-title">Trámites</span>
+              </div>
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Noticias</h2>
+              <p>Las utilizamos para comunicar noticias y novedades. Este tipo de página debe actualizarse al menos 1 vez por semana.</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <h3 class="text-xl mb-3">Con galería de imágenes</h3>
+                  <a href="./noticias/galeria.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de noticia con galería</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./pagina_libro/index.html" class="list-group-item">
-                <i class="bx bxs-book-open o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Página de Libro</span>
+                <div class="col">
+                  <h3 class="text-xl mb-3">Con foco en video</h3>
+                  <a href="./noticias/foco_en_video.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Página de noticia con video</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./pagina_simple/pagina_simple_op5/index.html" class="list-group-item">
-                <i class="bx bxs-bookmark o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Página Simple</span>
+              </div>
+            </section>
+            <section>
+              <h2 class="h4 fw-semibold mb-3">Formularios</h2>
+              <p>Los usamos en inscripciones, convocatorias, consultas, contacto, registros, postulaciones, encuestas, censos, tests, etc.</p>
+              <div class="max-items-2 mb-5 pt-3">
+                <div class="col">
+                  <a href="./formularios/trabaja_con_nosotros/index.html" class="list-group-item">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                    <div class="access-content">
+                      <span class="access-title">Formulario con campos varios</span>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./formularios/trabaja_con_nosotros/index.html" class="list-group-item">
-                <i class="bx bxs-spreadsheet o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Formularios</span>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./noticias/galeria.html" class="list-group-item">
-                <i class="bx bxs-message-detail o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Noticias</span>
-                  <p class="access-text">Galería de imágenes</p>
-                </div>
-              </a>
-            </div>
-            <div class="col">
-              <a href="./noticias/foco_en_video.html" class="list-group-item">
-                <i class="bx bxs-message-detail o-icon"></i>
-                <div class="access-content">
-                  <span class="access-title">Noticias</span>
-                  <p class="access-text">Foco en video</p>
-                </div>
-              </a>
-            </div>
-          
-          
+              </div>
+            </section>
+            <section class="pb-5 text-end" style="padding-top: 32px;">
+              <button class="btn btn-outline-tertiary btn-lg" type="button" onclick="scrollToTop()">
+                <span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span>
+                Volver arriba
+              </button>
+            </section>
           </div>
         </div>
-      </article>
+      </div>
     </main>
     <h2 class="sr-only">Navegación de pie de página</h2>
     <footer class="main-footer">
@@ -283,5 +322,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }
+    </script>
   </body>
 </html>
