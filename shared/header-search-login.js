@@ -4,8 +4,8 @@ const headerLogin = `<header class="o-header navbar" role="banner">
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="./../../assets/header/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="./../../assets/header/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="https://gcba.github.io/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="https://gcba.github.io/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <button
           class="navbar-toggler"
