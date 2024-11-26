@@ -45,7 +45,7 @@ const footer = `
         </li>
         <li class="list-inline-item redes-items">
           <a href="https://x.com/gcba">
-            <img src="../../assets/footer/rrss_x.svg" class="o-icon" alt="x" />
+            <img src="https://gcba.github.io/Obelisco-V2/images/rrss_x.svg" class="o-icon" alt="x" />
             X
           </a>
         </li>
@@ -86,19 +86,19 @@ const footer = `
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
           <img
             class="d-md-none"
-            src="../../assets/footer/logo-footer-mobile.svg"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-mobile.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="48"
           />
           <img
             class="d-none d-md-inline"
-            src="../../assets/footer/logo-footer.svg"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="40"
           />
           <img
             class="img-vamos-ba"
-            src="../../assets/footer/logo-footer-ba.svg"
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-ba.svg"
             alt="Logo de Vamos Buenos Aires"
           />
         </div>
