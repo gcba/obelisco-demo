@@ -19,227 +19,224 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
   <style type="text/css">
-    <!--/*
-    -->
-  <![CDATA[/* ><!--*/
-      .calendar {
-         width: 100%;
-           max-width: 328px;
-         background-color: #fff;
-           padding: 0.5rem 0.25rem;
+    <!--/*--><![CDATA[/* ><!--*/
+    .calendar {
+       width: 100%;
+         max-width: 328px;
+       background-color: #fff;
+         padding: 0.5rem 0.25rem;
+    }
+    @media only screen and (min-width: 752px){
+      .calendar{
+        max-width: 340px;
       }
-      @media only screen and (min-width: 752px){
-        .calendar{
-          max-width: 340px;
-        }
-      }
-       .calendar .calendar-header {
-          display: flex;
-          align-items: flex-start;
-          justify-content: space-between;
-          padding: 0;
-          height: 24px;
-      }
-       .calendar .calendar-header .calendar-title, .calendar .calendar-header .calendar-year {
-         font-weight: 600;
-         font-size: 1.3125rem;
-         line-height: 1.2;
-         font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-         margin-bottom: 0;
-      }
-       .calendar .calendar-body {
-         padding: 1rem 0 0;
-         color: #69788a;
-         font-weight: 600;
-         font-size: 1.0625rem;
-         line-height: 1.2;
-         font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-         margin-bottom: 0;
-      }
-      
-       .calendar .calendar-body table {
-         width: 100%;
-           text-align: center;
-      }
-       .calendar .calendar-body table th, .calendar .calendar-body table td {
-         padding: 0;
-      }
-       .calendar .calendar-body table th span, .calendar .calendar-body table td span {
-         height: 40px;
-           width: 40px;
-           display: inline-block;
-           line-height: 40px;
-           border-radius: 50%;
-           margin: 0.25rem 0;
-      }
-       .calendar .calendar-body table .calendar-week-header th {
-         font-weight: 700;
-           height: 48px;
-         background-color: #f5f9fc;
-      }
-       .calendar .calendar-body table .calendar-week {
-         line-height: 8px;
-      }
-       .calendar .calendar-body table .calendar-week:nth-of-type(even) {
-         background-color: #f5f9fc;
-      }
-       .calendar .calendar-body table .calendar-week:nth-of-type(odd) td {
-         padding: 0.25rem 0;
-      }
-      
-       .calendar .calendar-body table .calendar-week:nth-of-type(6) td {
-         line-height: 48px;
-      }
-       .calendar .calendar-body table .calendar-week td {
-         pointer-events: inherit;
-      }
-       .calendar .calendar-body table .calendar-week td .calendar-link {
-         border-radius: 50%;
-           margin: 0.25rem 0;
-      }
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .active {
-         background-color: #005387;
-      }
-      
-       .calendar .calendar-body table .calendar-week td .calendar-link:hover .active-secondary {
-         background-color: #5c6a7a;
-      }
-      
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-sky{background-color:#6df !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lavender{background-color:#6690ff !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-coral{background-color:#ff8766 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-avocado{background-color:#90ff66 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-citrus{background-color:#ffd466 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lime{background-color:#df6 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-pistachio{background-color:#66ff87 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-berries{background-color:#d466ff !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-musket{background-color:#f6d !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-aqua{background-color:#66ffd4 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-strawberry{background-color:#ff66d8 !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-blackberry{background-color:#8766ff !important;color:#252f3c}
-      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-gray{background-color:#ccc !important;color:#252f3c}
-      
-      .calendar .calendar-body table .calendar-week td .calendar-link:focus {
-         box-shadow: none;
-           backface-visibility: inherit;
-      }
-      .calendar .calendar-body table .calendar-week td .calendar-link:focus .active, .calendar .calendar-body table .calendar-week td .calendar-link:focus .active-secondary {
-         box-shadow: 0 0 0 0.125rem #005387;
-      }
-      
-      .calendar .calendar-body table .calendar-week td span:after {
-         line-height: 1.5;
-      }
-      .calendar .calendar-body table .calendar-week td span.disabled {
-         color: #9eaab8;
-      }
-      .calendar .calendar-body table .calendar-week td span.active, .calendar .calendar-body table .calendar-week td span.active-secondary {
-         color: #fff;
-         background-color: #007bc7;
-         cursor: pointer;
-         min-width: 100%;
-         height: 100%;
-         margin: 0;
-      }
-       .calendar .calendar-body table .calendar-week td span.active.bg-gray {
-         background-color: #e5e5e5;
-      }
-      .calendar .calendar-body table .calendar-week td span.active-secondary {
-         background-color: #38485c
-      }
-      .calendar .calendar-body table .calendar-week td span.active.bg-sky, .calendar .calendar-body table .calendar-week td span.active.bg-lavender, .calendar .calendar-body table .calendar-week td span.active.bg-coral, .calendar .calendar-body table .calendar-week td span.active.bg-avocado, .calendar .calendar-body table .calendar-week td span.active.bg-citrus, .calendar .calendar-body table .calendar-week td span.active.bg-lime, .calendar .calendar-body table .calendar-week td span.active.bg-pistachio, .calendar .calendar-body table .calendar-week td span.active.bg-berries, .calendar .calendar-body table .calendar-week td span.active.bg-musket, .calendar .calendar-body table .calendar-week td span.active.bg-gray,  .calendar .calendar-body table .calendar-week td span.active.bg-aqua, .calendar .calendar-body table .calendar-week td span.active.bg-strawberry, .calendar .calendar-body table .calendar-week td span.active.bg-blackberry {
-         color: #38485c;
-      }
-      .calendar .calendar-footer .calendar-footer-list {
-           margin-top: 1rem;
-           margin-bottom: 0;
-           border-top: 1px solid #e6ebf0;
-           padding: 1rem 0.5rem 0;	 
-      }
-       .calendar .calendar-footer .calendar-footer-list li {
-         font-size: 0.8125rem;
-           list-style-type: none;
-      }
-       .calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
-         margin-bottom: 0.25rem;
-      }
-       .calendar .calendar-footer .accordion {
-         margin-top: 1rem;
-      }
-       .calendar .calendar-footer .accordion .card {
-         margin-bottom: 0;
-      }
-       .calendar .calendar-footer .accordion .card .calendar-footer-list {
-         margin: 0;
-           border-top: none;
-           padding: 0;
-      }
-      
-      .calendar-deck{
+    }
+     .calendar .calendar-header {
         display: flex;
-        flex-wrap: wrap;
-        column-gap: 2rem;
-        row-gap: 2rem;
-        justify-content: center;
-      }
-      @media only screen and (min-width: 1120px){
-        .calendar-deck{
-          column-gap: 19px;
-        }
-      }
-      
-      .calendar-references {
-         border: 1px solid #f3f6f9;
-         border-radius: 8px;
-         padding: 16px;
-           width: min-content;
-      }
-       .calendar-references .calendar-references-text {
-         font-weight: 700;
-         margin-bottom: 12px;
-      }
-       .calendar-references .calendar-references-box {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 16px;
-      }
-       .calendar-references .calendar-references-box .calendar-references-row {
-         display: flex;
-         gap: 48px;
-      }
-       .calendar-references .calendar-references-box .calendar-references-row .color-box {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         gap: 0.5rem;
-          min-width: 105px;
-      }
-       .calendar-references .calendar-references-box .calendar-references-row .color-box .color {
-         min-width: 1rem;
-         max-height: 1rem;
-         height: 1rem;
-         border-radius: 50%;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0;
+        height: 24px;
+    }
+     .calendar .calendar-header .calendar-title, .calendar .calendar-header .calendar-year {
+       font-weight: 600;
+       font-size: 1.3125rem;
+       line-height: 1.2;
+       font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+       margin-bottom: 0;
+    }
+     .calendar .calendar-body {
+       padding: 1rem 0 0;
+       color: #69788a;
+       font-weight: 600;
+       font-size: 1.0625rem;
+       line-height: 1.2;
+       font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+       margin-bottom: 0;
+    }
+    
+     .calendar .calendar-body table {
+       width: 100%;
+         text-align: center;
+    }
+     .calendar .calendar-body table th, .calendar .calendar-body table td {
+       padding: 0;
+    }
+     .calendar .calendar-body table th span, .calendar .calendar-body table td span {
+       height: 40px;
+         width: 40px;
          display: inline-block;
-           font-size: 1px;
-           color: transparent;
+         line-height: 40px;
+         border-radius: 50%;
+         margin: 0.25rem 0;
+    }
+     .calendar .calendar-body table .calendar-week-header th {
+       font-weight: 700;
+         height: 48px;
+       background-color: #f5f9fc;
+    }
+     .calendar .calendar-body table .calendar-week {
+       line-height: 8px;
+    }
+     .calendar .calendar-body table .calendar-week:nth-of-type(even) {
+       background-color: #f5f9fc;
+    }
+     .calendar .calendar-body table .calendar-week:nth-of-type(odd) td {
+       padding: 0.25rem 0;
+    }
+    
+     .calendar .calendar-body table .calendar-week:nth-of-type(6) td {
+       line-height: 48px;
+    }
+     .calendar .calendar-body table .calendar-week td {
+       pointer-events: inherit;
+    }
+     .calendar .calendar-body table .calendar-week td .calendar-link {
+       border-radius: 50%;
+         margin: 0.25rem 0;
+    }
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .active {
+       background-color: #005387;
+    }
+    
+     .calendar .calendar-body table .calendar-week td .calendar-link:hover .active-secondary {
+       background-color: #5c6a7a;
+    }
+    
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-sky{background-color:#6df !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lavender{background-color:#6690ff !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-coral{background-color:#ff8766 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-avocado{background-color:#90ff66 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-citrus{background-color:#ffd466 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lime{background-color:#df6 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-pistachio{background-color:#66ff87 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-berries{background-color:#d466ff !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-musket{background-color:#f6d !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-aqua{background-color:#66ffd4 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-strawberry{background-color:#ff66d8 !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-blackberry{background-color:#8766ff !important;color:#252f3c}
+    .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-gray{background-color:#ccc !important;color:#252f3c}
+    
+    .calendar .calendar-body table .calendar-week td .calendar-link:focus {
+       box-shadow: none;
+         backface-visibility: inherit;
+    }
+    .calendar .calendar-body table .calendar-week td .calendar-link:focus .active, .calendar .calendar-body table .calendar-week td .calendar-link:focus .active-secondary {
+       box-shadow: 0 0 0 0.125rem #005387;
+    }
+    
+    .calendar .calendar-body table .calendar-week td span:after {
+       line-height: 1.5;
+    }
+    .calendar .calendar-body table .calendar-week td span.disabled {
+       color: #9eaab8;
+    }
+    .calendar .calendar-body table .calendar-week td span.active, .calendar .calendar-body table .calendar-week td span.active-secondary {
+       color: #fff;
+       background-color: #007bc7;
+       cursor: pointer;
+       min-width: 100%;
+       height: 100%;
+       margin: 0;
+    }
+     .calendar .calendar-body table .calendar-week td span.active.bg-gray {
+       background-color: #e5e5e5;
+    }
+    .calendar .calendar-body table .calendar-week td span.active-secondary {
+       background-color: #38485c
+    }
+    .calendar .calendar-body table .calendar-week td span.active.bg-sky, .calendar .calendar-body table .calendar-week td span.active.bg-lavender, .calendar .calendar-body table .calendar-week td span.active.bg-coral, .calendar .calendar-body table .calendar-week td span.active.bg-avocado, .calendar .calendar-body table .calendar-week td span.active.bg-citrus, .calendar .calendar-body table .calendar-week td span.active.bg-lime, .calendar .calendar-body table .calendar-week td span.active.bg-pistachio, .calendar .calendar-body table .calendar-week td span.active.bg-berries, .calendar .calendar-body table .calendar-week td span.active.bg-musket, .calendar .calendar-body table .calendar-week td span.active.bg-gray,  .calendar .calendar-body table .calendar-week td span.active.bg-aqua, .calendar .calendar-body table .calendar-week td span.active.bg-strawberry, .calendar .calendar-body table .calendar-week td span.active.bg-blackberry {
+       color: #38485c;
+    }
+    .calendar .calendar-footer .calendar-footer-list {
+         margin-top: 1rem;
+         margin-bottom: 0;
+         border-top: 1px solid #e6ebf0;
+         padding: 1rem 0.5rem 0;	 
+    }
+     .calendar .calendar-footer .calendar-footer-list li {
+       font-size: 0.8125rem;
+         list-style-type: none;
+    }
+     .calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
+       margin-bottom: 0.25rem;
+    }
+     .calendar .calendar-footer .accordion {
+       margin-top: 1rem;
+    }
+     .calendar .calendar-footer .accordion .card {
+       margin-bottom: 0;
+    }
+     .calendar .calendar-footer .accordion .card .calendar-footer-list {
+       margin: 0;
+         border-top: none;
+         padding: 0;
+    }
+    
+    .calendar-deck{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      justify-content: center;
+    }
+    @media only screen and (min-width: 1120px){
+      .calendar-deck{
+        column-gap: 19px;
       }
-       .calendar-references .calendar-references-box .calendar-references-row .color-box .color.bg-gray {
-         background-color: #e5e5e5;
+    }
+    
+    .calendar-references {
+       border: 1px solid #f3f6f9;
+       border-radius: 8px;
+       padding: 16px;
+         width: min-content;
+    }
+     .calendar-references .calendar-references-text {
+       font-weight: 700;
+       margin-bottom: 12px;
+    }
+     .calendar-references .calendar-references-box {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 16px;
+    }
+     .calendar-references .calendar-references-box .calendar-references-row {
+       display: flex;
+       gap: 48px;
+    }
+     .calendar-references .calendar-references-box .calendar-references-row .color-box {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap: 0.5rem;
+        min-width: 105px;
+    }
+     .calendar-references .calendar-references-box .calendar-references-row .color-box .color {
+       min-width: 1rem;
+       max-height: 1rem;
+       height: 1rem;
+       border-radius: 50%;
+       display: inline-block;
+         font-size: 1px;
+         color: transparent;
+    }
+     .calendar-references .calendar-references-box .calendar-references-row .color-box .color.bg-gray {
+       background-color: #e5e5e5;
+    }
+    @media only screen and (max-width: 976px) {
+       .calendar-references .calendar-references-box .calendar-references-row{
+         flex-direction: column;
+         gap: 8px;
       }
-      @media only screen and (max-width: 976px) {
-         .calendar-references .calendar-references-box .calendar-references-row{
-           flex-direction: column;
-           gap: 8px;
+        .calendar-references .calendar-references-box {
+           gap: 48px;
+           flex-wrap: nowrap;
         }
-          .calendar-references .calendar-references-box {
-             gap: 48px;
-             flex-wrap: nowrap;
-          }
-      }
-      
-      /*--><!]]>*/
-  </style>
-  <!-- -- ESTILOS FIN ----><!--<h1 class="mb-4 ">Actualización de calendario con colapsable</h1>--><!-- CALENDARIO LIMPIO -->
+    }
+    
+    /*--><!]]>*/
+    </style>
 
 
 </head>
@@ -333,15 +330,14 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
@@ -442,13 +438,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -551,7 +547,7 @@
                   <tr class="calendar-week">
                     <td><span title="Id Al-Fitr Al-Mubarak"><span class="active">30</span></span></td>
                     <td><span>31</span></td>
-                    <td> </td>
+                    <td><span></span> </td>
                     <td> </td>
                     <td> </td>
                     <td> </td>
@@ -661,13 +657,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -769,13 +765,13 @@
                     <td><span>31</span></td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -878,13 +874,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -987,13 +983,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -1088,12 +1084,12 @@
                   </tr>
                   <tr class="calendar-week">
                     <td><span>31</span></td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -1193,13 +1189,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -1296,13 +1292,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -1403,12 +1399,12 @@
                   </tr>
                   <tr class="calendar-week">
                     <td><span>30</span></td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -1511,13 +1507,13 @@
                     <td> </td>
                   </tr>
                   <tr class="calendar-week">
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
-                    <td> </td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
                   </tr>
                 </tbody>
               </table>
