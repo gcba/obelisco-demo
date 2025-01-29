@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+  <title>Plantillas GCBA</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="./node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+  <style type="text/css">
+    <!--/*
+    -->
+  <![CDATA[/* ><!--*/
+      .calendar {
+         width: 100%;
+           max-width: 328px;
+         background-color: #fff;
+           padding: 0.5rem 0.25rem;
+      }
+      @media only screen and (min-width: 752px){
+        .calendar{
+          max-width: 340px;
+        }
+      }
+       .calendar .calendar-header {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding: 0;
+          height: 24px;
+      }
+       .calendar .calendar-header .calendar-title, .calendar .calendar-header .calendar-year {
+         font-weight: 600;
+         font-size: 1.3125rem;
+         line-height: 1.2;
+         font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+         margin-bottom: 0;
+      }
+       .calendar .calendar-body {
+         padding: 1rem 0 0;
+         color: #69788a;
+         font-weight: 600;
+         font-size: 1.0625rem;
+         line-height: 1.2;
+         font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+         margin-bottom: 0;
+      }
+      
+       .calendar .calendar-body table {
+         width: 100%;
+           text-align: center;
+      }
+       .calendar .calendar-body table th, .calendar .calendar-body table td {
+         padding: 0;
+      }
+       .calendar .calendar-body table th span, .calendar .calendar-body table td span {
+         height: 40px;
+           width: 40px;
+           display: inline-block;
+           line-height: 40px;
+           border-radius: 50%;
+           margin: 0.25rem 0;
+      }
+       .calendar .calendar-body table .calendar-week-header th {
+         font-weight: 700;
+           height: 48px;
+         background-color: #f5f9fc;
+      }
+       .calendar .calendar-body table .calendar-week {
+         line-height: 8px;
+      }
+       .calendar .calendar-body table .calendar-week:nth-of-type(even) {
+         background-color: #f5f9fc;
+      }
+       .calendar .calendar-body table .calendar-week:nth-of-type(odd) td {
+         padding: 0.25rem 0;
+      }
+      
+       .calendar .calendar-body table .calendar-week:nth-of-type(6) td {
+         line-height: 48px;
+      }
+       .calendar .calendar-body table .calendar-week td {
+         pointer-events: inherit;
+      }
+       .calendar .calendar-body table .calendar-week td .calendar-link {
+         border-radius: 50%;
+           margin: 0.25rem 0;
+      }
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .active {
+         background-color: #005387;
+      }
+      
+       .calendar .calendar-body table .calendar-week td .calendar-link:hover .active-secondary {
+         background-color: #5c6a7a;
+      }
+      
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-sky{background-color:#6df !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lavender{background-color:#6690ff !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-coral{background-color:#ff8766 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-avocado{background-color:#90ff66 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-citrus{background-color:#ffd466 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lime{background-color:#df6 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-pistachio{background-color:#66ff87 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-berries{background-color:#d466ff !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-musket{background-color:#f6d !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-aqua{background-color:#66ffd4 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-strawberry{background-color:#ff66d8 !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-blackberry{background-color:#8766ff !important;color:#252f3c}
+      .calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-gray{background-color:#ccc !important;color:#252f3c}
+      
+      .calendar .calendar-body table .calendar-week td .calendar-link:focus {
+         box-shadow: none;
+           backface-visibility: inherit;
+      }
+      .calendar .calendar-body table .calendar-week td .calendar-link:focus .active, .calendar .calendar-body table .calendar-week td .calendar-link:focus .active-secondary {
+         box-shadow: 0 0 0 0.125rem #005387;
+      }
+      
+      .calendar .calendar-body table .calendar-week td span:after {
+         line-height: 1.5;
+      }
+      .calendar .calendar-body table .calendar-week td span.disabled {
+         color: #9eaab8;
+      }
+      .calendar .calendar-body table .calendar-week td span.active, .calendar .calendar-body table .calendar-week td span.active-secondary {
+         color: #fff;
+         background-color: #007bc7;
+         cursor: pointer;
+         min-width: 100%;
+         height: 100%;
+         margin: 0;
+      }
+       .calendar .calendar-body table .calendar-week td span.active.bg-gray {
+         background-color: #e5e5e5;
+      }
+      .calendar .calendar-body table .calendar-week td span.active-secondary {
+         background-color: #38485c
+      }
+      .calendar .calendar-body table .calendar-week td span.active.bg-sky, .calendar .calendar-body table .calendar-week td span.active.bg-lavender, .calendar .calendar-body table .calendar-week td span.active.bg-coral, .calendar .calendar-body table .calendar-week td span.active.bg-avocado, .calendar .calendar-body table .calendar-week td span.active.bg-citrus, .calendar .calendar-body table .calendar-week td span.active.bg-lime, .calendar .calendar-body table .calendar-week td span.active.bg-pistachio, .calendar .calendar-body table .calendar-week td span.active.bg-berries, .calendar .calendar-body table .calendar-week td span.active.bg-musket, .calendar .calendar-body table .calendar-week td span.active.bg-gray,  .calendar .calendar-body table .calendar-week td span.active.bg-aqua, .calendar .calendar-body table .calendar-week td span.active.bg-strawberry, .calendar .calendar-body table .calendar-week td span.active.bg-blackberry {
+         color: #38485c;
+      }
+      .calendar .calendar-footer .calendar-footer-list {
+           margin-top: 1rem;
+           margin-bottom: 0;
+           border-top: 1px solid #e6ebf0;
+           padding: 1rem 0.5rem 0;	 
+      }
+       .calendar .calendar-footer .calendar-footer-list li {
+         font-size: 0.8125rem;
+           list-style-type: none;
+      }
+       .calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
+         margin-bottom: 0.25rem;
+      }
+       .calendar .calendar-footer .accordion {
+         margin-top: 1rem;
+      }
+       .calendar .calendar-footer .accordion .card {
+         margin-bottom: 0;
+      }
+       .calendar .calendar-footer .accordion .card .calendar-footer-list {
+         margin: 0;
+           border-top: none;
+           padding: 0;
+      }
+      
+      .calendar-deck{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-content: center;
+      }
+      @media only screen and (min-width: 1120px){
+        .calendar-deck{
+          column-gap: 19px;
+        }
+      }
+      
+      .calendar-references {
+         border: 1px solid #f3f6f9;
+         border-radius: 8px;
+         padding: 16px;
+           width: min-content;
+      }
+       .calendar-references .calendar-references-text {
+         font-weight: 700;
+         margin-bottom: 12px;
+      }
+       .calendar-references .calendar-references-box {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 16px;
+      }
+       .calendar-references .calendar-references-box .calendar-references-row {
+         display: flex;
+         gap: 48px;
+      }
+       .calendar-references .calendar-references-box .calendar-references-row .color-box {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         gap: 0.5rem;
+          min-width: 105px;
+      }
+       .calendar-references .calendar-references-box .calendar-references-row .color-box .color {
+         min-width: 1rem;
+         max-height: 1rem;
+         height: 1rem;
+         border-radius: 50%;
+         display: inline-block;
+           font-size: 1px;
+           color: transparent;
+      }
+       .calendar-references .calendar-references-box .calendar-references-row .color-box .color.bg-gray {
+         background-color: #e5e5e5;
+      }
+      @media only screen and (max-width: 976px) {
+         .calendar-references .calendar-references-box .calendar-references-row{
+           flex-direction: column;
+           gap: 8px;
+        }
+          .calendar-references .calendar-references-box {
+             gap: 48px;
+             flex-wrap: nowrap;
+          }
+      }
+      
+      /*--><!]]>*/
+  </style>
+  <!-- -- ESTILOS FIN ----><!--<h1 class="mb-4 ">Actualización de calendario con colapsable</h1>--><!-- CALENDARIO LIMPIO -->
+
+
+</head>
+
+<body>
+
+  <main>
+    <article class="pb-5 mb-4">
+      <header class="pt-5 pb-5 mb-5 text-white bg-dark">
+        <div class="container pt-1">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Calendario</h1>
+                <p class="lead">Calendario 2025.</p>
+                <span>Obelisco V1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+
+        <div class="calendar-deck">
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Enero</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="Santa María Madre de Dios"><span class="active">1</span></span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>5</span></td>
+                    <td><span title="Epifanía"><span class="active">6</span></span></td>
+                    <td><span title="Natividad del Señor"><span class="active">7</span></span></td>
+                    <td><span>8</span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Bautismo del Señor"><span class="active">12</span> </span></td>
+                    <td><span>13</span></td>
+                    <td><span title="Cirscunsición del Señor"><span class="active">14</span> </span></td>
+                    <td><span>15</span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Santa Epifanía"><span class="active">19</span></span></td>
+                    <td><span title="Oxossi"><span class="active">20</span></span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                    <td><span>23</span></td>
+                    <td><span>24</span></td>
+                    <td><span>25</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>26</span></td>
+                    <td><span
+                        title="Laylat al miraj (noche de la ascención) ● Día Internacional de conmemoración en memoria de las víctimas del Holocausto"><span
+                          class="active active-secondary">27</span></span></td>
+                    <td><span>28</span></td>
+                    <td><span title="Nacimiento del Bodhisattva Maitreya"><span class="active">29</span></span></td>
+                    <td><span>30</span></td>
+                    <td><span>31</span></td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseEnero"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseEnero">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. CATÓLICO.</strong> Santa María Madre de Dios</li>
+                        <li><strong>6. CATÓLICO.</strong> Epifanía</li>
+                        <li><strong>7. ORTODOXA ORIENTAL.</strong> Natividad del Señor</li>
+                        <li><strong>12. CATÓLICO.</strong> Bautismo del Señor</li>
+                        <li><strong>14. ORTODOXA ORIENTAL.</strong> Cirscunsición del Señor </li>
+                        <li><strong>19. ORTODOXA ORIENTAL.</strong> Santa Epifanía</li>
+                        <li><strong>20. AFRICANISTA.</strong> Oxossi</li>
+                        <li><strong>27. ISLÁMICO.</strong> Laylat al miraj (noche de la ascención) </li>
+                        <li><strong>27. JUDÍO.</strong> Día Internacional de Conmemoración en Memoria de las Víctimas
+                          del Holocausto </li>
+                        <li><strong>29. BUDISTA</strong> Tu Bishvat</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Febrero</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="Armonía interconfesional"><span class="active">1</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Presentación del Señor ● Iemanjá "><span class="active active-secondary">2</span></span></td>
+                    <td><span>3</span></td>
+                    <td><span title="Día Internacional de la Fraternidad Humana"><span class="active">4</span></span>
+                    </td>
+                    <td><span>5</span></td>
+                    <td><span>6</span></td>
+                    <td><span>7</span></td>
+                    <td><span>8</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span title="Tu Bishvat"><span class="active">13</span></span></td>
+                    <td><span>14</span></td>
+                    <td><span title="Presentación del Señor"><span class="active">15</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>23</span></td>
+                    <td><span>24</span></td>
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                    <td><span title="Ramadán"><span class="active">28</span></span></td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseFebrero"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseFebrero">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. FECHAS EN COMÚN O ESPECIALES.</strong> Armonía interconfesional</li>
+                        <li><strong>2. CATÓLICO.</strong> Presentación del Señor</li>
+                        <li><strong>2. AFRICANISTA.</strong> Iemanjá</li>
+                        <li><strong>4. FECHAS EN COMÚN O ESPECIALES.</strong> Día Internacional de la Fraternidad Humana
+                        </li>
+                        <li><strong>13. JUDÍO</strong> Tu Bishvat</li>
+                        <li><strong>15. ORTODOXO</strong> Presentación del Señor</li>
+                        <li><strong>28. ISLAMICO</strong> Ramadán</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Marzo</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="Ramadán"><span class="active">1</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span title="Miércoles de Ceniza"><span class="active">5</span></span></td>
+                    <td><span>6</span></td>
+                    <td><span title="Santa María Antonia de San José (Mama Antula)"><span class="active">7</span></span>
+                    </td>
+                    <td><span>8</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span title="Ayuno de Ester"><span class="active">13</span></span></td>
+                    <td><span title="Purin ● Aniversario del Papado Francisco"><span class="active active-secondary">14</span></span>
+                    </td>
+                    <td><span title="Anunciación de la Virgen"><span class="active">15</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>16</span></td>
+                    <td><span title="Atentado Embajada Israel"><span class="active">17</span></span></td>
+                    <td><span title="Nacimiento del Bodhisattva Avalokiteshvara"><span class="active">18</span></span>
+                    </td>
+                    <td><span title="San José"><span class="active">19</span></span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>23</span></td>
+                    <td><span>24</span></td>
+                    <td><span title="Anunciación del Señor"><span class="active">25</span></span></td>
+                    <td><span title="Hola Mohalla"><span class="active">26</span></span></td>
+                    <td><span>27</span></td>
+                    <td><span title="Naw Ruz"><span class="active">28</span></span></td>
+                    <td><span>29</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Id Al-Fitr Al-Mubarak"><span class="active">30</span></span></td>
+                    <td><span>31</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseMarzo"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseMarzo">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. ISLÁMICO.</strong> Ramadán.</li>
+                        <li><strong>5. CATÓLICO.</strong> Miércoles de Ceniza.</li>
+                        <li><strong>7. CATÓLICO.</strong> Santa Maria Antonia de San José (Mama Antula).</li>
+                        <li><strong>13. JUDÍO.</strong> Ayuno de Ester.</li>
+                        <li><strong>14. JUDÍO.</strong> Purin.</li>
+                        <li><strong>14. CATÓLICO.</strong> Aniversario del Papado Francisco.</li>
+                        <li><strong>15. ORTODOXO ORIENTAL.</strong> Anunciación de la Virgen.</li>
+                        <li><strong>17. ANIVERSARIOS.</strong> Atentado Embajada Israel.</li>
+                        <li><strong>18. BUDISTA.</strong> Nacimiento del Bodhisattva Avalokiteshvara.</li>
+                        <li><strong>19. CATÓLICO.</strong> San José.</li>
+                        <li><strong>25. CATÓLICO.</strong> Anunciación del Señor.</li>
+                        <li><strong>26. SIKH.</strong> Hola Mohalla.</li>
+                        <li><strong>28. BAHAÍ.</strong> Naw Ruz.</li>
+                        <li><strong>30. ISLÁMICO.</strong> Id Al-Fitr Al-Mubarak.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Abril</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td><span>1</span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Fundación del Ijsud"><span class="active">6</span></span></td>
+                    <td><span>7</span></td>
+                    <td><span>8</span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span title="Pesaj"><span class="active">12</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Pesaj ● Domingo de Ramos"><span class="active active-secondary">13</span></span>
+                    </td>
+                    <td><span title="Pesaj ● Baisakhi"><span class="active active-secondary">14</span></span></td>
+                    <td><span title="Pesaj"><span class="active">15</span></span></td>
+                    <td><span title="Pesaj"><span class="active">16</span></span></td>
+                    <td><span title="Pesaj ● Jueves Santo"><span class="active active-secondary">17</span></span></td>
+                    <td><span title="Pesaj ● Viernes Santo"><span class="active active-secondary">18</span></span></td>
+                    <td><span title="Pesaj ● Sábado Santo"><span class="active active-secondary">19</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Pesaj ● Domingo de Pascua ● Ridván"><span class="active active-secondary">20</span></span></td>
+                    <td><span title="Ridván"><span class="active">21</span></span></td>
+                    <td><span title="Ridván"><span class="active">22</span></span></td>
+                    <td><span title="Ridván ● Ogum"><span class="active active-secondary">23</span></span></td>
+                    <td><span title="Ridván ● Día de la tolerancia y el respeto entre los pueblos"><span
+                          class="active active-secondary">24</span></span></td>
+                    <td><span title="Ridván"><span class="active">25</span></span></td>
+                    <td><span title="Ridván"><span class="active">26</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Ridván"><span class="active">27</span></span></td>
+                    <td><span title="Ridván"><span class="active">28</span></span></td>
+                    <td><span title="Ridván"><span class="active">29</span></span></td>
+                    <td><span title="Ridván"><span class="active">30</span></span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseAbril"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseAbril">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>6. IJSUD</strong> Fundación del Ijsud</li>
+                        <li><strong>12 al 20. JUDÍO</strong> Pesaj.</li>
+                        <li><strong>13. CATÓLICO.</strong> Domingo de Ramos.</li>
+                        <li><strong>14. SIKH.</strong> Baisakhi.</li>
+                        <li><strong>17. CATÓLICO.</strong> Jueves Santo .</li>
+                        <li><strong>18. CATÓLICO.</strong> Viernes Santo .</li>
+                        <li><strong>19. CATÓLICO.</strong> Sábado Santo .</li>
+                        <li><strong>20. CATÓLICO.</strong> Domingo de Pascua</li>
+                        <li><strong>20 al 01. BAHAÍ.</strong> Ridvan</li>
+                        <li><strong>23. AFRICANISTA.</strong> Ogum</li>
+                        <li><strong>24. FECHAS EN COMÚNO ESPECIALES</strong> Día de la tolerancia y el respeto entre los
+                          pueblos.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Mayo</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="San José Obrero"><span class="active">1</span></span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>4</span></td>
+                    <td><span title="Nacimiento del Buda Sakyamuni"><span class="active">5</span></span></td>
+                    <td><span title="San Jorge"><span class="active">6</span></span></td>
+                    <td><span>7</span></td>
+                    <td><span title="Nuestra Señora de Luján"><span class="active">8</span></span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span title="Pretos Velhos"><span class="active">13</span></span></td>
+                    <td><span>14</span></td>
+                    <td><span>15</span></td>
+                    <td><span title="Lag Baomer"><span class="active">16</span></span></td>
+                    <td><span>17</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                    <td><span title="Declaración del Bab"><span class="active">23</span></span></td>
+                    <td><span>24</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                    <td><span title="Ascensión del Bahá ´U´ Lláh"><span class="active">28</span></span></td>
+                    <td><span title="Ascensión del Señor"><span class="active">29</span></span></td>
+                    <td><span>30</span></td>
+                    <td><span>31</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseMayo"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseMayo">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>9. CATÓLICO.</strong> San José Obrero.</li>
+                        <li><strong>5. BUDISTA.</strong> Nacimiento del Buda Sakyamuni (Vesak).</li>
+                        <li><strong>6. ORTODOXO ORIENTAL.</strong> San Jorge.</li>
+                        <li><strong>8. CATÓLICO.</strong> Nuestra Señora de Luján.</li>
+                        <li><strong>13. CATÓLICO.</strong> Pretos Velhos.</li>
+                        <li><strong>16. JUDÍO.</strong> Lag Baomer.</li>
+                        <li><strong>23. BAHAÍ.</strong> Declaración del Bab.</li>
+                        <li><strong>28. BAHAÍ.</strong> Ascensión del Bahá ´U´ Lláh.</li>
+                        <li><strong>29. ORTODOXO ORIENTAL.</strong> Ascensión del Señor.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Junio</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td><span><span class="active active-secondary"
+                          title="Ascensión del Señor ● Shavuot">1</span></span></td>
+                    <td><span><span class="active"
+                          title="Declaración Buenos Aires como Ciudad del diálogo Interreligioso (LEY 5556)">2</span></span>
+                    </td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                    <td><span><span class="active" title="ID Al-Adha">6</span></span></td>
+                    <td><span>7</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Pentecostés"><span class="active">8</span></span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                    <td><span>14</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Santísima Trinidad"><span class="active">15</span></span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Corpus Christi"><span class="active">22</span></span></td>
+                    <td><span>23</span></td>
+                    <td><span title="San Juan Bautista"><span class="active">24</span></span></td>
+                    <td><span>25</span></td>
+                    <td><span title="Año Nuevo Islámico"><span class="active">26</span></span></td>
+                    <td><span title="Sagrado Corazón de Jesús"><span class="active">27</span></span></td>
+                    <td><span>28</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Santos Pedro y Pablo Apóstoles día del Pontífice"><span
+                          class="active">29</span></span></td>
+                    <td><span>30</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseJunio"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseJunio">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. CATOLICO.</strong> Ascención del Señor.</li>
+                        <li><strong>1. JUDÍO.</strong> Shavuot.</li>
+                        <li><strong>2. FECHAS ESPECIALESO EN COMÚN.</strong> Declaración Buenos Aires como Ciudad del
+                          diálogo Interreligioso (LEY 5556).</li>
+                        <li><strong>6. ISLÁMICO.</strong> ID Al-Adha.</li>
+                        <li><strong>8. CATOLICO.</strong> Pentecostés.</li>
+                        <li><strong>15. CATOLICO.</strong> Santísima Trinidad.</li>
+                        <li><strong>22. CATOLICO.</strong> Corpus Christi.</li>
+                        <li><strong>24. CATOLICO.</strong> San Juan Bautista.</li>
+                        <li><strong>26.</strong> Año nuevo Islámico.</li>
+                        <li><strong>27. CATOLICO.</strong> Sagrado Corazón de Jesús.</li>
+                        <li><strong>29. CATOLICO.</strong> Santos Pedro y Pablo Apóstoles día del Pontífice.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Julio</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td><span>1</span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span title="Ashura"><span class="active">5</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>6</span></td>
+                    <td><span>7</span></td>
+                    <td><span>8</span></td>
+                    <td><span title="Martirio del Báb"><span class="active">9</span></span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Día de la iluminación del Bodhisattva Avalokiteshvara"><span
+                          class="active">13</span></span></td>
+                    <td><span>14</span></td>
+                    <td><span>15</span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                    <td><span>23</span></td>
+                    <td><span>24</span></td>
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>27</span></td>
+                    <td><span>28</span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                    <td><span>31</span></td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseJulio"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseJulio">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>5. ISLÁMICO.</strong> Ashura.</li>
+                        <li><strong>9. BAHAÍ.</strong> Martirio del Báb.</li>
+                        <li><strong>13. BUDISTA.</strong> Día de la iluminación del Bodhisattva Avalokiteshvara.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Agosto</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span>1</span></td>
+                    <td><span title="Tisha B' AV"><span class="active">2</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                    <td><span>6</span></td>
+                    <td><span title="San Cayetano"><span class="active">7</span></span></td>
+                    <td><span>8</span></td>
+                    <td><span title="Día Internacional del diálogo Interreligioso"><span class="active">9</span></span>
+                    </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                    <td><span>14</span></td>
+                    <td><span title="Asunción de la Santísima Virgen"><span class="active">15</span></span></td>
+                    <td><span>16</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>17</span></td>
+                    <td><span title="Atentado a la AMIA"><span class="active">18</span></span></td>
+                    <td><span title="Transfiguración"><span class="active">19</span></span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                    <td><span>23</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Día del Pionero"><span class="active">24</span></span></td>
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                    <td><span title="Dormición de la Theotokos"><span class="active">28</span></span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>31</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseAgosto"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseAgosto">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>2. JUDÍO.</strong> Tisha B' AV.</li>
+                        <li><strong>7. CATÓLICO.</strong> San Cayetano.</li>
+                        <li><strong>9. ESPECIALES O ENCOMÚN.</strong> Día Nacional del Diálogo Interreligioso.</li>
+                        <li><strong>15. CATÓLICO.</strong> Asunción de la Santísima Virgen.</li>
+                        <li><strong>18. ANIVERSARIOS.</strong> Atentado a la AMIA.</li>
+                        <li><strong>19. ORTODOXA.</strong> Transfiguración.</li>
+                        <li><strong>24. IJSUD.</strong> Día del Pionero.</li>
+                        <li><strong>28. ORTODOXA.</strong> Dormición de la Theotokos.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Septiembre</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td><span>1</span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span title="AID AL-MAULID (Nacimiento de la Profeta Muhammad)"><span
+                          class="active">5</span></span></td>
+                    <td><span>6</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>7</span></td>
+                    <td><span title="Natividad de la Santísima Virgen"><span class="active">8</span></span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Exaltación de la Santísima Cruz"><span class="active">14</span></span></td>
+                    <td><span>15</span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Día Internacional de la Paz ● Natividad de la Theotokos"><span
+                          class="active active-secondary">21</span></span></td>
+                    <td><span title="Víspera de Rosh Hashaná"><span class="active">22</span></span></td>
+                    <td><span title="Víspera de Rosh Hashaná"><span class="active">23</span></span></td>
+                    <td><span title="Víspera de Rosh Hashaná"><span class="active">24</span></span></td>
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                    <td><span title="Exaltación de la Santa Cruz"><span class="active">27</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>28</span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseSeptiembre"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseSeptiembre">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>5. ISLÁMICO.</strong> AID AL-MAULID (Nacimiento del Profeta Muhammad).</li>
+                        <li><strong>8. CATÓLICO.</strong> Natividad de la Santísima Virgen.</li>
+                        <li><strong>14. CATÓLICO.</strong> Exaltación de la Santísima Cruz.</li>
+                        <li><strong>21. ESPECIALES O ENCOMÚN.</strong> Día Internacional de la Paz.</li>
+                        <li><strong>21. ORTODOXA.</strong> Natividad de la Theotokos.</li>
+                        <li><strong>22 al 24. JUDÍO.</strong> Víspera de Rosh Hashaná.</li>
+                        <li><strong>27. ORTODOXA.</strong> Exaltación de la Santa Cruz.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Octubre</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="Iom Kippur"><span class="active">1</span></span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>5</span></td>
+                    <td><span title="Sukot"><span class="active">6</span></span></td>
+                    <td><span>7</span></td>
+                    <td><span>8</span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                    <td><span>14</span></td>
+                    <td><span title="Simjat Torá"><span class="active">15</span></span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span title="Nacimiento del Báb"><span class="active">22</span></span></td>
+                    <td><span title="Nacimiento del BAHÁ'U'LLÁH"><span class="active">23</span></span></td>
+                    <td><span>24</span></td>
+                    <td><span>25</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                    <td><span>28</span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                    <td><span title="Día de las Iglesias Evangélicas"><span class="active">31</span></span></td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseOctubre"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseOctubre">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. JUDÍO.</strong> Iom Kippur.</li>
+                        <li><strong>6. JUDÍO.</strong> Sukot.</li>
+                        <li><strong>15. JUDÍO.</strong> Simjat Torá.</li>
+                        <li><strong>22. BAHAÍ.</strong> Nacimiento del Báb.</li>
+                        <li><strong>23. BAHAÍ.</strong> Nacimiento del BAHÁ'U'LLÁH.</li>
+                        <li><strong>31. EVANGELICO</strong> Dia de las Iglesias Evangélicas.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Noviembre</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td><span title="Todos los Santos"><span class="active">1</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Fieles Difuntos"><span class="active">2</span></span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                    <td><span>6</span></td>
+                    <td><span>7</span></td>
+                    <td><span title="Conmemoración del día que renunció el Bodhisattva Avalokiteshvara"><span
+                          class="active">8</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Kristallnacht"><span class="active">9</span></span></td>
+                    <td><span>10</span></td>
+                    <td><span title="San Martín de Tours"><span class="active">11</span></span></td>
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                    <td><span title="Conmemoración del Nacimiento del Gurú Nanak"><span class="active">14</span></span>
+                    </td>
+                    <td><span>15</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span title="Conmemoración del Nacimiento del Buda de la Medicina"><span
+                          class="active">18</span></span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Cristo Rey"><span class="active">23</span></span></td>
+                    <td><span>24</span></td>
+                    <td><span title="Día de la Alianza ● Día de la Libertad Religiosa"><span
+                          class="active active-secondary">25</span></span></td>
+                    <td><span>26</span></td>
+                    <td><span title="Ascensión de 'Abdu'L-Bahá"><span class="active">27</span></span></td>
+                    <td><span>28</span></td>
+                    <td><span>29</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>30</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseNoviembre"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseNoviembre">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>1. CATÓLICO.</strong> Todos los Santos.</li>
+                        <li><strong>2. CATÓLICO.</strong> Fieles Difuntos.</li>
+                        <li><strong>8. BUDISTA.</strong> Conmemoración del día que renunció el Bodhisattva
+                          Avalokiteshvara.</li>
+                        <li><strong>9. JUDÍO.</strong> Kristallnacht.</li>
+                        <li><strong>11. CATÓLICO.</strong> San Martín de Tours.</li>
+                        <li><strong>14. SIKH.</strong> Conmemoración del Nacimiento del Gurú Nanak.</li>
+                        <li><strong>18. BUDISTA.</strong> Conmemoración del Nacimiento del Buda de la Medicina.</li>
+                        <li><strong>23. CATÓLICO.</strong> Cristo Rey.</li>
+                        <li><strong>25. BAHAÍ.</strong> Día de la Alianza.</li>
+                        <li><strong>25. ESPECIALES O ENCOMÚN.</strong> Día de la Libertad Religiosa.</li>
+                        <li><strong>27. BAHAÍ.</strong> Ascención de 'Abdu'L-Bahá.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-header">
+              <h2 class="calendar-title">Diciembre</h2>
+              <span class="calendar-year">2025</span>
+            </div>
+
+            <div class="calendar-body">
+              <table>
+                <thead>
+                  <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td><span>1</span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                    <td><span>6</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span>7</span></td>
+                    <td><span title="Inmaculada Concepción de Maria"><span class="active">8</span></span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span title="Nuestra Señora de Guadalupe"><span class="active">12</span></span></td>
+                    <td><span>13</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Jánuca"><span class="active">14</span></span></td>
+                    <td><span title="Jánuca"><span class="active">15</span></span></td>
+                    <td><span title="Jánuca"><span class="active">16</span></span></td>
+                    <td><span title="Jánuca ● Cumpleaños de Francisco"><span
+                          class="active active-secondary">17</span></span></td>
+                    <td><span title="Jánuca"><span class="active">18</span></span></td>
+                    <td><span title="Jánuca"><span class="active">19</span></span></td>
+                    <td><span title="Jánuca"><span class="active">20</span></span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Jánuca"><span class="active">21</span></span></td>
+                    <td><span title="Jánuca"><span class="active">22</span></span></td>
+                    <td><span title="Nacimiento de Joseph Smith"><span class="active">23</span></span></td>
+                    <td><span>24</span></td>
+                    <td><span title="Navidad"><span class="active">25</span></span></td>
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td><span title="Sagrada Familia"><span class="active">28</span></span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                    <td><span>31</span></td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                  <tr class="calendar-week">
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Referencia con colapsable Inicio -->
+
+            <div class="calendar-footer">
+              <div class="accordion">
+                <div class="card"><button class="card-header collapsed" data-target="#collapseDiciembre"
+                    data-toggle="collapse"><span class="collapse-title">Referencias</span></button>
+
+                  <div class="collapse" id="collapseDiciembre">
+                    <div class="card-body">
+                      <ul class="calendar-footer-list">
+                        <li><strong>8. CATÓLICO.</strong> Inmaculada Concepción de María.</li>
+                        <li><strong>12. CATÓLICO</strong> Nuestra Señora de Guadalupe.</li>
+                        <li><strong>14 al 22. JUDÍO.</strong> Jánuca.</li>
+                        <li><strong>17. ESPECIALES.</strong> Cumpleaños de Francisco.</li>
+                        <li><strong>23. IJSUD.</strong> Nacimiento de Joseph Smith.</li>
+                        <li><strong>25. CATÓLICO.</strong> Navidad.</li>
+                        <li><strong>28. CATÓLICO.</strong> Sagrada Familia.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Referencia con colapsable Fin -->
+          </div>
+        </div>
+        <!-- CALENDARIO LIMPIO FIN -->
+      </div>
+
+      </div>
+      </div>
+
+      </div>
+
+      </div>
+
+      </div>
+
+    </article>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
