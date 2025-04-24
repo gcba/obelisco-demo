@@ -46,272 +46,261 @@
       </header>
 
       <div class="container pt-3">
-
-        <div class="mb-5 mt-4">
-          <h6>Antes de empezar</h6>
-          <ul class="list-informative-check mb-4">
-            <li>Contá con el archivo de tu currículum vitae. </li>
-            <li>Contá con el enlace a tu perfil en LinkedIn o portafolio web. </li>
-          </ul>
-          <p class="d-flex align-items-center gap-2 ps-4 mb-0 position-relative">
-            <span class="position-absolute start-0" style="
-              top: 50%;
-              transform: translateY(-50%);
-              width: 24px;
-              height: 24px;
-              background-image: url('./info.svg');
-              background-repeat: no-repeat;
-              background-position: center;
-              ">
-            </span>
-            Todos los campos son obligatorios, salvo que estén marcados como opcionales.
-          </p>
-        </div>
-
-        <form>
-          <!-- Datos personales -->
-          <div class="mb-5">
-            <h3 class="mb-1">Datos personales</h3>
-            <hr class="mb-1 mt-0">
-            <p class="text-md" style="margin-bottom: 32px;">
-              Información básica para poder identificarte y establecer contacto. Solo se utilizará con fines vinculados
-              a
-              las búsquedas laborales del GCBA.
-            </p>
-            <!-- nombre y apellido -->
-            <div class="row">
-              <div class="col-6 col-xl-6">
-                <!-- <div class="mb-5"> -->
-                <label for="name-input" class="form-label mb-2">Nombre y apellido</label>
-                <input type="text" class="form-control" id="name-input" name="name" />
-                <!-- </div> -->
-              </div>
-            </div>
-            <!-- nombre y apellido -->
-
-            <!-- fecha de nacimiento -->
-            <div class="row">
-              <div class="col-3 col-xl-3">
-                <!-- <div class="mb-5"> -->
-                <label for="date-input" class="form-label mb-2">Fecha de nacimiento</label>
-                <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
-                <!-- </div> -->
-              </div>
-            </div>
-            <!-- fecha de nacimiento -->
-
-            <!-- documento -->
-            <div class="row align-items-end">
-              <div class="col-3 col-xl-3">
-                <!-- <div class="mb-5"> -->
-                <label for="type-dni" class="form-label mb-2">Tipo de documento</label>
-                <select class="form-control form-select" id="type-dni" aria-label="Default select example">
-                  <option selected disabled>Seleccionar…</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-                <!-- </div> -->
-              </div>
-              <div class="col-4 col-xl-4">
-                <!-- <div class="mb-5"> -->
-                <!-- <label for="dni-input" class="form-label mb-2">Número de documento</label>
-                    <input type="text" class="form-control" id="dni-input" name="dni" placeholder="Ejemplo: 38129329" /> -->
-                <div class="form-label-container">
-                  <label for="exampleInputTexto" class="form-label">Número de documento</label>
-                </div>
-                <p class="form-label-description">
-                  Ingresá solo números, sin puntos ni guiones.
-                </p>
-                <input type="text" class="form-control" id="exampleInputTexto" aria-describedby="Text"
-                  placeholder="Texto" />
-                <!-- </div> -->
-              </div>
-            </div>
-            <!-- documento -->
-
-            <!-- nro de telefono -->
-            <div class="row">
-              <div class="col-6 col-xl-6">
-                <!-- <div class="mb-5"> -->
-                <div class="form-label-container">
-                  <label for="exampleInputNumber" class="form-label">
-                    Número de teléfono
-                  </label>
-                  <p class="form-label-description">
-                    Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
-                  </p>
-                </div>
-                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="Number"
-                  placeholder="11 0000 0000" />
-                <!-- </div> -->
-              </div>
+        <div class="col-12 col-xl-8">
+          <div class="mb-5 mt-4">
+            <h6>Antes de empezar</h6>
+            <ul class="list-informative-check mb-4">
+              <li>Contá con el archivo de tu currículum vitae. </li>
+              <li>Contá con el enlace a tu perfil en LinkedIn o portafolio web. </li>
+            </ul>
+            <div class="d-flex gap-2 mb-4">
+              <span class="material-symbols-rounded text-info">info</span>
+              <p>Todos los campos son obligatorios, salvo que estén marcados como opcionales.</p>
             </div>
           </div>
-          <!-- nro de telefono -->
-          <!-- Datos personales -->
 
-          <!-- Información laboral y académica -->
-          <div class="mb-5">
-            <h3 class="mb-1">Información laboral y académica</h3>
-            <hr class="mb-2 mt-0">
-            <p class="text-md" style="margin-bottom: 32px;">
-              Contanos sobre tu formación y experiencia para poder conocer mejor tu perfil profesional.
-            </p>
-            <!-- Situación laboral actual -->
-            <div class="row">
-              <!-- Situación laboral actual -->
-              <div class="col-6 col-xl-6">
-                <p class="headline-md  mb-4">Situación laboral actual</p>
-                <!-- input radios -->
-                <div class="form-radio">
-                  <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-designer"
-                    value="diseñador" checked />
-                  <label class="form-radio-label" for="profession-radio-designer">
-                    Trabajo en relación de dependencia
-                  </label>
+          <form>
+            <!-- seccion Datos personales -->
+            <div class="mb-5">
+              <h3 class="mb-1">Datos personales</h3>
+              <hr class="mb-1 mt-0">
+              <p class="text-md" style="margin-bottom: 32px;">
+                Información básica para poder identificarte y establecer contacto. Solo se utilizará con fines
+                vinculados
+                a
+                las búsquedas laborales del GCBA.
+              </p>
+              <!-- nombre y apellido -->
+              <div class="row">
+                <div class="col-12 col-xl-8">
+                  <div class="form-label-container">
+                    <label for="name-input" class="form-label mb-2">Nombre y apellido</label>
+                  </div>
+                  <input type="text" class="form-control" id="name-input" name="name" />
                 </div>
-                <div class="form-radio">
-                  <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-freelance"
-                    value="independiente" />
-                  <label class="form-radio-label" for="profession-radio-freelance">
-                    Trabajo de forma independiente
-                  </label>
-                </div>
-                <div class="form-radio">
-                  <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-none"
-                    value="no_trabajo" />
-                  <label class="form-radio-label" for="profession-radio-none">
-                    No trabajo
-                  </label>
-                </div>
-                <!-- input radios -->
               </div>
+              <!-- nombre y apellido -->
 
-              <!-- Años de antigüedad -->
-              <div class="col-12 mt-4">
-                <div class="row">
-                  <div class="col-4 col-xl-4">
-                    <div class="form-label-container">
-                      <label for="exampleInputNumber" class="form-label">
-                        Años de antigüedad
-                      </label>
+              <!-- fecha de nacimiento -->
+              <div class="row">
+                <div class="col-8 col-xl-4">
+                  <div class="form-label-container">
+                    <label for="date-input" class="form-label mb-2">Fecha de nacimiento</label>
+                  </div>
+                  <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+              <!-- fecha de nacimiento -->
+
+              <!-- documento -->
+              <div class="row align-items-end">
+                <div class="col-6 col-xl-4">
+                  <div class="form-label-container">
+                    <label for="type-dni" class="form-label mb-2">Tipo de documento</label>
+                  </div>
+                  <select class="form-control form-select" id="type-dni" aria-label="Default select example">
+                    <option selected disabled>Seleccionar…</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-10 col-xl-6">
+                  <!-- <div class="mb-5"> -->
+                  <!-- <label for="dni-input" class="form-label mb-2">Número de documento</label>
+                          <input type="text" class="form-control" id="dni-input" name="dni" placeholder="Ejemplo: 38129329" /> -->
+                  <div class="form-label-container">
+                    <label for="exampleInputTexto" class="form-label">Número de documento</label>
+                  </div>
+                  <p class="form-label-description">
+                    Ingresá solo números, sin puntos ni guiones.
+                  </p>
+                  <input type="text" class="form-control" id="exampleInputTexto" aria-describedby="Text"
+                    placeholder="Texto" />
+                  <!-- </div> -->
+                </div>
+              </div>
+              <!-- documento -->
+
+              <!-- nro de telefono -->
+              <div class="row">
+                <div class="col-9 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="exampleInputNumber" class="form-label">
+                      Número de teléfono
+                    </label>
+                    <p class="form-label-description">
+                      Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
+                    </p>
+                  </div>
+                  <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="Number"
+                    placeholder="11 0000 0000" />
+                </div>
+              </div>
+              <!-- nro de telefono -->
+            </div>
+            <!-- fin seccion Datos personales -->
+
+            <!-- inicio seccion Información laboral y académica -->
+            <div class="mb-5">
+              <h3 class="mb-1">Información laboral y académica</h3>
+              <hr class="mb-2 mt-0">
+              <p class="text-md" style="margin-bottom: 32px;">
+                Contanos sobre tu formación y experiencia para poder conocer mejor tu perfil profesional.
+              </p>
+              <!-- Situación laboral actual -->
+              <div class="row">
+                <!-- Situación laboral actual -->
+                <div class="col-12 col-xl-6">
+                  <p class="headline-md  mb-4">Situación laboral actual</p>
+                  <!-- input radios -->
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-designer"
+                      value="diseñador" checked />
+                    <label class="form-radio-label" for="profession-radio-designer">
+                      Trabajo en relación de dependencia
+                    </label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-freelance"
+                      value="independiente" />
+                    <label class="form-radio-label" for="profession-radio-freelance">
+                      Trabajo de forma independiente
+                    </label>
+                  </div>
+                  <div class="form-radio">
+                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-none"
+                      value="no_trabajo" />
+                    <label class="form-radio-label" for="profession-radio-none">
+                      No trabajo
+                    </label>
+                  </div>
+                  <!-- input radios -->
+                </div>
+
+                <!-- Años de antigüedad -->
+                <div class="col-12 mt-4">
+                  <div class="row">
+                    <div class="col-6 col-xl-4">
+                      <div class="form-label-container">
+                        <label for="exampleInputNumber" class="form-label">
+                          Años de antigüedad
+                        </label>
+                      </div>
+                      <input type="number" class="form-control" id="exampleInputNumber" placeholder="0" />
                     </div>
-                    <input type="number" class="form-control" id="exampleInputNumber" placeholder="0" />
                   </div>
                 </div>
               </div>
+
+
+              <div class="row" style="margin-top: 32px;">
+                <div class="col-12">
+                  <p class="headline-md mb-4">Situación académica actual</p>
+                  <!-- selects -->
+                  <div class="row">
+                    <div class="col-12 col-xl-5">
+                      <div class="form-label-container">
+                        <label for="nivelEstudios" class="form-label">Nivel de estudios alcanzado</label>
+                      </div>
+                      <select class="form-control form-select mb-3" id="nivelEstudios">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Opción</option>
+                        <option value="2">Opción</option>
+                        <option value="3">Opción</option>
+                      </select>
+
+                      <div class="form-label-container mt-3">
+                        <label for="estadoActual" class="form-label">Estado actual</label>
+                      </div>
+                      <select class="form-control form-select mb-3" id="estadoActual">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Opción</option>
+                        <option value="2">Opción</option>
+                        <option value="3">Opción</option>
+                      </select>
+
+                      <div class="form-label-container">
+                        <label for="areaEstudio" class="form-label">Área de estudio</label>
+                        <span class="badge-forms badge-optional-forms">Opcional</span>
+                      </div>
+                      <select class="form-control form-select" style="margin-bottom: 32px;" id="areaEstudio">
+                        <option value="0">Seleccionar</option>
+                        <option value="1">Opción</option>
+                        <option value="2">Opción</option>
+                        <option value="3">Opción</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- selects -->
+
+                  <!-- input file -->
+                  <div class="row">
+                    <div class="col-12 col-xl-8">
+                      <div class="form-label-container">
+                        <label for="exampleInputFile" class="form-label">Cargá tu curriculum vitae</label>
+                      </div>
+                      <p class="form-label-description">
+                        Subí un archivo de máximo 2MB en formato DOC o PDF.
+                      </p>
+                      <input type="file" class="form-control" id="exampleInputFile" accept=".pdf,.doc,.docx" />
+                    </div>
+                  </div>
+                  <!-- input file -->
+                </div>
+              </div>
             </div>
+            <!-- fin seccion Información laboral y académica -->
 
+            <!-- inicio seccion Información adicional -->
+            <div class="mb-5">
+              <div class="col-12 col-xl-8 mt-3">
+                <h3 class="mb-1">Información adicional</h3>
+                <hr class="mt-0" style="margin-bottom: 32px;">
 
-            <div class="row" style="margin-top: 32px;">
-              <div class="col-12">
-                <p class="headline-md mb-4">Situación académica actual</p>
-
-                <!-- selects -->
+                <!-- Situación académica actual -->
                 <div class="row">
-                  <div class="col-12 col-xl-5">
+                  <div class="col-12 col-xl-12">
                     <div class="form-label-container">
-                      <label for="nivelEstudios" class="form-label">Nivel de estudios alcanzado</label>
-                    </div>
-                    <select class="form-control form-select mb-3" id="nivelEstudios">
-                      <option value="0">Seleccionar</option>
-                      <option value="1">Opción</option>
-                      <option value="2">Opción</option>
-                      <option value="3">Opción</option>
-                    </select>
-
-                    <div class="form-label-container mt-3">
-                      <label for="estadoActual" class="form-label">Estado actual</label>
-                    </div>
-                    <select class="form-control form-select mb-3" id="estadoActual">
-                      <option value="0">Seleccionar</option>
-                      <option value="1">Opción</option>
-                      <option value="2">Opción</option>
-                      <option value="3">Opción</option>
-                    </select>
-
-                    <div class="form-label-container">
-                      <label for="areaEstudio" class="form-label">Área de estudio</label>
+                      <label for="ejemplo-5" class="form-label">¿Querés contarnos algo más?</label>
                       <span class="badge-forms badge-optional-forms">Opcional</span>
                     </div>
-                    <select class="form-control form-select" style="margin-bottom: 32px;" id="areaEstudio">
-                      <option value="0">Seleccionar</option>
-                      <option value="1">Opción</option>
-                      <option value="2">Opción</option>
-                      <option value="3">Opción</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- selects -->
-
-                <!-- input file -->
-                <div class="row">
-                  <div class="col-12 col-xl-6">
-                    <div class="form-label-container">
-                      <label for="exampleInputFile" class="form-label">Cargá tu curriculum vitae</label>
-                    </div>
-                    <p class="form-label-description">
-                      Subí un archivo de máximo 2MB en formato DOC o PDF.
-                    </p>
-                    <input type="file" class="form-control" id="exampleInputFile" accept=".pdf,.doc,.docx" />
-                  </div>
-                </div>
-                <!-- input file -->
-              </div>
-            </div>
-          </div>
-          <!-- Información laboral y académica -->
-
-          <!-- Información adicional -->
-          <div class="mb-5">
-            <div class="col-12 col-xl-8 mt-3">
-              <h3 class="mb-1">Información adicional</h3>
-              <hr class="mt-0" style="margin-bottom: 32px;">
-
-              <div class="row">
-                <!-- Situación académica actual -->
-                <div class="col-12 col-xl-12">
-                  <div class="form-label-container">
-                    <label for="ejemplo-5" class="form-label">¿Querés contarnos algo más?</label>
-                    <span class="badge-forms badge-optional-forms">Opcional</span>
-                  </div>
-                  <textarea class="form-control" id="ejemplo-5" aria-describedby="TextArea" placeholder="placeholder"
-                    required maxlength="100">
+                    <textarea class="form-control" id="ejemplo-5" aria-describedby="TextArea" placeholder="placeholder"
+                      required maxlength="100">
                     </textarea>
+                  </div>
                 </div>
                 <!-- Situación académica actual -->
               </div>
             </div>
-          </div>
-          <!-- Información adicional -->
+            <!-- fin seccion Información adicional -->
 
-          <!-- condiciones legales -->
-          <div class="col-12 col-xl-8 mt-3">
-            <p class="text-md">
-              Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. Recibirás un
-              correo si tu perfil coincide con alguna convocatoria.
-            </p>
-            <div class="form-checkbox">
-              <input class="form-checkbox-input" type="checkbox" name="professionCheckbox"
-                id="profession-checkbox-developer"
-                value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
-              <label class="form-checkbox-label" for="profession-checkbox-developer">
-                Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
-              </label>
+            <!-- inicio seccion condiciones legales -->
+            <div class="col-12 col-xl-8 mt-3">
+              <p class="text-md">
+                Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. Recibirás un
+                correo si tu perfil coincide con alguna convocatoria.
+              </p>
+              <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" name="professionCheckbox"
+                  id="profession-checkbox-developer"
+                  value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
+                <label class="form-checkbox-label" for="profession-checkbox-developer">
+                  Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
+                </label>
+              </div>
+              <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" name="professionCheckbox"
+                  id="profession-checkbox-developer" value="Leí y estoy de acuerdo con las Políticas de privacidad." />
+                <label class="form-checkbox-label" for="profession-checkbox-developer">
+                  Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
+                </label>
+              </div>
             </div>
-            <div class="form-checkbox">
-              <input class="form-checkbox-input" type="checkbox" name="professionCheckbox"
-                id="profession-checkbox-developer" value="Leí y estoy de acuerdo con las Políticas de privacidad." />
-              <label class="form-checkbox-label" for="profession-checkbox-developer">
-                Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
-              </label>
-            </div>
+            <!-- fin seccion condiciones legales -->
             <button type="submit" class="btn btn-primary mt-4">Enviar postulación</button>
-
-          </div>
-          <!-- condiciones legales -->
+        </div>
       </div>
 
       </form>
