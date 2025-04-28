@@ -75,9 +75,9 @@
                 <div class="row">
                   <div class="col-12 col-xl-8">
                     <div class="form-label-container">
-                      <label for="name-input" class="form-label">Nombre y apellido</label>
+                      <label for="name" class="form-label">Nombre y apellido</label>
                     </div>
-                    <input type="text" class="form-control" id="name-input" name="name" />
+                    <input type="text" class="form-control" id="name" name="name" />
                   </div>
                 </div>
                 <!-- nombre y apellido -->
@@ -85,9 +85,9 @@
                 <div class="row">
                   <div class="col-8 col-xl-4">
                     <div class="form-label-container">
-                      <label for="date-input" class="form-label">Fecha de nacimiento</label>
+                      <label for="date" class="form-label">Fecha de nacimiento</label>
                     </div>
-                    <input type="date" class="form-control" id="date-input" name="date" aria-describedby="date-help" />
+                    <input type="date" class="form-control" id="date" name="date" aria-describedby="date-help" />
                   </div>
                 </div>
                 <!-- fecha de nacimiento -->
@@ -107,12 +107,12 @@
                   </div>
                   <div class="col-12 mt-3 mt-lg-0 col-xl-6">
                     <div class="form-label-container">
-                      <label for="exampleInputTexto" class="form-label">Número de documento</label>
+                      <label for="dni" class="form-label">Número de documento</label>
                     </div>
                     <p class="form-label-description">
                       Ingresá solo números, sin puntos ni guiones.
                     </p>
-                    <input type="text" class="form-control" id="exampleInputTexto" aria-describedby="Text" />
+                    <input type="text" class="form-control" id="dni" aria-describedby="Text" />
                   </div>
                 </div>
                 <!-- documento -->
@@ -120,14 +120,14 @@
                 <div class="row">
                   <div class="col-12 col-xl-6">
                     <div class="form-label-container">
-                      <label for="exampleInputNumber" class="form-label">
+                      <label for="phone" class="form-label">
                         Número de teléfono
                       </label>
                       <p class="form-label-description">
                         Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
                       </p>
                     </div>
-                    <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="Number"
+                    <input type="number" class="form-control" id="phone" aria-describedby="Number"
                       placeholder="11 0000 0000" />
                   </div>
                 </div>
@@ -150,16 +150,16 @@
                   <p class="headline-md  mb-4">Situación laboral actual</p>
                   <!-- input radios -->
                   <div class="form-radio">
-                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-designer"
+                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-dependence"
                       value="diseñador" checked />
-                    <label class="form-radio-label" for="profession-radio-designer">
+                    <label class="form-radio-label" for="profession-radio-dependence">
                       Trabajo en relación de dependencia
                     </label>
                   </div>
                   <div class="form-radio">
-                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-freelance"
+                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-independence"
                       value="independiente" />
-                    <label class="form-radio-label" for="profession-radio-freelance">
+                    <label class="form-radio-label" for="profession-radio-independence">
                       Trabajo de forma independiente
                     </label>
                   </div>
@@ -178,11 +178,11 @@
                   <div class="row">
                     <div class="col-7 col-xl-4">
                       <div class="form-label-container">
-                        <label for="exampleInputNumber" class="form-label">
+                        <label for="year-of-antiquity" class="form-label">
                           Años de antigüedad
                         </label>
                       </div>
-                      <input type="number" class="form-control" id="exampleInputNumber" placeholder="0" />
+                      <input type="number" class="form-control" id="year-of-antiquity" placeholder="0" />
                     </div>
                   </div>
                 </div>
@@ -196,34 +196,34 @@
                   <div class="row mb-4 pb-2">
                     <div class="col-12 col-xl-5">
                       <div class="form-label-container">
-                        <label for="nivelEstudios" class="form-label">Nivel de estudios alcanzado</label>
+                        <label for="study-level" class="form-label">Nivel de estudios alcanzado</label>
                       </div>
-                      <select class="form-control form-select mb-3" id="nivelEstudios">
+                      <select class="form-control form-select mb-3" id="study-level">
                         <option value="0">Seleccionar</option>
-                        <option value="1">Opción</option>
-                        <option value="2">Opción</option>
-                        <option value="3">Opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
                       </select>
 
                       <div class="form-label-container mt-3">
-                        <label for="estadoActual" class="form-label">Estado actual</label>
+                        <label for="state" class="form-label">Estado actual</label>
                       </div>
-                      <select class="form-control form-select mb-3" id="estadoActual">
+                      <select class="form-control form-select mb-3" id="state">
                         <option value="0">Seleccionar</option>
-                        <option value="1">Opción</option>
-                        <option value="2">Opción</option>
-                        <option value="3">Opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
                       </select>
 
                       <div class="form-label-container">
-                        <label for="areaEstudio" class="form-label">Área de estudio</label>
+                        <label for="study-area" class="form-label">Área de estudio</label>
                         <span class="badge-forms badge-optional-forms">Opcional</span>
                       </div>
-                      <select class="form-control form-select" id="areaEstudio">
+                      <select class="form-control form-select" id="study-area">
                         <option value="0">Seleccionar</option>
-                        <option value="1">Opción</option>
-                        <option value="2">Opción</option>
-                        <option value="3">Opción</option>
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
                       </select>
                     </div>
                   </div>
@@ -233,12 +233,12 @@
                   <div class="row mt-4 pt-2">
                     <div class="col-12 col-xl-8">
                       <div class="form-label-container">
-                        <label for="exampleInputFile" class="form-label">Cargá tu curriculum vitae</label>
+                        <label for="cv" class="form-label">Cargá tu curriculum vitae</label>
                       </div>
                       <p class="form-label-description">
                         Subí un archivo de máximo 2MB en formato DOC o PDF.
                       </p>
-                      <input type="file" class="form-control" id="exampleInputFile" accept=".pdf,.doc,.docx" />
+                      <input type="file" class="form-control" id="cv" accept=".pdf,.doc,.docx" />
                     </div>
                   </div>
                   <!-- input file -->
@@ -257,10 +257,10 @@
                   <!-- Situación académica actual -->
                   <div class="col-12 col-xl-10">
                     <div class="form-label-container">
-                      <label for="ejemplo-5" class="form-label">¿Querés contarnos algo más?</label>
+                      <label for="additional-information" class="form-label">¿Querés contarnos algo más?</label>
                       <span class="badge-forms badge-optional-forms">Opcional</span>
                     </div>
-                    <textarea class="form-control" id="ejemplo-5" aria-describedby="TextArea" placeholder="placeholder"
+                    <textarea class="form-control" id="additional-information" aria-describedby="TextArea" placeholder="placeholder"
                       required maxlength="100" rows="5">
                     </textarea>
                   </div>
