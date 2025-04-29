@@ -59,7 +59,7 @@
             </div>
           </div>
 
-          <form>
+          <form id="formData">
             <!-- Datos personales -->
             <div class="mb-5">
               <h3 class="mb-1">Datos personales</h3>
@@ -75,9 +75,9 @@
                 <div class="row">
                   <div class="col-12 col-xl-8">
                     <div class="form-label-container">
-                      <label for="name" class="form-label">Nombre y apellido</label>
+                      <label for="fullname" class="form-label">Nombre y apellido</label>
                     </div>
-                    <input type="text" class="form-control" id="name" name="name" />
+                    <input type="text" class="form-control" id="fullname" name="fullname" />
                   </div>
                 </div>
                 <!-- nombre y apellido -->
@@ -92,50 +92,53 @@
                 </div>
                 <!-- fecha de nacimiento -->
                 <!-- documento -->
-                <div class="row align-items-end">
+                <div class="row ">
                   <div class="col-7 col-xl-4">
-                    <div class="form-label-container">
-                      <label for="type-dni" class="form-label">Tipo de documento</label>
+                    <div class="form-label-container" style="height: 48px;">
+                      <label for="type_doc" class="form-label">Tipo de documento</label>
                     </div>
-                    <select class="form-control form-select" id="type-dni" aria-label="Default select example">
+                    <select class="form-control form-select" id="type_doc" name="type_doc" aria-label="Default select example">
                       <option selected disabled>Seleccionar…</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
+                      <option value="dni">DNI</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
                     </select>
                   </div>
                   <div class="col-12 mt-3 mt-lg-0 col-xl-6">
                     <div class="form-label-container">
-                      <label for="dni" class="form-label">Número de documento</label>
+                      <label for="nro_dni" class="form-label">Número de documento</label>
                     </div>
                     <p class="form-label-description">
                       Ingresá solo números, sin puntos ni guiones.
                     </p>
-                    <input type="text" class="form-control" id="dni" aria-describedby="Text" />
+                    <input type="text" class="form-control " id="nro_dni" name="nro_dni" aria-describedby="Text"
+                      placeholder="Texto" />
                   </div>
                 </div>
                 <!-- documento -->
                 <!-- nro de telefono -->
                 <div class="row">
                   <div class="col-12 col-xl-6">
-                    <div class="form-label-container">
-                      <label for="phone" class="form-label">
+                    <div class="form-label-container ">
+                      <label for="nro_tel" class="form-label">
                         Número de teléfono
                       </label>
                       <p class="form-label-description">
                         Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
                       </p>
                     </div>
-                    <input type="number" class="form-control" id="phone" aria-describedby="Number"
+                    <input type="number" class="form-control " name="nro_tel" aria-describedby="Number"
                       placeholder="11 0000 0000" />
+                      <!-- <div class="invalid-feedback">
+                        <p>Los datos introducidos son inválidos.</p>
+                      </div> -->
                   </div>
                 </div>
                 <!-- nro de telefono -->
               </div>
             </div>
             <!-- Datos personales -->
-
             <!-- Información laboral y académica -->
             <div class="mb-5">
               <h3 class="mb-1">Información laboral y académica</h3>
@@ -150,21 +153,21 @@
                   <p class="headline-md  mb-4">Situación laboral actual</p>
                   <!-- input radios -->
                   <div class="form-radio">
-                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-dependence"
+                    <input class="form-radio-input" type="radio" name="profession" id="profession-radio-designer"
                       value="diseñador" checked />
                     <label class="form-radio-label" for="profession-radio-dependence">
                       Trabajo en relación de dependencia
                     </label>
                   </div>
                   <div class="form-radio">
-                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-independence"
+                    <input class="form-radio-input" type="radio" name="profession" id="profession-radio-freelance"
                       value="independiente" />
                     <label class="form-radio-label" for="profession-radio-independence">
                       Trabajo de forma independiente
                     </label>
                   </div>
                   <div class="form-radio">
-                    <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-none"
+                    <input class="form-radio-input" type="radio" name="profession" id="profession-radio-none"
                       value="no_trabajo" />
                     <label class="form-radio-label" for="profession-radio-none">
                       No trabajo
@@ -172,23 +175,20 @@
                   </div>
                   <!-- input radios -->
                 </div>
-
                 <!-- Años de antigüedad -->
                 <div class="col-12 mt-3">
                   <div class="row">
                     <div class="col-7 col-xl-4">
                       <div class="form-label-container">
-                        <label for="year-of-antiquity" class="form-label">
+                        <label for="anios_antiguedad" class="form-label">
                           Años de antigüedad
                         </label>
                       </div>
-                      <input type="number" class="form-control" id="year-of-antiquity" placeholder="0" />
+                      <input type="number" class="form-control" id="anios_antiguedad" name="anios_antiguedad" placeholder="0"/>
                     </div>
                   </div>
                 </div>
               </div>
-
-
               <div class="row mt-4 pt-2">
                 <div class="col-12">
                   <p class="headline-md mb-4">Situación académica actual</p>
@@ -196,30 +196,30 @@
                   <div class="row mb-4 pb-2">
                     <div class="col-12 col-xl-5">
                       <div class="form-label-container">
-                        <label for="study-level" class="form-label">Nivel de estudios alcanzado</label>
+                        <label for="nivel_estudios" class="form-label">Nivel de estudios alcanzado</label>
                       </div>
-                      <select class="form-control form-select mb-3" id="study-level">
-                        <option value="0">Seleccionar</option>
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
+                      <select class="form-control form-select mb-3" id="nivel_estudios" name="nivel_estudios">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="1">Opción</option>
+                        <option value="2">Opción</option>
+                        <option value="3">Opción</option>
                       </select>
 
                       <div class="form-label-container mt-3">
-                        <label for="state" class="form-label">Estado actual</label>
+                        <label for="estado_actual" class="form-label">Estado actual</label>
                       </div>
-                      <select class="form-control form-select mb-3" id="state">
-                        <option value="0">Seleccionar</option>
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
+                      <select class="form-control form-select mb-3" id="estado_actual" name="estado_actual">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="1">Opción</option>
+                        <option value="2">Opción</option>
+                        <option value="3">Opción</option>
                       </select>
 
                       <div class="form-label-container">
-                        <label for="study-area" class="form-label">Área de estudio</label>
+                        <label for="area_estudio" class="form-label">Área de estudio</label>
                         <span class="badge-forms badge-optional-forms">Opcional</span>
                       </div>
-                      <select class="form-control form-select" id="study-area">
+                      <select class="form-control form-select" id="area_estudio" name="area_estudio">
                         <option value="0">Seleccionar</option>
                         <option value="1">Opción 1</option>
                         <option value="2">Opción 2</option>
@@ -233,12 +233,12 @@
                   <div class="row mt-4 pt-2">
                     <div class="col-12 col-xl-8">
                       <div class="form-label-container">
-                        <label for="cv" class="form-label">Cargá tu curriculum vitae</label>
+                        <label for="curriculum_file" class="form-label">Cargá tu curriculum vitae</label>
                       </div>
                       <p class="form-label-description">
                         Subí un archivo de máximo 2MB en formato DOC o PDF.
                       </p>
-                      <input type="file" class="form-control" id="cv" accept=".pdf,.doc,.docx" />
+                      <input type="file" class="form-control" id="curriculum_file" name="curriculum_file"  accept=".pdf,.doc,.docx" />
                     </div>
                   </div>
                   <!-- input file -->
@@ -246,30 +246,25 @@
               </div>
             </div>
             <!-- Información laboral y académica -->
-
             <!-- Información adicional -->
             <div class="mb-5">
               <div class="col-12 col-xl-8 mt-3">
                 <h3 class="mb-1">Información adicional</h3>
                 <hr class="mt-0 mb-4 pb-2">
-
                 <div class="row">
                   <!-- Situación académica actual -->
                   <div class="col-12 col-xl-10">
                     <div class="form-label-container">
-                      <label for="additional-information" class="form-label">¿Querés contarnos algo más?</label>
+                      <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
                       <span class="badge-forms badge-optional-forms">Opcional</span>
                     </div>
-                    <textarea class="form-control" id="additional-information" aria-describedby="TextArea" placeholder="placeholder"
-                      required maxlength="100" rows="5">
-                    </textarea>
+                    <textarea class="form-control" id="comentario" name="comentario" placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5" aria-describedby="TextArea" ></textarea>
                   </div>
                   <!-- Situación académica actual -->
                 </div>
               </div>
             </div>
             <!-- Información adicional -->
-
             <!-- condiciones legales -->
             <div class="col-12">
               <p class="text-md mb-4 pb-2">
@@ -277,17 +272,17 @@
                 correo si tu perfil coincide con alguna convocatoria.
               </p>
               <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="offersCheckbox"
+                <input class="form-checkbox-input" type="checkbox" name="ofertas"
                   id="latest-offers"
                   value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
-                <label class="form-checkbox-label" for="latest-offers">
+                <label class="form-checkbox-label" for="ofertas">
                   Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
                 </label>
               </div>
               <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="termsCheckbox"
-                  id="terms-and-conditions" value="Leí y estoy de acuerdo con las Políticas de privacidad." />
-                <label class="form-checkbox-label" for="terms-and-conditions">
+                <input class="form-checkbox-input" type="checkbox" name="terminos"
+                  id="terminos" value="Leí y estoy de acuerdo con las Políticas de privacidad." />
+                <label class="form-checkbox-label" for="terminos">
                   Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
                 </label>
               </div>
@@ -298,7 +293,6 @@
         </div>
       </div>
     </article>
-
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -309,6 +303,162 @@
     crossOrigin="anonymous"></script>
   <script src="../../shared/header-search-login.js"></script>
   <script src="../../shared/footer.js"></script>
+  <script>
+    const $ = document
+    const form = $.getElementById('formData')
+    
+    const selectInputElement = (element) => {
+      return $.querySelector(`input[name='${element}']`)
+    }
+
+    const selectSelectElement = (element) => {
+      return $.querySelector(`select[name='${element}']`)
+    }
+
+    const generatedValidateElement = ({message}) => {
+      return `
+        <div class="invalid-feedback">
+        <p>${message}</p>
+        </div>
+      `
+    }
+
+    const renderValidateElement = ({element, message, inputType = 'text'}) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)   
+      const error = field.nextElementSibling
+      if (error && error.classList.contains('invalid-feedback')) {
+        return
+      }else if (inputType !== 'checkbox' && inputType !== 'radio'){ 
+        field.insertAdjacentHTML('afterEnd', generatedValidateElement({message}))
+        field.classList.add('is-invalid')
+      }else{
+        field.classList.add('is-invalid')
+      }
+    }
+
+    const remveValidateElement = ({element, inputType = 'text'}) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)   
+      if (field && field.classList.contains('is-invalid')) {
+        field.classList.remove('is-invalid')
+        const error = field.nextElementSibling
+        if (error && error.classList.contains('invalid-feedback')) {
+          error.remove()
+        }
+      }
+    }
+
+
+    form.addEventListener('submit',(e) => {
+      
+      const formData = new FormData(form)
+      let isInvalid = false
+      e.preventDefault()
+      for (const [key, value] of formData.entries()) {
+          if (key === 'fullname' && value === '' && value.length < 3) {
+            renderValidateElement({element:key, message: 'El campo nombre y apellido es obligatorio.'})
+            isInvalid = true
+          }else if (key === 'date' && value === ''){
+            renderValidateElement({element: key, message: 'El campo fecha es obligatorio.'})
+          }else if (key === 'nro_dni' && value === ''){
+            renderValidateElement({element: key, message: 'El campo número de documento es obligatorio.'})
+            isInvalid = true
+          }else if (key === 'nro_tel'&& value === ''){
+            renderValidateElement({element: key, message: 'El campo número de telefono es obligatorio.'})
+            isInvalid = true
+          }else if (key === 'anios_antiguedad' && value === '' ){
+            renderValidateElement({element: key, message: 'El campo años de antiguedad es obligatorio.'})
+          }else if (key === 'curriculum_file' && value.name === '' ){
+            renderValidateElement({element: key, message: 'El campo curriculum es obligatorio.'})
+            isInvalid = true
+          }else {
+            const field = selectInputElement(key)
+            if (field && field.classList.contains('is-invalid')) {
+              field.classList.remove('is-invalid')
+              const error = field.nextElementSibling
+              if (error && error.classList.contains('invalid-feedback')) {
+                error.remove()
+              }
+            }
+          }
+      }
+
+      if (selectSelectElement('type_doc').value  === 'Seleccionar…' ){
+        renderValidateElement({element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select'})
+        isInvalid = true
+      }else{
+        remveValidateElement({element: 'type_doc', inputType: 'select'})
+      }
+      if (selectSelectElement('nivel_estudios').value  === 'Seleccionar' ){
+        renderValidateElement({element: 'nivel_estudios', message: 'El campo nivel de estudios es obligatorio.', inputType: 'select'})
+        isInvalid = true
+      }else{
+        remveValidateElement({element: 'nivel_estudios', inputType: 'select'})
+      }
+
+      if (selectSelectElement('estado_actual').value  === 'Seleccionar' ){
+        renderValidateElement({element: 'estado_actual', message: 'El campo estado actual es obligatorio.', inputType: 'select'})
+        isInvalid = true
+      }else{
+        remveValidateElement({element: 'estado_actual', inputType: 'select'})
+      }
+
+      if (selectInputElement('terminos').checked  === false ){
+        renderValidateElement({element: 'terminos', message: '', inputType: 'checkbox'})
+        isInvalid = true
+      }else{
+        remveValidateElement({element: 'terminos', inputType: 'checkbox'})
+      }
+
+
+      if (isInvalid) {
+        window.location.href = '#formData'
+        return
+      } else{
+        alert('Formulario enviado correctamente')
+        form.reset()
+        const inputs = form.querySelectorAll('input')
+        const select = form.querySelectorAll('select')
+        inputs.forEach((input) => {
+          input.classList.remove('is-invalid')
+          const error = input.nextElementSibling
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        select.forEach((select) => {
+          if (select.classList.contains('is-invalid')) {
+            select.classList.remove('is-invalid')
+          }
+          const error = select.nextElementSibling
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        window.location.href = '#formData'
+      }
+
+    })
+
+    // const intiailValues = {
+    // fullname: '',
+    // date: '',
+    // type_doc: '', //TODO
+    // nro_dni: '',
+    // nro_tel: '',
+    // profession: '', //TODO
+    // anios_antiguedad: '',
+    // nivel_estudios: '', // TODO
+    // estado_actual: '', // TODO
+    // area_estudio: '', // OPCIONAL
+    // curriculum_file: '',
+    // comentario: '',
+    // ofertas: '',
+    // terminos: ''
+    // }
+
+  </script>
 </body>
 
 </html>
+
+
