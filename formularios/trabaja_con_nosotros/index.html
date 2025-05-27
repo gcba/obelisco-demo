@@ -94,10 +94,11 @@
                 <!-- documento -->
                 <div class="row ">
                   <div class="col-7 col-xl-4">
-                    <div class="form-label-container" style="height: 48px;">
+                    <div class="form-label-container">
                       <label for="type_doc" class="form-label">Tipo de documento</label>
                     </div>
-                    <select class="form-control form-select" id="type_doc" name="type_doc" aria-label="Default select example">
+                    <select class="form-control form-select" id="type_doc" name="type_doc"
+                      aria-label="Default select example">
                       <option selected disabled>Seleccionar…</option>
                       <option value="dni">DNI</option>
                       <option value="3">3</option>
@@ -109,11 +110,11 @@
                     <div class="form-label-container">
                       <label for="nro_dni" class="form-label">Número de documento</label>
                     </div>
+                    <input type="text" class="form-control " id="nro_dni" name="nro_dni" aria-describedby="Text"
+                      placeholder="Texto" />
                     <p class="form-label-description">
                       Ingresá solo números, sin puntos ni guiones.
                     </p>
-                    <input type="text" class="form-control " id="nro_dni" name="nro_dni" aria-describedby="Text"
-                      placeholder="Texto" />
                   </div>
                 </div>
                 <!-- documento -->
@@ -124,15 +125,15 @@
                       <label for="nro_tel" class="form-label">
                         Número de teléfono
                       </label>
-                      <p class="form-label-description">
-                        Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
-                      </p>
                     </div>
                     <input type="number" class="form-control " name="nro_tel" aria-describedby="Number"
                       placeholder="11 0000 0000" />
-                      <!-- <div class="invalid-feedback">
+                    <!-- <div class="invalid-feedback">
                         <p>Los datos introducidos son inválidos.</p>
                       </div> -->
+                    <p class="form-label-description">
+                      Podés ingresar un número de línea o celular, con característica sin el 0 ni el 15.
+                    </p>
                   </div>
                 </div>
                 <!-- nro de telefono -->
@@ -184,7 +185,8 @@
                           Años de antigüedad
                         </label>
                       </div>
-                      <input type="number" class="form-control" id="anios_antiguedad" name="anios_antiguedad" placeholder="0"/>
+                      <input type="number" class="form-control" id="anios_antiguedad" name="anios_antiguedad"
+                        placeholder="0" />
                     </div>
                   </div>
                 </div>
@@ -238,7 +240,8 @@
                       <p class="form-label-description">
                         Subí un archivo de máximo 2MB en formato DOC o PDF.
                       </p>
-                      <input type="file" class="form-control" id="curriculum_file" name="curriculum_file"  accept=".pdf,.doc,.docx" />
+                      <input type="file" class="form-control" id="curriculum_file" name="curriculum_file"
+                        accept=".pdf,.doc,.docx" />
                     </div>
                   </div>
                   <!-- input file -->
@@ -258,7 +261,9 @@
                       <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
                       <span class="badge-forms badge-optional-forms">Opcional</span>
                     </div>
-                    <textarea class="form-control" id="comentario" name="comentario" placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5" aria-describedby="TextArea" ></textarea>
+                    <textarea class="form-control" id="comentario" name="comentario"
+                      placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5"
+                      aria-describedby="TextArea"></textarea>
                   </div>
                   <!-- Situación académica actual -->
                 </div>
@@ -268,19 +273,20 @@
             <!-- condiciones legales -->
             <div class="col-12">
               <p class="text-md mb-4 pb-2">
-                Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br> Recibirás un
+                Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br>
+                Recibirás un
                 correo si tu perfil coincide con alguna convocatoria.
               </p>
               <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="ofertas"
-                  id="ofertas" value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
+                <input class="form-checkbox-input" type="checkbox" name="ofertas" id="ofertas"
+                  value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
                 <label class="form-checkbox-label" for="ofertas">
                   Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
                 </label>
               </div>
               <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="terminos"
-                  id="terminos" value="Leí y estoy de acuerdo con las Políticas de privacidad." />
+                <input class="form-checkbox-input" type="checkbox" name="terminos" id="terminos"
+                  value="Leí y estoy de acuerdo con las Políticas de privacidad." />
                 <label class="form-checkbox-label" for="terminos">
                   Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
                 </label>
@@ -305,7 +311,7 @@
   <script>
     const $ = document
     const form = $.getElementById('formData')
-    
+
     const selectInputElement = (element) => {
       return $.querySelector(`input[name='${element}']`)
     }
@@ -314,7 +320,7 @@
       return $.querySelector(`select[name='${element}']`)
     }
 
-    const generatedValidateElement = ({message}) => {
+    const generatedValidateElement = ({ message }) => {
       return `
         <div class="invalid-feedback">
         <p>${message}</p>
@@ -322,104 +328,111 @@
       `
     }
 
-    const renderValidateElement = ({element, message, inputType = 'text'}) => {
-      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)   
-      const error = field.nextElementSibling
-      if (error && error.classList.contains('invalid-feedback')) {
-        return
-      }else if (inputType !== 'checkbox' && inputType !== 'radio'){ 
-        field.insertAdjacentHTML('afterEnd', generatedValidateElement({message}))
-        field.classList.add('is-invalid')
-      }else{
-        field.classList.add('is-invalid')
-      }
+    const renderValidateElement = ({ element, message, inputType = 'text' }) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
+      const parent = field.closest('.col-12') // o el contenedor adecuado
+
+      // Evita duplicar el mensaje si ya existe
+      const existingError = parent.querySelector('.invalid-feedback')
+      if (existingError) return
+
+      // Marcar el campo como inválido
+      field.classList.add('is-invalid')
+
+      // Insertar el mensaje como último hijo del padre
+      parent.insertAdjacentHTML('beforeend', generatedValidateElement({ message }))
     }
 
-    const remveValidateElement = ({element, inputType = 'text'}) => {
-      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)   
+    const removeValidateElement = ({ element, inputType = 'text' }) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
+      const parent = field.closest('.col-12') // Ajustá esto si usás otro contenedor
+
       if (field && field.classList.contains('is-invalid')) {
         field.classList.remove('is-invalid')
-        const error = field.nextElementSibling
-        if (error && error.classList.contains('invalid-feedback')) {
+
+        const error = parent?.querySelector('.invalid-feedback')
+        if (error) {
           error.remove()
         }
       }
     }
 
 
-    form.addEventListener('submit',(e) => {
-      
+    form.addEventListener('submit', (e) => {
+
       const formData = new FormData(form)
       let isInvalid = false
       e.preventDefault()
       for (const [key, value] of formData.entries()) {
-          if (key === 'fullname' && value === '' && value.length < 3) {
-            renderValidateElement({element:key, message: 'El campo nombre y apellido es obligatorio.'})
-            isInvalid = true
-          }else if (key === 'date' && value === ''){
-            renderValidateElement({element: key, message: 'El campo fecha es obligatorio.'})
-          }else if (key === 'nro_dni' && value === ''){
-            renderValidateElement({element: key, message: 'El campo número de documento es obligatorio.'})
-            isInvalid = true
-          }else if (key === 'nro_tel'&& value === ''){
-            renderValidateElement({element: key, message: 'El campo número de telefono es obligatorio.'})
-            isInvalid = true
-          }else if (key === 'anios_antiguedad' && value === '' ){
-            renderValidateElement({element: key, message: 'El campo años de antiguedad es obligatorio.'})
-          }else if (key === 'curriculum_file' && value.name === '' ){
-            renderValidateElement({element: key, message: 'El campo curriculum es obligatorio.'})
-            isInvalid = true
-          }else {
-            const field = selectInputElement(key)
-            if (field && field.classList.contains('is-invalid')) {
-              field.classList.remove('is-invalid')
-              const error = field.nextElementSibling
-              if (error && error.classList.contains('invalid-feedback')) {
-                error.remove()
-              }
+        if (key === 'fullname' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo nombre y apellido es obligatorio.' })
+          isInvalid = true
+        } else if (key === 'date' && value === '') {
+          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.' })
+        } else if (key === 'nro_dni' && value === '') {
+          renderValidateElement({ element: key, message: 'El campo número de documento es obligatorio.' })
+          isInvalid = true
+        } else if (key === 'nro_tel' && value === '') {
+          renderValidateElement({ element: key, message: 'El campo número de telefono es obligatorio.' })
+          isInvalid = true
+        } else if (key === 'anios_antiguedad' && value === '') {
+          renderValidateElement({ element: key, message: 'El campo años de antiguedad es obligatorio.' })
+        } else if (key === 'curriculum_file' && value.name === '') {
+          renderValidateElement({ element: key, message: 'El campo curriculum es obligatorio.' })
+          isInvalid = true
+        } else {
+          const field = selectInputElement(key)
+          if (field && field.classList.contains('is-invalid')) {
+            field.classList.remove('is-invalid')
+            const parentElement = field.parentElement
+            const error = parentElement.querySelector('.invalid-feedback')
+            if (error && error.classList.contains('invalid-feedback')) {
+              error.remove()
             }
           }
+        }
       }
 
-      if (selectSelectElement('type_doc').value  === 'Seleccionar…' ){
-        renderValidateElement({element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select'})
+      if (selectSelectElement('type_doc').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select' })
         isInvalid = true
-      }else{
-        remveValidateElement({element: 'type_doc', inputType: 'select'})
+      } else {
+        removeValidateElement({ element: 'type_doc', inputType: 'select' })
       }
-      if (selectSelectElement('nivel_estudios').value  === 'Seleccionar' ){
-        renderValidateElement({element: 'nivel_estudios', message: 'El campo nivel de estudios es obligatorio.', inputType: 'select'})
+      if (selectSelectElement('nivel_estudios').value === 'Seleccionar') {
+        renderValidateElement({ element: 'nivel_estudios', message: 'El campo nivel de estudios es obligatorio.', inputType: 'select' })
         isInvalid = true
-      }else{
-        remveValidateElement({element: 'nivel_estudios', inputType: 'select'})
-      }
-
-      if (selectSelectElement('estado_actual').value  === 'Seleccionar' ){
-        renderValidateElement({element: 'estado_actual', message: 'El campo estado actual es obligatorio.', inputType: 'select'})
-        isInvalid = true
-      }else{
-        remveValidateElement({element: 'estado_actual', inputType: 'select'})
+      } else {
+        removeValidateElement({ element: 'nivel_estudios', inputType: 'select' })
       }
 
-      if (selectInputElement('terminos').checked  === false ){
-        renderValidateElement({element: 'terminos', message: '', inputType: 'checkbox'})
+      if (selectSelectElement('estado_actual').value === 'Seleccionar') {
+        renderValidateElement({ element: 'estado_actual', message: 'El campo estado actual es obligatorio.', inputType: 'select' })
         isInvalid = true
-      }else{
-        remveValidateElement({element: 'terminos', inputType: 'checkbox'})
+      } else {
+        removeValidateElement({ element: 'estado_actual', inputType: 'select' })
+      }
+
+      if (selectInputElement('terminos').checked === false) {
+        renderValidateElement({ element: 'terminos', message: 'El campo terminos es obligatorio', inputType: 'checkbox' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'terminos', inputType: 'checkbox' })
       }
 
 
       if (isInvalid) {
         window.location.href = '#formData'
         return
-      } else{
+      } else {
         alert('Formulario enviado correctamente')
         form.reset()
         const inputs = form.querySelectorAll('input')
         const select = form.querySelectorAll('select')
         inputs.forEach((input) => {
           input.classList.remove('is-invalid')
-          const error = input.nextElementSibling
+          const parentElement = input.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
           if (error && error.classList.contains('invalid-feedback')) {
             error.remove()
           }
@@ -428,7 +441,8 @@
           if (select.classList.contains('is-invalid')) {
             select.classList.remove('is-invalid')
           }
-          const error = select.nextElementSibling
+          const parentElement = select.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
           if (error && error.classList.contains('invalid-feedback')) {
             error.remove()
           }
@@ -454,10 +468,7 @@
     // ofertas: '',
     // terminos: ''
     // }
-
   </script>
 </body>
 
 </html>
-
-

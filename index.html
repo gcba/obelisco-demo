@@ -1,336 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-    <title>Plantillas GCBA</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
-   <!-- Obelisco -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+  <title>Plantillas GCBA</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-    </link>
-    <link rel="stylesheet" href="./node_modules/@gcba/obelisco-v2/dist/styles.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="./node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
 
-    <style>
+  <style>
+    .home-iframe {
+      min-height: 100%;
+      min-width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
       .home-iframe {
-        min-height: 100%; 
-        min-width: 100%;
+        min-height: 300px;
+        min-width: 500px;
       }
-      @media screen and (min-width: 1200px) {
-        .home-iframe {
-          min-height: 300px; 
-          min-width: 500px;
-        }
-      }
-    </style>
-  </head>
-  
-  <body>    
-    <header class="o-header navbar" role="banner">
-      <a href="#main" class="skip-to-main-content-link">
-        Saltar al contenido principal
+    }
+  </style>
+</head>
+
+<body>
+  <header class="o-header navbar" role="banner">
+    <a href="#main" class="skip-to-main-content-link">
+      Saltar al contenido principal
+    </a>
+    <div class="container header-container">
+      <a href="https://gcba.github.io/" class="navbar-brand">
+        <img class="d-none d-xl-block" src="/assets/header/logo_obelisco.svg" alt="Obelisco" />
+        <img class="d-xl-none" src="/assets/header/logo_obelisco_mobile.svg" alt="Obelisco" />
       </a>
-      <div class="container header-container">
-        <a href="https://gcba.github.io/" class="navbar-brand">
-          <img
-            class="d-none d-xl-block"
-            src="/assets/header/logo_obelisco.svg"
-            alt="Obelisco"
-          />
-          <img
-            class="d-xl-none"
-            src="/assets/header/logo_obelisco_mobile.svg"
-            alt="Obelisco"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarHomeObelisco"
-          aria-controls="navbarHomeObelisco"
-          aria-expanded="false"
-          aria-label="Menú"
-        ></button>
-        <div class="collapse navbar-collapse" id="navbarHomeObelisco">
-          <div class="navbar-content">
-            <div class="navbar-sections">
-              <nav>
-                <p class="navbar-sections-title">Secciones</p>
-                <ul class="nav nav-pills nav-sections">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link nav-link-lg"
-                      href="https://gcba.github.io/Obelisco-V2/getting-started"
-                      ><span>Empezar con Obelisco</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link nav-link-lg"
-                      href="https://gcba.github.io/Obelisco-V2/components"
-                      ><span>Librería</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link nav-link-lg"
-                      href="https://gcba.github.io/Obelisco-V2/patterns"
-                      ><span>Patrones</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link nav-link-lg active"
-                      href="https://gcba.github.io/obelisco-demo/"
-                      ><span>Plantillas</span></a
-                    >
-                  </li>
-                  <li class="dropdown">
-                    <button
-                      type="button"
-                      class="btn btn-dropdown btn-lg"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span class="btn-dropdown-text ellipsis-1">Versiones</span>
-                      <span
-                        class="material-symbols-rounded btn-dropdown-icon"
-                        aria-label="hidden"
-                      >
-                        expand_more
-                      </span>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a
-                        class="dropdown-item"
-                        href="https://gcba.github.io/Obelisco-V2/documentation"
-                      >
-                        <span class="item-text">Obelisco v.2</span>
-                      </a>
-                      <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
-                        <span class="item-text"
-                          >Obelisco v.1
-                          <span class="fst-italic">(deprecado)</span></span
-                        >
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-backdrop"></div>
-    </header>
-    <main id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-xl-8 mx-auto" style="margin-top: 64px;">
-            <section>
-              <h1 style="margin-bottom: 20px;" class="fw-semibold">Plantillas</h1>
-              <p style="margin-bottom: 20px;">Las plantillas son combinaciones de organismos y componentes que sirven como ejemplos y como guía para generar contenido. Son un buen punto de partida para construir nuevas páginas utilizando Obelisco como sistema de diseño.</p>
-              <hr style="margin-bottom: 32px; background-color: #E6EBF0;">
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Áreas de Gobierno</h2>
-              <p>Página principal de un ministerio, secretaría o subsecretaría. Es la puerta de acceso a los demás tipos de contenido (artículos, páginas, páginas de libro, etc.)</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <h3 class="text-xl mb-3">Plantilla de primer nivel</h3>
-                  <a href="./pagina_area/area_de_gobierno/op1.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de primer nivel</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="col">
-                  <h3 class="text-xl mb-3">Plantilla de segundo nivel</h3>
-                  <a href="./pagina_area/area_de_gobierno/op2.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de segundo nivel</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Página Simple</h2>
-              <p>Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <a href="./pagina_simple/pagina_simple_op5/index.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página simple</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Página de libro</h2>
-              <p>Las usamos para agrupar información sobre un mismo tema en subtemas. Los índices y las subpáginas deben tener como mínimo 2 párrafos de 5 líneas de información.</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <a href="./pagina_libro/index.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de libro</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Trámites</h2>
-              <p>Página que usamos para todos los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <a href="./pagina_simple/tramites/index.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de trámites</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Noticias</h2>
-              <p>Las utilizamos para comunicar noticias y novedades. Este tipo de página debe actualizarse al menos 1 vez por semana.</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <h3 class="text-xl mb-3">Con galería de imágenes</h3>
-                  <a href="./noticias/galeria.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de noticia con galería</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="col">
-                  <h3 class="text-xl mb-3">Con foco en video</h3>
-                  <a href="./noticias/foco_en_video.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Página de noticia con video</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section>
-              <h2 class="h4 fw-semibold mb-3">Formularios</h2>
-              <p>Los usamos en inscripciones, convocatorias, consultas, contacto, registros, postulaciones, encuestas, censos, tests, etc.</p>
-              <div class="max-items-2 mb-5 pt-3">
-                <div class="col">
-                  <a href="./formularios/trabaja_con_nosotros/index.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
-                    <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
-                    <div class="access-content">
-                      <span class="access-title">Formulario con campos varios</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <section class="pb-5 text-end" style="padding-top: 32px;">
-              <button class="btn btn-outline-tertiary btn-lg" type="button" onclick="scrollToTop()">
-                <span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span>
-                Volver arriba
-              </button>
-            </section>
-          </div>
-        </div>
-      </div>
-    </main>
-    <h2 class="sr-only">Navegación de pie de página</h2>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-legal-section">
-          <h3 class="sr-only">Información gubernamental</h3>
-          <div class="row align-items-center">
-            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-              <img
-                class="d-md-none"
-                src="./assets/footer/logo-footer-mobile.svg"
-                alt="Logo de Ciudad de Buenos Aires"
-                height="48"
-              />
-              <img
-                class="d-none d-md-inline"
-                src="./assets/footer/logo-footer.svg"
-                alt="Logo de Ciudad de Buenos Aires"
-                height="40"
-              />
-              <img
-                class="img-vamos-ba"
-                src="./assets/footer/logo-footer-ba.svg"
-                alt="Logo de Vamos Buenos Aires"
-              />
-            </div>
-            <div class="col-12">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="https://boletinoficial.buenosaires.gob.ar">
-                    Boletín oficial
-                  </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHomeObelisco"
+        aria-controls="navbarHomeObelisco" aria-expanded="false" aria-label="Menú"></button>
+      <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+        <div class="navbar-content">
+          <div class="navbar-sections">
+            <nav>
+              <p class="navbar-sections-title">Secciones</p>
+              <ul class="nav nav-pills nav-sections">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/getting-started"><span>Empezar con Obelisco</span></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                  >
-                    Términos y condiciones
-                  </a>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/components"><span>Librería</span></a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                    Política de privacidad
-                  </a>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/patterns"><span>Patrones</span></a>
                 </li>
-                <li class="list-inline-item">
-                  <a
-                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                  >
-                    Oficios judiciales
-                  </a>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg active"
+                    href="https://gcba.github.io/obelisco-demo/"><span>Plantillas</span></a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                    Transparencia
-                  </a>
+                <li class="dropdown">
+                  <button type="button" class="btn btn-dropdown btn-lg" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                    <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                      expand_more
+                    </span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://gcba.github.io/Obelisco-V2/documentation">
+                      <span class="item-text">Obelisco v.2</span>
+                    </a>
+                    <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                      <span class="item-text">Obelisco v.1
+                        <span class="fst-italic">(deprecado)</span></span>
+                    </a>
+                  </div>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
-        </section>
-        <section>
-          <div class="footer-license-text">
-            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-            Commons Reconocimiento 2.5 Argentina License.
-          </div>
-        </section>
+        </div>
       </div>
-    </footer>
+    </div>
+    <div class="header-backdrop"></div>
+  </header>
+  <main id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-8 mx-auto" style="margin-top: 64px;">
+          <section>
+            <h1 style="margin-bottom: 20px;" class="fw-semibold">Plantillas</h1>
+            <p style="margin-bottom: 20px;">Las plantillas son combinaciones de organismos y componentes que sirven como
+              ejemplos y como guía para generar contenido. Son un buen punto de partida para construir nuevas páginas
+              utilizando Obelisco como sistema de diseño.</p>
+            <hr style="margin-bottom: 32px; background-color: #E6EBF0;">
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Áreas de Gobierno</h2>
+            <p>Página principal de un ministerio, secretaría o subsecretaría. Es la puerta de acceso a los demás tipos
+              de contenido (artículos, páginas, páginas de libro, etc.)</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <h3 class="text-xl mb-3">Plantilla de primer nivel</h3>
+                <a href="./pagina_area/area_de_gobierno/op1.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de primer nivel</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <h3 class="text-xl mb-3">Plantilla de segundo nivel</h3>
+                <a href="./pagina_area/area_de_gobierno/op2.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de segundo nivel</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Página Simple</h2>
+            <p>Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área,
+              y con menor cantidad de contenido.</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <a href="./pagina_simple/pagina_simple_op5/index.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página simple</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Página de libro</h2>
+            <p>Las usamos para agrupar información sobre un mismo tema en subtemas. Los índices y las subpáginas deben
+              tener como mínimo 2 párrafos de 5 líneas de información.</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <a href="./pagina_libro/index.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de libro</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Trámites</h2>
+            <p>Página que usamos para todos los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <a href="./pagina_simple/tramites/index.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de trámites</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Noticias</h2>
+            <p>Las utilizamos para comunicar noticias y novedades. Este tipo de página debe actualizarse al menos 1 vez
+              por semana.</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <h3 class="text-xl mb-3">Con galería de imágenes</h3>
+                <a href="./noticias/galeria.html" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de noticia con galería</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <h3 class="text-xl mb-3">Con foco en video</h3>
+                <a href="./noticias/foco_en_video.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Página de noticia con video</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 fw-semibold mb-3">Formularios</h2>
+            <p>Los usamos en inscripciones, convocatorias, consultas, contacto, registros, postulaciones, encuestas,
+              censos, tests, etc.</p>
+            <div class="max-items-2 mb-5 pt-3">
+              <div class="col">
+                <a href="./formularios/trabaja_con_nosotros/index.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Formulario página unica</span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="./formularios/multipagina/index.html" class="list-group-item" target="_blank"
+                  rel="noopener noreferrer">
+                  <span class="material-symbols-rounded o-icon" aria-hidden="true">language</span>
+                  <div class="access-content">
+                    <span class="access-title">Formulario multipágina</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="pb-5 text-end" style="padding-top: 32px;">
+            <button class="btn btn-outline-tertiary btn-lg" type="button" onclick="scrollToTop()">
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span>
+              Volver arriba
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <h2 class="sr-only">Navegación de pie de página</h2>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-legal-section">
+        <h3 class="sr-only">Información gubernamental</h3>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+            <img class="d-md-none" src="./assets/footer/logo-footer-mobile.svg" alt="Logo de Ciudad de Buenos Aires"
+              height="48" />
+            <img class="d-none d-md-inline" src="./assets/footer/logo-footer.svg" alt="Logo de Ciudad de Buenos Aires"
+              height="40" />
+            <img class="img-vamos-ba" src="./assets/footer/logo-footer-ba.svg" alt="Logo de Vamos Buenos Aires" />
+          </div>
+          <div class="col-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                  Oficios judiciales
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                  Transparencia
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+          Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
-    <script>
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      }
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossOrigin="anonymous"></script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+
 </html>
