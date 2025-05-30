@@ -181,10 +181,9 @@
                   <select class="form-control form-select" id="country" name="country"
                     aria-label="Default select example">
                     <option selected disabled>Seleccionar…</option>
-                    <option value="dni">DNI</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="peru">Perú</option>
                   </select>
                 </div>
 
@@ -195,10 +194,9 @@
                   <select class="form-control form-select" id="province" name="province"
                     aria-label="Default select example">
                     <option selected disabled>Seleccionar…</option>
-                    <option value="dni">DNI</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
                   </select>
                 </div>
               </div>
@@ -212,7 +210,8 @@
                   <select class="form-control form-select" id="commune" name="commune"
                     aria-label="Default select example">
                     <option selected disabled>Seleccionar…</option>
-                    <option value="dni">DNI</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
@@ -251,7 +250,7 @@
                     <span class="badge-forms badge-optional-forms">Opcional</span>
                     <span class="form-label-number">0/100</span>
                   </div>
-                  <textarea class="form-control" id="observations" aria-describedby="TextArea" required
+                  <textarea class="form-control" id="observations" aria-describedby="TextArea"
                     style="height: 144px;"></textarea>
                 </div>
               </div>
@@ -297,7 +296,7 @@
           <div class="container" style="padding: 0;">
             <div class=" d-flex flex-column flex-md-row gap-3 justify-content-end" style="margin-bottom: 56px; ">
               <button type="button" class="btn btn-outline-secondary">Volver</button>
-              <button type="button" class="btn btn-secondary">Siguiente</button>
+              <button type="submit" class="btn btn-secondary">Siguiente</button>
             </div>
           </div>
         </form>
@@ -315,6 +314,145 @@
     crossOrigin="anonymous"></script>
   <script src="../../shared/header-search-login.js"></script>
   <script src="../../shared/footer.js"></script>
+
+  <script>
+    const $ = document
+    const form = $.getElementById('formData')
+
+    const selectInputElement = (element) => {
+      return $.querySelector(`input[name='${element}']`)
+    }
+
+    const selectSelectElement = (element) => {
+      return $.querySelector(`select[name='${element}']`)
+    }
+
+    const generatedValidateElement = ({ message }) => {
+      return `
+        <div class="invalid-feedback">
+        <p>${message}</p>
+        </div>
+      `
+    }
+
+    const renderValidateElement = ({ element, message, inputType = 'text' }) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
+      const parent = field.closest('.col-12') // o el contenedor adecuado
+
+      // Evita duplicar el mensaje si ya existe
+      const existingError = parent.querySelector('.invalid-feedback')
+      if (existingError) return
+
+      // Marcar el campo como inválido
+      field.classList.add('is-invalid')
+
+      // Insertar el mensaje como último hijo del padre
+      parent.insertAdjacentHTML('beforeend', generatedValidateElement({ message }))
+    }
+
+
+    form.addEventListener('submit', (e) => {
+      const formData = new FormData(form)
+      let isInvalid = false
+      e.preventDefault()
+
+      for (const [key, value] of formData.entries()) {
+
+        if (key === 'firstname' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo nombre es obligatorio.' })
+          isInvalid = true
+        } else if (key === 'lastname' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo apellido es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'date' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'cuit_cuil' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo CUIT - CUIL es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'street' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo calle es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'street_number' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo número es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'zip_code' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo código es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'phone' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo telefono es obligatorio.' })
+          isInvalid = true
+        } else {
+          const field = selectInputElement(key)
+          if (field && field.classList.contains('is-invalid')) {
+            field.classList.remove('is-invalid')
+            const parentElement = field.parentElement
+            const error = parentElement.querySelector('.invalid-feedback')
+            if (error && error.classList.contains('invalid-feedback')) {
+              error.remove()
+            }
+          }
+        }
+
+      }
+
+      if (selectSelectElement('country').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'country', message: 'El campo pais es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'country', inputType: 'select' })
+      }
+      if (selectSelectElement('province').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'province', message: 'El campo provincia es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'province', inputType: 'select' })
+      }
+      if (selectSelectElement('commune').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'commune', message: 'El campo provincia es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'commune', inputType: 'select' })
+      }
+
+      if (isInvalid) {
+        window.location.href = '#formData'
+        return
+      } else {
+        alert('Formulario enviado correctamente')
+        form.reset()
+        const inputs = form.querySelectorAll('input')
+        const select = form.querySelectorAll('select')
+        inputs.forEach((input) => {
+          input.classList.remove('is-invalid')
+          const parentElement = input.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        select.forEach((select) => {
+          if (select.classList.contains('is-invalid')) {
+            select.classList.remove('is-invalid')
+          }
+          const parentElement = select.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        window.location.href = '#formData'
+      }
+    })
+
+
+  </script>
 
 </body>
 

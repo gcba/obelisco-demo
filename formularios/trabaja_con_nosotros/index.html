@@ -195,7 +195,7 @@
                 <div class="col-12">
                   <p class="headline-md mb-4">Situación académica actual</p>
                   <!-- selects -->
-                  <div class="row mb-4 pb-2">
+                  <div class="row mb-4 pb-2 flex-column">
                     <div class="col-12 col-xl-5">
                       <div class="form-label-container">
                         <label for="nivel_estudios" class="form-label">Nivel de estudios alcanzado</label>
@@ -206,6 +206,9 @@
                         <option value="2">Opción</option>
                         <option value="3">Opción</option>
                       </select>
+                    </div>
+
+                    <div class="col-12 col-xl-5">
 
                       <div class="form-label-container mt-3">
                         <label for="estado_actual" class="form-label">Estado actual</label>
@@ -216,6 +219,8 @@
                         <option value="2">Opción</option>
                         <option value="3">Opción</option>
                       </select>
+                    </div>
+                    <div class="col-12 col-xl-5">
 
                       <div class="form-label-container mt-3">
                         <label for="area_estudio" class="form-label">Área de estudio</label>
@@ -229,73 +234,74 @@
                       </select>
                     </div>
                   </div>
-                  <!-- selects -->
+                </div>
+                <!-- selects -->
 
-                  <!-- input file -->
-                  <div class="row mt-4 pt-2">
-                    <div class="col-12 col-xl-8">
-                      <div class="form-label-container">
-                        <label for="curriculum_file" class="form-label">Cargá tu curriculum vitae</label>
-                      </div>
-                      <p class="form-label-description">
-                        Subí un archivo de máximo 2MB en formato DOC o PDF.
-                      </p>
-                      <input type="file" class="form-control" id="curriculum_file" name="curriculum_file"
-                        accept=".pdf,.doc,.docx" />
-                    </div>
-                  </div>
-                  <!-- input file -->
-                </div>
-              </div>
-            </div>
-            <!-- Información laboral y académica -->
-            <!-- Información adicional -->
-            <div class="mb-5">
-              <div class="col-12 col-xl-8 mt-3">
-                <h3 class="mb-1">Información adicional</h3>
-                <hr class="mt-0 mb-4 pb-2">
-                <div class="row">
-                  <!-- Situación académica actual -->
-                  <div class="col-12 col-xl-10">
+                <!-- input file -->
+                <div class="row mt-4 pt-2">
+                  <div class="col-12 col-xl-8">
                     <div class="form-label-container">
-                      <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
-                      <span class="badge-forms badge-optional-forms">Opcional</span>
+                      <label for="curriculum_file" class="form-label">Cargá tu curriculum vitae</label>
                     </div>
-                    <textarea class="form-control" id="comentario" name="comentario"
-                      placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5"
-                      aria-describedby="TextArea"></textarea>
+                    <p class="form-label-description">
+                      Subí un archivo de máximo 2MB en formato DOC o PDF.
+                    </p>
+                    <input type="file" class="form-control" id="curriculum_file" name="curriculum_file"
+                      accept=".pdf,.doc,.docx" />
                   </div>
-                  <!-- Situación académica actual -->
                 </div>
+                <!-- input file -->
               </div>
             </div>
-            <!-- Información adicional -->
-            <!-- condiciones legales -->
-            <div class="col-12">
-              <p class="text-md mb-4 pb-2">
-                Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br>
-                Recibirás un
-                correo si tu perfil coincide con alguna convocatoria.
-              </p>
-              <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="ofertas" id="ofertas"
-                  value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
-                <label class="form-checkbox-label" for="ofertas">
-                  Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
-                </label>
-              </div>
-              <div class="form-checkbox">
-                <input class="form-checkbox-input" type="checkbox" name="terminos" id="terminos"
-                  value="Leí y estoy de acuerdo con las Políticas de privacidad." />
-                <label class="form-checkbox-label" for="terminos">
-                  Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
-                </label>
-              </div>
-            </div>
-            <!-- condiciones legales -->
-            <button type="submit" class="btn btn-primary mt-4">Enviar postulación</button>
-          </form>
         </div>
+        <!-- Información laboral y académica -->
+        <!-- Información adicional -->
+        <div class="mb-5">
+          <div class="col-12 col-xl-8 mt-3">
+            <h3 class="mb-1">Información adicional</h3>
+            <hr class="mt-0 mb-4 pb-2">
+            <div class="row">
+              <!-- Situación académica actual -->
+              <div class="col-12 col-xl-10">
+                <div class="form-label-container">
+                  <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
+                  <span class="badge-forms badge-optional-forms">Opcional</span>
+                </div>
+                <textarea class="form-control" id="comentario" name="comentario"
+                  placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5"
+                  aria-describedby="TextArea"></textarea>
+              </div>
+              <!-- Situación académica actual -->
+            </div>
+          </div>
+        </div>
+        <!-- Información adicional -->
+        <!-- condiciones legales -->
+        <div class="col-12">
+          <p class="text-md mb-4 pb-2">
+            Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br>
+            Recibirás un
+            correo si tu perfil coincide con alguna convocatoria.
+          </p>
+          <div class="form-checkbox">
+            <input class="form-checkbox-input" type="checkbox" name="ofertas" id="ofertas"
+              value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
+            <label class="form-checkbox-label" for="ofertas">
+              Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
+            </label>
+          </div>
+          <div class="form-checkbox">
+            <input class="form-checkbox-input" type="checkbox" name="terminos" id="terminos"
+              value="Leí y estoy de acuerdo con las Políticas de privacidad." />
+            <label class="form-checkbox-label" for="terminos">
+              Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
+            </label>
+          </div>
+        </div>
+        <!-- condiciones legales -->
+        <button type="submit" class="btn btn-primary mt-4">Enviar postulación</button>
+        </form>
+      </div>
       </div>
     </article>
   </main>
@@ -328,9 +334,9 @@
       `
     }
 
-    const renderValidateElement = ({ element, message, inputType = 'text' }) => {
+    const renderValidateElement = ({ element, message, inputType = 'text', parentElement = '.col-12' }) => {
       const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
-      const parent = field.closest('.col-12') // o el contenedor adecuado
+      const parent = field.closest(parentElement) // o el contenedor adecuado
 
       // Evita duplicar el mensaje si ya existe
       const existingError = parent.querySelector('.invalid-feedback')
@@ -368,7 +374,7 @@
           renderValidateElement({ element: key, message: 'El campo nombre y apellido es obligatorio.' })
           isInvalid = true
         } else if (key === 'date' && value === '') {
-          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.' })
+          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.', parentElement: '.col-8' })
         } else if (key === 'nro_dni' && value === '') {
           renderValidateElement({ element: key, message: 'El campo número de documento es obligatorio.' })
           isInvalid = true
@@ -376,7 +382,7 @@
           renderValidateElement({ element: key, message: 'El campo número de telefono es obligatorio.' })
           isInvalid = true
         } else if (key === 'anios_antiguedad' && value === '') {
-          renderValidateElement({ element: key, message: 'El campo años de antiguedad es obligatorio.' })
+          renderValidateElement({ element: key, message: 'El campo años de antiguedad es obligatorio.', parentElement: '.col-7' })
         } else if (key === 'curriculum_file' && value.name === '') {
           renderValidateElement({ element: key, message: 'El campo curriculum es obligatorio.' })
           isInvalid = true
@@ -394,7 +400,7 @@
       }
 
       if (selectSelectElement('type_doc').value === 'Seleccionar…') {
-        renderValidateElement({ element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select' })
+        renderValidateElement({ element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select', parentElement: '.col-7' })
         isInvalid = true
       } else {
         removeValidateElement({ element: 'type_doc', inputType: 'select' })
