@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+
+  <title>Formulario multipagina</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+
+</head>
+
+<body>
+  <main class="min-vh-100">
+    <header class="bg-light pt-3 pb-5 mb-5">
+      <div class="container pt-3 px-3 px-lg-0">
+        <nav aria-label="Navegación secundaria" class="py-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Formulario</a></li>
+          </ol>
+        </nav>
+        <div class="row px-3 px-md-0">
+          <div class="stepper-content" style="padding: 0px;">
+            <div class="stepper">
+              <p class="step-volanta">Solicitud de partidas</p>
+              <h2 class="step-title">Datos del solicitante</h2>
+              <p class="step-subtitle">Paso siguiente: Adjuntá documentación</p>
+              <div class="steps">
+                <div class="steps-items">
+                  <div class="steps-item active"></div>
+                  <div class="steps-item active"></div>
+                  <div class="steps-item"></div>
+                  <div class="steps-item"></div>
+                  <div class="steps-item"></div>
+                </div>
+                <span class="steps-detail">Paso 2 de 5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8">
+          <div class="mb-5">
+            <h6 class="mb-3">Este es el subtítulo de una lista de requisitos</h6>
+            <ul class="list-informative-check mb-4">
+              <li><strong>Contá con tu DNI vigente con domicilio en CABA.</strong> Las personas mayores de 75 años
+                podrán utilizar la Libreta de Enrolamiento o la Libreta Cívica. </li>
+              <li><strong>Contá con tu número de CUIL/CUIT.</strong> Podes consultar la constancia del CUIL desde la
+                página del Anses.</li>
+            </ul>
+            <div class="d-flex gap-2 mb-4">
+              <span class="material-symbols-rounded text-info">info</span>
+              <p>Todos los campos son obligatorios, salvo que estén marcados como opcionales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <form id="formData" class="col-12 col-xl-8">
+          <!-- Datos personales -->
+          <div class="mb-5">
+
+            <h3 class="mb-1">Datos personales</h3>
+            <hr class="mb-2 mt-0">
+            <p class="text-md mb-4 pb-2">
+              Información básica para poder identificarte y establecer contacto. Solo se utilizará con fines
+              vinculados
+              a
+              las búsquedas laborales del GCBA.
+            </p>
+
+            <div class="container d-flex flex-column gap-3" style="padding: 0;">
+              <!-- nombre y apellido -->
+              <div class="row row-gap-3">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="firstname" class="form-label">Nombre</label>
+                  </div>
+                  <input type="text" class="form-control" id="firstname" name="firstname" />
+                </div>
+
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="lastname" class="form-label">Apellido</label>
+                  </div>
+                  <input type="text" class="form-control" id="lastname" name="lastname" />
+                </div>
+              </div>
+              <!-- nombre y apellido -->
+              <!-- fecha de nacimiento -->
+              <div class="row">
+                <div class="col-12 col-xl-4">
+                  <div class="form-label-container">
+                    <label for="date" class="form-label">Fecha de nacimiento</label>
+                  </div>
+                  <input type="date" class="form-control" id="date" name="date" aria-describedby="date-help" />
+                </div>
+              </div>
+              <!-- fecha de nacimiento -->
+              <!-- cuil/cuit -->
+              <div class="row">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="cuit_cuil" class="form-label">CUIL/CUIT</label>
+                  </div>
+                  <input type="number" class="form-control" id="cuit_cuil" name="cuit_cuil" />
+                  <p class="form-label-description">Ingresá sólo números, sin guiones ni puntos.</p>
+                </div>
+              </div>
+              <!-- cuil/cuit -->
+
+              <!-- documento -->
+              <div class="row">
+                <div class="col-12 col-xl-5">
+                  <div class="form-label-container">
+                    <label for="type_doc" class="form-label">Tipo de documento</label>
+                    <span class="badge-forms badge-optional-forms">Opcional</span>
+                  </div>
+                  <select class="form-control form-select" id="type_doc" name="type_doc"
+                    aria-label="Seleccione una opción">
+                    <option selected disabled>Seleccionar…</option>
+                    <option value="dni">DNI</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-3 mt-lg-0 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="nro_dni" class="form-label">Número de documento</label>
+                    <span class="badge-forms badge-optional-forms">Opcional</span>
+                  </div>
+                  <input type="text" class="form-control " id="nro_dni" name="nro_dni" aria-describedby="Text"
+                    placeholder="Texto" />
+                  <p class="form-label-description">
+                    Ingresá solo números, sin puntos ni guiones.
+                  </p>
+                </div>
+              </div>
+              <!-- documento -->
+            </div>
+
+          </div>
+          <!-- Datos personales -->
+
+          <!-- Datos del domicilio -->
+          <div class="mb-5">
+            <h3 class="mb-1">Datos del domicilio</h3>
+            <hr class="mb-2 mt-0">
+            <p class="text-md mb-4 pb-2">
+              Esta información puede ser necesaria para validar tu residencia o enviarte notificaciones físicas si
+              corresponde.
+            </p>
+
+            <div class="container d-flex flex-column gap-3" style="padding: 0;">
+
+              <!-- Pais y provincia -->
+              <div class="row row-gap-3">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="country" class="form-label">País</label>
+                  </div>
+                  <select class="form-control form-select" id="country" name="country"
+                    aria-label="Seleccione una opción">
+                    <option selected disabled>Seleccionar…</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="peru">Perú</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="province" class="form-label">Provincia</label>
+                  </div>
+                  <select class="form-control form-select" id="province" name="province"
+                    aria-label="Seleccione una opción">
+                    <option selected disabled>Seleccionar…</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Pais y provincia -->
+
+              <div class="row">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="commune" class="form-label">Seleccioná tu comuna</label>
+                  </div>
+                  <select class="form-control form-select" id="commune" name="commune"
+                    aria-label="Seleccione una opción">
+                    <option selected disabled>Seleccionar…</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="row row-gap-3">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="street" class="form-label">Calle</label>
+                  </div>
+                  <input type="text" class="form-control" id="street" name="street" />
+                </div>
+
+                <div class="col-12 col-xl-3">
+                  <div class="form-label-container">
+                    <label for="street_number" class="form-label">Número</label>
+                  </div>
+                  <input type="text" class="form-control" id="street_number" name="street_number" />
+                </div>
+                <div class="col-12 col-xl-3">
+                  <div class="form-label-container">
+                    <label for="zip_code" class="form-label">Código Postal</label>
+                  </div>
+                  <input type="text" class="form-control" id="zip_code" name="zip_code" />
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-xl-8">
+                  <div class="form-label-container">
+                    <label for="observations" class="form-label">Observaciones</label>
+                    <span class="badge-forms badge-optional-forms">Opcional</span>
+                    <span class="form-label-number">0/100</span>
+                  </div>
+                  <textarea class="form-control" id="observations" aria-describedby="TextArea"
+                    style="height: 144px;"></textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Datos del domicilio -->
+
+          <!-- Contacto -->
+          <div class="mb-5">
+            <h3 class="mb-1">Contacto</h3>
+            <hr class="mb-2 mt-0">
+            <p class="text-md mb-4 pb-2">
+              Usaremos estos datos para que podamos comunicarnos con vos en caso de ser necesario.
+            </p>
+
+            <div class="container d-flex flex-column gap-3" style="padding: 0;">
+              <div class="row">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="phone" class="form-label">Número de teléfono</label>
+                  </div>
+                  <input type="text" class="form-control" id="phone" name="phone" />
+                  <p class="form-label-description">
+                    Podés ingresar un número de línea o celular, con características sin el 0 ni el 15.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-xl-6">
+                  <div class="form-label-container">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <span class="badge-forms badge-optional-forms">Opcional</span>
+                  </div>
+                  <input type="email" class="form-control" id="email" name="email" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Contacto -->
+          <div class="container" style="padding: 0;">
+            <div class=" d-flex flex-column flex-md-row gap-3 justify-content-end" style="margin-bottom: 56px; ">
+              <button type="button" class="btn btn-outline-secondary">Volver</button>
+              <button type="submit" class="btn btn-secondary">Siguiente</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossOrigin="anonymous"></script>
+  <script src="../../shared/header-search-login.js"></script>
+  <script src="../../shared/footer.js"></script>
+
+  <script>
+    const $ = document
+    const form = $.getElementById('formData')
+
+    const selectInputElement = (element) => {
+      return $.querySelector(`input[name='${element}']`)
+    }
+
+    const selectSelectElement = (element) => {
+      return $.querySelector(`select[name='${element}']`)
+    }
+
+    const generatedValidateElement = ({ message }) => {
+      return `
+        <div class="invalid-feedback">
+        <p>${message}</p>
+        </div>
+      `
+    }
+
+    const renderValidateElement = ({ element, message, inputType = 'text' }) => {
+      const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
+      const parent = field.closest('.col-12') // o el contenedor adecuado
+
+      // Evita duplicar el mensaje si ya existe
+      const existingError = parent.querySelector('.invalid-feedback')
+      if (existingError) return
+
+      // Marcar el campo como inválido
+      field.classList.add('is-invalid')
+
+      // Insertar el mensaje como último hijo del padre
+      parent.insertAdjacentHTML('beforeend', generatedValidateElement({ message }))
+    }
+
+
+    form.addEventListener('submit', (e) => {
+      const formData = new FormData(form)
+      let isInvalid = false
+      e.preventDefault()
+
+      for (const [key, value] of formData.entries()) {
+
+        if (key === 'firstname' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo nombre es obligatorio.' })
+          isInvalid = true
+        } else if (key === 'lastname' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo apellido es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'date' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'cuit_cuil' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo CUIT - CUIL es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'street' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo calle es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'street_number' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo número es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'zip_code' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo código es obligatorio.' })
+          isInvalid = true
+        }
+        else if (key === 'phone' && value === '' && value.length < 3) {
+          renderValidateElement({ element: key, message: 'El campo telefono es obligatorio.' })
+          isInvalid = true
+        } else {
+          const field = selectInputElement(key)
+          if (field && field.classList.contains('is-invalid')) {
+            field.classList.remove('is-invalid')
+            const parentElement = field.parentElement
+            const error = parentElement.querySelector('.invalid-feedback')
+            if (error && error.classList.contains('invalid-feedback')) {
+              error.remove()
+            }
+          }
+        }
+
+      }
+
+      if (selectSelectElement('country').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'country', message: 'El campo pais es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'country', inputType: 'select' })
+      }
+      if (selectSelectElement('province').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'province', message: 'El campo provincia es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'province', inputType: 'select' })
+      }
+      if (selectSelectElement('commune').value === 'Seleccionar…') {
+        renderValidateElement({ element: 'commune', message: 'El campo comuna es obligatorio.', inputType: 'select' })
+        isInvalid = true
+      } else {
+        removeValidateElement({ element: 'commune', inputType: 'select' })
+      }
+
+      if (isInvalid) {
+        window.location.href = '#formData'
+        return
+      } else {
+        alert('Formulario enviado correctamente')
+        form.reset()
+        const inputs = form.querySelectorAll('input')
+        const select = form.querySelectorAll('select')
+        inputs.forEach((input) => {
+          input.classList.remove('is-invalid')
+          const parentElement = input.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        select.forEach((select) => {
+          if (select.classList.contains('is-invalid')) {
+            select.classList.remove('is-invalid')
+          }
+          const parentElement = select.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+        window.location.href = '#formData'
+      }
+    })
+
+
+  </script>
+
+</body>
+
+</html>
