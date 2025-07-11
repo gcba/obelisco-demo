@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+    <title>Plantillas GCBA</title>
+
+    <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <style>
+        .home-iframe {
+            min-height: 100%;
+            min-width: 100%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .home-iframe {
+                min-height: 300px;
+                min-width: 500px;
+            }
+        }
+
+        /* //Styles for component Scrollspy */
+        .box-scrollspy {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            .nav-scrollspy {
+                position: relative;
+                min-width: 319px;
+                width: 319px;
+                padding: 0 0 2rem 2rem;
+
+                .nav-scrollspy-position {
+                    position: sticky;
+                    top: 16px;
+                    right: 0;
+
+                    .scrollspy {
+                        list-style: none;
+
+                        background-color: transparent;
+                        padding: 0 5px 5px 1rem;
+
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 90dvh;
+                        overflow-y: auto;
+                        scrollbar-width: thin;
+                        padding: 0;
+                        margin: 0;
+
+                        li {
+                            position: relative;
+
+                            a {
+                                color: #38485c;
+                                text-decoration: none;
+                                padding: 12px 0 12px 16px;
+                                min-height: 40px;
+
+                                &:after {
+                                    content: '';
+                                    background-color: #e6ebf0;
+                                    position: absolute;
+                                    width: 2px;
+                                    height: 100%;
+                                    left: 0;
+                                    top: 0;
+                                }
+
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+
+                            &.active {
+                                a {
+                                    color: #274986;
+
+                                    &:after {
+                                        background-color: #274986;
+                                    }
+                                }
+                            }
+
+                            .custom-scrollspy-color {
+                                outline: 2px solid #101e37;
+                                outline-offset: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-content .box-section:last-of-type {
+                @media screen and (min-width: 992px) {
+                    min-height: 40vh;
+                }
+            }
+        }
+
+        .custom-scrollspy-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0.25rem;
+        }
+
+        /* // End Styles for component Scrollspy */
+    </style>
+</head>
+
+<body>
+    <!-- Inicio Header -->
+    <header class="o-header navbar" role="banner">
+        <a href="#main" class="skip-to-main-content-link">
+            Saltar al contenido principal
+        </a>
+        <div class="container header-container">
+            <a href="https://gcba.github.io/" class="navbar-brand">
+                <img class="d-none d-xl-block" src="/assets/header/logo_obelisco.svg" alt="Obelisco" />
+                <img class="d-xl-none" src="/assets/header/logo_obelisco_mobile.svg" alt="Obelisco" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHomeObelisco"
+                aria-controls="navbarHomeObelisco" aria-expanded="false" aria-label="Menú"></button>
+            <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+                <div class="navbar-content">
+                    <div class="navbar-sections">
+                        <nav>
+                            <p class="navbar-sections-title">Secciones</p>
+                            <ul class="nav nav-pills nav-sections">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-lg"
+                                        href="https://gcba.github.io/Obelisco-V2/getting-started"><span>Empezar con
+                                            Obelisco</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-lg"
+                                        href="https://gcba.github.io/Obelisco-V2/components"><span>Librería</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-lg"
+                                        href="https://gcba.github.io/Obelisco-V2/patterns"><span>Patrones</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-lg active"
+                                        href="https://gcba.github.io/obelisco-demo/"><span>Plantillas</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <button type="button" class="btn btn-dropdown btn-lg" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                            expand_more
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item"
+                                            href="https://gcba.github.io/Obelisco-V2/documentation">
+                                            <span class="item-text">Obelisco v.2</span>
+                                        </a>
+                                        <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                                            <span class="item-text">Obelisco v.1
+                                                <span class="fst-italic">(deprecado)</span></span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-backdrop"></div>
+    </header>
+    <!-- Fin Header -->
+
+    <main style="min-height: 100vh;">
+        <section class="container custom-layout-container">
+            <div class="row container" style="padding-top:32px">
+
+                <div class="col-12 row">
+
+                    <section class="component-header col-xl-9 custom-col-9-desktop">
+                        <h1>Guía de uso de template de trámites</h1>
+                        <p> Esta guía está diseñada para proporcionar una comprensión clara y completa de cómo utilizar
+                            el template de trámites de manera efectiva. La idea es asegurar la mejor experiencia posible
+                            a la persona usuaria y facilitar la implementación del template. </p>
+                        <p>
+                            Si bien se contempla la máxima de contenido en esta propuesta, pueden ir
+                            quitando aquellos bloques que consideren que no se adaptan al contenido de la página.
+                        </p>
+                    </section>
+
+                    <div class="d-flex box-scrollspy">
+
+                        <div class="flex-grow-1 box-content">
+
+                            <section class="box-section" id="section-ux-1">
+                                <!-- <h2 class="h4 mb-3" style="margin-top:0px">Uso</h2> -->
+                                <div style="margin-bottom:32px">
+                                    <h4> ¿Qué puede tener una página de trámite? </h4>
+                                    <p class="text-md">Una página de trámites puede estar compuesta por las
+                                        siguientes secciones: </p>
+                                </div>
+                            </section>
+
+                            <!-- Inicio Encabezado -->
+                            <section class="box-section" id="section-ux-2">
+                                <div style="margin-bottom:32px">
+                                    <p id="encabezado" class="text-xl">Encabezado </p>
+                                    <p class="text-md">Va al comienzo de la página, justo debajo del header, y está
+                                        formado por: </p>
+                                    <ul class="list-informative-bullet">
+                                        <li>Migas de pan, que nos indican el recorrido de la persona usuaria hasta
+                                            la página actual.</li>
+                                        <li>El título del trámite.</li>
+                                        <li>Una breve descripción del trámite.</li>
+                                        <li>La modalidad del trámite identificada con la etiqueta respectiva.</li>
+                                    </ul>
+
+                                    <img src="../../assets/tramites/ejemplo_incluir_en_pagina.png"
+                                        alt="Ejemplo de lo que puede incluir una página de tramite" class="img-fluid">
+
+                                    <p class="text-xl">Buenas prácticas</p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>El máximo de caracteres para el título es de 120 caracteres (incluyendo
+                                            espacios).</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>La estructura para armar el título de los trámites es: ACCIÓN + NOMBRE
+                                            DEL TRÁMITE.</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>El máximo de caracteres para la descripción del trámite
+                                            es de 250 caracteres (incluyendo espacios).</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Encabezado -->
+
+                            <!-- Inicio Estado del trámite -->
+                            <section class="box-section" id="section-ux-3">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Estado del trámite</p>
+                                    <p class="text-md">Por medio del bloque de iniciar trámite la persona usuaria
+                                        podrá iniciar su trámite o, si
+                                        así lo requiera, continuarlo desde el paso en el que lo dejó por última vez.
+                                    </p>
+
+                                    <img src="../../assets/tramites/estado_del_tramite.png" class="img-fluid"
+                                        alt="Imagen del bloque de trámite" width="440" height="207">
+
+                                </div>
+                            </section>
+                            <!-- Fin Estado del trámite -->
+
+                            <!-- Inicio Títulos de sección -->
+                            <section class="box-section" id="section-ux-4">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Títulos de sección</p>
+                                    <p class="text-md">Estos títulos son independientes a los componentes dentro del
+                                        template y sirven para
+                                        dividir e identificar cada una de las secciones y su contenido. Utilizan la
+                                        etiqueta H2. </p>
+
+                                    <img src="../../assets/tramites/titulo_requisito_del_tramite.png" class="img-fluid"
+                                        alt="Imagen del bloque de trámite" width="688" height="101">
+                                </div>
+                            </section>
+                            <!-- Fin Títulos de sección -->
+
+                            <!-- Inicio Requisitos del trámite -->
+                            <section class="box-section" id="section-ux-5">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Requisitos del trámite</p>
+                                    <p class="text-md">En esta sección se encuentran cada uno de los requisitos
+                                        necesarios para realizar el
+                                        trámite. Para mostrarlos se utiliza una lista de requisitos con check
+                                        siguiendo los lineamientos de
+                                        Obelisco, nuestro sistema de estándares y diseño. </p>
+
+                                    <a href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
+                                        class="external" target="_blank">Lista de requisitos</a>
+
+                                    <img src="../../assets/tramites/subtitulo_con_lista_de_requisitos.png"
+                                        class="img-fluid" alt="Imagen de lista de requisitos" width="948" height="337">
+
+                                    <p class="text-xl">Buenas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Las listas de requisitos llevan únicamente un subtítulo y contenido,
+                                            cualquier elemento adicional
+                                            debe ir fuera del componente.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>El subtítulo de la lista de requisitos es opcional y puede omitirse en
+                                            caso de no ser necesario.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No debe modificarse el componente de lista para incluir elementos
+                                            externos.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar variables bold dentro de los ítems de la lista para no
+                                            agregar carga cognitiva a la
+                                            persona usuaria.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Requisitos del trámite -->
+
+                            <!-- Inicio Pasos del trámite -->
+                            <section class="box-section" id="section-ux-6">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Pasos del trámite</p>
+                                    <p class="text-md">En este bloque la persona usuaria podrá ver cada uno de los
+                                        pasos organizados en
+                                        secuencia que deberá realizar para completar el trámite. Para mostrarlos se
+                                        utiliza una lista de pasos
+                                        siguiendo los lineamientos de Obelisco, nuestro sistema de estándares y
+                                        diseño. </p>
+
+                                    <a href="https://gcba.github.io/estandares/componentes/listas/listas-de-pasos/"
+                                        class="external" target="_blank">Lista de pasos</a>
+
+                                    <img src="../../assets/tramites/lista_de_pasos.png" class="img-fluid"
+                                        alt="Imagen de lista de pasos" width="948" height="337">
+
+                                    <p class="text-xl">Buenas prácticas</p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Utilizar títulos claros y concisos. Usar verbos o frases de acción para
+                                            indicar a la persona usuaria
+                                            lo que sucederá en cada paso.</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Usar la menor cantidad de pasos posibles para no abrumar a la persona
+                                            usuaria. Si luego en el flujo
+                                            verá más información, limitar la lista de pasos a una síntesis del
+                                            proceso a realizar.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar este componente si el proceso tiene sólo un paso.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar el componente sólo con el título. Siempre debe contener,
+                                            aunque mínima, una bajada
+                                            explicativa.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No incluir componentes como listas informativas, bulleteados y botones
+                                            dentro de la lista de pasos.
+                                            La bajada debe consistir sólo en un párrafo de texto, y si es necesario
+                                            puede poseer enlaces dentro
+                                            del mismo.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Pasos del trámite -->
+
+                            <!-- Inicio Costos del trámite -->
+                            <section class="box-section" id="section-ux-7">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Costos del trámite</p>
+                                    <p class="text-md">Esta sección va luego de la lista de pasos, y muestra todos
+                                        los costos relacionados al
+                                        trámite. Es una bajada simple de título, subtítulos y descripción organizada
+                                        por bloques. La descripción
+                                        del concepto sirve para identificar la razón del costo y puede contener un
+                                        enlace si lo necesita. </p>
+
+                                    <img src="../../assets/tramites/costos_del_tramite.png" class="img-fluid"
+                                        alt="Imagen de costos del tramite" width="757" height="332">
+
+                                    <p class="text-xl">Buenas prácticas</p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Utilizar títulos claros y concisos. Usar verbos o frases de acción para
+                                            indicar a la persona usuaria
+                                            lo que sucederá en cada paso.</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Usar la menor cantidad de pasos posibles para no abrumar a la persona
+                                            usuaria. Si luego en el flujo
+                                            verá más información, limitar la lista de pasos a una síntesis del
+                                            proceso a realizar.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar este componente si el proceso tiene sólo un paso.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar el componente sólo con el título. Siempre debe contener,
+                                            aunque mínima, una bajada
+                                            explicativa.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No incluir componentes como listas informativas, bulleteados y botones
+                                            dentro de la lista de pasos.
+                                            La bajada debe consistir sólo en un párrafo de texto, y si es necesario
+                                            puede poseer enlaces dentro
+                                            del mismo.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Costos del trámite -->
+
+                            <!-- Inicio Colapsables -->
+                            <section class="box-section" id="section-ux-8">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Colapsables</p>
+                                    <p class="text-md">
+                                        Los colapsables se utilizan en caso que los trámites tengan información
+                                        adicional de casos particulares.
+                                        Es una buena forma de mostrar y ocultar secciones sin agregar información
+                                        por fuera del template.
+                                    </p>
+                                    <p class="text-md">
+                                        Para mostrarlos se utilizan colapsables de selección única siguiendo los
+                                        lineamientos de Obelisco,
+                                        nuestro sistema de estándares y diseño.
+                                    </p>
+
+                                    <a href="https://gcba.github.io/estandares/componentes/colapsable/" class="external"
+                                        target="_blank">Colapsables</a>
+
+                                    <p class="text-xl">Buenas prácticas</p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Mantener títulos breves y claros. El encabezado es lo primero que capta
+                                            la atención de la mayoría de
+                                            las personas usuarias. Es fundamental que el contenido del colapsable se
+                                            exprese de manera clara
+                                            para que las personas usuarias puedan decidir si desean expandirlo o no.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Cada colapsable puede tener un máximo de 800 caracteres (contando
+                                            espacios) para su descripción.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar un colapsable para el contenido que es necesario que esté
+                                            visible. No ocultarlo dentro de
+                                            un colapsable.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar más de 5 colapsables para sumar información. En todo caso, lo
+                                            recomendable es buscar
+                                            otros componentes que se adapten mejor al contenido o hacer bajadas
+                                            sencillas de título y texto.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar más de 1 sección de colapsables. </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Colapsables -->
+
+                            <!-- Inicio Información adicional  -->
+                            <section class="box-section" id="section-ux-9">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Información adicional</p>
+                                    <p class="text-md">
+                                        Este bloque de contenido se utiliza para agregar información a destacar
+                                        relacionada al trámite que no es
+                                        parte de los requisitos o de los pasos a cumplir.
+                                    </p>
+                                    <p class="text-md">
+                                        En este caso, se utiliza una lista informativa con viñeta o texto plano,
+                                        siguiendo los lineamientos de
+                                        Obelisco, nuestro sistema de estándares y diseño.
+                                    </p>
+
+                                    <a href="https://gcba.github.io/estandares/componentes/listas/lista-informativa//"
+                                        class="external" target="_blank">Lista informativa general</a>
+
+                                    <img src="../../assets/tramites/info_adicional.png" class="img-fluid"
+                                        alt="Imagen de información adicional" width="791" height="302">
+
+                                    <p class="text-xl">Buenas prácticas</p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Utilizar listas informativas para piezas de información de texto que no
+                                            tienen un orden secuencial.
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Mantener la redacción del contenido de los ítems de forma consistente.
+                                            Por ejemplo: siempre usar la
+                                            misma voz y tono. </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Utilizar texto plano cuando no es posible generar más de 1 ítem para la
+                                            lista informativa.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No utilizar variables bold dentro de los ítems de la lista para no
+                                            agregar carga cognitiva a la
+                                            persona usuaria. </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>Al utilizar una lista informativa, no incluir más de 7 ítems en la misma.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No combinar listas informativas con listas de pasos.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Información adicional  -->
+
+                            <!-- Inicio Descargables  -->
+                            <section class="box-section" id="section-ux-10">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Descargables</p>
+                                    <p class="text-md">En este bloque la persona usuaria encontrará los descargables
+                                        o archivos necesarios para
+                                        realizar el trámite. En este caso, se utiliza una lista de enlaces siguiendo
+                                        los lineamientos de
+                                        Obelisco, nuestro sistema de estándares y diseño. </p>
+
+                                    <a href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
+                                        class="external" target="_blank">Lista de enlaces</a>
+
+                                    <img class="img-fluid" src="../../assets/tramites/descargables.png"
+                                        alt="Ejemplo de links descargables" />
+
+                                    <p class="text-xl">Buenas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>El subtítulo de la lista debe ser coherente con el tipo de contenido que
+                                            posee dentro. </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>El subtítulo de la lista de enlaces es opcional y puede omitirse en caso
+                                            de no ser necesario.</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Las listas de enlaces llevan únicamente un subtítulo y contenido,
+                                            cualquier elemento adicional debe
+                                            ir fuera del componente.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No se debe quitar el ícono que acompaña a los enlaces de descarga. Se
+                                            utiliza como refuerzo semántico
+                                            del tipo de enlace.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Descargables  -->
+
+                            <!-- Inicio Normativa  -->
+                            <section class="box-section" id="section-ux-11">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Normativa</p>
+                                    <p class="text-md">El bloque de normativa muestra la normativa o las normativas
+                                        relacionadas al trámite. Se
+                                        trata de una bajada de texto simple con título y el número de normativa.
+                                    </p>
+
+                                    <img class="img-fluid" src="../../assets/tramites/normativa.png"
+                                        alt="Ejemplo de nro de normativa" />
+
+                                    <p class="text-xl">Buenas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>La normativa es una sección obligatoria para algunos trámites, pero puede
+                                            omitirse en caso de no ser
+                                            necesaria.</p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No es posible combinar esta sección con otras dentro del template o
+                                            cambiar su estructura. Evitar
+                                            sumar elementos que no correspondan a la sección.</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Normativa  -->
+
+                            <!-- Inicio Organismo responsable -->
+                            <section class="box-section" id="section-ux-12">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Organismo responsable</p>
+                                    <p class="text-md">El organismo responsable es el ente gubernamental que se
+                                        encarga de la regulación del
+                                        trámite. Dentro de esta sección la persona usuaria tendrá acceso al nombre
+                                        del organismo, la ubicación,
+                                        los días y horarios de atención, y la información de contacto. </p>
+
+                                    <img class="img-fluid" src="../../assets/tramites/organismo_responsable.png"
+                                        alt="Ejemplo de organismo responsable" />
+
+                                    <p class="text-xl">Buenas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-success">check</span>
+                                        <p>Utilizar títulos, subtítulos y descripciones breves para jerarquizar e
+                                            identificar la información,
+                                            siguiendo el modelo del template. </p>
+                                    </div>
+
+                                    <p class="text-xl">Malas prácticas </p>
+                                    <div class="d-flex">
+                                        <span class="material-symbols-rounded text-danger">close</span>
+                                        <p>No debe incluirse otro tipo de información que no sea sobre el organismo
+                                            responsable en esta sección.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Fin Organismo responsable -->
+
+                            <!-- Inicio Contenido del template de trámites -->
+                            <section class="box-section" id="section-ux-13">
+                                <div style="margin-bottom:32px">
+                                    <h4>Contenido del template de trámites</h4>
+                                    <p class="text-md">
+                                        Para mejorar la experiencia al volcar la información en cada una de las
+                                        secciones del template de trámites, es importante tener en cuenta que se trata
+                                        de una página flexible y no de una estructura rígida, por lo que la información
+                                        dentro del template es adaptable. </p>
+                                </div>
+                            </section>
+                            <!-- Inicio Contenido del template de trámites -->
+
+                            <!-- Inicio Estilos de texto -->
+                            <section class="box-section" id="section-ux-14">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Estilos de texto</p>
+                                    <p class="text-md">Al momento de llenar cualquier campo de texto del template se
+                                        deben respetar los
+                                        siguientes parámetros: </p>
+                                    <ul class="list-informative-bullet">
+                                        <li>No utilizar negrita (ejemplo) en ningún texto. </li>
+                                        <li>Todos los campos de texto dentro del cuerpo del template pueden ir
+                                            acompañados de un
+                                            enlace/hipervínculo (ejemplo), a excepción de: los títulos (incluyendo
+                                            el del <a href="#encabezado">Encabezado</a>), los
+                                            subtítulos, la descripción del trámite y la normativa. </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <!-- Fin Estilos de texto -->
+
+                            <!-- Inicio Cantidad de caracteres  -->
+                            <section class="box-section" id="section-ux-15">
+                                <div style="margin-bottom:32px">
+                                    <p class="text-xl">Cantidad de caracteres </p>
+                                    <p class="text-md">Existen secciones dentro del template de trámites que cuentan
+                                        con un máximo de caracteres
+                                        por la capacidad del espacio/componente (véase <a
+                                            href="#encabezado">Encabezado</a> como ejemplo), sin
+                                        embargo, la gran mayoría de
+                                        campos de texto no tienen un límite definido más allá de respetar la
+                                        propuesta de contenido y no
+                                        sobrecargar ninguna de las secciones. </p>
+
+                                    <p class="text-md">
+                                        Además, cada una de las secciones que está compuesta por un componente sigue
+                                        los lineamientos
+                                        establecidos en Obelisco, nuestro sistema de estándares y diseño. </p>
+                                </div>
+                            </section>
+                            <!-- Fin Cantidad de caracteres  -->
+
+
+                        </div>
+
+                        <div class="nav-scrollspy d-none d-xl-block ">
+                            <div class="nav-scrollspy-position">
+                                <p class="text-sm fw-bold text-body-secondary mb-3">Contenido en esta página</p>
+                                <ul class="scrollspy" data-cy="nav-wrapper">
+                                    <li class="active">
+                                        <a href="#section-ux-1" class="text-sm">
+                                            ¿Qué puede tener una página de trámite?
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-2" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Encabezado
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-3" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Estado del trámite
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-4" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Títulos de sección
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-5" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Requisitos del trámite
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-6" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Pasos del trámite
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-7" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Costos del trámite
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-8" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Colapsables
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-9" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Información adicional
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-10" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Descargables
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-11" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Normativa
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-12" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Organismo responsable
+                                        </a>
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#section-ux-13" class="text-sm">
+                                            Contenido del template de trámites
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-14" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Estilos de texto
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#section-ux-15" class="text-sm"
+                                            style="gap:.25rem;align-items:center;margin-left:16px">
+                                            Cantidad de caracteres
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Inicio Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <section class="footer-legal-section">
+                <h3 class="sr-only">Información gubernamental</h3>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+                        <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.svg"
+                            alt="Logo de Ciudad de Buenos Aires" height="48" />
+                        <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.svg"
+                            alt="Logo de Ciudad de Buenos Aires" height="40" />
+                        <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.svg"
+                            alt="Logo de Vamos Buenos Aires" />
+                    </div>
+                    <div class="col-12">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://boletinoficial.buenosaires.gob.ar">
+                                    Boletín oficial
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
+                                    Términos y condiciones
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                                    Política de privacidad
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                                    Oficios judiciales
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                                    Transparencia
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="footer-license-text">
+                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+                    Commons Reconocimiento 2.5 Argentina License.
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossOrigin="anonymous"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
