@@ -120,6 +120,11 @@
             margin: 0.25rem;
         }
 
+        .border-imgs {
+            border: 2px solid #e6ebf0;
+            border-radius: 8px;
+        }
+
         /* // End Styles for component Scrollspy */
     </style>
 </head>
@@ -211,7 +216,6 @@
                         <div class="flex-grow-1 box-content">
 
                             <section class="box-section" id="section-ux-1">
-                                <!-- <h2 class="h4 mb-3" style="margin-top:0px">Uso</h2> -->
                                 <div style="margin-bottom:32px">
                                     <h4> ¿Qué puede tener una página de trámite? </h4>
                                     <p class="text-md">Una página de trámites puede estar compuesta por las
@@ -223,9 +227,9 @@
                             <section class="box-section" id="section-ux-2">
                                 <div style="margin-bottom:32px">
                                     <p id="encabezado" class="text-xl">Encabezado </p>
-                                    <p class="text-md">Va al comienzo de la página, justo debajo del header, y está
+                                    <p class="text-md mb-4">Va al comienzo de la página, justo debajo del header, y está
                                         formado por: </p>
-                                    <ul class="list-informative-bullet">
+                                    <ul class="list-informative-bullet mb-4">
                                         <li>Migas de pan, que nos indican el recorrido de la persona usuaria hasta
                                             la página actual.</li>
                                         <li>El título del trámite.</li>
@@ -234,7 +238,8 @@
                                     </ul>
 
                                     <img src="../../assets/tramites/ejemplo_incluir_en_pagina.png"
-                                        alt="Ejemplo de lo que puede incluir una página de tramite" class="img-fluid">
+                                        alt="Ejemplo de lo que puede incluir una página de tramite"
+                                        class="img-fluid mb-2">
 
                                     <p class="text-xl">Buenas prácticas</p>
                                     <div class="d-flex">
@@ -261,13 +266,13 @@
                             <section class="box-section" id="section-ux-3">
                                 <div style="margin-bottom:32px">
                                     <p class="text-xl">Estado del trámite</p>
-                                    <p class="text-md">Por medio del bloque de iniciar trámite la persona usuaria
+                                    <p class="text-md mb-4">Por medio del bloque de iniciar trámite la persona usuaria
                                         podrá iniciar su trámite o, si
                                         así lo requiera, continuarlo desde el paso en el que lo dejó por última vez.
                                     </p>
 
                                     <img src="../../assets/tramites/estado_del_tramite.png" class="img-fluid"
-                                        alt="Imagen del bloque de trámite" width="440" height="207">
+                                        alt="Imagen del bloque de trámite" width="420" height="187">
 
                                 </div>
                             </section>
@@ -282,8 +287,12 @@
                                         dividir e identificar cada una de las secciones y su contenido. Utilizan la
                                         etiqueta H2. </p>
 
-                                    <img src="../../assets/tramites/titulo_requisito_del_tramite.png" class="img-fluid"
-                                        alt="Imagen del bloque de trámite" width="688" height="101">
+                                    <!-- <img src="../../assets/tramites/titulo_requisito_del_tramite.png" class="img-fluid"
+                                        alt="Imagen del bloque de trámite" width="668" height="101"> -->
+
+                                    <img src="../../assets/tramites/titulo_requisito_del_tramite.png"
+                                        class="border-imgs" alt="Imagen del bloque de trámite" width="550" height="80">
+
                                 </div>
                             </section>
                             <!-- Fin Títulos de sección -->
@@ -302,7 +311,8 @@
                                         class="external" target="_blank">Lista de requisitos</a>
 
                                     <img src="../../assets/tramites/subtitulo_con_lista_de_requisitos.png"
-                                        class="img-fluid" alt="Imagen de lista de requisitos" width="948" height="337">
+                                        class="img-fluid border-imgs mt-4 mb-4" alt="Imagen de lista de requisitos"
+                                        width="948" height="337">
 
                                     <p class="text-xl">Buenas prácticas </p>
                                     <div class="d-flex">
@@ -345,10 +355,11 @@
                                         diseño. </p>
 
                                     <a href="https://gcba.github.io/estandares/componentes/listas/listas-de-pasos/"
-                                        class="external" target="_blank">Lista de pasos</a>
+                                        class="external mb-4" target="_blank">Lista de pasos</a>
 
-                                    <img src="../../assets/tramites/lista_de_pasos.png" class="img-fluid"
-                                        alt="Imagen de lista de pasos" width="948" height="337">
+                                    <img src="../../assets/tramites/lista_de_pasos.png"
+                                        class="img-fluid border-imgs mb-4" alt="Imagen de lista de pasos" width="948"
+                                        height="337">
 
                                     <p class="text-xl">Buenas prácticas</p>
                                     <div class="d-flex">
@@ -393,15 +404,16 @@
                             <section class="box-section" id="section-ux-7">
                                 <div style="margin-bottom:32px">
                                     <p class="text-xl">Costos del trámite</p>
-                                    <p class="text-md">Esta sección va luego de la lista de pasos, y muestra todos
+                                    <p class="text-md mb-4">Esta sección va luego de la lista de pasos, y muestra todos
                                         los costos relacionados al
                                         trámite. Es una bajada simple de título, subtítulos y descripción organizada
                                         por bloques. La descripción
                                         del concepto sirve para identificar la razón del costo y puede contener un
                                         enlace si lo necesita. </p>
 
-                                    <img src="../../assets/tramites/costos_del_tramite.png" class="img-fluid"
-                                        alt="Imagen de costos del tramite" width="757" height="332">
+                                    <img src="../../assets/tramites/costos_del_tramite.png"
+                                        class="img-fluid border-imgs mb-4" alt="Imagen de costos del tramite"
+                                        width="757" height="332">
 
                                     <p class="text-xl">Buenas prácticas</p>
                                     <div class="d-flex">
@@ -458,8 +470,8 @@
                                         nuestro sistema de estándares y diseño.
                                     </p>
 
-                                    <a href="https://gcba.github.io/estandares/componentes/colapsable/" class="external"
-                                        target="_blank">Colapsables</a>
+                                    <a href="https://gcba.github.io/estandares/componentes/colapsable/"
+                                        class="external mb-4" target="_blank">Colapsables</a>
 
                                     <p class="text-xl">Buenas prácticas</p>
                                     <div class="d-flex">
@@ -516,10 +528,11 @@
                                     </p>
 
                                     <a href="https://gcba.github.io/estandares/componentes/listas/lista-informativa//"
-                                        class="external" target="_blank">Lista informativa general</a>
+                                        class="external mb-4" target="_blank">Lista informativa general</a>
 
-                                    <img src="../../assets/tramites/info_adicional.png" class="img-fluid"
-                                        alt="Imagen de información adicional" width="791" height="302">
+                                    <img src="../../assets/tramites/info_adicional.png"
+                                        class="img-fluid border-imgs mb-4" alt="Imagen de información adicional"
+                                        width="791" height="302">
 
                                     <p class="text-xl">Buenas prácticas</p>
                                     <div class="d-flex">
@@ -572,9 +585,9 @@
                                         Obelisco, nuestro sistema de estándares y diseño. </p>
 
                                     <a href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
-                                        class="external" target="_blank">Lista de enlaces</a>
+                                        class="external mb-4" target="_blank">Lista de enlaces</a>
 
-                                    <img class="img-fluid" src="../../assets/tramites/descargables.png"
+                                    <img class="img-fluid border-imgs mb-4" src="../../assets/tramites/descargables.png"
                                         alt="Ejemplo de links descargables" />
 
                                     <p class="text-xl">Buenas prácticas </p>
@@ -615,7 +628,7 @@
                                         trata de una bajada de texto simple con título y el número de normativa.
                                     </p>
 
-                                    <img class="img-fluid" src="../../assets/tramites/normativa.png"
+                                    <img class="img-fluid mb-4 border-imgs" src="../../assets/tramites/normativa.png"
                                         alt="Ejemplo de nro de normativa" />
 
                                     <p class="text-xl">Buenas prácticas </p>
@@ -647,7 +660,7 @@
                                         del organismo, la ubicación,
                                         los días y horarios de atención, y la información de contacto. </p>
 
-                                    <img class="img-fluid" src="../../assets/tramites/organismo_responsable.png"
+                                    <img class="img-fluid mb-4" src="../../assets/tramites/organismo_responsable.png"
                                         alt="Ejemplo de organismo responsable" />
 
                                     <p class="text-xl">Buenas prácticas </p>
@@ -722,6 +735,18 @@
                             </section>
                             <!-- Fin Cantidad de caracteres  -->
 
+                            <!-- Volver arriba -->
+                            <div class="pt-4" style="padding-bottom:32px">
+                                <div class="text-end me-1">
+                                    <a href="#top" class="btn btn-outline-tertiary btn-lg" role="button">
+                                        <span class="material-symbols-rounded" aria-hidden="true">
+                                            arrow_upward
+                                        </span>
+                                        Volver arriba
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Volver arriba -->
 
                         </div>
 
@@ -839,11 +864,11 @@
                 <h3 class="sr-only">Información gubernamental</h3>
                 <div class="row align-items-center">
                     <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-                        <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.svg"
+                        <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.png"
                             alt="Logo de Ciudad de Buenos Aires" height="48" />
-                        <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.svg"
+                        <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.png"
                             alt="Logo de Ciudad de Buenos Aires" height="40" />
-                        <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.svg"
+                        <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.png"
                             alt="Logo de Vamos Buenos Aires" />
                     </div>
                     <div class="col-12">
