@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+  <title>Plantillas GCBA</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="/node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+  <header class="o-header navbar" role="banner">
+    <a href="#main" class="skip-to-main-content-link">
+      Saltar al contenido principal
+    </a>
+    <div class="container header-container">
+      <a href="https://gcba.github.io/" class="navbar-brand">
+        <img class="d-none d-xl-block" src="/assets/header/logo_obelisco.svg" alt="Obelisco" />
+        <img class="d-xl-none" src="/assets/header/logo_obelisco_mobile.svg" alt="Obelisco" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHomeObelisco"
+        aria-controls="navbarHomeObelisco" aria-expanded="false" aria-label="Menú"></button>
+      <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+        <div class="navbar-content">
+          <div class="navbar-sections">
+            <nav>
+              <p class="navbar-sections-title">Secciones</p>
+              <ul class="nav nav-pills nav-sections">
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/getting-started"><span>Empezar con Obelisco</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/components"><span>Librería</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg"
+                    href="https://gcba.github.io/Obelisco-V2/patterns"><span>Patrones</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link-lg active"
+                    href="https://gcba.github.io/obelisco-demo/"><span>Plantillas</span></a>
+                </li>
+                <li class="dropdown">
+                  <button type="button" class="btn btn-dropdown btn-lg" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                    <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                      expand_more
+                    </span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://gcba.github.io/Obelisco-V2/documentation">
+                      <span class="item-text">Obelisco v.2</span>
+                    </a>
+                    <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                      <span class="item-text">Obelisco v.1
+                        <span class="fst-italic">(deprecado)</span></span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-backdrop"></div>
+  </header>
+
+  <main style="min-height: 100vh;">
+    <section class="container custom-layout-container">
+      <div class="row container" style="padding:32px 0 ">
+        <div class="col-12 row gap-5">
+
+          <section class="component-header col-xl-9 custom-col-9-desktop">
+            <h1>Segundo nivel de Páginas de Áreas</h1>
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-6" style="padding: 0;">
+                  <a href="./op2.html" class="col-4 list-group-item item-sm ">
+                    <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
+                    <div class="access-content">
+                      <span class="access-title">Ver demo</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="d-flex box-scrollspy">
+
+            <div class="flex-grow-1 box-content">
+
+              <section class="box-section" id="section-use">
+                <h2 class="h4 mb-3" style="margin-top:0px">Uso</h2>
+                <div style="margin-bottom:32px">
+                  <div class="list-informative">
+                    <p class="text-xl">Cuándo usar</p>
+                    <p>
+                      Con este template buscamos mejorar la experiencia de las personas a la hora de navegar nuestro
+                      sitio web. Buscamos crear jerarquías claras de contenido donde se aplique el sistema de diseño
+                      Obelisco. 
+                    </p>
+                    <p>
+                      Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo de
+                      componente se utiliza en las distintas casuísticas. 
+                    </p>
+                    <p>
+                      Si bien se contempla la máxima de contenido en esta propuesta, pueden ir quitando aquellos bloques
+                      que consideren que no se adaptan al contenido de la página. 
+                    </p>
+                    <strong>
+                      ¿A qué llamamos nivel 2?
+                    </strong>
+                    <p>
+                      Se llama segundo nivel de navegación a toda página que se desprenda de los atajos de las home de
+                      Ministerios. 
+                      Son páginas que por su contenido funcionan como nexo a más información de un área específica y
+                      buscan mostrar los destacados, programas y servicios. 
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="box-section" id="section-header">
+                <h2 class="h4 mb-3" style="margin-top:0px">Encabezado de página</h2>
+                <div>
+                  <p class="text-xl">
+                    Se compone con los siguientes elementos:
+                  </p>
+                  <div class="list-informative">
+                    <ul class="list-informative-bullet">
+                      <li>
+                        Migas de pan que nos indican el camino recorrido hasta llegar a dónde estamos navegando. 
+                      </li>
+                      <li>
+                        Título
+                      </li>
+                      <li>
+                        Bajada
+                      </li>
+                      <li>
+                        Desplegables de “Institucional” y/o “Transparencia activa”. Evitamos sumar más desplegables. La
+                        idea de este bloque es que sea la presentación de lo que las personas encontrarán al seguir
+                        scrolleando. 
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="/assets/pagina_area//segundo_nivel/hero.svg" alt="Ejemplo encabezado de área" width="800"
+                    height="295" className="img-fluid">
+                </div>
+              </section>
+
+              <section class="box-section" id="section-fast-access">
+                <h2 class="h4 mb-3" style="margin-top:0px">Accesos rápidos / destacados</h2>
+
+                <div>
+                  <h3 class="text-xl mb-2">Contexto de uso</h3>
+                  <p>
+                    El propósito de la sección es acercar al usuario las principales acciones que el área considere
+                    relevantes para interactuar. Es importante mencionar que cuantas más opciones haya, más va a demorar
+                    el usuario en decidirse por la acción, por lo tanto es primordial que el área tenga una elección
+                    clara en el contenido de las tarjetas destacadas.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 class="text-xl mb-2">Encabezado</h3>
+                  <p>
+                    Llevan un título que puede ser &quot;Accesos rápidos&quot; o &quot;Destacados&quot;, siempre
+                    haciendo referencia que esos son los destacados de la página. 
+                  </p>
+                </div>
+
+                <div>
+                  <h3 class="text-xl mb-2">Variante de componente</h3>
+                  <p>
+                    Se utiliza la tarjeta horizontal con ícono con la alineación interna al borde superior izquierdo.
+                    Sugerimos que tanto el título como la bajada no lleve más de dos líneas. 
+                  </p>
+                </div>
+
+                <img src="/assets/pagina_area//segundo_nivel/access.svg" alt="Ejemplo accesos rapidos en página de área"
+                  width="800" height="295" className="img-fluid">
+
+                <div>
+                  <h3 class="text-xl mb-2">❌ Malas practicas</h3>
+                  <p>
+                    1. Generar puntos de tensión en la lectura y desequilibrio visual en el inicio de la página. En las
+                    situaciones en las que haya tres tarjetas en la primera línea y una por debajo, recomendamos
+                    reubicar la última tarjeta en la sección que corresponda y velar por el equilibrio en la página.
+                  </p>
+                  <p>
+                    2. Presentar sólo dos opciones como destacadas. En estas situaciones, recomendamos preservar la
+                    simetría y el equilibrio al inicio de la página ya que un diseño agradable crea respuestas positivas
+                    en el cerebro de las personas. Por lo tanto, considerar incluir una tercera tarjeta con contenido
+                    relevante para los usuarios.
+                  </p>
+                  <p>
+                    3. Creer que todo es importante para destacar. No recomendamos tener más de 6 tarjetas destacadas,
+                    ya que el tiempo que lleva tomar una decisión aumenta con el número y la complejidad de las
+                    opciones.
+                  </p>
+
+                  <p>En las situaciones que haya 6 tarjetas destacadas recomendamos colocar los elementos menos
+                    importantes en medio de la lista y las acciones claves en los extremos izquierdo y derecho para
+                    aumentar la memorización.</p>
+                </div>
+              </section>
+
+              <section class="box-section" id="section-programs">
+                <h2 class="h4 mb-3" style="margin-top:0px">Programas</h2>
+
+                <p>
+                  Los programas son contenido de valor que crean desde las distintas áreas de gobierno para acercarse a
+                  los vecinos, para promover su trabajo o las políticas que llevan adelante durante su gestión. Por eso
+                  es que para este tipo de contenidos se utilizan las tarjetas horizontales con imagen. 
+                </p>
+                <p>
+                  Esta información se presenta en grilla de tres con un ancho de 4 columnas.
+                </p>
+                <p>
+                  Esta agrupación de tarjetas de programas siempre llevan un título que haga referencia a dicho grupo.
+                </p>
+                <img src="/assets/pagina_area/segundo_nivel/programs.svg" alt="Ejemplo encabezado de área" width="800"
+                  height="295" className="img-fluid">
+                <div>
+                  <h3 class="text-xl mb-2">⚠️ Excepción de uso.</h3>
+                  <p>
+                    En caso que solo haya dos programas para presentar, puede admitirse una grilla de dos con un ancho
+                    de 6 columnas para cada tarjeta. En caso que se itere el contenido y se incorporen más de dos
+                    programas, deberá volver a utilizarse la grilla de 3 con ancho de 4 columnas.
+                  </p>
+                </div>
+              </section>
+
+              <section class="box-section" id="section-services">
+                <h2 class="h4 mb-3" style="margin-top:0px">Servicios</h2>
+
+                <p>
+                  Son aquellas acciones proporcionadas por el gobierno para satisfacer necesidades públicas y mejorar la
+                  calidad de vida de los/as ciudadanos/as y residentes de la Ciudad de Buenos Aires.
+                </p>
+                <p>
+                  La agrupación de estas tarjetas lleva un título &quot;Servicios&quot; o &quot;Nuestros servicios&quot;
+                  y se utiliza el
+                  acceso solo con título. Se utilizan en grilla de tres columnas por fila.
+                </p>
+                <img src="/assets/pagina_area/segundo_nivel/services.svg" alt="Ejemplo encabezado de área" width="800"
+                  height="295" className="img-fluid">
+              </section>
+
+              <section class="box-section" id="section-outstanding">
+                <h2 class="h4 mb-3" style="margin-top:0px">Destacados</h2>
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Contexto de uso
+                  </h3>
+                  <p>
+                    En caso que haya contenido a destacar tenemos dos variantes disponibles del template.
+                  </p>
+                </div>
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Un solo destacado
+                  </h3>
+                  <p>
+                    Se utiliza el destacado con fondo. Compuesto de título, bajada y accionable con el fondo grisulado.
+                    Para los accionables hay tres variantes: enlace, acceso y botón primario. Se elegirá el accionable
+                    acorde al tipo de contenido.
+                  </p>
+                  <img src="/assets/pagina_area/segundo_nivel/destacado.svg" alt="Ejemplo encabezado de área"
+                    width="800" height="295" className="img-fluid">
+                </div>
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Dos destacados
+                  </h3>
+                  <p>
+                    Se utiliza el panel vertical. Se posicionan ambos destacados uno al lado del otro, debajo de los
+                    servicios.
+                  </p>
+                  <img src="/assets/pagina_area/segundo_nivel/destacado.svg" alt="Ejemplo encabezado de área"
+                    width="800" height="295" className="img-fluid">
+                </div>
+              </section>
+
+              <section class="box-section" id="section-news">
+                <h2 class="h4 mb-3" style="margin-top:0px">Noticias</h2>
+                <p>Se utilizan tarjetas de noticia con etiquetas y fecha. Se muestran tres por página, con el enlace de
+                  ver todas las noticias.</p>
+                <img src="/assets/pagina_area/segundo_nivel/noticias.svg" alt="Ejemplo encabezado de área" width="800"
+                  height="295" className="img-fluid">
+              </section>
+
+              <section class="box-section" id="section-institutional">
+                <h2 class="h4 mb-3" style="margin-top:0px">Institucional</h2>
+                <p>Este bloque se compone de la siguiente información.</p>
+
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Título: Información Institucional. 
+                  </h3>
+                  <ul>
+                    <li>
+                      Nombre del funcionario/a a cargo.
+                    </li>
+                    <li>Cargo</li>
+
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Contacto
+                  </h3>
+                  <ul>
+                    <li>Teléfono de contacto</li>
+                    <li>
+                      Correo electrónico
+                    </li>
+                  </ul>
+                  <p>
+                    La información institucional se aplica siempre y cuando el área tenga un funcionario a cargo. En
+                    caso de que no haya alguna persona con este rol, este bloque de información no debe incluirse y van
+                    únicamente las redes sociales. 
+                  </p>
+                </div>
+
+                <div>
+                  <h3 class="text-xl mb-2">
+                    Título: Redes sociales
+                  </h3>
+                  <p>
+                    Facebook   /   Instagram   /   X   /   YouTube
+                  </p>
+                  <p>
+                    Se utiliza el acceso con iconografía correspondiente a la red social y título. 
+                  </p>
+                </div>
+
+                <img src="/assets/pagina_area/segundo_nivel/social_media.svg" alt="Ejemplo encabezado de área"
+                  width="800" height="295" className="img-fluid">
+              </section>
+
+              <!-- Volver arriba -->
+              <div class="pt-4" style="padding-bottom:32px">
+                <div class="text-end me-1">
+                  <a href="#top" class="btn btn-outline-tertiary btn-lg" role="button">
+                    <span class="material-symbols-rounded" aria-hidden="true">
+                      arrow_upward
+                    </span>
+                    Volver arriba
+                  </a>
+                </div>
+              </div>
+              <!-- Volver arriba -->
+            </div>
+
+            <div class="nav-scrollspy d-none d-xl-block ">
+              <div class="nav-scrollspy-position">
+                <p class="text-sm fw-bold text-body-secondary mb-3">Contenido en esta página</p>
+                <ul class="scrollspy" id="nav-scrollspy" data-cy="nav-wrapper">
+                  <li class="active" onclick="handleNavigate(event)">
+                    <a href="#section-use" class="text-sm">Uso</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-header">Encabezado</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-fast-access">Accesos rápidos / destacados</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-programs">Programas</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-services">Servicios</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-outstanding">Destacados</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-news">Noticias</a>
+                  </li>
+                  <li class="" onclick="handleNavigate(event)">
+                    <a href="#section-institutional">Institucional</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+
+  <h2 class="sr-only">Navegación de pie de página</h2>
+  <footer class="main-footer">
+    <div class="container">
+      <section class="footer-legal-section">
+        <h3 class="sr-only">Información gubernamental</h3>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+            <img class="d-md-none" src="/assets/footer/logo-footer-mobile.svg" alt="Logo de Ciudad de Buenos Aires"
+              height="48" />
+            <img class="d-none d-md-inline" src="/assets/footer/logo-footer.svg" alt="Logo de Ciudad de Buenos Aires"
+              height="40" />
+            <img class="img-vamos-ba" src="/assets/footer/logo-footer-ba.svg" alt="Logo de Vamos Buenos Aires" />
+          </div>
+          <div class="col-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                  Oficios judiciales
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                  Transparencia
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+          Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossOrigin="anonymous"></script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+  <script>
+    const $ = document;
+    const navScrollspy = $.querySelector('#nav-scrollspy')
+    let itemActive;
+
+    const handleNavigate = (e) => {
+      const selectItem = e.target.parentElement
+      for (element of navScrollspy.children) {
+        console.dir(element.classList.contains('active'));
+        if (element.classList.contains('active')) element.classList.remove("active");
+      }
+      selectItem.classList.add("active");
+    }
+  </script>
+
+
+  <script>
+    // Scrollspy: activa el item correspondiente al pasar por cada sección
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = [
+        'section-use',
+        'section-header',
+        'section-fast-access',
+        'section-programs',
+        'section-services',
+        'section-outstanding',
+        'section-news',
+        'section-institutional'
+      ];
+      const navItems = Array.from(document.querySelectorAll('#nav-scrollspy li'));
+      function onScroll() {
+        let current = sections[0];
+        for (const id of sections) {
+
+          const el = document.getElementById(id);
+          if (el && el.getBoundingClientRect().top - 120 <= 0) {
+            current = id;
+          }
+        }
+        navItems.forEach(li => {
+          li.classList.remove('active');
+          const a = li.querySelector('a');
+          if (a && a.getAttribute('href') === '#' + current) {
+            li.classList.add('active');
+          }
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    });
+  </script>
+
+</body>
+
+</html>
