@@ -539,7 +539,6 @@
     const handleNavigate = (e) => {
       const selectItem = e.target.parentElement
       for (element of navScrollspy.children) {
-        console.dir(element.classList.contains('active'));
         if (element.classList.contains('active')) element.classList.remove("active");
       }
       selectItem.classList.add("active");

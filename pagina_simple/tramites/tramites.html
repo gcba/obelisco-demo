@@ -755,90 +755,90 @@
                             <div class="nav-scrollspy-position">
                                 <p class="text-sm fw-bold text-body-secondary mb-3">Contenido en esta página</p>
                                 <ul class="scrollspy" id="nav-scrollspy" data-cy="nav-wrapper">
-                                    <li class="active">
+                                    <li class="active" onclick="handleNavigate(event)">
                                         <a href="#section-ux-1" class="text-sm">
                                             ¿Qué puede tener una página de trámite?
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-2" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Encabezado
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-3" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Estado del trámite
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-4" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Títulos de sección
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-5" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Requisitos del trámite
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-6" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Pasos del trámite
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-7" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Costos del trámite
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-8" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Colapsables
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-9" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Información adicional
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-10" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Descargables
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-11" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Normativa
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-12" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Organismo responsable
                                         </a>
                                     </li>
 
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-13" class="text-sm">
                                             Contenido del template de trámites
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-14" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Estilos de texto
                                         </a>
                                     </li>
-                                    <li class="">
+                                    <li class="" onclick="handleNavigate(event)">
                                         <a href="#section-ux-15" class="text-sm"
                                             style="gap:.25rem;align-items:center;margin-left:16px">
                                             Cantidad de caracteres
@@ -865,11 +865,11 @@
                 <h3 class="sr-only">Información gubernamental</h3>
                 <div class="row align-items-center">
                     <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-                        <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.png"
+                        <img class="d-md-none" src="/assets/footer/logo-footer-mobile.png"
                             alt="Logo de Ciudad de Buenos Aires" height="48" />
-                        <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.png"
+                        <img class="d-none d-md-inline" src="/assets/footer/logo-footer.png"
                             alt="Logo de Ciudad de Buenos Aires" height="40" />
-                        <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.png"
+                        <img class="img-vamos-ba" src="/assets/footer/logo-footer-ba.png"
                             alt="Logo de Vamos Buenos Aires" />
                     </div>
                     <div class="col-12">
@@ -928,7 +928,6 @@
             });
         }
     </script>
-
     <script>
         const $ = document;
         const navScrollspy = $.querySelector('#nav-scrollspy')
@@ -937,7 +936,6 @@
         const handleNavigate = (e) => {
             const selectItem = e.target.parentElement
             for (element of navScrollspy.children) {
-                console.dir(element.classList.contains('active'));
                 if (element.classList.contains('active')) element.classList.remove("active");
             }
             selectItem.classList.add("active");
@@ -949,14 +947,21 @@
         // Scrollspy: activa el item correspondiente al pasar por cada sección
         document.addEventListener('DOMContentLoaded', function () {
             const sections = [
-                'section-use',
-                'section-header',
-                'section-fast-access',
-                'section-outstanding',
-                'section-ministry-areas',
-                'section-programs',
-                'section-news',
-                'section-institutional'
+                'section-ux-1',
+                'section-ux-2',
+                'section-ux-3',
+                'section-ux-4',
+                'section-ux-5',
+                'section-ux-6',
+                'section-ux-7',
+                'section-ux-8',
+                'section-ux-9',
+                'section-ux-10',
+                'section-ux-11',
+                'section-ux-12',
+                'section-ux-13',
+                'section-ux-14',
+                'section-ux-15',
             ];
             const navItems = Array.from(document.querySelectorAll('#nav-scrollspy li'));
             function onScroll() {
@@ -980,7 +985,6 @@
             onScroll();
         });
     </script>
-
 </body>
 
 </html>
