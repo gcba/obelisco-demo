@@ -14,10 +14,11 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     </link>
-    <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+    <link rel="stylesheet" href="/node_modules/@gcba/obelisco-v2/dist/styles.css" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="/styles.css">
 
     <style>
         .home-iframe {
@@ -753,7 +754,7 @@
                         <div class="nav-scrollspy d-none d-xl-block ">
                             <div class="nav-scrollspy-position">
                                 <p class="text-sm fw-bold text-body-secondary mb-3">Contenido en esta página</p>
-                                <ul class="scrollspy" data-cy="nav-wrapper">
+                                <ul class="scrollspy" id="nav-scrollspy" data-cy="nav-wrapper">
                                     <li class="active">
                                         <a href="#section-ux-1" class="text-sm">
                                             ¿Qué puede tener una página de trámite?
@@ -927,6 +928,59 @@
             });
         }
     </script>
+
+    <script>
+        const $ = document;
+        const navScrollspy = $.querySelector('#nav-scrollspy')
+        let itemActive;
+
+        const handleNavigate = (e) => {
+            const selectItem = e.target.parentElement
+            for (element of navScrollspy.children) {
+                console.dir(element.classList.contains('active'));
+                if (element.classList.contains('active')) element.classList.remove("active");
+            }
+            selectItem.classList.add("active");
+        }
+    </script>
+
+
+    <script>
+        // Scrollspy: activa el item correspondiente al pasar por cada sección
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = [
+                'section-use',
+                'section-header',
+                'section-fast-access',
+                'section-outstanding',
+                'section-ministry-areas',
+                'section-programs',
+                'section-news',
+                'section-institutional'
+            ];
+            const navItems = Array.from(document.querySelectorAll('#nav-scrollspy li'));
+            function onScroll() {
+                let current = sections[0];
+                for (const id of sections) {
+
+                    const el = document.getElementById(id);
+                    if (el && el.getBoundingClientRect().top - 120 <= 0) {
+                        current = id;
+                    }
+                }
+                navItems.forEach(li => {
+                    li.classList.remove('active');
+                    const a = li.querySelector('a');
+                    if (a && a.getAttribute('href') === '#' + current) {
+                        li.classList.add('active');
+                    }
+                });
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        });
+    </script>
+
 </body>
 
 </html>
