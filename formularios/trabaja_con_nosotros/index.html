@@ -46,6 +46,7 @@
       </header>
 
       <div class="container">
+
         <div class="col-12 col-xl-8">
           <div class="mb-5">
             <h6 class="mb-3">Antes de empezar</h6>
@@ -253,55 +254,55 @@
                 <!-- input file -->
               </div>
             </div>
-        </div>
-        <!-- Información laboral y académica -->
-        <!-- Información adicional -->
-        <div class="mb-5">
-          <div class="col-12 col-xl-8 mt-3">
-            <h3 class="mb-1">Información adicional</h3>
-            <hr class="mt-0 mb-4 pb-2">
-            <div class="row">
-              <!-- Situación académica actual -->
-              <div class="col-12 col-xl-10">
-                <div class="form-label-container">
-                  <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
-                  <span class="badge-forms badge-optional-forms">Opcional</span>
+            <!-- Información laboral y académica -->
+            <!-- Información adicional -->
+            <div class="mb-5">
+              <div class="col-12 col-xl-8 mt-3">
+                <h3 class="mb-1">Información adicional</h3>
+                <hr class="mt-0 mb-4 pb-2">
+                <div class="row">
+                  <!-- Situación académica actual -->
+                  <div class="col-12 col-xl-10">
+                    <div class="form-label-container">
+                      <label for="comentario" class="form-label">¿Querés contarnos algo más?</label>
+                      <span class="badge-forms badge-optional-forms">Opcional</span>
+                    </div>
+                    <textarea class="form-control" id="comentario" name="comentario"
+                      placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5"
+                      aria-describedby="TextArea"></textarea>
+                  </div>
+                  <!-- Situación académica actual -->
                 </div>
-                <textarea class="form-control" id="comentario" name="comentario"
-                  placeholder="¿Querés contarnos algo más?" maxlength="100" rows="5"
-                  aria-describedby="TextArea"></textarea>
               </div>
-              <!-- Situación académica actual -->
             </div>
-          </div>
+            <!-- Información adicional -->
+            <!-- condiciones legales -->
+            <div class="col-12">
+              <p class="text-md mb-4 pb-2">
+                Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br>
+                Recibirás un
+                correo si tu perfil coincide con alguna convocatoria.
+              </p>
+              <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" name="ofertas" id="ofertas"
+                  value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
+                <label class="form-checkbox-label" for="ofertas">
+                  Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
+                </label>
+              </div>
+              <div class="form-checkbox">
+                <input class="form-checkbox-input" type="checkbox" name="terminos" id="terminos"
+                  value="Leí y estoy de acuerdo con las Políticas de privacidad." />
+                <label class="form-checkbox-label" for="terminos">
+                  Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
+                </label>
+              </div>
+            </div>
+            <!-- condiciones legales -->
+            <button type="submit" class="btn btn-primary mt-4">Enviar postulación</button>
+          </form>
         </div>
-        <!-- Información adicional -->
-        <!-- condiciones legales -->
-        <div class="col-12">
-          <p class="text-md mb-4 pb-2">
-            Al enviar el formulario, tu perfil se sumará a nuestra base de datos de búsquedas activas. <br>
-            Recibirás un
-            correo si tu perfil coincide con alguna convocatoria.
-          </p>
-          <div class="form-checkbox">
-            <input class="form-checkbox-input" type="checkbox" name="ofertas" id="ofertas"
-              value="Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico." />
-            <label class="form-checkbox-label" for="ofertas">
-              Me interesa recibir nuevas ofertas laborales a mi casilla de correo electrónico.
-            </label>
-          </div>
-          <div class="form-checkbox">
-            <input class="form-checkbox-input" type="checkbox" name="terminos" id="terminos"
-              value="Leí y estoy de acuerdo con las Políticas de privacidad." />
-            <label class="form-checkbox-label" for="terminos">
-              Leí y estoy de acuerdo con las <a href="">Políticas de privacidad</a>.
-            </label>
-          </div>
-        </div>
-        <!-- condiciones legales -->
-        <button type="submit" class="btn btn-primary mt-4">Enviar postulación</button>
-        </form>
-      </div>
+
       </div>
     </article>
   </main>
@@ -337,6 +338,8 @@
     const renderValidateElement = ({ element, message, inputType = 'text', parentElement = '.col-12' }) => {
       const field = inputType === 'select' ? selectSelectElement(element) : selectInputElement(element)
       const parent = field.closest(parentElement) // o el contenedor adecuado
+      console.log("[FIELD] ", field);
+      console.log("[PARENT] ", parent);
 
       // Evita duplicar el mensaje si ya existe
       const existingError = parent.querySelector('.invalid-feedback')
@@ -373,8 +376,6 @@
         if (key === 'fullname' && value === '' && value.length < 3) {
           renderValidateElement({ element: key, message: 'El campo nombre y apellido es obligatorio.' })
           isInvalid = true
-        } else if (key === 'date' && value === '') {
-          renderValidateElement({ element: key, message: 'El campo fecha es obligatorio.', parentElement: '.col-8' })
         } else if (key === 'nro_dni' && value === '') {
           renderValidateElement({ element: key, message: 'El campo número de documento es obligatorio.' })
           isInvalid = true
@@ -400,7 +401,7 @@
       }
 
       if (selectSelectElement('type_doc').value === 'Seleccionar…') {
-        renderValidateElement({ element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select', parentElement: '.col-7' })
+        renderValidateElement({ element: 'type_doc', message: 'El campo tipo de documento es obligatorio.', inputType: 'select', parentElement: '.col-12' })
         isInvalid = true
       } else {
         removeValidateElement({ element: 'type_doc', inputType: 'select' })
@@ -435,6 +436,7 @@
         form.reset()
         const inputs = form.querySelectorAll('input')
         const select = form.querySelectorAll('select')
+        const checks = form.querySelectorAll('input[type=checkbox]')
         inputs.forEach((input) => {
           input.classList.remove('is-invalid')
           const parentElement = input.parentElement
@@ -448,6 +450,17 @@
             select.classList.remove('is-invalid')
           }
           const parentElement = select.parentElement
+          const error = parentElement.querySelector('.invalid-feedback')
+          if (error && error.classList.contains('invalid-feedback')) {
+            error.remove()
+          }
+        })
+
+        checks.forEach((select) => {
+          if (select.classList.contains('is-invalid')) {
+            select.classList.remove('is-invalid')
+          }
+          const parentElement = select.parentElement.parentElement
           const error = parentElement.querySelector('.invalid-feedback')
           if (error && error.classList.contains('invalid-feedback')) {
             error.remove()
