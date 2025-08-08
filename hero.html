@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <title>Plantillas GCBA</title>
+
+   <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="./node_modules/@gcba/obelisco-v2/dist/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
+
+    <style>
+      .home-iframe {
+        min-height: 100%; 
+        min-width: 100%;
+      }
+      @media screen and (min-width: 1200px) {
+        .home-iframe {
+          min-height: 300px; 
+          min-width: 500px;
+        }
+      }
+
+      /* .box {
+        --mask:
+          radial-gradient(123.55px at 50% calc(100% - 168px),#000 99%,#0000 101%) calc(50% - 120px) 0/240px 100%,
+          radial-gradient(123.55px at 50% calc(100% + 108px),#0000 99%,#000 101%) 50% calc(100% - 60px)/240px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      } */
+
+      /* .box {
+        --mask:
+          radial-gradient(41.18px at 50% calc(100% - 56px),#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+          radial-gradient(41.18px at 50% calc(100% + 36px),#0000 99%,#000 101%) 50% calc(100% - 20px)/80px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      } */
+
+      /* .box {
+        --mask:
+          radial-gradient(86.02px at 50% calc(100% - 120px),#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
+          radial-gradient(86.02px at 50% calc(100% + 70px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+      } */
+
+      .box {
+        --mask:
+          radial-gradient(111.8px at 50% calc(100% - 150px),#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
+          radial-gradient(111.8px at 50% calc(100% + 100px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
+
+        /*??*/
+        /*min-height: 440px;*/
+      }
+
+
+
+      /* .wave {
+        display: block;
+        position: relative;
+        height: 40px;
+        width: 100%;
+        background: rgb(57, 27, 112);
+        transform: scale(1, 1);
+      }
+      .wave:before {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        width: 100%;
+        height: 300px;
+        background-color: white;
+        right: -25%;
+        top: 20px;
+      }
+      .wave:after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        width: 100%;
+        height: 300px;
+        background-color: rgb(57, 27, 112);
+        left: -25%;
+        top: -240px;
+        clip-path: ellipse(100% 15% at -15% 100%);
+      } */
+
+
+
+
+
+
+
+
+      /* .wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: rgb(57, 27, 112);
+  transform: scale(1, 1.5);
+}
+
+.wave:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  right: -25%;
+  top: 20px;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(57, 27, 112);
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
+} */
+
+    </style>
+  </head>
+
+  
+  <body>    
+    <header class="o-header navbar" role="banner">
+      <a href="#main" class="skip-to-main-content-link">
+        Saltar al contenido principal
+      </a>
+      <div class="container header-container">
+        <a href="/" class="navbar-brand">
+          <img
+            class="d-none d-xl-block"
+            src="/assets/header/logo_obelisco.svg"
+            alt="Obelisco"
+          />
+          <img
+            class="d-xl-none"
+            src="/assets/header/logo_obelisco_mobile.svg"
+            alt="Obelisco"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarHomeObelisco"
+          aria-controls="navbarHomeObelisco"
+          aria-expanded="false"
+          aria-label="Menú"
+        ></button>
+        <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+          <div class="navbar-content">
+            <div class="navbar-sections">
+              <nav>
+                <p class="navbar-sections-title">Secciones</p>
+                <ul class="nav nav-pills nav-sections">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link-lg"
+                      href="https://gcba.github.io/Obelisco-V2/getting-started"
+                      ><span>Empezar con Obelisco</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link-lg"
+                      href="https://gcba.github.io/Obelisco-V2/components"
+                      ><span>Librería</span></a
+                    >
+                  </li>
+                  <li class="dropdown">
+                    <button
+                      type="button"
+                      class="btn btn-dropdown btn-lg"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="btn-dropdown-text ellipsis-1">Versiones</span>
+                      <span
+                        class="material-symbols-rounded btn-dropdown-icon"
+                        aria-label="hidden"
+                      >
+                        expand_more
+                      </span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a
+                        class="dropdown-item"
+                        href="https://gcba.github.io/Obelisco-V2/documentation"
+                      >
+                        <span class="item-text">Migrar a Obelisco v.2</span>
+                      </a>
+                      <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                        <span class="item-text"
+                          >Obelisco v.1
+                          <span class="fst-italic">(deprecado)</span></span
+                        >
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-backdrop"></div>
+    </header>
+    <main id="main">
+      <article class="pb-5 mb-4">
+      <header class="bg-light pt-3 pb-5 mb-5 box">
+        <div class="container pt-1">
+          <nav aria-label="Navegación secundaria" class="py-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col-12 col-xl-8">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Nombre del área</h1>
+                <p class="lead">It has survived not only five centuries, but also the leap into electronic typesetting,
+                  remaining essentially unchanged. It was popularised in the 1960s.</p>
+              </div>
+              <div class="d-block d-md-flex flex-wrap pt-3">
+                <div class="dropdown mb-2 mb-md-3 me-3">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-border btn-lg" data-bs-toggle="dropdown"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                    <span class="btn-dropdown-text ellipsis-1">Institucional</span>
+                    <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <div class="form-radio reverse">
+                      <input class="form-radio-input" type="radio" name="dropdownRadioLg" id="option-radio-lg-1"
+                        value="option-1" />
+                      <label class="form-radio-label" for="option-radio-lg-1">
+                        Opción de selección única 1
+                      </label>
+                    </div>
+                    <div class="form-radio reverse">
+                      <input class="form-radio-input" type="radio" name="dropdownRadioLg" id="option-radio-lg-2"
+                        value="option-2" />
+                      <label class="form-radio-label" for="option-radio-lg-2">
+                        Opción de selección única 2
+                      </label>
+                    </div>
+                    <div class="form-radio reverse">
+                      <input class="form-radio-input" type="radio" name="dropdownRadioLg" id="option-radio-lg-3"
+                        value="option-3" disabled />
+                      <label class="form-radio-label" for="option-radio-lg-3">
+                        Opción de selección única 3
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- <header class="bg-light pt-3 pb-5 mb-5 box">
+        <div class="container pt-1">
+          <nav aria-label="Navegación secundaria" class="py-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Nombre del área</h1>
+                <p class="lead">It has survived not only five centuries, but also the leap into electronic typesetting,
+                  remaining essentially unchanged. It was popularised in the 1960s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> -->
+
+      <!-- <header class="bg-light pt-3 pb-5 mb-5 ">
+        <div class="container pt-1">
+          <nav aria-label="Navegación secundaria" class="py-3">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col-12 col-xl-6">
+              <div class="mt-2 pt-1">
+                <h1 class="mb-3">Nombre del área</h1>
+                <p class="lead">It has survived not only five centuries, but also the leap into electronic typesetting,
+                  remaining essentially unchanged. It was popularised in the 1960s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"></div>
+      </header> -->
+
+      </article>
+    </main>
+    <h2 class="sr-only">Navegación de pie de página</h2>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-legal-section">
+          <h3 class="sr-only">Información gubernamental</h3>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+              <img
+                class="d-md-none"
+                src="./assets/footer/logo-footer-mobile.svg"
+                alt="Logo de Ciudad de Buenos Aires"
+                height="48"
+              />
+              <img
+                class="d-none d-md-inline"
+                src="./assets/footer/logo-footer.svg"
+                alt="Logo de Ciudad de Buenos Aires"
+                height="40"
+              />
+              <img
+                class="img-vamos-ba"
+                src="./assets/footer/logo-footer-ba.svg"
+                alt="Logo de Vamos Buenos Aires"
+              />
+            </div>
+            <div class="col-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://boletinoficial.buenosaires.gob.ar">
+                    Boletín oficial
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
+                  >
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                    Política de privacidad
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
+                  >
+                    Oficios judiciales
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                    Transparencia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="footer-license-text">
+            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+            Commons Reconocimiento 2.5 Argentina License.
+          </div>
+        </section>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
+  </body>
+</html>
