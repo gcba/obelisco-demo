@@ -23,13 +23,99 @@
       .card-border-left-yellow {
         border-left: 8px solid #ffd633;
       }
+      .lauti{
+        /*background-color: #64D8C8;*/
+        background-color: #94E1B0;
+        border-top-right-radius: 145px;
+        padding-bottom: 4rem;
+        margin-right: 4rem;
+      }
+      .lauti2 {
+        background-color: #002733;
+      }
+
+      .list-steps-item::before {
+        background-color: #26874A;
+      }
+      .list-steps.list-steps-numbers .list-steps-item:nth-child(n)::before {
+        box-shadow: 0 0 0 1px #26874A;
+      }
+      .list-steps-item:not(:last-child)::after {
+        background-color: #26874A;
+      }
+
     </style>
 </head>
 
 <body>
+
+      <header class="o-header navbar text-white" role="banner">
+      <a href="#main" class="skip-to-main-content-link">
+        Saltar al contenido principal
+      </a>
+      <div class="container header-container">
+        <a href="/" class="navbar-brand">
+          <img
+            class="d-none d-xl-block"
+            src="/assets/header/logo_obelisco.svg"
+            alt="Obelisco"
+          />
+          <img
+            class="d-xl-none"
+            src="/assets/header/logo_obelisco_mobile.svg"
+            alt="Obelisco"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarHomeObelisco"
+          aria-controls="navbarHomeObelisco"
+          aria-expanded="false"
+          aria-label="Menú"
+        ></button>
+        <div class="collapse navbar-collapse" id="navbarHomeObelisco">
+          <div class="navbar-content">
+            <div class="navbar-sections">
+              <nav>
+                <p class="navbar-sections-title">Secciones</p>
+                <ul class="nav nav-pills nav-sections">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link-lg"
+                      href=""
+                      ><span>Áreas de gobierno</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link nav-link-lg"
+                      href=""
+                      ><span>BA Discapacidad</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                        class="nav-link nav-link-lg"
+                        href=""
+                      ><span class="item-text">Trámites y servicios</span></a
+                      >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-backdrop"></div>
+    </header>
+
+
   <main id="main">
     <article class="pb-5 mb-4">
-      <header class="bg-light pt-3 pb-5">
+      <header class="lauti2">  <!--   pt-3 pb-5-->
+        <section class="lauti">
         <div class="container pt-1">
           <nav aria-label="Navegación secundaria" class="py-3">
             <ol class="breadcrumb">
@@ -52,6 +138,7 @@
             </div>
           </div>
         </div>
+        </section>
       </header>
       <div class="banner banner-dark mb-5">
         <div class="banner-content">
