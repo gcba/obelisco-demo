@@ -23,16 +23,6 @@
       .card-border-left-yellow {
         border-left: 8px solid #ffd633;
       }
-      .lauti{
-        /*background-color: #64D8C8;*/
-        background-color: #94E1B0;
-        border-top-right-radius: 145px;
-        padding-bottom: 4rem;
-        margin-right: 4rem;
-      }
-      .lauti2 {
-        background-color: #002733;
-      }
 
       .list-steps-item::before {
         background-color: #26874A;
@@ -44,12 +34,299 @@
         background-color: #26874A;
       }
 
+
+       .search-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+  top: 0;
+}
+
+.search-wrapper:focus-within {
+  background-color: #f3f6f9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+  min-height: max-content;
+}
+
+.active {
+  background-color: #f3f6f9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+}
+
+.search-wrapper .search-results a:focus {
+  box-shadow: none;
+  outline: none;
+}
+ 
+.search-results {
+  display: block;
+}
+
+      /* .search-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+ 
+.search-wrapper:focus-within {
+  background-color: #f3f6f9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+  min-height: max-content;
+}
+ 
+.active {
+  background-color: #f3f6f9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+}
+ 
+.search-wrapper .search-results a:focus {
+  box-shadow: none;
+  outline: none;
+}
+ 
+.search-results {
+  display: block;
+}
+ 
+.search-wrapper:focus-within .search-results {
+  display: block;
+}
+ 
+.hero-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+ 
+.hero-radius {
+  width: 95%;
+  z-index: 10;
+  border-radius: 0 80px 0 0;
+}
+ 
+.container-search-wrapper {
+  position: relative;
+  margin-top: 32px;
+  height: 56px;
+}
+ 
+.form-control {
+  border-bottom: 2px solid #e6ebf0;
+  padding: 1rem;
+  padding-left: 12px;
+  padding-right: 128px;
+  box-shadow: none;
+}
+ 
+.list-link-result {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000 !important;
+  gap: 0.25rem;
+}
+ 
+.bg-cyan {
+  background: #94e1b0;
+} */
+
+
+
+
+
+
+.wrapper,
+    .bg,
+    header {
+      width: 100%;
+      height: 697px;
+      /* MODIFICAR ALTURA EN BASE A LO QUE SE QUIERA LOGRAR */
+    }
+
+    .wrapper-masks {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mask::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #94E1B0;
+      /*jugar con este valor */
+      height: 100%;
+      width: 100%;
+      content: '';
+      -webkit-clip-path: path("M633.555 -619L633.555 277.44C546.36 277.44 546.36 308 459.166 308C371.971 308 371.971 277.44 284.777 277.44C197.582 277.44 197.582 308 110.388 308C23.1932 308 23.1932 277.44 -64.0013 277.44L-64.0012 -619L633.555 -619Z");
+      clip-path: path("M633.555 -619L633.555 277.44C546.36 277.44 546.36 308 459.166 308C371.971 308 371.971 277.44 284.777 277.44C197.582 277.44 197.582 308 110.388 308C23.1932 308 23.1932 277.44 -64.0013 277.44L-64.0012 -619L633.555 -619Z");
+    }
+
+    /* se puden estandarizar los valores de los breakpoints pero hay que tener en cuenta los path de las maks */
+    @media screen and (min-width: 620px) {
+      .mask::before {
+        transform: scaleX(2);
+      }
+    }
+
+    @media screen and (min-width: 840px) {
+      .mask::before {
+        transform: scaleX(4);
+      }
+    }
+
+    @media screen and (min-width: 1010px) {
+
+      .wrapper,
+      .bg,
+      header {
+        width: 100%;
+        height: 400px;
+        /* MODIFICAR ALTURA EN BASE A LO QUE SE QUIERA LOGRAR */
+      }
+
+      .mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #94E1B0;
+        clip-path: path("M0 -289H768C768 -174 800 -174 800 -87C800 0 768 0 768 87C768 174 800 174 800 261C800 348 768 348 768 435H0V-289Z");
+        -webkit-clip-path: path("M0 -289H768C768 -174 800 -174 800 -87C800 0 768 0 768 87C768 174 800 174 800 261C800 348 768 348 768 435H0V-289Z");
+        transform: scaleX(1.2);
+        /* escala solo la onda */
+        transform-origin: left;
+        /* z-index: 0; */
+      }
+
+      .wrapper-masks {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .mask {
+        order: -1;
+      }
+
+      header {
+        /* background-color: #002733; */
+        height: 100%;
+      }
+    }
+
+    @media screen and (min-width: 1225px) {
+      .mask::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #94E1B0;
+        clip-path: path('M0 -266.373H1181.71C1181.71 -178.591 1222 -178.591 1222 -90.8088C1222 -3.02698 1181.71 -3.02698 1181.71 84.7549C1181.71 172.537 1222 172.537 1222 260.319C1222 348.1 1181.71 348.1 1181.71 435.882H0V-266.373Z');
+        -webkit-clip-path: path('M0 -266.373H1181.71C1181.71 -178.591 1222 -178.591 1222 -90.8088C1222 -3.02698 1181.71 -3.02698 1181.71 84.7549C1181.71 172.537 1222 172.537 1222 260.319C1222 348.1 1181.71 348.1 1181.71 435.882H0V-266.373Z');
+        transform: scaleX(0.9);
+        /* escala solo la onda */
+        transform-origin: left;
+        /* z-index: 0; */
+      }
+
+      .hero-img {
+        object-position: 660px;
+        /*jugar con este valor */
+        /* object-position: 40% 180px; */
+      }
+
+      .mask-mobile-img,
+      .mask-mobile-img::before {
+        display: none;
+      }
+
+      .wrapper-masks {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .mask {
+        order: -1;
+      }
+
+      header {
+        /* background-color: #002733; */
+        height: 100%;
+      }
+    }
+
+    .mask-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+
+    }
+
+    .mask-border {
+      width: 100%;
+      height: 90%;
+      background-color: #94E1B0;
+      border-radius: 0 0 80px 0;
+      z-index: 0;
+    }
+
+    @media screen and (min-width: 1010px) {
+
+      .mask-border {
+        width: 90%;
+        height: 100%;
+        background-color: #94E1B0;
+        border-radius: 0 80px 0 0;
+        z-index: 0;
+      }
+
+    }
+
+    /* no se usa, se centraliza en la clase mask y los dif breakpoints */
+    /* .mask-mobile-img::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #94E1B0;
+      height: 100%;
+      width: 100%;
+      content: '';
+      -webkit-clip-path: path("M633.555 -619L633.555 277.44C546.36 277.44 546.36 308 459.166 308C371.971 308 371.971 277.44 284.777 277.44C197.582 277.44 197.582 308 110.388 308C23.1932 308 23.1932 277.44 -64.0013 277.44L-64.0012 -619L633.555 -619Z");
+      clip-path: path("M633.555 -619L633.555 277.44C546.36 277.44 546.36 308 459.166 308C371.971 308 371.971 277.44 284.777 277.44C197.582 277.44 197.582 308 110.388 308C23.1932 308 23.1932 277.44 -64.0013 277.44L-64.0012 -619L633.555 -619Z");
+    } */
+
+    /* no se usa, la imagen va como elemento html */
+    /* .bg-img {
+      background-image: url("lio.webp");
+      background-size: cover;
+      background-position: center;
+    } */
+
     </style>
 </head>
 
 <body>
 
-      <header class="o-header navbar text-white" role="banner">
+    <header class="o-header navbar text-white" role="banner">
       <a href="#main" class="skip-to-main-content-link">
         Saltar al contenido principal
       </a>
@@ -114,8 +391,7 @@
 
   <main id="main">
     <article class="pb-5 mb-4">
-      <header class="lauti2">  <!--   pt-3 pb-5-->
-        <section class="lauti">
+      <!-- <header class="pt-3 pb-5">
         <div class="container pt-1">
           <nav aria-label="Navegación secundaria" class="py-3">
             <ol class="breadcrumb">
@@ -138,8 +414,166 @@
             </div>
           </div>
         </div>
-        </section>
-      </header>
+      </header> -->
+
+
+
+      <!-- <div style="position: relative">
+  <div class="hero-mask bg-dark">
+  </div>
+  <header class="pt-3 pb-5 hero-radius bg-cyan">
+    <div class="container pt-1">
+      <nav aria-label="Navegación secundaria" class="py-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+          <li class="breadcrumb-item"><a href="#">BA Productiva</a></li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col-12 col-xl-8">
+          <div class="mt-2 pt-1">
+            <h1 class="mb-3">BA Productiva</h1>
+            <p class="lead">
+              Accedé a la ventanilla única de trámites para habilitar y desarrollar actividades económicas o llevar
+              adelante obras en la Ciudad.
+            </p>
+          </div>
+          <div class="container-search-wrapper">
+            <div class="search-wrapper">
+              <div class="position-relative">
+                <label for="search-home" class="sr-only">Buscar</label>
+                <input
+                  type="text"
+                  id="search-home"
+                  name="search-home"
+                  maxlength="100"
+                  autocomplete="off"
+                  class="form-control"
+                  placeholder="¿En qué te podemos ayudar?"
+                />
+                <div class="position-absolute" style="top: 5px; right: 5px; bottom: 5px">
+                  <button class="btn btn-lg btn-primary">Buscar</button>
+                </div>
+                <div class="search-results bg-light">
+                  <div class="list-link" id="list-results">
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div> -->
+
+
+
+
+
+
+
+  <div class="wrapper">
+    <header>
+      <!-- <div class="pt-3 pb-5 mb-5 wrapper-masks"> -->
+      <div class="wrapper-masks">
+        <!--  bg -->
+        <div class="bg bg-dark" style="display: flex; justify-content: end;">
+        </div>
+        <!--  bg -->
+        <div class="mask-border"> <!--  mask -->
+        </div>
+              <!-- content header -->
+      <div class="container pt-1 position-absolute" style="top: 0; left: 0; right: 0;">
+
+
+   
+      <nav aria-label="Navegación secundaria" class="py-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Buenos Aires</a></li>
+          <li class="breadcrumb-item"><a href="#">BA Productiva</a></li>
+        </ol>
+      </nav>
+      <div class="row">
+        <div class="col-12 col-xl-8">
+          <div class="mt-2 pt-1">
+            <h1 class="mb-3">BA Productiva</h1>
+            <p class="lead">
+              Accedé a la ventanilla única de trámites para habilitar y desarrollar actividades económicas o llevar
+              adelante obras en la Ciudad.
+            </p>
+          </div>
+          <!-- <div class="d-block d-md-flex flex-wrap pt-3"> -->
+          <div class="container-search-wrapper">
+            <div class="search-wrapper">
+              <div class="position-relative">
+                <label for="search-home" class="sr-only">Buscar</label>
+                <input
+                  type="text"
+                  id="search-home"
+                  name="search-home"
+                  maxlength="100"
+                  autocomplete="off"
+                  class="form-control"
+                  placeholder="¿En qué te podemos ayudar?"
+                />
+                <div class="position-absolute" style="top: 5px; right: 5px; bottom: 5px">
+                  <button class="btn btn-lg btn-primary">Buscar</button>
+                </div>
+                <!-- results -->
+                <div class="search-results bg-light">
+                  <div class="list-link" id="list-results">
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                    <a href="#" target="_blank" class="list-link-result" rel="noopener noreferrer">
+                      <span class="material-symbols-outlined"> search </span>
+                      Enlace predeterminado
+                    </a>
+                  </div>
+                </div>
+                <!-- results -->
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    
+
+
+      </div>
+      <!-- content header -->
+      </div>
+
+    </header>
+  </div>
+
+
+
+
+
+
+
+
+      
       <div class="banner banner-dark mb-5">
         <div class="banner-content">
           <p class="banner-text">
