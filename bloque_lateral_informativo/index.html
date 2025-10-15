@@ -19,105 +19,103 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
 
   <style>
-    .list-inline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
+    .bloque_detalle_evento {
 
-    .list-inline .list-inline-item {
-      a {
+
+      .list-inline {
         display: inline-flex;
-        justify-content: center;
         align-items: center;
-        color: #002733;
-        text-decoration: none;
-        font-size: 24px;
-        line-height: 1;
+        justify-content: center;
+      }
 
-        i {
+      .list-inline .list-inline-item {
+        a {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          color: #002733;
+          text-decoration: none;
           font-size: 24px;
           line-height: 1;
+
+          i {
+            font-size: 24px;
+            line-height: 1;
+          }
         }
       }
+
+      /* Estilos del Colapsable dentro del bloque de trámite */
+      .accordion {
+        border: none;
+        box-shadow: none;
+      }
+
+      #accordionUniqueSelection,
+      #accordionUniqueSelection .accordion-item,
+      #accordionUniqueSelection .accordion-button,
+      #accordionUniqueSelection .accordion-collapse {
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+
+      #accordionUniqueSelection {
+        --bs-accordion-border-color: transparent;
+        --bs-border-width: 0;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-active-color: inherit;
+        --bs-accordion-active-bg: transparent;
+      }
+
+      .accordion-item .accordion-button,
+      .accordion-item .accordion-button.collapsed {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+      }
+
+      .accordion-item .accordion-button:hover,
+      .accordion-item .accordion-button.collapsed:hover {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: transparent;
+        color: black;
+      }
+
+      /* Quita el ícono + default del desplegable */
+      .accordion-button::after,
+      .accordion-button:not(.collapsed)::after,
+      .accordion-button:hover::after,
+      .accordion-button:focus::after {
+        background-image: none !important;
+        content: "";
+      }
+
+      /* Flecha cuando está colapsado */
+      .accordion-button.collapsed::after {
+        background: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8746 8.99953L11.9946 12.8795L8.11461 8.99953C7.72461 8.60953 7.09461 8.60953 6.70461 8.99953C6.31461 9.38953 6.31461 10.0195 6.70461 10.4095L11.2946 14.9995C11.6846 15.3895 12.3146 15.3895 12.7046 14.9995L17.2946 10.4095C17.6846 10.0195 17.6846 9.38953 17.2946 8.99953C16.9046 8.61953 16.2646 8.60953 15.8746 8.99953Z" fill="%23101E37"/></svg>') center/contain no-repeat !important;
+      }
+
+      /* 3. Flecha cuando está abierto (al hacer click) */
+      .accordion-button:not(.collapsed)::after {
+        background: url('data:image/svg+xml,<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.795 14.9995C18.185 14.6095 18.185 13.9795 17.795 13.5895L13.205 8.99953C12.815 8.60953 12.185 8.60953 11.795 8.99953L7.20503 13.5895C6.81503 13.9795 6.81503 14.6095 7.20503 14.9995C7.59503 15.3895 8.22502 15.3895 8.61502 14.9995L12.505 11.1195L16.385 14.9995C16.775 15.3895 17.415 15.3795 17.795 14.9995Z" fill="%23101E37"/></svg>') center/contain no-repeat !important;
+      }
+
+      .accordion-body>span {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8px;
+      }
+
+      /* el span que contiene la hora */
+      .accordion-body>span>span {
+        text-align: right;
+      }
+
+      /* Estilos del Colapsable dentro del bloque de trámite */
     }
-
-    /* Estilos del Colapsable dentro del bloque de trámite */
-    .accordion {
-      border: none;
-      box-shadow: none;
-    }
-
-    #accordionUniqueSelection,
-    #accordionUniqueSelection .accordion-item,
-    #accordionUniqueSelection .accordion-button,
-    #accordionUniqueSelection .accordion-collapse {
-      border: none;
-      box-shadow: none;
-      outline: none;
-    }
-
-    #accordionUniqueSelection {
-      --bs-accordion-border-color: transparent;
-      --bs-border-width: 0;
-      --bs-accordion-btn-focus-border-color: transparent;
-      --bs-accordion-active-color: inherit;
-      --bs-accordion-active-bg: transparent;
-    }
-
-    .accordion-item .accordion-button,
-    .accordion-item .accordion-button.collapsed {
-      background-color: rgb(255, 255, 255);
-      color: rgb(0, 0, 0);
-    }
-
-    .accordion-item .accordion-button:hover,
-    .accordion-item .accordion-button.collapsed:hover {
-      border: none;
-      box-shadow: none;
-      outline: none;
-      background-color: transparent;
-      color: black;
-    }
-
-    /* Quita el ícono + default del desplegable */
-    .accordion-button::after,
-    .accordion-button:not(.collapsed)::after,
-    .accordion-button:hover::after,
-    .accordion-button:focus::after {
-      background-image: none !important;
-      content: "";
-    }
-
-    /* Flecha cuando está colapsado */
-    .accordion-button.collapsed::after {
-      background: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.8746 8.99953L11.9946 12.8795L8.11461 8.99953C7.72461 8.60953 7.09461 8.60953 6.70461 8.99953C6.31461 9.38953 6.31461 10.0195 6.70461 10.4095L11.2946 14.9995C11.6846 15.3895 12.3146 15.3895 12.7046 14.9995L17.2946 10.4095C17.6846 10.0195 17.6846 9.38953 17.2946 8.99953C16.9046 8.61953 16.2646 8.60953 15.8746 8.99953Z" fill="%23101E37"/></svg>') center/contain no-repeat !important;
-    }
-
-    /* 3. Flecha cuando está abierto (al hacer click) */
-    .accordion-button:not(.collapsed)::after {
-      background: url('data:image/svg+xml,<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.795 14.9995C18.185 14.6095 18.185 13.9795 17.795 13.5895L13.205 8.99953C12.815 8.60953 12.185 8.60953 11.795 8.99953L7.20503 13.5895C6.81503 13.9795 6.81503 14.6095 7.20503 14.9995C7.59503 15.3895 8.22502 15.3895 8.61502 14.9995L12.505 11.1195L16.385 14.9995C16.775 15.3895 17.415 15.3795 17.795 14.9995Z" fill="%23101E37"/></svg>') center/contain no-repeat !important;
-    }
-
-    .accordion-body>span {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 8px;
-    }
-
-    /* el span que contiene la hora */
-    .accordion-body>span>span {
-      text-align: right;
-    }
-
-    /* Estilos del Colapsable dentro del bloque de trámite */
-
-
-    /* .list-inline .list-inline-item a:hover {
-      background-color: #002733;
-      color: #fff;
-    } */
   </style>
 
 </head>
@@ -405,108 +403,110 @@
         </div>
 
         <div class="col-12 col-xl-4">
-          <!-- Bloque lateral informativo -->
-          <!-- Basado en el componente bloque de trámite. Cambia el contenido -->
-          <div class="block position-sticky" style="top: 48px;">
-            <div class="block-body">
+          <!-- bloque_detalle_evento -->
+          <div class="bloque_detalle_evento">
+            <!-- Bloque lateral informativo -->
+            <!-- Basado en el componente bloque de trámite. Cambia el contenido -->
+            <div class="block position-sticky" style="top: 48px;">
+              <div class="block-body">
 
-              <p class="headline-lg">Personas, lugares & cosas</p>
+                <p class="headline-lg">Personas, lugares & cosas</p>
 
-              <span class="badge badge-default">teatro</span>
-              <span class="badge badge-default">musical</span>
-              <span class="badge badge-default">estreno</span>
+                <span class="badge badge-default">teatro</span>
+                <span class="badge badge-default">musical</span>
+                <span class="badge badge-default">estreno</span>
 
-              <!-- desplegable - colapsable -->
-              <div class="accordion" id="accordionUniqueSelection" style="margin-top: 28px;">
-                <div class="accordion-item">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOneUniqueSelection" aria-expanded="false"
-                    aria-controls="collapseOneUniqueSelection">
-                    <!-- Con semibold, no se ve como en el figma -->
-                    <span class="headline-sm fw-bold">Días y horarios</span>
-                  </button>
-                  <div id="collapseOneUniqueSelection" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionUniqueSelection">
-                    <div class="accordion-body">
-                      <!-- span dentro de span se puede, pero p dentro de p no -->
-                      <span>5 de Septiembre <span>20 h</span></span>
-                      <span>6 de Septiembre <span>21 h</span></span>
-                      <span>12 de Septiembre <span>20 h</span></span>
+                <!-- desplegable - colapsable -->
+                <div class="accordion" id="accordionUniqueSelection" style="margin-top: 28px;">
+                  <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOneUniqueSelection" aria-expanded="false"
+                      aria-controls="collapseOneUniqueSelection">
+                      <!-- Con semibold, no se ve como en el figma -->
+                      <span class="headline-sm fw-bold">Días y horarios</span>
+                    </button>
+                    <div id="collapseOneUniqueSelection" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionUniqueSelection">
+                      <div class="accordion-body">
+                        <!-- span dentro de span se puede, pero p dentro de p no -->
+                        <span>5 de Septiembre <span>20 h</span></span>
+                        <span>6 de Septiembre <span>21 h</span></span>
+                        <span>12 de Septiembre <span>20 h</span></span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- desplegable - colapsable -->
+
+                <!-- ubicacion -->
+                <div class="d-flex align-items-center" style="margin-top: 28px;">
+                  <span class="material-symbols-rounded" style="color:#38485C;">
+                    location_on
+                  </span>
+                  <!-- p pone 8 de margin left, y en el figma es 4 del ícono y 4 del p -->
+                  <p class="mb-0 text-md ms-2 fw-semibold">Teatro Sarmiento</p>
+                </div>
+                <p class="text-sm mb-0" style="color:#38485C; margin-left: 32px;">Av. Sarmiento 2715</p>
+
+                <!-- mapa -->
+                <div class="d-flex pt-3 align-items-center">
+                  <span class="material-symbols-rounded" style="color:#38485C;">
+                    map
+                  </span>
+                  <a class="external ms-2" href="#" target="_blank" rel="noopener noreferrer">Ver mapa</a>
+                </div>
+                <!-- mapa -->
+
+                <!-- ubicacion -->
+
+                <button type="button" class="btn btn-secondary btn-lg  btn-block">Adquirir entradas</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg  btn-block mb-3">Descubrí más
+                  eventos</button>
+
+                <p class="text-sm" style="margin-top: 20px; margin-bottom: 8px;">Compartilo en</p>
+
+                <ul class="list-inline">
+                  <li class="list-inline-item redes-items">
+                    <a href="https://www.facebook.com/GCBA">
+                      <i class="o-icon bx bxl-facebook-circle"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item redes-items">
+                    <a href="https://www.instagram.com/gcba/">
+                      <i class="o-icon bx bxl-instagram-alt"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item redes-items social-x">
+                    <a href="https://x.com/gcba">X</a>
+                  </li>
+                  <li class="list-inline-item redes-items">
+                    <a href="https://www.youtube.com/user/GCBA">
+                      <i class="o-icon bx bxl-youtube"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item redes-items">
+                    <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+                      <i class="o-icon bx bxl-linkedin-square"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item redes-items">
+                    <a href="https://www.tiktok.com/@buenosaires">
+                      <i class="o-icon bx bxl-tiktok"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item redes-items">
+                    <a href="https://www.pinterest.es/buenosaires/">
+                      <i class="o-icon bx bxl-pinterest"></i>
+                    </a>
+                  </li>
+                </ul>
+
               </div>
-              <!-- desplegable - colapsable -->
-
-              <!-- ubicacion -->
-              <div class="d-flex align-items-center" style="margin-top: 28px;">
-                <span class="material-symbols-rounded" style="color:#38485C;">
-                  location_on
-                </span>
-                <!-- p pone 8 de margin left, y en el figma es 4 del ícono y 4 del p -->
-                <p class="mb-0 text-md ms-2 fw-semibold">Teatro Sarmiento</p>
-              </div>
-              <p class="text-sm mb-0" style="color:#38485C; margin-left: 32px;">Av. Sarmiento 2715</p>
-
-              <!-- mapa -->
-              <div class="d-flex pt-3 align-items-center">
-                <span class="material-symbols-rounded" style="color:#38485C;">
-                  map
-                </span>
-                <a class="external ms-2" href="#" target="_blank" rel="noopener noreferrer">Ver mapa</a>
-              </div>
-              <!-- mapa -->
-
-              <!-- ubicacion -->
-
-              <button type="button" class="btn btn-secondary btn-lg  btn-block">Adquirir entradas</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg  btn-block mb-3">Descubrí más
-                eventos</button>
-
-              <p class="text-sm" style="margin-top: 20px; margin-bottom: 8px;">Compartilo en</p>
-
-              <ul class="list-inline">
-                <li class="list-inline-item redes-items">
-                  <a href="https://www.facebook.com/GCBA">
-                    <i class="o-icon bx bxl-facebook-circle"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item redes-items">
-                  <a href="https://www.instagram.com/gcba/">
-                    <i class="o-icon bx bxl-instagram-alt"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item redes-items social-x">
-                  <a href="https://x.com/gcba">X</a>
-                </li>
-                <li class="list-inline-item redes-items">
-                  <a href="https://www.youtube.com/user/GCBA">
-                    <i class="o-icon bx bxl-youtube"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item redes-items">
-                  <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                    <i class="o-icon bx bxl-linkedin-square"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item redes-items">
-                  <a href="https://www.tiktok.com/@buenosaires">
-                    <i class="o-icon bx bxl-tiktok"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item redes-items">
-                  <a href="https://www.pinterest.es/buenosaires/">
-                    <i class="o-icon bx bxl-pinterest"></i>
-                  </a>
-                </li>
-              </ul>
-
             </div>
+            <!-- Basado en el componente bloque de trámite. Cambia el contenido -->
+            <!-- Bloque lateral informativo -->
           </div>
-          <!-- Basado en el componente bloque de trámite. Cambia el contenido -->
-          <!-- Bloque lateral informativo -->
-
-
+          <!-- bloque_detalle_evento -->
         </div>
       </div>
     </div>
