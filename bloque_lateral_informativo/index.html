@@ -7,13 +7,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
 
-  <title>Bloque lateral informativo</title>
+  <title>*Bloque lateral informativo</title>
 
   <!-- Obelisco -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link rel="stylesheet" href="../node_modules/@gcba/obelisco-v2/dist/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
@@ -90,6 +90,8 @@
       .accordion-button:focus::after {
         background-image: none !important;
         content: "";
+        right: 0px;
+
       }
 
       /* Flecha cuando está colapsado */
@@ -109,9 +111,59 @@
         margin-bottom: 8px;
       }
 
+      .accordion-body>span:last-child {
+        margin-bottom: 0;
+      }
+
       /* el span que contiene la hora */
       .accordion-body>span>span {
         text-align: right;
+      }
+
+      /* Suaviza la apertura/cierre del acordeón */
+      .accordion-collapse {
+        transition: height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+        margin-top: 8px;
+      }
+
+      /* Previene que el sticky recalibre bruscamente */
+      .bloque_detalle_evento .block {
+        will-change: transform;
+        transition: transform 0.2s ease;
+      }
+
+      /* Evita que el salto visual venga del cambio de margen del contenido */
+      .bloque_detalle_evento .accordion-item {
+        margin-bottom: 0;
+        /* por si Bootstrap agrega spacing */
+      }
+
+      /* Centra correctamente el ícono del ::after incluso sin padding */
+      .accordion-button {
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
+        min-height: 40px;
+      }
+
+      .accordion-button::after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+      }
+
+
+      /* Margen por defecto cuando el acordeón está cerrado */
+      .accordion+.text-sm {
+        margin-top: 22px !important;
+      }
+
+      /* Cuando el acordeón está abierto (Bootstrap agrega .show al collapse) */
+      .accordion .accordion-collapse.show+.text-sm,
+      .accordion.show+.text-sm {
+        margin-top: 28px !important;
       }
 
       /* Estilos del Colapsable dentro del bloque de trámite */
@@ -169,7 +221,7 @@
                     <a class="dropdown-item" href="https://gcba.github.io/Obelisco-V2/documentation">
                       <span class="item-text">Obelisco v.2</span>
                     </a>
-                    <a class="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                    <a class="dropdown-item" href="htftps://gcba.github.io/obelisco-v1">
                       <span class="item-text">Obelisco v.1
                         <span class="fst-italic">(deprecado)</span></span>
                     </a>
@@ -195,7 +247,7 @@
             <h2 class="mb-4">Generales</h2>
             <div class="accordion" id="accordionUniqueSelection">
               <div class="accordion-item">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button p-0 collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwoUniqueSelection" aria-expanded="false"
                   aria-controls="collapseTwoUniqueSelection">
                   <span class="collapse-title">¿Cuántas personas migrantes vivimos en la Ciudad Autónoma
@@ -203,7 +255,7 @@
                 </button>
                 <div id="collapseTwoUniqueSelection" class="accordion-collapse collapse"
                   data-bs-parent="#accordionUniqueSelection">
-                  <div class="accordion-body">
+                  <div class="accordion-body p-0">
                     <p>
                       La Encuesta Anual de Hogares (2021) de la Dirección
                       General de Estadísticas y Censos del Gobierno de la
@@ -410,16 +462,16 @@
             <div class="block position-sticky" style="top: 48px;">
               <div class="block-body">
 
-                <p class="headline-lg">Personas, lugares & cosas</p>
+                <p class="headline-lg" style="margin-bottom: 28px;">Personas, lugares & cosas</p>
 
                 <span class="badge badge-default">teatro</span>
                 <span class="badge badge-default">musical</span>
                 <span class="badge badge-default">estreno</span>
 
                 <!-- desplegable - colapsable -->
-                <div class="accordion" id="accordionUniqueSelection" style="margin-top: 28px;">
+                <div class="accordion" id="accordionUniqueSelection" style="margin-top: 12px;">
                   <div class="accordion-item">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseOneUniqueSelection" aria-expanded="false"
                       aria-controls="collapseOneUniqueSelection">
                       <!-- Con semibold, no se ve como en el figma -->
@@ -427,7 +479,7 @@
                     </button>
                     <div id="collapseOneUniqueSelection" class="accordion-collapse collapse"
                       data-bs-parent="#accordionUniqueSelection">
-                      <div class="accordion-body">
+                      <div class="accordion-body p-0 ">
                         <!-- span dentro de span se puede, pero p dentro de p no -->
                         <span>5 de Septiembre <span>20 h</span></span>
                         <span>6 de Septiembre <span>21 h</span></span>
@@ -439,7 +491,8 @@
                 <!-- desplegable - colapsable -->
 
                 <!-- ubicacion -->
-                <div class="d-flex align-items-center" style="margin-top: 28px;">
+                <p class="text-sm fw-semibold mb-2">Ubicación</p>
+                <div class="d-flex align-items-center">
                   <span class="material-symbols-rounded" style="color:#38485C;">
                     location_on
                   </span>
@@ -458,17 +511,17 @@
                 <!-- mapa -->
 
                 <!-- ubicacion -->
-
-                <button type="button" class="btn btn-secondary btn-lg  btn-block">Adquirir entradas</button>
+                <button type="button" class="btn btn-secondary btn-lg  btn-block" style="margin-top: 28px;">Adquirir
+                  entradas</button>
                 <button type="button" class="btn btn-outline-secondary btn-lg  btn-block mb-3">Descubrí más
                   eventos</button>
 
                 <p class="text-sm" style="margin-top: 20px; margin-bottom: 8px;">Compartilo en</p>
 
-                <ul class="list-inline">
-                  <li class="list-inline-item redes-items">
-                    <a href="https://www.facebook.com/GCBA">
-                      <i class="o-icon bx bxl-facebook-circle"></i>
+                <ul class="list-inline mb-0 pb-0">
+                  <li class="list-inline-item redes-items  mb-0 pb-0">
+                    <a href="https://www.facebook.com/GCBA" class="  mb-0 pb-0">
+                      <i class="o-icon bx bxl-facebook-circle   mb-0 pb-0"></i>
                     </a>
                   </li>
                   <li class="list-inline-item redes-items">
@@ -525,7 +578,7 @@
             <img class="img-vamos-ba" src="./assets/footer/logo-footer-ba.svg" alt="Logo de Vamos Buenos Aires" />
           </div>
           <div class="col-12">
-            <ul class="list-inline">
+            <ul class="list-inline mb-0">
               <li class="list-inline-item">
                 <a href="https://boletinoficial.buenosaires.gob.ar">
                   Boletín oficial
