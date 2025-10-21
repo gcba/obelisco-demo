@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
 
   <title>*Bloque lateral informativo</title>
 
@@ -83,6 +83,9 @@
         color: black;
       }
 
+			.accordion-button {
+				min-height: 20px !important;
+			}
       /* Quita el ícono + default del desplegable */
       .accordion-button::after,
       .accordion-button:not(.collapsed)::after,
@@ -157,7 +160,7 @@
 
       /* Margen por defecto cuando el acordeón está cerrado */
       .accordion+.text-sm {
-        margin-top: 22px !important;
+        margin-top: 28px !important;
       }
 
       /* Cuando el acordeón está abierto (Bootstrap agrega .show al collapse) */
@@ -179,8 +182,8 @@
     </a>
     <div class="container header-container">
       <a href="https://gcba.github.io/" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/assets/header/logo_obelisco.svg" alt="Obelisco" />
-        <img class="d-xl-none" src="/assets/header/logo_obelisco_mobile.svg" alt="Obelisco" />
+        <img class="d-none d-xl-block" src="../assets/header/logo_obelisco.svg" alt="Obelisco" />
+        <img class="d-xl-none" src="../assets/header/logo_obelisco_mobile.svg" alt="Obelisco" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHomeObelisco"
         aria-controls="navbarHomeObelisco" aria-expanded="false" aria-label="Menú"></button>
@@ -469,7 +472,7 @@
                 <span class="badge badge-default">estreno</span>
 
                 <!-- desplegable - colapsable -->
-                <div class="accordion" id="accordionUniqueSelection" style="margin-top: 12px;">
+                <div class="accordion" id="accordionUniqueSelection" style="margin-top: 28px;">
                   <div class="accordion-item">
                     <button class="accordion-button px-0 collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#collapseOneUniqueSelection" aria-expanded="false"
