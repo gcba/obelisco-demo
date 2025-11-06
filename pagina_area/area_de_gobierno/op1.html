@@ -21,105 +21,179 @@
 
 
 
-<style type="text/css">
+  <style type="text/css">
+    .carousel.sponsors .carousel-inner .carousel-item .logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 8px;
+      height: 125px;
+    }
 
-.carousel.sponsors .carousel-inner .carousel-item .logos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 8px;
-  height: 125px;
-}
-.carousel.sponsors .carousel-inner .carousel-item .logos a {
-  position: relative;
-}
-.carousel.sponsors .carousel-inner .carousel-item .logos a:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-.carousel.sponsors .carousel-inner .carousel-item .logos a img {
-  position: relative !important;
-  width: 100%;
-  height: auto;
-  max-width: 200px;
+    .carousel.sponsors .carousel-inner .carousel-item .logos a {
+      position: relative;
+    }
 
+    .carousel.sponsors .carousel-inner .carousel-item .logos a:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
 
-
-
+    .carousel.sponsors .carousel-inner .carousel-item .logos a img {
+      position: relative !important;
+      width: 100%;
+      height: auto;
+      max-width: 200px;
 
 
-    /* width: 100%; */
-    /* height: auto; */   
-    /* border-radius: 0.5rem 0.5rem 0 0; */
-    /* aspect-ratio: 16 / 9; */
-
-    max-width: 200px;
-    object-fit: cover;
-    object-position: center;
-    height: 196px;
 
 
-}
-.carousel.sponsors .carousel-control-next,
-.carousel.sponsors .carousel-control-next:focus,
-.carousel.sponsors .carousel-control-next:hover,
-.carousel.sponsors .carousel-control-prev,
-.carousel.sponsors .carousel-control-prev:focus,
-.carousel.sponsors .carousel-control-prev:hover {
-  border: none;
-  outline: none;
-  background: none;
-  box-shadow: none;
-}
-.carousel.sponsors .carousel-control-next:active,
-.carousel.sponsors .carousel-control-next:focus:active,
-.carousel.sponsors .carousel-control-next:hover:active,
-.carousel.sponsors .carousel-control-prev:active,
-.carousel.sponsors .carousel-control-prev:focus:active,
-.carousel.sponsors .carousel-control-prev:hover:active {
-  box-shadow: none;
-  background-color: none;
-  outline: none;
-}
-.carousel.sponsors .carousel-control-next:active .carousel-control-prev-icon,
-.carousel.sponsors .carousel-control-next:focus:active .carousel-control-prev-icon,
-.carousel.sponsors .carousel-control-next:hover:active .carousel-control-prev-icon,
-.carousel.sponsors .carousel-control-prev:active .carousel-control-prev-icon,
-.carousel.sponsors .carousel-control-prev:focus:active .carousel-control-prev-icon,
-.carousel.sponsors .carousel-control-prev:hover:active .carousel-control-prev-icon {
-  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23000000"/></svg>');
-}
-.carousel.sponsors .carousel-control-next:active .carousel-control-next-icon,
-.carousel.sponsors .carousel-control-next:focus:active .carousel-control-next-icon,
-.carousel.sponsors .carousel-control-next:hover:active .carousel-control-next-icon,
-.carousel.sponsors .carousel-control-prev:active .carousel-control-next-icon,
-.carousel.sponsors .carousel-control-prev:focus:active .carousel-control-next-icon,
-.carousel.sponsors .carousel-control-prev:hover:active .carousel-control-next-icon {
-  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23000000"/></svg>');
-}
-@media (width < 992px) {
-  .carousel.sponsors .carousel-inner {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 24px;
-  }
-  .carousel.sponsors .carousel-inner .carousel-item {
-    display: contents;
-  }
-  .carousel.sponsors .carousel-inner .carousel-item .logos {
-    display: contents;
-  }
-  .carousel.sponsors .carousel-control-next,
-  .carousel.sponsors .carousel-control-prev {
-    display: none;
-  }
-}
 
-</style>
 
-    
+      /* width: 100%; */
+      /* height: auto; */
+      /* border-radius: 0.5rem 0.5rem 0 0; */
+      /* aspect-ratio: 16 / 9; */
+
+      max-width: 200px;
+      object-fit: cover;
+      object-position: center;
+      height: 196px;
+
+
+    }
+
+    .carousel.sponsors .carousel-control-next,
+    .carousel.sponsors .carousel-control-next:focus,
+    .carousel.sponsors .carousel-control-next:hover,
+    .carousel.sponsors .carousel-control-prev,
+    .carousel.sponsors .carousel-control-prev:focus,
+    .carousel.sponsors .carousel-control-prev:hover {
+      border: none;
+      outline: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .carousel.sponsors .carousel-control-next:active,
+    .carousel.sponsors .carousel-control-next:focus:active,
+    .carousel.sponsors .carousel-control-next:hover:active,
+    .carousel.sponsors .carousel-control-prev:active,
+    .carousel.sponsors .carousel-control-prev:focus:active,
+    .carousel.sponsors .carousel-control-prev:hover:active {
+      box-shadow: none;
+      background-color: none;
+      outline: none;
+    }
+
+    .carousel.sponsors .carousel-control-next:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-next:focus:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-next:hover:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:focus:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:hover:active .carousel-control-prev-icon {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23000000"/></svg>');
+    }
+
+    .carousel.sponsors .carousel-control-next:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-next:focus:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-next:hover:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:focus:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:hover:active .carousel-control-next-icon {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23000000"/></svg>');
+    }
+
+    /* @media (width < 992px) {
+      .carousel.sponsors .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item {
+        display: contents;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        width: 100%;
+        background-color: red;
+        display: flex;
+        height: auto;
+        min-height: 25vh;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 1rem;
+      }
+
+      .carousel.sponsors .carousel-control-next,
+      .carousel.sponsors .carousel-control-prev {
+        display: none;
+      }
+    } */
+    @media (width < 992px) {
+      .carousel.sponsors .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item {
+        display: contents;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 por fila en tablets */
+        justify-items: center;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        height: auto;
+        /* 👈 deja crecer según contenido */
+      }
+
+      /* en responsive no mostramos los controles */
+      .carousel.sponsors .carousel-control-next,
+      .carousel.sponsors .carousel-control-prev {
+        display: none;
+      }
+    }
+
+    /* móviles chicos: 1 por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* Móviles chicos: 1 imagen por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: 1fr;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item .logos a img {
+        max-width: 220px;
+        /* un poco más grande en móviles */
+      }
+    }
+
+
+    /* Móviles chicos: 1 imagen por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+
+
 </head>
 
 <body>
@@ -326,8 +400,7 @@
         <div class="card-items-3">
           <div class="col">
             <div class="card card-horizontal">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body">
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -337,8 +410,7 @@
           </div>
           <div class="col">
             <div class="card card-horizontal">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body">
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -348,8 +420,7 @@
           </div>
           <div class="col">
             <div class="card card-horizontal" href="#">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body">
                 <h3 class="card-title"><a href="#" class="card-title-link">Título de la tarjeta</a>
                 </h3>
@@ -358,8 +429,7 @@
           </div>
           <div class="col">
             <div class="card card-horizontal" href="#">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body text-center">
                 <h3 class="card-title"><a href="#" class="card-title-link">Título de la tarjeta</a></h3>
               </div>
@@ -367,8 +437,7 @@
           </div>
           <div class="col">
             <div class="card card-horizontal" href="#">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body text-center">
                 <h3 class="card-title"><a href="#" class="card-title-link">Título de la tarjeta</a></h3>
               </div>
@@ -376,8 +445,7 @@
           </div>
           <div class="col">
             <div class="card card-horizontal" href="#">
-              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa"
-                width="168" />
+              <img src="../../assets/eventos/cultura.png" class="card-img" alt="descripción alternativa" width="168" />
               <div class="card-body text-center">
                 <h3 class="card-title"><a href="#" class="card-title-link">Título de la tarjeta</a></h3>
               </div>
@@ -464,78 +532,68 @@
     </article>
 
 
-    
-<div id="carousel_sponsors" class="carousel sponsors slide" data-bs-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="logos">
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Adidas" class="lauti" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/tarjetas/image-3.jpeg" alt="Chocolinas" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
-						</a>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="logos">
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/eventos/cultura.png" alt="Chocolinas" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/panel/multimediaDestacado.png" alt="Adidas" />
-						</a>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="logos">
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Chocolinas" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
-						</a>
-						<a href="https://google.com" target="_blank">
-							<img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
-						</a>
-					</div>
-				</div>
-			</div>
 
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carousel_sponsors"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Anterior</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carousel_sponsors"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Siguiente</span>
-			</button>
-		</div>
+    <div id="carousel_sponsors" class="carousel sponsors slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="logos">
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Adidas" class="lauti" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/tarjetas/image-3.jpeg" alt="Chocolinas" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="logos">
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/eventos/cultura.png" alt="Chocolinas" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/panel/multimediaDestacado.png" alt="Adidas" />
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="logos">
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Chocolinas" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Samsung" />
+            </a>
+            <a href="https://google.com" target="_blank">
+              <img src="../../assets/institucional/ministro.jpeg" alt="Adidas" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel_sponsors" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel_sponsors" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
 
 
 
@@ -699,9 +757,7 @@
               </a>
             </li>
             <li class="list-inline-item redes-items">
-              <a
-                href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-              >
+              <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
                 <i class="o-icon bx bxl-linkedin-square"></i>
                 LinkedIn
               </a>
@@ -727,23 +783,11 @@
           <h3 class="sr-only">Información gubernamental</h3>
           <div class="row align-items-center">
             <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-              <img
-                class="d-md-none"
-                src="../../assets/footer/logo-footer-mobile.svg"
-                alt="Logo de Ciudad de Buenos Aires"
-                height="48"
-              />
-              <img
-                class="d-none d-md-inline"
-                src="../../assets/footer/logo-footer.svg"
-                alt="Logo de Ciudad de Buenos Aires"
-                height="40"
-              />
-              <img
-                class="img-vamos-ba"
-                src="../../assets/footer/logo-footer-ba.svg"
-                alt="Logo de Vamos Buenos Aires"
-              />
+              <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.svg"
+                alt="Logo de Ciudad de Buenos Aires" height="48" />
+              <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.svg"
+                alt="Logo de Ciudad de Buenos Aires" height="40" />
+              <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.svg" alt="Logo de Vamos Buenos Aires" />
             </div>
             <div class="col-12">
               <ul class="list-inline">
@@ -753,9 +797,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                  >
+                  <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
                     Términos y condiciones
                   </a>
                 </li>
@@ -766,8 +808,7 @@
                 </li>
                 <li class="list-inline-item">
                   <a
-                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                  >
+                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
                     Oficios judiciales
                   </a>
                 </li>
