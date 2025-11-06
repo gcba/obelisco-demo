@@ -45,18 +45,6 @@
       width: 100%;
       height: auto;
       max-width: 200px;
-
-
-
-
-
-
-      /* width: 100%; */
-      /* height: auto; */
-      /* border-radius: 0.5rem 0.5rem 0 0; */
-      /* aspect-ratio: 16 / 9; */
-
-      max-width: 200px;
       object-fit: cover;
       object-position: center;
       height: 196px;
@@ -105,34 +93,6 @@
       content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23000000"/></svg>');
     }
 
-    /* @media (width < 992px) {
-      .carousel.sponsors .carousel-inner {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 24px;
-      }
-
-      .carousel.sponsors .carousel-inner .carousel-item {
-        display: contents;
-      }
-
-      .carousel.sponsors .carousel-inner .carousel-item .logos {
-        width: 100%;
-        background-color: red;
-        display: flex;
-        height: auto;
-        min-height: 25vh;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        row-gap: 1rem;
-      }
-
-      .carousel.sponsors .carousel-control-next,
-      .carousel.sponsors .carousel-control-prev {
-        display: none;
-      }
-    } */
     @media (width < 992px) {
       .carousel.sponsors .carousel-inner {
         display: flex;
@@ -148,16 +108,14 @@
       .carousel.sponsors .carousel-inner .carousel-item .logos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* 2 por fila en tablets */
+        /* 2 por fila de 1200 para abajo*/
         justify-items: center;
         align-items: center;
         gap: 24px;
         width: 100%;
         height: auto;
-        /* 👈 deja crecer según contenido */
       }
 
-      /* en responsive no mostramos los controles */
       .carousel.sponsors .carousel-control-next,
       .carousel.sponsors .carousel-control-prev {
         display: none;
@@ -180,7 +138,6 @@
 
       .carousel.sponsors .carousel-inner .carousel-item .logos a img {
         max-width: 220px;
-        /* un poco más grande en móviles */
       }
     }
 
