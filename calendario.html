@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
   <link rel="stylesheet" href="./node_modules/@gcba/obelisco/dist/obelisco.css">
+	<link rel="stylesheet" href="./bax/obeliscoV2.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
@@ -240,72 +241,6 @@
 
 
 
-
-
-  /* css hero */
-  .hero {
-      min-height: 380px;
-      /* DEFINIR ALTURA DESKTOP */
-      display: flex;
-      position: relative;
-    } 
-    .content-hero {
-      flex-grow: 1;
-      padding-left: 8rem;
-      background: #ADEBE2;
-      position: relative;
-    } 
-    .content-hero::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -50px;
-      height: 100%;
-      width: 50px;
-      background: #ADEBE2;
-      z-index: 1;
-      border-radius: 0 80px 0 0; 
-    } 
-    .aside-hero {
-      min-width: 200px;
-      background-color: #002733;
-    } 
-    .hero-container-description {
-      display: none;
-    } 
- 
-    /* --- MOBILE --- */
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        min-height: 408px;
-        /* DEFINIR ALTURA MOBILE */
-      } 
-      .content-hero {
-        padding: 1rem !important;
-      } 
-      .content-hero::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        height: 50px;
-        border-radius: 0 0 40px 0;
-      } 
-      .aside-hero {
-        width: 100%;
-        min-height: 50px;
-        background-color: #002733;
-      } 
-      .hero-container-description {
-        display: block;
-        padding: 1rem;
-        color: #fff;
-        text-align: center;
-      } 
-    }
-
     </style>
 
 
@@ -315,57 +250,43 @@
 
   <main>
     <article class="pb-5 mb-4">
-      <!-- <header class="pt-5 pb-5 mb-5 text-white bg-dark">
-        <div class="container pt-1">
-          <div class="row">
-            <div class="col-12 col-lg-8">
-              <div class="mt-2 pt-1">
-                <h1 class="mb-3">Calendario</h1>
-                <p class="lead">Calendario 2025.</p>
-                <span>Obelisco V1</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header> -->     
+    
 
-    <header class="hero">
-      <div class="content-hero py-5">
-        <div class="d-flex flex-column row-gap-4">
-          <nav aria-label="Navegación secundaria" class="m-0">
-            <ol class="breadcrumb m-0">
-              <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/inicio/" style="color: #101E37;">Buenos
-                  Aires</a></li>
-              <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/educacion"
-                  style="color: #101E37;">Educación</a></li>
-              <li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/educacion/estudiantes"
-                  style="color: #101E37;">Estudiantes</a></li>
-            </ol>
-          </nav>
-    
-          <div class="row">
-            <div class="col-12 col-xl-8">
-              <div class="mt-2 pt-1">
-                <h1 class="mb-3">Inscripción escolar 2026</h1>
-    
-                <p class="lead">El <strong>5 de diciembre</strong> se publicarán los listados de asignación.&nbsp;Del
-                  <strong>26 de enero al 8 de febrero de 2026</strong> estará habilitado el período de excepción para
-                  quienes aún no se inscribieron. El sistema mostrará solamente las escuelas que cuenten con vacante.</p>
-              </div>
-            </div>
-          </div>
-    
-          <div style="position: relative;  height: 56px; "><a class="btn btn-secondary"
-              href="https://login.buenosaires.gob.ar/auth/realms/miba/protocol/openid-connect/auth?response_type=code&amp;client_id=inscripciones-en-linea&amp;redirect_uri=https%3A%2F%2Fiel.buenosaires.gob.ar%2Fauth%2Fmi-ba%2Fcallback&amp;scope=openid%20openid%20profile%20email&amp;state=hzY6j8UcCqSgnQt0jSf%2Fs1b4"
-              rel="noopener noreferrer" target="_blank">Iniciar inscripción</a></div>
-        </div>
-      </div>
-    
-      <div class="aside-hero"><img alt="" src="bax/img-hero.svg"
-          style="width: 100%; height: 100%;" /></div>
-      <!-- componente bajada opcional --><!--<div class="bg-dark hero-container-description">
-        </div>-->
-    </header>
+			<header class="hero bg-content-hero-cyan">
+				<div class="content corner">
+					<div class="d-flex flex-column">
+						<nav aria-label="Navegación secundaria" class="m-0">
+							<ol class="breadcrumb m-0">
+								<li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/inicio/" style="color: #101E37;">Buenos
+										Aires</a></li>
+								<li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/educacion"
+										style="color: #101E37;">Educación</a></li>
+								<li class="breadcrumb-item"><a href="https://buenosaires.gob.ar/educacion/estudiantes"
+										style="color: #101E37;">Estudiantes</a></li>
+							</ol>
+						</nav>
+			
+						<div class="row">
+							<div class="col-12 col-xl-8">
+								<div class="mt-2 pt-1">
+									<h1 class="mb-3">Inscripción escolar 2026</h1>
+			
+									<p class="lead">El <strong>5 de diciembre</strong> se publicarán los listados de asignación.&nbsp;Del
+										<strong>26 de enero al 8 de febrero de 2026</strong> estará habilitado el período de excepción para
+										quienes aún no se inscribieron. El sistema mostrará solamente las escuelas que cuenten con vacante.</p>
+								</div>
+							</div>
+						</div>
+			
+						<div style="position: relative;  height: 56px; "><a class="btn btn-secondary"
+								href="https://login.buenosaires.gob.ar/auth/realms/miba/protocol/openid-connect/auth?response_type=code&amp;client_id=inscripciones-en-linea&amp;redirect_uri=https%3A%2F%2Fiel.buenosaires.gob.ar%2Fauth%2Fmi-ba%2Fcallback&amp;scope=openid%20openid%20profile%20email&amp;state=hzY6j8UcCqSgnQt0jSf%2Fs1b4"
+								rel="noopener noreferrer" target="_blank">Iniciar inscripción</a></div>
+					</div>
+				</div>
+				<div class="aside bg-aside-hero-dark">
+					<img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" src="./bax/img-hero.svg">
+				</div>
+			</header>
 
 
       <div class="container">
