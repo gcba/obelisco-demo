@@ -18,6 +18,147 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <style type="text/css">
+    .carousel.sponsors .carousel-inner .carousel-item .logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 8px;
+      height: 125px;
+    }
+
+    .carousel.sponsors .carousel-inner .carousel-item .logos a {
+      position: relative;
+    }
+
+    .carousel.sponsors .carousel-inner .carousel-item .logos a:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    .carousel.sponsors .carousel-inner .carousel-item .logos a img {
+      position: relative !important;
+      width: 100%;
+      height: auto;
+      max-width: 200px;
+      object-position: center;
+      height: 196px;
+    }
+
+    .carousel.sponsors .carousel-control-next,
+    .carousel.sponsors .carousel-control-next:focus,
+    .carousel.sponsors .carousel-control-next:hover,
+    .carousel.sponsors .carousel-control-prev,
+    .carousel.sponsors .carousel-control-prev:focus,
+    .carousel.sponsors .carousel-control-prev:hover {
+      border: none;
+      outline: none;
+      background: none;
+      box-shadow: none;
+    }
+
+    .carousel.sponsors .carousel-control-next:active,
+    .carousel.sponsors .carousel-control-next:focus:active,
+    .carousel.sponsors .carousel-control-next:hover:active,
+    .carousel.sponsors .carousel-control-prev:active,
+    .carousel.sponsors .carousel-control-prev:focus:active,
+    .carousel.sponsors .carousel-control-prev:hover:active {
+      box-shadow: none;
+      background-color: none;
+      outline: none;
+    }
+
+    .carousel.sponsors .carousel-control-next:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-next:focus:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-next:hover:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:focus:active .carousel-control-prev-icon,
+    .carousel.sponsors .carousel-control-prev:hover:active .carousel-control-prev-icon {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23000000"/></svg>');
+    }
+
+    .carousel.sponsors .carousel-control-next:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-next:focus:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-next:hover:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:focus:active .carousel-control-next-icon,
+    .carousel.sponsors .carousel-control-prev:hover:active .carousel-control-next-icon {
+      content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23000000"/></svg>');
+    }
+
+    @media (min-width: 992px) {
+      .carousel .carousel-inner {
+        border-radius: 0px !important;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .carousel.sponsors .carousel-inner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 24px;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item {
+        display: contents;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 por fila de 1200 para abajo*/
+        justify-items: center;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-inner img {
+        border-radius: 0px;
+      }
+
+      .carousel.sponsors .carousel-control-next,
+      .carousel.sponsors .carousel-control-prev {
+        display: none;
+      }
+    }
+
+    /* móviles chicos: 1 por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* Móviles chicos: 1 imagen por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: 1fr;
+      }
+
+      .carousel.sponsors .carousel-inner .carousel-item .logos a img {
+        max-width: 220px;
+      }
+    }
+
+
+    /* Móviles chicos: 1 imagen por fila */
+    @media (width < 576px) {
+      .carousel.sponsors .carousel-inner .carousel-item .logos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -88,6 +229,69 @@
       </header>
 
       <div class="container py-3">
+
+        <div id="carousel_sponsors" class="carousel sponsors slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="logos">
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/samsung.svg" alt="Samsung" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="logos">
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/samsung.svg" alt="Samsung" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="logos">
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/samsung.svg" alt="Samsung" />
+                </a>
+                <a href="https://google.com" target="_blank">
+                  <img src="images/sponsors/adidas.svg" alt="Adidas" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_sponsors" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_sponsors" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
         <div class="card-items-3 mb-5">
           <div class="col">
             <div class="card unbordered">
