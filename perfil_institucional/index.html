@@ -14,7 +14,7 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
   </link>
-  <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link rel="stylesheet" href="../node_modules/@gcba/obelisco-v2/dist/styles.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
@@ -22,7 +22,7 @@
 
 <body>
   <main id="main">
-    <article class="pb-5 mb-4">
+    <article class="pb-5">
 
       <header class="hero bg-content-hero-light">
         <div class="content corner">
@@ -56,14 +56,12 @@
       </header>
 
       <div class="container">
-        <div class="row mt-5">
           <div class="col-12 col-xl-8">
             <!-- Inicio Informacion institucional -->
-            <section class="informacion_institucional row">
-              <article class="foto_contacto  d-flex flex-column flex-md-row">
-                <figure class="col mb-0">
-                  <img src="./foto_perfil_institucional.svg" alt=""
-                    style="max-width: 250px; width: 250px; max-height: 250px; height: 250px;">
+            <section class="my-5">
+              <article class="d-flex flex-column flex-md-row gap-5">
+                <figure class="mb-0">
+                  <img src="./foto_perfil_institucional.svg" alt="" width="250" height="250">
                 </figure>
                 <div class="col d-flex flex-column justify-content-between">
                   <header>
@@ -90,9 +88,9 @@
             </section>
             <!-- Fin Informacion institucional -->
 
-            <!-- Colapsables -->
-            <!-- Inicio Objetivos -->
+            <!-- Colapsables -->           
             <section class="accordion">
+              <!-- Inicio Objetivos -->
               <div class="accordion-item item-white">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseMisionesFunciones" aria-expanded="false"
@@ -117,11 +115,9 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <!-- Fin Objetivos -->
+              <!-- Fin Objetivos -->
 
-            <!-- Inicio Responsabilidades primarias -->
-            <section class="accordion mt-3">
+              <!-- Inicio Responsabilidades primarias -->
               <div class="accordion-item item-white">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseResponsabilidadesPrimarias" aria-expanded="false"
@@ -146,11 +142,12 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <!-- Fin Responsabilidades primarias -->
+            <!-- Fin Responsabilidades primarias -->       
+            </section>      
+            <!-- Fin colapsables-->
 
             <!-- Inicio normativa -->
-            <section class="normativa bg-light ps-3 pe-3 rounded-2" style="padding: 32px 0; margin: 32px 0;">
+            <section class="bg-light ps-3 pe-3 rounded-2 my-5 py-4">
               <h4>Normativa</h4>
               <div class="normative_bloque mt-3">
                 <p class="mb-2">IF-2023-45656308-GCABA-MHFGC</p>
@@ -165,7 +162,7 @@
             <!-- Fin normativa -->
 
             <!-- Inicio Organigrama -->
-            <section class="block mt-4" style="max-width: 447px;">
+            <section class="block my-4 col-lg-8">
               <div class="block-body">
                 <h2 class="block-title">¿Querés ver todas las autoridades a cargo?</h2>
                 <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary btn-block">
@@ -175,13 +172,9 @@
             </section>
             <!-- Fin Organigrama -->
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </article>
-
-    <div class="col-4">
-      <p class="sr-only">Espacio</p>
-    </div>
 
     <!-- Inicio Indicador -->
     <div class="footer-info">
