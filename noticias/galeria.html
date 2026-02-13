@@ -22,56 +22,50 @@
 <body>
   <main id="main">
     <article class="pb-5 mb-4">
-      <header class="bg-light pt-3 pb-5 mb-5">
-        <div class="container pt-1">
-          <nav aria-label="Navegación secundaria" class="py-3">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item"><a href="#">Jefatura de Gabinete</a></li>
-            </ol>
-          </nav>
+      <header class="hero bg-content-hero-light">
+        <div class="content corner">
+          <div class="d-flex flex-column">
+            <nav aria-label="Navegación secundaria">
+              <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">Inicio</a>
+                </li>
+              </ol>
+            </nav>
 
-          <div class="row">
-            <div class="col-12 col-xl-8">
-              <div class="mt-2 pt-1">
-                <p><a href="#" class="badge badge-info">Espacio público</a></p>
-                <p class="mb-0"><small>Jueves 17 de junio de 2022</small></p>
-                <h1 class="mb-3">Sumate al programa Embajadores Verdes y promové el reciclado</h1>
-                <p class="lead">
-                  El Ministerio de Espacio Público e Higiene Urbana desarrolló el programa de
-                  Embajadores Ciudad Verde. Se trata de una propuesta vinculada con el Plan de
-                  Reciclaje de la Ciudad, BA Recicla. Si querés promover el reciclado ¡Sumate!
-                </p>
-              </div>
+            <div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+              <span class="badge badge-info">Etiqueta</span>
+              <span class="badge badge-info">Etiqueta</span>
+            </div>
 
-              <div class="d-flex flex-row pt-3">
-                Compartir en redes
-                <ul class="list-inline ms-2">
-                  <li class="list-inline-item me-1">
-                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                      <i class="bx bx-sm bxl-facebook-circle"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item me-1">
-                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                      <i class="bx bx-sm bxl-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item me-1">
-                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                      <i class="bx bx-sm bxl-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item me-1">
-                    <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                      <i class="bx bx-sm bxl-linkedin-square"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div>
+              <p class="text-sm text-body-secondary mb-3">Jueves 17 de julio de 2022</p>
+              <h1 class="mb-3">Encabezado de la página</h1>
+              <p class="lead m-0">
+                Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+              </p>
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+              <span class="text-body-secondary me-2">Compartir en redes</span>
+              <a href="#" class="shadow-none" target="_blank">
+                <i class="bx bxl-facebook-circle o-icon text-primary"></i>
+              </a>
+              <a href="#" class="shadow-none" target="_blank">
+                <i class="bx bxl-instagram o-icon text-primary"></i>
+              </a>
+              <a href="#" class="shadow-none" target="_blank">
+                <i class="bx bxl-twitter o-icon text-primary"></i>
+              </a>
+              <a href="#" class="shadow-none" target="_blank">
+                <i class="bx bxl-linkedin-square o-icon text-primary"></i>
+              </a>
             </div>
           </div>
         </div>
+
+        <div class="aside bg-aside-hero-light"></div>
       </header>
 
       <div class="container">
@@ -99,7 +93,7 @@
                 enlaces</a> cuando sea necesario ampliar la información.
             </p>
             <h5 class=" mb-4">Subtítulo de la sección</h5>
-            <ol class=" mb-4">
+            <ol class="gap-3 mb-4">
               <li>Este es el contenido de un ítem de una lista con numeración.</li>
               <li>Este es el contenido de un ítem de una lista con numeración.</li>
               <li>Este es el contenido de un ítem de una lista con numeración.</li>
@@ -156,7 +150,8 @@
             <p class="text-sm">Este es un ejemplo de texto alternativo que describe brevemente el contenido de la
 
             <p class="headline-lg" style="margin-top: 40px">Título del audio</p>
-            <p class="text-sm mb-0">Este es el cuerpo del contenedor de audio. Recomendamos que no sea mayor a 3 líneas.</p>
+            <p class="text-sm mb-0">Este es el cuerpo del contenedor de audio. Recomendamos que no sea mayor a 3 líneas.
+            </p>
             <img src="../assets/noticias/3.svg" alt="" srcset="" style="margin-top: 32px;margin-bottom: 40px;">
 
             <p class="text-md">
@@ -404,6 +399,38 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-xl-4">
+            <section class="bg-light rounded-2 p-4 mb-3">
+              <p class="headline-lg">Ejemplo de documentación.pdf</p>
+              <button type="button" class="btn btn-secondary btn-sm">
+                Descargar
+                <span class="material-symbols-rounded o-icon" aria-hidden="true"> download </span>
+              </button>
+            </section>
+            <section class="bg-light rounded-2 p-4 mb-4">
+              <p class="headline-lg">Ejemplo de documentación.pdf</p>
+              <button type="button" class="btn btn-secondary btn-sm">
+                Descargar
+                <span class="material-symbols-rounded o-icon" aria-hidden="true"> download </span>
+              </button>
+            </section>
+            <div class="map">
+              <div class="map-body">
+                <h3 class="map-title">Ubicación</h3>
+                <p class="map-text">Av. Monroe 3555</p>
+                <div class="map-iframe">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.546419258713!2d-58.47368982446642!3d-34.56503805545613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7af96224d2b%3A0x74db1988250c9c82!2sAv.%20Monroe%203555%2C%20C1430BKC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1732540817198!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <a href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.564499&amp;lng=-58.468230&amp;zl=15&amp;modo=transporte&amp;dir=Monroe+Av.+3555"
+                  class="btn btn-primary btn-lg btn-block mt-4" target="_blank" rel="noopener noreferrer" tabindex="0">
+                  Cómo llego
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <hr class="mt-5" />
@@ -415,6 +442,10 @@
             <div class="card">
               <img class="card-img" src="../assets/noticias/5.svg" alt="descripción de imagen" />
               <div class="card-body">
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta 1</span>
+                  <span class="badge badge-default">etiqueta 2</span>
+                </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Título de la tarjeta</a>
                 </h3>
@@ -431,6 +462,10 @@
             <div class="card">
               <img class="card-img" src="../assets/noticias/5.svg" alt="descripción de imagen" />
               <div class="card-body">
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta 1</span>
+                  <span class="badge badge-default">etiqueta 2</span>
+                </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Título de la tarjeta</a>
                 </h3>
@@ -447,6 +482,10 @@
             <div class="card">
               <img class="card-img" src="../assets/noticias/5.svg" alt="descripción de imagen" />
               <div class="card-body">
+                <div class="card-badges">
+                  <span class="badge badge-default">etiqueta 1</span>
+                  <span class="badge badge-default">etiqueta 2</span>
+                </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Título de la tarjeta</a>
                 </h3>
