@@ -7,6 +7,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gcba/obelisco-v2": "^1.9.0"
+    "@gcba/obelisco-v2": "^1.9.1"
   }
 }
