@@ -26,6 +26,8 @@
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     .container {
@@ -229,26 +231,78 @@
 
 
 
-    .carousel-control-prev, .carousel-control-next {
+    .carousel-control-prev,
+    .carousel-control-next {
       top: 95% !important;
       bottom: auto;
       width: 40px !important;
       height: 20px !important;
       opacity: 1;
     }
-    .carousel .carousel-control-next .carousel-control-next-icon, .carousel .carousel-control-prev .carousel-control-next-icon, .carousel-control-prev-icon {
+
+    .carousel .carousel-control-next .carousel-control-next-icon,
+    .carousel .carousel-control-prev .carousel-control-next-icon,
+    .carousel-control-prev-icon {
       width: 24px !important;
     }
 
+    /* tarjetas */
+    .card {
+      width: 253px;
+      height: auto;
+      /* img de 380 */
+      max-height: 450px;
+      /* img de 350 */
+      min-height: 420px;
+      border: none;
+      outline: none;
+      background-color: unset;
 
+      img {
+        width: 253px;
+        height: 350px;
+        aspect-ratio: 747/427;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      img.card-img-grande {
+        height: 380px;
+      }
+    }
+
+    .card .card-body {
+      padding: 0;
+      margin: 0;
+      background-color: unset;
+    }
+
+    .card .card-body h6 {
+      padding: 0;
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 7px;
+      font-weight: 400;
+    }
+
+    .card .card-body p.small {
+      padding: 0;
+      margin: 0;
+
+      color: white
+    }
+
+    .card-container-descubrir {
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+    }
   </style>
 </head>
 
 <body>
   <main id="main">
     <!-- <article class="pb-5 mb-4"> -->
-
-
 
     <!-- <header class="hero-landing gradient"><img alt="Hero" loading="lazy" width="1366" height="500" decoding="async"
           data-nimg="1" class="hero-bg-image" style="color:transparent" src="hero-landing.jpg">
@@ -358,15 +412,15 @@
 
 
       <!-- EVENTOS -->
-      <section class="row g-4 mb-5">
+      <section class="row g-4 mb-5 card-container-descubrir">
 
         <div class="col-12 col-sm-6 col-lg-3">
 
-          <div class="card bg-dark text-white border-0">
-            <img src="event1.jpg" class="card-img-top">
+          <div class="card text-white">
+            <img src="event1.jpg">
             <div class="card-body">
               <h6>Evento 1</h6>
-              <p class="small text-secondary">Descripción breve</p>
+              <p class="small">Descripción de evento</p>
             </div>
           </div>
 
@@ -375,11 +429,11 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
 
-          <div class="card bg-dark text-white border-0">
-            <img src="img3.jpg" class="card-img-top">
+          <div class="card text-white">
+            <img src="img3.jpg" class="card-img-grande">
             <div class="card-body">
               <h6>Evento 2</h6>
-              <p class="small text-secondary">Descripción breve</p>
+              <p class="small">Descripción de evento</p>
             </div>
           </div>
 
@@ -388,11 +442,11 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
 
-          <div class="card bg-dark text-white border-0">
-            <img src="event2.jpg" class="card-img-top">
+          <div class="card text-white">
+            <img src="event2.jpg">
             <div class="card-body">
               <h6>Evento 3</h6>
-              <p class="small text-secondary">Descripción breve</p>
+              <p class="small">Descripción de evento</p>
             </div>
           </div>
 
@@ -401,11 +455,11 @@
 
         <div class="col-12 col-sm-6 col-lg-3">
 
-          <div class="card bg-dark text-white border-0" style="outline: none; background: #0a0a0a !important;">
-            <img src="event3.png" class="card-img-top">
+          <div class="card text-white">
+            <img src="event3.png">
             <div class="card-body">
               <h6>Evento 4</h6>
-              <p class="small text-secondary">Descripción breve</p>
+              <p class="small">Descripción de evento</p>
             </div>
           </div>
 
@@ -510,7 +564,7 @@
                       <h2 class="panel-title">Reviví lo mejor de la Ciudad</h2>
                       <p class="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. 
+                        líneas.
                       </p>
                       <div class="panel-footer">
                         <a class="text-white" href="#" rel="noopener noreferrer">
@@ -579,14 +633,14 @@
               <button type="button" data-bs-target="#carousel_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carousel_2" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
             <!-- </div> -->
 
             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
