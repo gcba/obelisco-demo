@@ -18,7 +18,8 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900" rel="stylesheet">
 
   <style type="text/css">
     body {
@@ -296,6 +297,24 @@
       height: auto;
       display: flex;
       align-items: flex-end;
+
+      a.access {
+        font-family: "Archivo", sans-serif;
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid white;
+      }
+
+      a.access::after {
+        content: "";
+        display: inline-block;
+        vertical-align: text-top;
+        background-color: white;
+        mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M10 8L16 12L10 16Z'/></svg>");
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+      }
     }
   </style>
 </head>
@@ -463,6 +482,13 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="col-12">
+          <div class="pt-1">
+            <a class="access" href="#" target="_blank" rel="noreferrer">
+              Ir a todos los eventos </a>
+          </div>
         </div>
 
       </section>
