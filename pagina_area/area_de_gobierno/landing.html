@@ -320,6 +320,38 @@
 		.text-warning {
 			color: #CB5F25 !important;
 		}
+
+		a.access-descubrir {
+			font-family: "Archivo", sans-serif;
+			text-decoration: none;
+			color: white;
+			border-bottom: 2px solid white;
+			position: relative;
+			min-width: 200px;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				vertical-align: text-top;
+				background-color: white;
+				mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M10 8L16 12L10 16Z'/></svg>");
+				mask-repeat: no-repeat;
+				mask-position: center;
+				mask-size: contain;
+				position: absolute;
+				right: -5px;
+			}
+    }
+
+		.btn.badge-descubrir {
+			border-radius: 16px;
+			outline-width: 1px;
+			outline-offset: -1px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 20px;
+			min-height: unset;
+		}
   </style>
 </head>
 
@@ -499,12 +531,12 @@
 
 
       <!-- DESTACADO -->
-      <section class="row my-5">
+      <section class="row py-5">
 				<div class="col-12 col-lg-4">
 					<div class="d-flex flex-column h-100 justify-content-between">
 						<div>
 							<p class="text-xl">Evento Destacado</p>
-							<hr class="border-white opacity-100 w-75" />
+							<hr class="border-white opacity-75 w-75" />
 						</div>
 
 						<div>
@@ -522,7 +554,7 @@
 
 						<div>
 							<img src="heart.png" width="55" alt="BSAS">
-							<hr class="border-white opacity-100 w-75 mb-0" />
+							<hr class="border-white opacity-75 w-75 mb-0" />
 						</div>
 
 					</div>
@@ -541,31 +573,42 @@
 
 
       <!-- CERCA TUYO -->
-      <section class="mb-5">
+      <section class="py-5">
+				<div class="d-flex align-items-end justify-content-between mb-4">
+					<a class="access access-descubrir" href="#" target="_blank" rel="noreferrer">Ir al mapa</a>
 
-        <h2 class="mb-3">Cerca tuyo</h2>
+					<div class="col-6">
+						<h2 class="text-end">Cerca tuyo</h2>
+						<hr class="opacity-75 m-0" />
+					</div>
+				</div>
 
-        <div class="d-flex gap-2 mb-4 flex-wrap">
-
-          <button class="btn btn-sm btn-outline-light">Palermo</button>
-          <button class="btn btn-sm btn-outline-light">Recoleta</button>
-          <button class="btn btn-sm btn-outline-light">Belgrano</button>
-          <button class="btn btn-sm btn-outline-light">Caballito</button>
-
-        </div>
-
-        <div class="row g-4">
-
-          <div class="col-12 col-md-6">
-            <img src="event3.png" class="img-fluid rounded">
-          </div>
-
-          <div class="col-12 col-md-6">
-            <img src="event4.png" class="img-fluid rounded">
-          </div>
-
-        </div>
-
+				<div class="row">
+					<div class="col-12 col-lg-6">
+	
+						<img src="event3.png" class="img-fluid rounded pt-5">
+	
+						<hr class="opacity-75 mt-4" />
+						<h6>La verdadera historia de Ricardo III</h6>
+						<p class="text-sm">Joaquin Furriel y un elenco estelar en Teatro San Martín...</p>
+					</div>
+	
+					<div class="col-12 col-lg-6">
+	
+						<div class="d-flex justify-content-end gap-3 mb-5 flex-wrap">
+							<button class="btn badge-descubrir btn-sm btn-outline-light">Palermo</button>
+							<button class="btn badge-descubrir btn-sm btn-outline-light">Recoleta</button>
+							<button class="btn badge-descubrir btn-sm btn-outline-light">Belgrano</button>
+							<button class="btn badge-descubrir btn-sm btn-outline-light">Caballito</button>
+						</div>
+	
+						<div class="d-flex gap-3 flex-nowrap ">
+							<img src="event4.png" class="img-fluid rounded overflow-auto">
+							<img src="event6.png" class="img-fluid rounded">
+						</div>
+	
+					</div>
+				</div>
       </section>
 
 
