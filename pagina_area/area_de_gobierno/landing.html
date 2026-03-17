@@ -293,6 +293,7 @@
       color: white
     }
 
+    /* clase creada .card-container-descubrir */
     .card-container-descubrir {
       height: auto;
       display: flex;
@@ -303,6 +304,15 @@
         text-decoration: none;
         color: white;
         border-bottom: 2px solid white;
+        padding-bottom: 4px;
+        display: inline-flex;
+        align-items: center;
+        /* text-decoration: underline;
+        text-decoration-color: white;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 8px;
+        display: inline-block; */
+
       }
 
       a.access::after {
@@ -314,6 +324,32 @@
         mask-repeat: no-repeat;
         mask-position: center;
         mask-size: contain;
+      }
+
+    }
+
+    h2.editorial {
+      display: block;
+      border-bottom: 2px solid rgb(255, 255, 255);
+      padding-bottom: 8px;
+    }
+
+    /* clase creada .card-container-editorial */
+    .card-container-editorial {
+      .card {
+        flex-direction: column-reverse;
+        min-height: 300px;
+
+        img {
+          width: 248px;
+          height: 200px;
+        }
+
+        .card-body {
+          h3.card-title {
+            color: white;
+          }
+        }
       }
     }
 
@@ -613,26 +649,66 @@
 
 
       <!-- EDITORIAL -->
-      <section class="mb-5">
+      <section class="mb-5 card-container-editorial">
 
-        <h2 class="mb-4">Editorial ❤</h2>
+        <h2 class="mb-4 editorial">Editorial ❤</h2>
 
         <div class="row g-4">
 
           <div class="col-6 col-md-3">
-            <img src="event1.jpg" class="img-fluid rounded">
+            <div class="card">
+              <img src="event1.jpg" class="img-fluid rounded">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+                    Editorial
+                  </a>
+                </h3>
+                <p class="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-3">
-            <img src="event5.jpg" class="img-fluid rounded">
+            <div class="card">
+              <img src="event5.jpg" class="img-fluid rounded">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+                    Editorial
+                  </a>
+                </h3>
+                <p class="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-3">
-            <img src="event4.png" class="img-fluid rounded">
+            <div class="card">
+              <img src="event4.png" class="img-fluid rounded">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+                    Editorial
+                  </a>
+                </h3>
+                <p class="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
           </div>
 
           <div class="col-6 col-md-3">
-            <img src="event1.jpg" class="img-fluid rounded">
+            <div class="card">
+              <img src="event1.jpg" class="img-fluid rounded">
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+                    Editorial
+                  </a>
+                </h3>
+                <p class="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
           </div>
 
         </div>
