@@ -51,81 +51,11 @@
         border-bottom-right-radius: 8px;
       }
       /* HERO LANDING */
-      header.bg-content-hero-sky {
-        background-color: #66dcff !important;
-      }
-      header.bg-content-hero-sky .content::after {
-        background-color: #66dcff;
-      }
-
-      header.bg-content-hero-blue {
-        background-color: #85a5e0 !important;
-      }
-      header.bg-content-hero-blue .content::after {
-        background-color: #85a5e0;
-      }
-
       header.bg-content-hero-cyan {
         background-color: #64d8c8 !important;
       }
-      header.bg-content-hero-cyan .content::after {
-        background-color: #64d8c8;
-      }
 
-      header.bg-content-hero-yellow {
-        background-color: #ffd633 !important;
-      }
-      header.bg-content-hero-yellow .content::after {
-        background-color: #ffd633;
-      }
-
-      header.bg-content-hero-red {
-        background-color: #e08585 !important;
-      }
-      header.bg-content-hero-red .content::after {
-        background-color: #e08585;
-      }
-
-      header.bg-content-hero-purple {
-        background-color: #d366ff !important;
-      }
-      header.bg-content-hero-purple .content::after {
-        background-color: #d366ff;
-      }
-
-      header.bg-content-hero-light {
-        background-color: #f3f6f9 !important;
-      }
-      header.bg-content-hero-light .content::after {
-        background-color: #f3f6f9;
-      }
-
-      header.bg-content-hero-dark {
-        background-color: #002733 !important;
-      }
-      header.bg-content-hero-dark .content::after {
-        background-color: #002733;
-      }
-      header.hero.bg-content-hero-dark .content .breadcrumb-item a,
-      header.hero.bg-content-hero-dark .content div h1,
-      header.hero.bg-content-hero-dark .content div .h1,
-      header.hero.bg-content-hero-dark .content div p,
-      header.hero.bg-content-hero-dark .content div span.fw-semibold.me-3,
-      header.hero-landing.bg-content-hero-dark .breadcrumb-item a,
-      header.hero-landing.bg-content-hero-dark div h1,
-      header.hero-landing.bg-content-hero-dark div .h1,
-      header.hero-landing.bg-content-hero-dark div p,
-      header.hero-landing.bg-content-hero-dark div span.fw-semibold.me-3 {
-        color: #ffffff;
-      }
-      header.hero.bg-content-hero-dark .content .breadcrumb-item::before,
-      header.hero-landing.bg-content-hero-dark .breadcrumb-item::before {
-        background: transparent
-          url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23FFFFFF"/></g></svg>')
-          no-repeat center center !important;
-      }
-
-      header.hero-landing nav ol.breadcrumb li.breadcrumb-item a{
+      header.hero-landing nav ol.breadcrumb li.breadcrumb-item a {
         color: black;
       }
 
@@ -189,7 +119,6 @@
         line-clamp: 2;
       }
 
-
       @media (width <= 1200px) {
         header.hero-landing .panel-horizontal-content {
           padding: 32px 16px;
@@ -251,101 +180,6 @@
   </head>
 
   <body>
-    <!-- <header class="navbar navbar-light navbar-lg">
-      <div class="container">
-        <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
-          <img
-            class="header-logo"
-            src="../../assets/header/logoBA.svg"
-            alt="Ciudad de Buenos Aires"
-          />
-        </a>
-        <div class="navbar-search d-responsive ml-auto">
-          <form class="form-search form-search-sm">
-            <div class="form-group">
-              <input
-                type="search"
-                class="form-control form-control-sm input-search"
-                id="header-search-example-3"
-                name="header-search"
-                aria-label="Ingrese su búsqueda"
-                placeholder="Buscar..."
-              />
-              <button class="reset" type="reset"></button>
-            </div>
-          </form>
-        </div>
-        <button
-          class="navbar-toggler collapsed ml-2"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-        >
-          Menú
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="list-group-content d-responsive ml-2">
-          <a
-            href="#"
-            aria-label="Cerrar sesión"
-            class="list-group-item list-group-item-logout logout-sm"
-          >
-            &nbsp;
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="../../index.html" class="nav-link active"
-                ><span>Inicio</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><span>Chateá con BOTI</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><span>Mi actividad</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><span>Mi cuenta</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" aria-label="Notificaciones" class="nav-link">
-                <i class="bx bxs-bell"></i>
-              </a>
-            </li>
-            <li class="nav-item d-responsive">
-              <div class="navbar-search">
-                <form class="form-search form-search-sm">
-                  <div class="form-group">
-                    <input
-                      type="search"
-                      class="form-control form-control-sm input-search"
-                      id="header-search-example-4"
-                      name="header-search"
-                      aria-label="Ingrese su búsqueda"
-                      placeholder="Buscar..."
-                    />
-                    <button class="reset" type="reset"></button>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="nav-item d-responsive">
-              <a
-                href="#"
-                aria-label="Cerrar sesión"
-                class="list-group-item list-group-item-logout logout-sm"
-              >
-                &nbsp;
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header> -->
-
     <main>
       <article class="pb-5 mb-4">
         <header class="hero-landing bg-content-hero-cyan">
