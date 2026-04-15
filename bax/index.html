@@ -50,6 +50,79 @@
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
       }
+			/* HERO LANDING */
+			header.bg-content-hero-sky {
+				background-color: #66dcff !important;
+			}
+			header.bg-content-hero-sky .content::after {
+				background-color: #66dcff;
+			}
+
+			header.bg-content-hero-blue {
+				background-color: #85a5e0 !important;
+			}
+			header.bg-content-hero-blue .content::after {
+				background-color: #85a5e0;
+			}
+
+			header.bg-content-hero-cyan {
+				background-color: #64d8c8 !important;
+			}
+			header.bg-content-hero-cyan .content::after {
+				background-color: #64d8c8;
+			}
+
+			header.bg-content-hero-yellow {
+				background-color: #ffd633 !important;
+			}
+			header.bg-content-hero-yellow .content::after {
+				background-color: #ffd633;
+			}
+
+			header.bg-content-hero-red {
+				background-color: #e08585 !important;
+			}
+			header.bg-content-hero-red .content::after {
+				background-color: #e08585;
+			}
+
+			header.bg-content-hero-purple {
+				background-color: #d366ff !important;
+			}
+			header.bg-content-hero-purple .content::after {
+				background-color: #d366ff;
+			}
+
+			header.bg-content-hero-light {
+				background-color: #f3f6f9 !important;
+			}
+			header.bg-content-hero-light .content::after {
+				background-color: #f3f6f9;
+			}
+
+			header.bg-content-hero-dark {
+				background-color: #002733 !important;
+			}
+			header.bg-content-hero-dark .content::after {
+				background-color: #002733;
+			}
+			header.hero.bg-content-hero-dark .content .breadcrumb-item a,
+			header.hero.bg-content-hero-dark .content div h1,
+			header.hero.bg-content-hero-dark .content div .h1,
+			header.hero.bg-content-hero-dark .content div p,
+			header.hero.bg-content-hero-dark .content div span.fw-semibold.me-3,
+			header.hero-landing.bg-content-hero-dark .breadcrumb-item a,
+			header.hero-landing.bg-content-hero-dark div h1,
+			header.hero-landing.bg-content-hero-dark div .h1,
+			header.hero-landing.bg-content-hero-dark div p,
+			header.hero-landing.bg-content-hero-dark div span.fw-semibold.me-3 {
+				color: #ffffff;
+			}
+			header.hero.bg-content-hero-dark .content .breadcrumb-item::before,
+			header.hero-landing.bg-content-hero-dark .breadcrumb-item::before {
+				background: transparent url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23FFFFFF"/></g></svg>') no-repeat center center !important;
+			}
+
       header.hero-landing {
         background-color: #66dcff;
         mask-image:
@@ -61,7 +134,8 @@
         mask-position: bottom, top;
         mask-repeat: repeat-x, no-repeat;
       }
-      header.hero-landing img.hero-bg-image {
+      header.hero-landing img.hero-bg-image,
+			header.hero-landing video.hero-bg-image {
         width: 100%;
         height: 500px;
         display: block;
@@ -380,6 +454,11 @@
         }
       }
       @media (width >= 768px) {
+				header.hero-landing img.hero-bg-image,
+				header.hero-landing video.hero-bg-image {
+					height: 800px;
+				}
+				
         header.hero-landing .search-container {
           max-width: 650px;
         }
@@ -485,36 +564,38 @@
 
     <main>
       <article class="pb-5 mb-4">
-        <div class="container">
-          <div class="hero-container">
-            <div class="hero-box-sizing mb-0">
-              <header class="hero-landing">
-                <img
-                  src="./hero-landing.jpg"
-                  class="hero-bg-image"
-                  alt="Hero"
-                  width="1366"
-                  height="500"
-                />
+        
+				<header class="hero-landing bg-content-hero-cyan">
+					<video src="bax-portada.mp4" class="hero-bg-image" autoplay="" muted="" loop="" controls="">
+						Your browser does not support the video tag.
+					</video>
 
-                <div class="panel-horizontal-content">
-                  <div class="panel-horizontal">
-                    <div class="panel-body">
-                      <div class="panel-wrapper">
-                        <h1 class="panel-title">Descubrir BA</h1>
-                        <p class="panel-text text-xl">
-                          Todo lo que podés hacer en la Ciudad en un solo lugar.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+					<div class="container-fluid pt-1 pb-4">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item">
+                  <a href="#">Desarrollo económico y producción</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Empleados</a></li>
+                <li class="breadcrumb-item"><a href="#">Asesoramiento</a></li>
+              </ol>
+            </nav>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <div class="mt-2 pt-1">
+                  <h1 class="mb-3">BAX, una experiencia para cada usuario</h1>
+                  <p class="lead">
+                    Conocé la plataforma unificada que integra trámites, servicios, noticias y participación ciudadana con inteligencia artificial conversacional.
+                  </p>
                 </div>
-              </header>
+              </div>
             </div>
           </div>
-        </div>
+				</header>
+        
 
-        <div class="container">
+        <div class="container pt-4">
           <div class="row">
             <div class="col-12 col-lg-8">
               <div>
