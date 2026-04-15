@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -33,28 +33,358 @@
       rel="stylesheet"
     />
 
-
-
-
-
-
-      <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
-
-
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      media="all"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    />
 
     <style type="text/css">
       .card-border-bottom-blue {
-          border-bottom: 8px solid #5C88D6;
-          border-bottom-left-radius: 8px;
-          border-bottom-right-radius: 8px;
+        border-bottom: 8px solid #5c88d6;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
       }
-
-      
+      header.hero-landing {
+        background-color: #66dcff;
+        mask-image:
+          url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1366 75'><path d='M62.3037 74.9999C47.7015 74.9999 39.9438 71.4859 32.6143 67.7518L29.6904 66.2538C22.3606 62.5196 14.6025 59.0048 1.39834e-06 59.0048L6.55671e-06 -0.00011942L1366 0L1366 59.0049C1351.4 59.0049 1343.64 62.5197 1336.31 66.2539L1333.39 67.752C1326.06 71.486 1318.3 75 1303.7 75C1289.09 75 1281.34 71.4861 1274.01 67.7519L1271.08 66.2539C1263.75 62.5197 1255.99 59.0049 1241.39 59.0049C1226.79 59.0049 1219.03 62.5197 1211.7 66.2539L1208.78 67.7519C1201.45 71.486 1193.69 74.9999 1179.09 75C1164.49 75 1156.73 71.486 1149.4 67.7519L1146.47 66.2539C1139.14 62.5197 1131.39 59.0049 1116.78 59.0049C1102.18 59.0049 1094.42 62.5197 1087.09 66.2539L1084.17 67.7519C1076.84 71.486 1069.08 75 1054.48 75C1039.88 74.9999 1032.12 71.486 1024.79 67.7519L1021.87 66.2539C1014.54 62.5197 1006.78 59.0049 992.177 59.0049C977.574 59.0049 969.817 62.5197 962.487 66.2539L959.563 67.7519C952.234 71.486 944.476 75 929.873 75C914.297 74.9999 906.509 71.0015 898.722 67.0029C891.012 63.0445 883.302 59.0882 868.038 59.0087C852.773 59.0881 845.064 63.0445 837.354 67.0029C829.567 71.0016 821.778 75 806.202 75C791.6 74.9999 783.842 71.4859 776.513 67.7519L773.589 66.2539C766.259 62.5196 758.501 59.0048 743.898 59.0048C729.296 59.0048 721.538 62.5196 714.208 66.2538L711.284 67.7519C703.955 71.4859 696.197 74.9999 681.595 74.9999C666.992 74.9999 659.234 71.486 651.904 67.7519L648.98 66.2538C641.651 62.5197 633.893 59.0049 619.291 59.0048C604.689 59.0048 596.93 62.5196 589.601 66.2538L586.677 67.7519C579.347 71.4859 571.589 74.9999 556.987 74.9999C541.411 74.9999 533.623 71.0015 525.835 67.0029C518.366 63.1679 510.897 59.3349 496.558 59.0273C482.218 59.3347 474.749 63.1678 467.279 67.0029C459.491 71.0015 451.703 74.9999 436.127 74.9999C435.49 74.9999 434.866 74.9915 434.254 74.9784C433.642 74.9916 433.017 74.9999 432.379 74.9999C416.803 74.9999 409.015 71.0015 401.228 67.0028C393.758 63.1678 386.289 59.3347 371.949 59.0273C357.61 59.3348 350.14 63.1678 342.671 67.0028C334.883 71.0015 327.095 74.9999 311.52 74.9999C296.917 74.9999 289.159 71.486 281.829 67.7519L278.905 66.2538C271.576 62.5196 263.818 59.0049 249.216 59.0048C234.613 59.0048 226.855 62.5196 219.525 66.2538L216.602 67.7519C209.272 71.4859 201.514 74.9999 186.911 74.9999C172.309 74.9998 164.551 71.4859 157.222 67.7518L154.298 66.2538C146.968 62.5196 139.21 59.0048 124.607 59.0048C110.005 59.0048 102.248 62.5196 94.918 66.2538L91.9941 67.7518C84.6643 71.486 76.9062 74.9999 62.3037 74.9999Z'/></svg>"),
+          linear-gradient(#000, #000);
+        mask-size:
+          1366px 75px,
+          100% calc(100% - 74px);
+        mask-position: bottom, top;
+        mask-repeat: repeat-x, no-repeat;
+      }
+      header.hero-landing img.hero-bg-image {
+        width: 100%;
+        height: 500px;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+      }
+      header.hero-landing .panel-horizontal-content {
+        background-color: transparent;
+      }
+      header.hero-landing .panel-horizontal-content .panel-horizontal {
+        justify-content: center;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body {
+        max-width: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-wrapper {
+        flex: 1;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-title,
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-text {
+        text-align: start;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-container {
+        position: relative;
+        width: 100%;
+        min-width: 400px;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper {
+        display: flex;
+        width: 100%;
+        position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background: white;
+        border: 1px solid #dee2e6;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .form-control {
+        flex: 1;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border: none;
+        outline: none;
+        background: white;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .form-control:focus {
+        box-shadow: none;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .form-control::placeholder {
+        color: #6c757d;
+        font-size: 0.95rem;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-btn-container
+        .btn-search {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 0;
+        background-color: #0d6efd;
+        border: none;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-btn-container
+        .btn-search:hover {
+        background-color: #0b5ed7;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-btn-container
+        .btn-search
+        svg {
+        width: 18px;
+        height: 18px;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-results {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-radius: 0.5rem;
+        margin-top: 0.25rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        overflow: hidden;
+        border: 1px solid #dee2e6;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-results
+        .list-link-result {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.2s;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-results
+        .list-link-result:hover {
+        background-color: #f8f9fa;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper
+        .search-results
+        .list-link-result
+        .material-symbols-rounded {
+        font-size: 1.25rem;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .search-wrapper:focus-within
+        .search-results {
+        display: block;
+      }
+      header.hero-landing
+        .panel-horizontal-content
+        .panel-horizontal
+        .panel-body
+        .panel-footer
+        .btn-hero {
+        display: flex;
+        gap: 24px 8px;
+      }
+      @media (width <= 360px) {
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-footer
+          .btn-hero {
+          display: grid;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-footer
+          .btn-hero
+          button {
+          width: 100%;
+          display: block;
+        }
+      }
+      @media (width <= 1200px) {
+        header.hero-landing .panel-horizontal-content {
+          padding: 32px 16px;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-wrapper {
+          width: 100%;
+          height: 100%;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-wrapper
+          .panel-title {
+          margin-bottom: 12px;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-wrapper
+          .panel-text {
+          margin-bottom: 24px;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-footer {
+          width: 100%;
+          margin-top: 0px;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .panel-body
+          .panel-footer
+          .search-container {
+          min-width: auto;
+          width: 100%;
+        }
+      }
+      @media (width <= 576px) {
+        header.hero-landing .panel-horizontal-content .panel-horizontal {
+          max-width: unset;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .search-wrapper
+          .btn-search
+          span {
+          display: none;
+        }
+        header.hero-landing
+          .panel-horizontal-content
+          .panel-horizontal
+          .search-wrapper
+          .btn-search
+          svg {
+          margin: 0 !important;
+        }
+      }
+      @media (width >= 768px) {
+        header.hero-landing .search-container {
+          max-width: 650px;
+        }
+      }
     </style>
-
-
-
   </head>
 
   <body>
@@ -155,56 +485,34 @@
 
     <main>
       <article class="pb-5 mb-4">
-        <header class="bg-light pt-3 pb-5 mb-5">
-          <div class="container pt-1">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item">
-                  <a href="#">Desarrollo económico y producción</a>
-                </li>
-                <li class="breadcrumb-item"><a href="#">Empleados</a></li>
-                <li class="breadcrumb-item"><a href="#">Asesoramiento</a></li>
-              </ol>
-            </nav>
-            <div class="row">
-              <div class="col-12 col-lg-8">
-                <div class="mt-2 pt-1">
-                  <h1 class="mb-3">BAX</h1>
-                  <p class="lead">
-                    La super app del Gobierno de la Ciudad de Buenos Aires que centraliza, simplifica y personaliza 
-                    el acceso a los servicios digitales desde una única plataforma, con inteligencia artificial conversacional.
-                  </p>
+        <div class="container">
+          <div class="hero-container">
+            <div class="hero-box-sizing mb-0">
+              <header class="hero-landing">
+                <img
+                  src="./hero-landing.jpg"
+                  class="hero-bg-image"
+                  alt="Hero"
+                  width="1366"
+                  height="500"
+                />
+
+                <div class="panel-horizontal-content">
+                  <div class="panel-horizontal">
+                    <div class="panel-body">
+                      <div class="panel-wrapper">
+                        <h1 class="panel-title">Descubrir BA</h1>
+                        <p class="panel-text text-xl">
+                          Todo lo que podés hacer en la Ciudad en un solo lugar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="d-flex flex-row pt-3">
-                  Compartir en redes
-                  <ul class="list-inline ml-2">
-                    <li class="list-inline-item mr-1">
-                      <a href="#" target="_blank"
-                        ><i class="bx bx-sm bxl-facebook-circle"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item mr-1">
-                      <a href="#" target="_blank"
-                        ><i class="bx bx-sm bxl-instagram"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item mr-1">
-                      <a href="#" target="_blank"
-                        ><i class="bx bx-sm bxl-twitter"></i
-                      ></a>
-                    </li>
-                    <li class="list-inline-item mr-1">
-                      <a href="#" target="_blank"
-                        ><i class="bx bx-sm bxl-linkedin-square"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </header>
             </div>
           </div>
-        </header>
+        </div>
 
         <div class="container">
           <div class="row">
@@ -212,17 +520,18 @@
               <div>
                 <h2 class="mb-4">BAX</h2>
                 <p class="mb-4">
-                  La super app del Gobierno de la Ciudad de Buenos Aires que 
-                  centraliza, simplifica y personaliza el acceso a los servicios 
-                  digitales desde una única plataforma, con inteligencia artificial 
-                  conversacional. 
+                  La super app del Gobierno de la Ciudad de Buenos Aires que
+                  centraliza, simplifica y personaliza el acceso a los servicios
+                  digitales desde una única plataforma, con inteligencia
+                  artificial conversacional. 
                 </p>
                 <h2 class="mb-4">¿Para qué sirve?</h2>
                 <p class="mb-4">
-                  BAX busca simplificar la relación entre las personas y la Ciudad, 
-                  integrando en una sola aplicación servicios que antes estaban dispersos. 
-                  La experiencia está pensada para que el ciudadano pueda resolver gestiones 
-                  cotidianas conversando, de manera rápida e intuitiva.
+                  BAX busca simplificar la relación entre las personas y la
+                  Ciudad, integrando en una sola aplicación servicios que antes
+                  estaban dispersos. La experiencia está pensada para que el
+                  ciudadano pueda resolver gestiones cotidianas conversando, de
+                  manera rápida e intuitiva.
                 </p>
               </div>
               <div class="mt-5 pb-2">
@@ -257,57 +566,97 @@
               </div> -->
 
               <div class="mt-5">
-                <h2 class="mb-4">Propuesta de valor</h2>              
-                <div class="card-deck max-cards-2 card-column">              
+                <h2 class="mb-4">Propuesta de valor</h2>
+                <div class="card-deck max-cards-2 card-column">
                   <div class="card">
-                    <div class="card-body card-border-bottom-blue"><span class="material-icons-round card-icon">text_snippet </span>              
+                    <div class="card-body card-border-bottom-blue">
+                      <span class="material-icons-round card-icon"
+                        >text_snippet
+                      </span>
                       <h3 class="card-title">
-                        <span class="card-title-link">Trámites simples
-                          y rápidos.</span>
-                      </h3>              
-                      <p class="card-text">Hacelo todo desde tu celular, sin filas ni demoras.</p>
+                        <span class="card-title-link"
+                          >Trámites simples y rápidos.</span
+                        >
+                      </h3>
+                      <p class="card-text">
+                        Hacelo todo desde tu celular, sin filas ni demoras.
+                      </p>
                     </div>
-                  </div>              
+                  </div>
                   <div class="card">
-                    <div class="card-body card-border-bottom-blue"><span class="material-icons-round card-icon">support_agent </span>              
-                      <h3 class="card-title"><span class="card-title-link">Información al
-                          instante.</span></h3>              
-                      <p class="card-text">Consultá el estado de tus gestiones, turnos y
-                        documentos en tiempo real.</p>
+                    <div class="card-body card-border-bottom-blue">
+                      <span class="material-icons-round card-icon"
+                        >support_agent
+                      </span>
+                      <h3 class="card-title">
+                        <span class="card-title-link"
+                          >Información al instante.</span
+                        >
+                      </h3>
+                      <p class="card-text">
+                        Consultá el estado de tus gestiones, turnos y documentos
+                        en tiempo real.
+                      </p>
                     </div>
-                  </div>              
+                  </div>
                   <div class="card">
-                    <div class="card-body card-border-bottom-blue"><span class="material-icons-round card-icon">celebration </span>              
-                      <h3 class="card-title"><span class="card-title-link">Agenda siempre
-                          activa.</span></h3>              
-                      <p class="card-text">Descubrí eventos, actividades y novedades cerca tuyo,
-                        siempre actualizados.</p>
+                    <div class="card-body card-border-bottom-blue">
+                      <span class="material-icons-round card-icon"
+                        >celebration
+                      </span>
+                      <h3 class="card-title">
+                        <span class="card-title-link"
+                          >Agenda siempre activa.</span
+                        >
+                      </h3>
+                      <p class="card-text">
+                        Descubrí eventos, actividades y novedades cerca tuyo,
+                        siempre actualizados.
+                      </p>
                     </div>
-                  </div>              
+                  </div>
                   <div class="card">
-                    <div class="card-body card-border-bottom-blue"><span
-                        class="material-icons-round card-icon">connect_without_contact </span>              
-                      <h3 class="card-title"><span class="card-title-link">Conectá con tu
-                          gobierno, estés donde estés.</span></h3>              
-                      <p class="card-text">Participá, informate y hacé oír tu voz desde cualquier
-                        lugar.</p>
+                    <div class="card-body card-border-bottom-blue">
+                      <span class="material-icons-round card-icon"
+                        >connect_without_contact
+                      </span>
+                      <h3 class="card-title">
+                        <span class="card-title-link"
+                          >Conectá con tu gobierno, estés donde estés.</span
+                        >
+                      </h3>
+                      <p class="card-text">
+                        Participá, informate y hacé oír tu voz desde cualquier
+                        lugar.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-
               <div class="mt-5">
                 <h2 class="mb-4">Contacto</h2>
-                  <div class="content">
-
-                    <div class="field field--type-text-with-summary field--label-hidden field__item">
-                      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-                      <link href='https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-                      <style type="text/css">
+                <div class="content">
+                  <div
+                    class="field field--type-text-with-summary field--label-hidden field__item"
+                  >
+                    <link
+                      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+                      rel="stylesheet"
+                    />
+                    <link
+                      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+                      rel="stylesheet"
+                    />
+                    <style type="text/css">
                       .app-store-container {
                         border-radius: 16px;
-                        background: linear-gradient(101deg, #0F4659 8.39%, #007BC7 62.5%, #89E5D6 115.92%);
+                        background: linear-gradient(
+                          101deg,
+                          #0f4659 8.39%,
+                          #007bc7 62.5%,
+                          #89e5d6 115.92%
+                        );
                         padding: 32px 18px;
                         color: #fff;
                         overflow: hidden;
@@ -323,7 +672,6 @@
                         height: 24px;
                       }
 
-
                       .app-store-container .app-content .buttons {
                         display: flex;
                         flex-wrap: wrap;
@@ -331,63 +679,77 @@
                         column-gap: 24px;
                       }
 
-                      .app-store-container .app-content .buttons a{
-                        background-color: #101E37;
-                        border-color: #101E37;
+                      .app-store-container .app-content .buttons a {
+                        background-color: #101e37;
+                        border-color: #101e37;
                       }
 
-                        .app-store-container .app-content {
-                          flex-direction: row;
-                          column-gap: 64px;
-                        }
-
-                        .app-store-container .app-content .star-img span {
-                          position: inherit;
-                                  display: none;
-                        }
-
-                      @media (width >= 768px) {
+                      .app-store-container .app-content {
+                        flex-direction: row;
+                        column-gap: 64px;
+                      }
 
                       .app-store-container .app-content .star-img span {
-                        display: block;
                         position: inherit;
-                        top: 0;
-                        background-image: url("data:image/svg+xml;utf8, <svg viewBox='0 0 139 139' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M50.5067 17.8163L21.0947 2.6111C6.62234 -4.65259 -4.65332 6.62307 2.61036 21.0955L17.8156 50.5075C26.6547 67.5904 26.6547 71.0986 17.8156 88.1815L2.61036 117.593C-4.65332 132.066 6.62234 143.342 21.0947 136.078L50.5067 120.873C67.5988 112.043 71.0978 112.034 88.1808 120.873L117.593 136.078C132.065 143.342 143.341 132.066 136.077 117.593L120.872 88.1815C112.042 71.0894 112.033 67.5904 120.872 50.5075L136.077 21.0955C143.341 6.62307 132.065 -4.65259 117.593 2.6111L88.1808 17.8163C71.0887 26.6555 67.5897 26.6463 50.5067 17.8163Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M52.4851 23.2203L26.16 9.60895C13.2081 3.10552 3.11407 13.1996 9.6175 26.1515L23.2289 52.4766C31.1338 67.7734 31.1338 70.906 23.2289 86.2028L9.6175 112.528C3.11407 125.48 13.2081 135.574 26.16 129.07L52.4851 115.459C67.7819 107.554 70.9146 107.545 86.2114 115.459L112.537 129.07C125.488 135.574 135.582 125.48 129.079 112.528L115.468 86.2028C107.563 70.906 107.563 67.7734 115.468 52.4766L129.079 26.1515C135.582 13.1996 125.488 3.10552 112.537 9.60895L86.2114 23.2203C70.9146 31.1344 67.7819 31.1252 52.4851 23.2203Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M54.4545 28.625L31.207 16.6074C19.7756 10.8643 10.8632 19.7767 16.5972 31.2173L28.6148 54.4647C35.5945 67.9662 35.5945 70.7416 28.6148 84.2431L16.5972 107.491C10.854 118.922 19.7665 127.834 31.207 122.1L54.4545 110.083C67.9559 103.103 70.7222 103.103 84.2328 110.083L107.48 122.1C118.912 127.844 127.824 118.931 122.09 107.491L110.072 84.2431C103.093 70.7416 103.093 67.9754 110.072 54.4647L122.09 31.2173C127.833 19.7859 118.921 10.8734 107.48 16.6074L84.2328 28.625C70.7313 35.6048 67.9559 35.6048 54.4545 28.625Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M56.4329 34.0291L36.2723 23.6053C26.3522 18.6316 18.6214 26.3624 23.6043 36.2732L34.0281 56.4339C40.0827 68.1492 40.0827 70.549 34.0281 82.2644L23.6043 102.425C18.6306 112.345 26.3522 120.076 36.2723 115.093L56.4329 104.669C68.1482 98.6145 70.5481 98.6145 82.2634 104.669L102.424 115.093C112.344 120.067 120.075 112.336 115.092 102.425L104.668 82.2644C98.6135 70.549 98.6135 68.1492 104.668 56.4339L115.092 36.2732C120.066 26.3532 112.344 18.6224 102.424 23.6053L82.2634 34.0291C70.5481 40.0837 68.1482 40.0837 56.4329 34.0291Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M58.4099 39.424L41.3361 30.594C32.9366 26.3805 26.3874 32.9298 30.6009 41.3293L39.4309 58.403C44.5603 68.3231 44.5603 70.3565 39.4309 80.2765L30.6009 97.3503C26.3874 105.75 32.9366 112.299 41.3361 108.086L58.4099 99.2556C68.3299 94.1261 70.3634 94.1261 80.2834 99.2556L97.3572 108.086C105.757 112.299 112.306 105.75 108.092 97.3503L99.2624 80.2765C94.1329 70.3565 94.1329 68.3231 99.2624 58.403L108.092 41.3293C112.306 32.9298 105.757 26.3805 97.3572 30.594L80.2834 39.424C70.3634 44.5535 68.3299 44.5535 58.4099 39.424Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M62.3593 50.2319L51.45 44.5895C46.0824 41.8965 41.9056 46.0826 44.5985 51.441L50.241 62.3503C53.5201 68.6888 53.5201 69.9895 50.241 76.3281L44.5985 87.2373C41.9056 92.605 46.0916 96.7818 51.45 94.0888L62.3593 88.4464C68.6979 85.1672 69.9985 85.1672 76.3371 88.4464L87.2464 94.0888C92.614 96.7818 96.7908 92.5958 94.0979 87.2373L88.4555 76.3281C85.1763 69.9895 85.1763 68.6888 88.4555 62.3503L94.0979 51.441C96.7908 46.0734 92.6048 41.8965 87.2464 44.5895L76.3371 50.2319C69.9985 53.5111 68.6979 53.5111 62.3593 50.2319Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M64.3282 55.6368L56.5058 51.5882C52.6587 49.6555 49.6543 52.6599 51.587 56.507L55.6356 64.3295C57.9897 68.8727 57.9897 69.807 55.6356 74.3502L51.587 82.1727C49.6543 86.0198 52.6587 89.0242 56.5058 87.0915L64.3282 83.0428C68.8715 80.6888 69.8058 80.6888 74.349 83.0428L82.1714 87.0915C86.0185 89.0242 89.0229 86.0198 87.0902 82.1727L83.0416 74.3502C80.6875 69.807 80.6875 68.8727 83.0416 64.3295L87.0902 56.507C89.0229 52.6599 86.0185 49.6555 82.1714 51.5882L74.349 55.6368C69.8058 57.9909 68.8715 57.9909 64.3282 55.6368Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path d='M90.7139 40.3928C92.9419 39.585 95.0743 39.1536 97.1318 39.4065C99.0831 41.1405 99.7195 43.0229 99.5859 45.0618C99.4486 47.1575 98.4969 49.4388 97.2295 51.9114C95.9775 54.3538 94.3994 57.014 93.1094 59.7463C91.8112 62.4959 90.766 65.3905 90.5557 68.3958C90.3963 70.671 91.072 73.3382 92.0957 76.1096C93.1215 78.8867 94.515 81.8131 95.8213 84.6106C97.1321 87.4179 98.3534 90.0903 99.0586 92.3899C99.4108 93.5386 99.6287 94.5798 99.6689 95.4866C99.7092 96.3933 99.5703 97.1441 99.2305 97.7346C98.5609 98.8978 97.6684 99.5212 96.6416 99.7903C95.6009 100.063 94.3963 99.9781 93.1094 99.6663C90.5257 99.0401 87.7534 97.5416 85.5439 96.468C84.193 95.8118 82.949 95.15 81.75 94.5198C80.5531 93.8907 79.4 93.2924 78.2432 92.7688C75.925 91.7196 73.5793 90.9668 70.7744 90.8499C64.7866 90.5989 58.9425 93.6471 53.8955 96.2717C51.3541 97.5934 49.021 98.805 46.9385 99.4817C44.854 100.159 43.0981 100.273 41.6689 99.4983C40.8227 99.0394 40.2816 98.3946 39.9717 97.5989C39.6586 96.7949 39.5752 95.819 39.6826 94.6985C39.8981 92.4507 40.8696 89.7156 42.1143 86.8372C43.361 83.954 44.8484 80.9987 46.0967 78.2532C47.3317 75.5369 48.3321 73.0277 48.5361 71.134C48.794 68.7379 48.1781 66.0101 47.1816 63.2122C46.1836 60.4096 44.7885 57.4965 43.457 54.7249C42.1209 51.9436 40.8527 49.3115 40.084 47.0403C39.7001 45.9061 39.4459 44.8769 39.3682 43.9758C39.2904 43.0741 39.3913 42.3234 39.6914 41.7278C40.1636 40.791 40.812 40.1906 41.5977 39.8401C42.3906 39.4864 43.3478 39.3764 44.4463 39.468C46.6524 39.6521 49.3338 40.6392 52.1777 41.9133C53.595 42.5483 55.0429 43.2495 56.4824 43.9504C57.9202 44.6505 59.3507 45.3504 60.7256 45.9778C63.4617 47.2263 66.0331 48.2155 68.0576 48.3352C73.6181 48.664 78.8348 46.0932 83.6748 43.6458C86.1084 42.4151 88.4452 41.2154 90.7139 40.3928Z' fill='url(%23paint0_linear_4373_3682)' stroke='%2394D4CC' stroke-width='0.689799'/><path d='M45.0566 80.4792C46.3744 82.9974 47.7302 85.4781 49.1484 87.8943H49.1494C51.9423 93.4198 48.076 99.1287 43.0068 99.9529C42.534 99.8702 42.0878 99.7229 41.6689 99.4958C40.4902 98.8567 39.8888 97.8483 39.7021 96.5408C39.5129 95.2142 39.7535 93.5853 40.2812 91.7595C41.2818 88.2981 43.2676 84.2647 45.0566 80.4792Z' fill='%23FFCC01' stroke='%2394D4CC' stroke-width='0.689799'/><defs><linearGradient id='paint0_linear_4373_3682' x1='66.3783' y1='112.112' x2='81.1042' y2='57.9414' gradientUnits='userSpaceOnUse'><stop stop-color='%230C66E4'/><stop offset='1' stop-color='%2389E5D6'/>");
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        background-position: center;
-                        width: 139px;
-                        height: 139px;
+                        display: none;
                       }
 
+                      @media (width >= 768px) {
+                        .app-store-container .app-content .star-img span {
+                          display: block;
+                          position: inherit;
+                          top: 0;
+                          background-image: url("data:image/svg+xml;utf8, <svg viewBox='0 0 139 139' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M50.5067 17.8163L21.0947 2.6111C6.62234 -4.65259 -4.65332 6.62307 2.61036 21.0955L17.8156 50.5075C26.6547 67.5904 26.6547 71.0986 17.8156 88.1815L2.61036 117.593C-4.65332 132.066 6.62234 143.342 21.0947 136.078L50.5067 120.873C67.5988 112.043 71.0978 112.034 88.1808 120.873L117.593 136.078C132.065 143.342 143.341 132.066 136.077 117.593L120.872 88.1815C112.042 71.0894 112.033 67.5904 120.872 50.5075L136.077 21.0955C143.341 6.62307 132.065 -4.65259 117.593 2.6111L88.1808 17.8163C71.0887 26.6555 67.5897 26.6463 50.5067 17.8163Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M52.4851 23.2203L26.16 9.60895C13.2081 3.10552 3.11407 13.1996 9.6175 26.1515L23.2289 52.4766C31.1338 67.7734 31.1338 70.906 23.2289 86.2028L9.6175 112.528C3.11407 125.48 13.2081 135.574 26.16 129.07L52.4851 115.459C67.7819 107.554 70.9146 107.545 86.2114 115.459L112.537 129.07C125.488 135.574 135.582 125.48 129.079 112.528L115.468 86.2028C107.563 70.906 107.563 67.7734 115.468 52.4766L129.079 26.1515C135.582 13.1996 125.488 3.10552 112.537 9.60895L86.2114 23.2203C70.9146 31.1344 67.7819 31.1252 52.4851 23.2203Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M54.4545 28.625L31.207 16.6074C19.7756 10.8643 10.8632 19.7767 16.5972 31.2173L28.6148 54.4647C35.5945 67.9662 35.5945 70.7416 28.6148 84.2431L16.5972 107.491C10.854 118.922 19.7665 127.834 31.207 122.1L54.4545 110.083C67.9559 103.103 70.7222 103.103 84.2328 110.083L107.48 122.1C118.912 127.844 127.824 118.931 122.09 107.491L110.072 84.2431C103.093 70.7416 103.093 67.9754 110.072 54.4647L122.09 31.2173C127.833 19.7859 118.921 10.8734 107.48 16.6074L84.2328 28.625C70.7313 35.6048 67.9559 35.6048 54.4545 28.625Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M56.4329 34.0291L36.2723 23.6053C26.3522 18.6316 18.6214 26.3624 23.6043 36.2732L34.0281 56.4339C40.0827 68.1492 40.0827 70.549 34.0281 82.2644L23.6043 102.425C18.6306 112.345 26.3522 120.076 36.2723 115.093L56.4329 104.669C68.1482 98.6145 70.5481 98.6145 82.2634 104.669L102.424 115.093C112.344 120.067 120.075 112.336 115.092 102.425L104.668 82.2644C98.6135 70.549 98.6135 68.1492 104.668 56.4339L115.092 36.2732C120.066 26.3532 112.344 18.6224 102.424 23.6053L82.2634 34.0291C70.5481 40.0837 68.1482 40.0837 56.4329 34.0291Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M58.4099 39.424L41.3361 30.594C32.9366 26.3805 26.3874 32.9298 30.6009 41.3293L39.4309 58.403C44.5603 68.3231 44.5603 70.3565 39.4309 80.2765L30.6009 97.3503C26.3874 105.75 32.9366 112.299 41.3361 108.086L58.4099 99.2556C68.3299 94.1261 70.3634 94.1261 80.2834 99.2556L97.3572 108.086C105.757 112.299 112.306 105.75 108.092 97.3503L99.2624 80.2765C94.1329 70.3565 94.1329 68.3231 99.2624 58.403L108.092 41.3293C112.306 32.9298 105.757 26.3805 97.3572 30.594L80.2834 39.424C70.3634 44.5535 68.3299 44.5535 58.4099 39.424Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M62.3593 50.2319L51.45 44.5895C46.0824 41.8965 41.9056 46.0826 44.5985 51.441L50.241 62.3503C53.5201 68.6888 53.5201 69.9895 50.241 76.3281L44.5985 87.2373C41.9056 92.605 46.0916 96.7818 51.45 94.0888L62.3593 88.4464C68.6979 85.1672 69.9985 85.1672 76.3371 88.4464L87.2464 94.0888C92.614 96.7818 96.7908 92.5958 94.0979 87.2373L88.4555 76.3281C85.1763 69.9895 85.1763 68.6888 88.4555 62.3503L94.0979 51.441C96.7908 46.0734 92.6048 41.8965 87.2464 44.5895L76.3371 50.2319C69.9985 53.5111 68.6979 53.5111 62.3593 50.2319Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path fill-rule='evenodd' clip-rule='evenodd' d='M64.3282 55.6368L56.5058 51.5882C52.6587 49.6555 49.6543 52.6599 51.587 56.507L55.6356 64.3295C57.9897 68.8727 57.9897 69.807 55.6356 74.3502L51.587 82.1727C49.6543 86.0198 52.6587 89.0242 56.5058 87.0915L64.3282 83.0428C68.8715 80.6888 69.8058 80.6888 74.349 83.0428L82.1714 87.0915C86.0185 89.0242 89.0229 86.0198 87.0902 82.1727L83.0416 74.3502C80.6875 69.807 80.6875 68.8727 83.0416 64.3295L87.0902 56.507C89.0229 52.6599 86.0185 49.6555 82.1714 51.5882L74.349 55.6368C69.8058 57.9909 68.8715 57.9909 64.3282 55.6368Z' stroke='%2394D4CC' stroke-width='0.689799' stroke-miterlimit='10'/><path d='M90.7139 40.3928C92.9419 39.585 95.0743 39.1536 97.1318 39.4065C99.0831 41.1405 99.7195 43.0229 99.5859 45.0618C99.4486 47.1575 98.4969 49.4388 97.2295 51.9114C95.9775 54.3538 94.3994 57.014 93.1094 59.7463C91.8112 62.4959 90.766 65.3905 90.5557 68.3958C90.3963 70.671 91.072 73.3382 92.0957 76.1096C93.1215 78.8867 94.515 81.8131 95.8213 84.6106C97.1321 87.4179 98.3534 90.0903 99.0586 92.3899C99.4108 93.5386 99.6287 94.5798 99.6689 95.4866C99.7092 96.3933 99.5703 97.1441 99.2305 97.7346C98.5609 98.8978 97.6684 99.5212 96.6416 99.7903C95.6009 100.063 94.3963 99.9781 93.1094 99.6663C90.5257 99.0401 87.7534 97.5416 85.5439 96.468C84.193 95.8118 82.949 95.15 81.75 94.5198C80.5531 93.8907 79.4 93.2924 78.2432 92.7688C75.925 91.7196 73.5793 90.9668 70.7744 90.8499C64.7866 90.5989 58.9425 93.6471 53.8955 96.2717C51.3541 97.5934 49.021 98.805 46.9385 99.4817C44.854 100.159 43.0981 100.273 41.6689 99.4983C40.8227 99.0394 40.2816 98.3946 39.9717 97.5989C39.6586 96.7949 39.5752 95.819 39.6826 94.6985C39.8981 92.4507 40.8696 89.7156 42.1143 86.8372C43.361 83.954 44.8484 80.9987 46.0967 78.2532C47.3317 75.5369 48.3321 73.0277 48.5361 71.134C48.794 68.7379 48.1781 66.0101 47.1816 63.2122C46.1836 60.4096 44.7885 57.4965 43.457 54.7249C42.1209 51.9436 40.8527 49.3115 40.084 47.0403C39.7001 45.9061 39.4459 44.8769 39.3682 43.9758C39.2904 43.0741 39.3913 42.3234 39.6914 41.7278C40.1636 40.791 40.812 40.1906 41.5977 39.8401C42.3906 39.4864 43.3478 39.3764 44.4463 39.468C46.6524 39.6521 49.3338 40.6392 52.1777 41.9133C53.595 42.5483 55.0429 43.2495 56.4824 43.9504C57.9202 44.6505 59.3507 45.3504 60.7256 45.9778C63.4617 47.2263 66.0331 48.2155 68.0576 48.3352C73.6181 48.664 78.8348 46.0932 83.6748 43.6458C86.1084 42.4151 88.4452 41.2154 90.7139 40.3928Z' fill='url(%23paint0_linear_4373_3682)' stroke='%2394D4CC' stroke-width='0.689799'/><path d='M45.0566 80.4792C46.3744 82.9974 47.7302 85.4781 49.1484 87.8943H49.1494C51.9423 93.4198 48.076 99.1287 43.0068 99.9529C42.534 99.8702 42.0878 99.7229 41.6689 99.4958C40.4902 98.8567 39.8888 97.8483 39.7021 96.5408C39.5129 95.2142 39.7535 93.5853 40.2812 91.7595C41.2818 88.2981 43.2676 84.2647 45.0566 80.4792Z' fill='%23FFCC01' stroke='%2394D4CC' stroke-width='0.689799'/><defs><linearGradient id='paint0_linear_4373_3682' x1='66.3783' y1='112.112' x2='81.1042' y2='57.9414' gradientUnits='userSpaceOnUse'><stop stop-color='%230C66E4'/><stop offset='1' stop-color='%2389E5D6'/>");
+                          background-repeat: no-repeat;
+                          background-size: contain;
+                          background-position: center;
+                          width: 139px;
+                          height: 139px;
+                        }
                       }
 
-                  /*--><!]]>*/
-                      </style>
-                      <p><img alt="descarga bax" class="w-100 my-5" src="/sites/default/files/2025-12/Group%2014004%201.jpg" /></p>
-                      <h2 class="mb-4">Descargá BAX</h2>
-                      <div class="app-store-container mb-5" id="descargar">
-                        <div class="app-content">
-                          <div>
-                            <h3><b>BAX</b> en tu celular</h3>
+                      /*--><!]]>*/
+                    </style>
+                    <p>
+                      <img
+                        alt="descarga bax"
+                        class="w-100 my-5"
+                        src="/sites/default/files/2025-12/Group%2014004%201.jpg"
+                      />
+                    </p>
+                    <h2 class="mb-4">Descargá BAX</h2>
+                    <div class="app-store-container mb-5" id="descargar">
+                      <div class="app-content">
+                        <div>
+                          <h3><b>BAX</b> en tu celular</h3>
 
-                            <p class="mb-md-4">Hacé tus trámites, sacá turnos, conocé todos los eventos de la Ciudad, y mucho más.</p>
+                          <p class="mb-md-4">
+                            Hacé tus trámites, sacá turnos, conocé todos los
+                            eventos de la Ciudad, y mucho más.
+                          </p>
 
-                            <div class="buttons"><a class="btn btn-secondary" href="">Descarga para Android </a><a
-                                class="btn btn-secondary" href=""><i class="bxl bx-apple"></i> para IOS</a></div>
+                          <div class="buttons">
+                            <a class="btn btn-secondary" href=""
+                              >Descarga para Android </a
+                            ><a class="btn btn-secondary" href=""
+                              ><i class="bxl bx-apple"></i> para IOS</a
+                            >
                           </div>
+                        </div>
 
-                          <div class="star-img"><span><img alt="estrella bax" class="w-100"
-                                src="/sites/default/files/2025-12/estrella%201.png" /></span></div>
+                        <div class="star-img">
+                          <span
+                            ><img
+                              alt="estrella bax"
+                              class="w-100"
+                              src="/sites/default/files/2025-12/estrella%201.png"
+                          /></span>
                         </div>
                       </div>
                     </div>
-
                   </div>
-
+                </div>
               </div>
-
-
 
               <div class="mt-5">
                 <h2>Preguntas Frecuentes</h2>
@@ -403,9 +765,9 @@
                     <div id="collapseOne" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
@@ -421,9 +783,9 @@
                     <div id="collapseTwo" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
@@ -439,9 +801,9 @@
                     <div id="collapseThree" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
@@ -460,9 +822,9 @@
                     <div id="collapseOneWhite" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
@@ -478,9 +840,9 @@
                     <div id="collapseTwoWhite" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
@@ -496,16 +858,15 @@
                     <div id="collapseThreeWhite" class="collapse">
                       <div class="card-body">
                         <p>
-                          Esta es la descripción que se encuentra dentro de un colapsable.
-                          Recomendamos no utilizar demasiado texto, para generar una lectura
-                          óptima.
+                          Esta es la descripción que se encuentra dentro de un
+                          colapsable. Recomendamos no utilizar demasiado texto,
+                          para generar una lectura óptima.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -626,7 +987,9 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                  <a
+                    href="https://www.buenosaires.gob.ar/gobierno/transparencia"
+                  >
                     Transparencia activa
                   </a>
                 </li>
