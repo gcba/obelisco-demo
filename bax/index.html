@@ -123,6 +123,10 @@
         line-clamp: 2;
       }
 
+			header.hero-landing .bax-logo {
+				bottom: 40px;
+			}
+			
       @media (width <= 1200px) {
         header.hero-landing .panel-horizontal-content {
           padding: 32px 16px;
@@ -188,15 +192,19 @@
     <main>
       <article class="pb-5 mb-4">
         <header class="hero-landing bg-content-hero-cyan">
-          <video
-            src="bax-portada.mp4"
-            class="hero-bg-image"
-            autoplay=""
-            muted=""
-            loop=""
-          >
-            Your browser does not support the video tag.
-          </video>
+					<div class="position-relative d-flex justify-content-center">
+						<video
+							src="bax-portada.mp4"
+							class="hero-bg-image"
+							autoplay=""
+							muted=""
+							loop=""
+						>
+							Your browser does not support the video tag.
+						</video>
+						<img class="position-absolute bax-logo d-none d-md-block" src="BAX-desktop.png" alt="BAX" />
+						<img class="position-absolute bax-logo d-md-none" src="BAX-mobile.png" alt="BAX" />
+					</div>
 
           <div class="container py-5">
             <nav aria-label="breadcrumb">
