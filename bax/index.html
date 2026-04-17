@@ -191,7 +191,7 @@
   <body>
     <main>
       <article class="pb-5 mb-4">
-        <header class="hero-landing bg-content-hero-cyan">
+        <header class="hero-landing bg-content-hero-cyan" >
 					<div class="position-relative d-flex justify-content-center overflow-hidden">
 						<video
 							src="bax-portada.mp4"
@@ -423,9 +423,11 @@
                           width: 139px;
                           height: 139px;
                         }
-                      }
 
-                      /*--><!]]>*/
+                        .app-store-container .app-content {
+                          flex-direction: column;
+                        }
+                      }
                     </style>
                     <p>
                         <style type="text/css">
@@ -589,12 +591,19 @@
                           <style type="text/css">
                            .app-instructivos-container {
                               background-color: #f3f6f9;
-                              padding: 32px 130px;
+                              padding: 32px 20px;
                             }
                             .app-instructivos-container .btn-primary {
                               color: #fff !important; 
                               background-color: #336ACC !important;
                               border-color: #336ACC !important;
+                            }
+
+                            @media (width >= 768px) {
+                            .app-instructivos-container {
+                                background-color: #f3f6f9;
+                                padding: 32px 130px;
+                              }
                             }
                         </style>
                         <section class="app-instructivos-container">
