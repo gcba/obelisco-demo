@@ -145,10 +145,48 @@
     /*ESTILOS TECBA*/
 
     .main-footer {
-      border-top-left-radius: 100px;
-      border-top-right-radius: 100px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
       border-top: none !important;
     }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    .list-item-social {
+      border: 1px solid #101E37;
+      border-radius: 30px;
+      padding: 8px 12px;
+    }
+    .item-social {
+      color: #101e37 !important;
+    }
+
+    .institucional-bloque {
+      display: block;
+    }
+
+    .institucional-descripcion {
+      margin-top: 20px;
+    }
+
+    @media (width >=768px) {
+
+      .main-footer {
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+
+      .institucional-bloque {
+        display: flex;
+      }
+
+      .institucional-descripcion {
+        margin-top: 0px;
+      }
+    }
+
   </style>
 </head>
 
@@ -502,10 +540,10 @@
 
             <div class="mt-5">
               <style type="text/css">
-                .app-instructivos-container {
+                /* .app-instructivos-container {
                   background-color: #CAF2EC;
                   padding: 32px 20px;
-                }
+                } */
 
                 .app-instructivos-container .btn-primary {
                   color: #fff !important;
@@ -513,12 +551,14 @@
                   border-color: #336ACC !important;
                 }
 
+                .institucional-container {
+                  background-color: #CAF2EC;
+                  padding: 32px 40px;
+                  border-radius: 30px;
+                }
+
                 @media (width >=768px) {
-                  .institucional-container {
-                    background-color: #CAF2EC;
-                    padding: 32px 40px;
-                    border-radius: 30px;
-                  }
+
                 }
               </style>
               <!-- <section class="app-instructivos-container">
@@ -528,21 +568,34 @@
                         </section> -->
               <h2 class="mb-4">Información institucional</h2>
               <section class="institucional-container">
-                <div class="d-flex p-3 rounded-3 gap-3">
+                <div class="institucional-bloque p-3 rounded-3 gap-3">
                   <img src="raul.jpg" class="rounded mr-4" alt="descripción alternativa" width="150" height="150">
-                  <div class="">
+                  <div class="institucional-descripcion">
                     <h4 class="h4">
                       Raúl Piola
                     </h4>
                     <p>
                       Secretario de Innovación y Transformación Digital
                     </p>
-                    <h5>
-                      Contacto
+                    <h5><strong>
+                      Contacto</strong>
                     </h5>
                     <p class="mb-0">Teléfono: 4323-9380 (int. 4011)</p>
                     <p>Correo electrónico: rpiola@buenosaires.gob.ar</p>
-                    <strong>Seguinos en redes</strong>
+                    <strong class="">Seguinos en redes</strong>
+                    <div class="mt-2 pt-1 d-flex flex-row">
+                      <ul>
+                        <li class="list-inline-item mr-1 list-item-social">
+                          <a class="item-social" href=""><i class="bx bxl-facebook-circle bx-sm"></i></a>
+                        </li>
+                        <li class="list-inline-item mr-1 list-item-social">
+                          <a class="item-social" href=""><i class="bx bxl-instagram bx-sm"></i></a>
+                        </li>
+                        <li class="list-inline-item mr-1 list-item-social">
+                          <a class="item-social" href=""><i class="bx bxl-twitter bx-sm"></i></a>
+                        </li>
+                      </ul>                      
+                    </div>
                   </div>
                 </div>
               </section>
