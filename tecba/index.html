@@ -150,8 +150,8 @@
     /*ESTILOS TECBA*/
 
     .main-footer {
-      border-top-left-radius: 60px;
-      border-top-right-radius: 60px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
       border-top: none !important;
     }
 
@@ -159,11 +159,13 @@
       padding-left: 0;
       list-style: none;
     }
+
     .list-item-social {
       border: 1px solid #101E37;
       border-radius: 30px;
       padding: 8px 12px;
     }
+
     .item-social {
       color: #101e37 !important;
     }
@@ -192,6 +194,7 @@
       }
     }
 
+    /* DESTACADO OBELISCO */
     div.ob-destacado.bg-dark.panel-horizontal-content {
       font-family: "Archivo", sans-serif;
       padding: 64px;
@@ -273,6 +276,133 @@
       }
 
     }
+
+    /* DESTACADO OBELISCO */
+
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    h2.tramites-servicios {
+      font-size: 32px;
+      margin-bottom: 32px;
+      font-family: "Archivo", sans-serif;
+
+    }
+
+    .card-deck.card-column.tramites-servicios {
+      font-family: "Archivo", sans-serif;
+      gap: 32px;
+
+      .card {
+        width: 253px;
+        min-height: 320px;
+        max-width: 253px;
+        border-radius: 30px;
+        /* necesito ayuda con esto, con el borde*/
+        border: 1px solid #143246;
+        background-color: #E9F2FE;
+        display: flex;
+        flex-direction: column;
+        padding: 32px 15px;
+        /* Evita que el fondo se extienda debajo del borde */
+        background-clip: padding-box;
+        overflow: hidden;
+        margin: 0;
+        gap: 15px;
+
+        .card-icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 140px;
+
+          img.card-icon {
+            background-color: transparent;
+            width: 80px;
+            height: 80px;
+            align-self: center;
+            margin: 0 auto;
+          }
+        }
+
+        .card-body {
+          margin: 0;
+          padding: 0 !important;
+          /* margin-top: auto; */
+          display: flex;
+          flex-direction: column;
+          /*el body ocupe todo el espacio restante*/
+          flex: 1;
+
+          h3.card-title {
+            margin-top: 13px;
+            margin-bottom: 16px;
+            font-weight: 400;
+
+            a {
+              text-decoration: none;
+              color: #101E37;
+              font-size: 22px;
+            }
+          }
+
+          .card-text {
+            color: #101E37;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      @media (max-width: 976px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        .card {
+          min-width: 33%;
+        }
+      }
+
+      @media (max-width: 592px) {
+        flex-direction: column;
+        gap: 15px;
+
+        .card {
+          width: 100%;
+          max-width: 80%;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .card {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
+    /* Trámites y servicios digitales  */
   </style>
 </head>
 
@@ -542,6 +672,100 @@
                   </section>
                   </p>
 
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <div class="container">
+                    <h2 class="tramites-servicios">Trámites y servicios digitales</h2>
+                    <div class="card-deck card-column tramites-servicios">
+                      <div class="card">
+                        <div class="card-icon-container">
+                          <img src="./tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">
+                            <a href="#" class="card-title-link stretched-link">TAD</a>
+                          </h3>
+                          <p class="card-text">Gestioná todos tus trámites en la Plataforma de Trámites a Distancia
+                            (TAD).
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-icon-container">
+                          <img src="./tramites_servicios_2_tad.svg" alt="" class="card-icon">
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">
+                            <a href="#" class="card-title-link">BA Colaborativa</a>
+                          </h3>
+                          <p class="card-text">
+                            Hacé solicitudes y reclamos de manera rápida y sencilla, desde cualquier lugar.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-icon-container">
+                          <img src="./tramites_servicios_3_datos.svg" alt="" class="card-icon">
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">
+                            <a href="#" class="card-title-link">Datos BA</a>
+                          </h3>
+                          <p class="card-text">Accedé a todos los datos de Gobierno de la Ciudad.</p>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-icon-container">
+                          <img src="./tramites_servicios_4_firma_digital.svg" alt="" class="card-icon">
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">
+                            <a href="#" class="card-title-link">Firma Digital Ciudad</a>
+                          </h3>
+                          <p class="card-text">Generá certificados digitales de forma segura y confiable.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
+                  <!-- Trámites y servicios digitales -->
 
                   <!-- DESTACADO OBELISCO -->
                   <div class="ob-destacado panel-horizontal-content bg-dark">
@@ -640,9 +864,7 @@
                   border-radius: 30px;
                 }
 
-                @media (width >=768px) {
-
-                }
+                @media (width >=768px) {}
               </style>
               <!-- <section class="app-instructivos-container">
                             <h3>Accedé a los instructivos para saber cómo registrarte
@@ -661,7 +883,7 @@
                       Secretario de Innovación y Transformación Digital
                     </p>
                     <h5><strong>
-                      Contacto</strong>
+                        Contacto</strong>
                     </h5>
                     <p class="mb-0">Teléfono: 4323-9380 (int. 4011)</p>
                     <p>Correo electrónico: rpiola@buenosaires.gob.ar</p>
@@ -677,7 +899,7 @@
                         <li class="list-inline-item mr-1 list-item-social">
                           <a class="item-social" href=""><i class="bx bxl-twitter bx-sm"></i></a>
                         </li>
-                      </ul>                      
+                      </ul>
                     </div>
                   </div>
                 </div>
