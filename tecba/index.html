@@ -18,7 +18,12 @@
 
   <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
-
+  <!-- archivo tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <style type="text/css">
     .card-border-bottom-blue {
       border-bottom: 8px solid #5c88d6;
@@ -187,6 +192,87 @@
       }
     }
 
+    div.ob-destacado.bg-dark.panel-horizontal-content {
+      font-family: "Archivo", sans-serif;
+      padding: 64px;
+      max-height: 388px;
+      max-width: 1109px;
+      background-color: #101E37 !important;
+      border-radius: 30px;
+
+      img {
+        width: 404px;
+        height: 228px;
+      }
+
+      .card.panel-horizontal {
+        flex-direction: row-reverse;
+        color: white;
+
+        .card-body {
+          padding: 0;
+          margin: 0;
+
+          h2.card-title {
+            margin: 24px 0 0 0;
+          }
+
+          .card-text {
+            width: 90%;
+            font-size: 20px;
+          }
+
+          .panel-footer {
+            .btn {
+              border-radius: 30px;
+              padding: 12px 20px;
+              color: white;
+              min-width: 193px;
+
+              &.btn-primary {
+                background-color: #336ACC;
+                border: none;
+              }
+
+              &.btn-outline-light {
+                border-color: white;
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1120px) {
+        padding: 34px;
+        max-height: 100%;
+
+        img {
+          width: 100%;
+          /*  
+          minimo de alto 200px, 
+          si 44vw da menos de 200px usa 180px
+          si 44vw da más de 500px usa 500px
+          si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
+          usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
+          */
+          height: clamp(200px, 44vw, 500px);
+          object-fit: cover;
+        }
+
+        .card.panel-horizontal {
+          width: 100%;
+          flex-direction: column;
+
+          .card-body {
+
+            .card-text {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+    }
   </style>
 </head>
 
@@ -455,29 +541,26 @@
                     </div>
                   </section>
                   </p>
-                  
-                  <div class="app-store-container mb-5" id="descargar">
-                    <div class="app-content">
-                      <div>
-                        <h3>BAX: un concepto 
-                        que impulsa una Ciudad 
-                        innovadora, cercana y confiable.</h3>
 
-                        <p class="mb-md-4">
-                         Propone una experiencia ágil y natural desde el primer momento, con una navegación dinámica, fluida y adaptada a cada persona.
+
+                  <!-- DESTACADO OBELISCO -->
+                  <div class="ob-destacado panel-horizontal-content bg-dark">
+                    <div class="card card-simple panel-horizontal">
+                      <img src="./img_destacado_obelisco.svg" alt="descripción de imagen" class="card-img" />
+                      <div class="card-body">
+                        <h2 class="card-title">“Obelisco”, el sistema de diseño de Gobierno de la Ciudad</h2>
+                        <p class="card-text">
+                          Accedé a nuestro repositorio de estándares, guías y componentes de código
+                          abierto para diseñar productos digitales accesibles y funcionales.
                         </p>
-
-                        <div class="buttons">
-                          <a class="btn btn-secondary d-flex" href="">Conocé BAX</a>
+                        <div class="panel-footer">
+                          <button class="btn btn-primary">Ir a la librería</button>
+                          <button class="btn btn-outline-light" href="#">Acceder al figma</button>
                         </div>
-                      </div>
-
-                      <div class="star-img">
-                        <span><img alt="estrella bax" class="w-100"
-                            src="/sites/default/files/2025-12/estrella%201.png" /></span>
                       </div>
                     </div>
                   </div>
+                  <!-- DESTACADO OBELISCO -->
                 </div>
               </div>
             </div>
