@@ -198,111 +198,105 @@
       }
     }
 
-    /* DESTACADO OBELISCO */
-    div.ob-destacado.bg-dark.panel-horizontal-content {
-      font-family: "Archivo", sans-serif;
-      padding: 64px;
-      max-height: 388px;
-      max-width: 1109px;
-      background-color: #101E37 !important;
-      border-radius: 30px;
-
-      img {
-        width: 404px;
-        height: 228px;
-      }
-
-      .card.panel-horizontal {
-        flex-direction: row-reverse;
-        color: white;
-
-        .card-body {
-          padding: 0;
-          margin: 0;
-
-          h2.card-title {
-            margin: 24px 0 0 0;
-          }
-
-          .card-text {
-            width: 90%;
-            font-size: 20px;
-          }
-
-          .panel-footer {
-            .btn {
-              border-radius: 30px;
-              padding: 12px 20px;
-              color: white;
-              min-width: 193px;
-
-              &.btn-primary {
-                background-color: #336ACC;
-                border: none;
-              }
-
-              &.btn-outline-light {
-                border-color: white;
-              }
-            }
-          }
-        }
-      }
-
-      @media (max-width: 1120px) {
-        padding: 34px;
-        max-height: 100%;
-
-        img {
-          width: 100%;
-          /*  
-          minimo de alto 200px, 
-          si 44vw da menos de 200px usa 180px
-          si 44vw da más de 500px usa 500px
-          si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
-          usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
-          */
-          height: clamp(200px, 44vw, 500px);
-          object-fit: cover;
-        }
-
-        .card.panel-horizontal {
-          width: 100%;
-          flex-direction: column;
-
-          .card-body {
-
-            .card-text {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-
+    /* HEADER NAVBAR */
+    header.tecba-navbar {
+      background-color: transparent;
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      height: 80px !important;
     }
 
-    /* DESTACADO OBELISCO */
-
-    /* Información institucional */
-    .institucional-container {
-      background-color: #CAF2EC;
-      padding: 32px 40px;
-      border-radius: 30px;
+    header.tecba-navbar .form-search {
+      height: auto;
     }
 
-    /* Información institucional */
+    header.tecba-navbar .tecba-search.form-control-sm {
+      height: 64px;
+      width: 24rem;
+    }
 
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
+    header.tecba-navbar .form-search .form-group .btn {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (width > 1160px) {
+      header.tecba-navbar {
+        height: 7rem;
+      }
+    }
+
+    /* INPUT SEARCH */
+    .tecba-search.form-control.input-search {
+      padding: 8px 142px 8px 40px;
+      border-radius: 100px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
+      background-color: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(5.25px);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z'/%3E%3C/svg%3E");
+      background-position: center left .8rem;
+      background-size: 16px;
+      color: rgba(255, 255, 255, 0.80);
+    }
+
+    .tecba-search::placeholder {
+      color: rgba(255, 255, 255, 0.80);
+    }
+
+    .tecba-search:focus {
+      outline: unset !important;
+      background-color: rgba(255, 255, 255, 0.18);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
+    }
+
+    /* BUTTON */
+    .tecba-button {
+      border-radius: 45px;
+      padding: 12px 20px;
+    }
+
+    .tecba-button.btn-cyan {
+      background-color: #64D8C8;
+      color: #143246;
+    }
+
+    .tecba-button.btn-cyan:hover,
+    .tecba-button.btn-cyan:active,
+    .tecba-button.btn-cyan:focus {
+      box-shadow: 0 0 0 2px #64D8C8;
+    }
+
+    .tecba-button.btn-dark {
+      background-color: #101E37;
+      color: #fff;
+    }
+
+    .tecba-button.btn-dark:hover,
+    .tecba-button.btn-dark:active,
+    .tecba-button.btn-dark:focus {
+      box-shadow: 0 0 0 2px #101E37;
+    }
+
+    .tecba-button.btn-light {
+      background-color: #F3F6F9;
+      color: #143246
+    }
+
+    .tecba-button.btn-light:hover,
+    .tecba-button.btn-light:active,
+    .tecba-button.btn-light:focus {
+      box-shadow: 0 0 0 2px #F3F6F9;
+    }
+
+    /* HEADER NAVBAR */
+
+    /* HERO */
+
+    /* HERO */
+
     /* Conocé los proyectos de TecBA */
     .ob-carousel.carousel {
       background-color: transparent;
@@ -398,7 +392,7 @@
         }
       }
 
-       @media (width >=768px) {
+      @media (width >=768px) {
         .carousel-inner {
           max-width: unset;
           padding: 0;
@@ -407,22 +401,8 @@
       }
     }
 
+    /* Conocé los proyectos de TecBA */
 
-
-
-
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
-    /* Conocé los proyectos de TecBA */
     /* Trámites y servicios digitales  */
     h2.tramites-servicios {
       font-size: 32px;
@@ -528,98 +508,99 @@
 
     /* Trámites y servicios digitales  */
 
-    /* HEADER NAVBAR */
-    header.tecba-navbar {
-      background-color: transparent;
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      height: 80px !important;
-    }
+    /* DESTACADO OBELISCO */
+    div.ob-destacado.bg-dark.panel-horizontal-content {
+      font-family: "Archivo", sans-serif;
+      padding: 64px;
+      max-height: 388px;
+      max-width: 1109px;
+      background-color: #101E37 !important;
+      border-radius: 30px;
 
-    header.tecba-navbar .form-search {
-      height: auto;
-    }
-
-    header.tecba-navbar .tecba-search.form-control-sm {
-      height: 64px;
-      width: 24rem;
-    }
-
-    header.tecba-navbar .form-search .form-group .btn {
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    @media (width > 1160px) {
-      header.tecba-navbar {
-        height: 7rem;
+      img {
+        width: 404px;
+        height: 228px;
       }
+
+      .card.panel-horizontal {
+        flex-direction: row-reverse;
+        color: white;
+
+        .card-body {
+          padding: 0;
+          margin: 0;
+
+          h2.card-title {
+            margin: 24px 0 0 0;
+          }
+
+          .card-text {
+            width: 90%;
+            font-size: 20px;
+          }
+
+          .panel-footer {
+            .btn {
+              border-radius: 30px;
+              padding: 12px 20px;
+              color: white;
+              min-width: 193px;
+
+              &.btn-primary {
+                background-color: #336ACC;
+                border: none;
+              }
+
+              &.btn-outline-light {
+                border-color: white;
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 1120px) {
+        padding: 34px;
+        max-height: 100%;
+
+        img {
+          width: 100%;
+          /*  
+          minimo de alto 200px, 
+          si 44vw da menos de 200px usa 180px
+          si 44vw da más de 500px usa 500px
+          si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
+          usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
+          */
+          height: clamp(200px, 44vw, 500px);
+          object-fit: cover;
+        }
+
+        .card.panel-horizontal {
+          width: 100%;
+          flex-direction: column;
+
+          .card-body {
+
+            .card-text {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
     }
 
-    /* INPUT SEARCH */
-    .tecba-search.form-control.input-search {
-      padding: 8px 142px 8px 40px;
-      border-radius: 100px;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
-      background-color: rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(5.25px);
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z'/%3E%3C/svg%3E");
-      background-position: center left .8rem;
-      background-size: 16px;
-      color: rgba(255, 255, 255, 0.80);
+    /* DESTACADO OBELISCO */
+
+    /* Información institucional */
+    .institucional-container {
+      background-color: #CAF2EC;
+      padding: 32px 40px;
+      border-radius: 30px;
     }
 
-    .tecba-search::placeholder {
-      color: rgba(255, 255, 255, 0.80);
-    }
-
-    .tecba-search:focus {
-      outline: unset !important;
-      background-color: rgba(255, 255, 255, 0.18);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
-    }
-
-    /* BUTTON */
-    .tecba-button {
-      border-radius: 45px;
-      padding: 12px 20px;
-    }
-
-    .tecba-button.btn-cyan {
-      background-color: #64D8C8;
-      color: #143246;
-    }
-
-    .tecba-button.btn-cyan:hover,
-    .tecba-button.btn-cyan:active,
-    .tecba-button.btn-cyan:focus {
-      box-shadow: 0 0 0 2px #64D8C8;
-    }
-
-    .tecba-button.btn-dark {
-      background-color: #101E37;
-      color: #fff;
-    }
-
-    .tecba-button.btn-dark:hover,
-    .tecba-button.btn-dark:active,
-    .tecba-button.btn-dark:focus {
-      box-shadow: 0 0 0 2px #101E37;
-    }
-
-    .tecba-button.btn-light {
-      background-color: #F3F6F9;
-      color: #143246
-    }
-
-    .tecba-button.btn-light:hover,
-    .tecba-button.btn-light:active,
-    .tecba-button.btn-light:focus {
-      box-shadow: 0 0 0 2px #F3F6F9;
-    }
+    /* Información institucional */
   </style>
 </head>
 
