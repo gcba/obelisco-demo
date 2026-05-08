@@ -41,7 +41,11 @@
     }
 
     header.hero-landing nav ol.breadcrumb li.breadcrumb-item a {
-      color: black;
+      color: rgb(255, 255, 255);
+    }
+
+    header.hero-landing nav ol.breadcrumb li.breadcrumb-item::before {
+      background: transparent url('data:image/svg+xml;utf8,%3csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:%23FFFFFF;transform:;-ms-filter:"%3e%3cpath d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"%3e%3c/path%3e%3c/svg%3e') no-repeat 50%;
     }
 
     header.hero-landing {
@@ -294,6 +298,79 @@
     /* HEADER NAVBAR */
 
     /* HERO */
+    div.container-headers {
+      position: relative;
+      min-height: 756px;
+      /* revisar altura y colores*/
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -32.27%, #000 83.25%);
+
+    }
+
+    .ob-hero.hero-landing.hero-video {
+      position: relative;
+      min-height: 756px;
+      display: flex;
+      align-items: center;
+      background: transparent;
+
+      /* z-index 0 */
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      /* Degradado encima del video z-index 1*/
+      .ob-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) -32.27%, #000 83.25%);
+        z-index: 1;
+      }
+
+      /* Contenido del hero encima del degradado */
+      .container {
+        position: relative;
+        z-index: 2;
+        color: white;
+        width: 100%;
+
+        h1 {
+          margin-bottom: 40px;
+        }
+
+        p.lead {
+          margin-bottom: 40px;
+        }
+
+        .container-dropdowns {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 13px;
+        }
+
+      }
+
+      .dropdown-menu .dropdown-item {
+        display: flex;
+      }
+
+      .dropdown .btn.btn-dropdown.btn-dropdown-border,
+      .dropdown .btn-dropdown.btn-dropdown-border.progression-link {
+        border-radius: 25px;
+      }
+    }
 
     /* HERO */
 
@@ -605,118 +682,172 @@
 </head>
 
 <body>
-  <header class="navbar tecba-navbar navbar-lg">
-    <div class="container">
-      <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
-        <img class="header-logo" src="./imgs/ba-logo.svg" alt="Ciudad de buenos aires" />
-      </a>
-      <div class="navbar-search d-responsive ml-auto">
-        <button type="button" class="btn btn-icon tecba-button btn-dark">
-          <span class="material-icons-round">search</span>
-        </button>
-      </div>
-
-      <div class="list-group-content d-responsive ml-2">
-        <button type="button" class="btn btn-icon tecba-button btn-light">
-          <span class="material-icons-round">menu</span>
-        </button>
-      </div>
-
-      <div class="list-group-content d-responsive ml-2">
-        <button type="button" class="btn btn-icon tecba-button btn-cyan">
-          <span class="material-icons-round">person</span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills">
-          <li class="nav-item d-responsive">
-            <div class="navbar-search">
-              <form class="form-search">
-                <div class="form-group">
-                  <input type="search" class="form-control form-control-sm input-search tecba-search"
-                    id="header-search-example-4" name="header-search" aria-label="Ingrese su búsqueda"
-                    placeholder="¿En que te podemos ayudar?" />
-                  <button type="button" class="btn btn-dark tecba-button">Buscar</button>
-                </div>
-              </form>
-            </div>
-          </li>
-          <li class="nav-item d-responsive">
-            <button type="button" class="btn btn-icon tecba-button btn-cyan">
-              <span class="material-icons-round">person</span>
-              Ingresar
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <article class="pb-5 mb-4">
-
-
-      <header class="hero-landing bg-content-hero-cyan">
-        <div class="position-relative d-flex justify-content-center overflow-hidden">
-          <video src="bax-portada.mp4" class="hero-bg-image" autoplay="" muted="" loop="">
-            Your browser does not support the video tag.
-          </video>
-          <img class="position-absolute bax-logo d-none d-md-block" src="BAX-desktop.png" alt="BAX" />
-          <img class="position-absolute bax-logo d-md-none" src="BAX-mobile.png" alt="BAX" />
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <div class="container-headers">
+    <header class="navbar tecba-navbar navbar-lg">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.buenosaires.gob.ar/">
+          <img class="header-logo" src="./imgs/ba-logo.svg" alt="Ciudad de buenos aires" />
+        </a>
+        <div class="navbar-search d-responsive ml-auto">
+          <button type="button" class="btn btn-icon tecba-button btn-dark">
+            <span class="material-icons-round">search</span>
+          </button>
         </div>
 
-        <div class="container py-5">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item">
-                <a href="#">Desarrollo económico y producción</a>
-              </li>
-              <li class="breadcrumb-item"><a href="#">Empleados</a></li>
-              <li class="breadcrumb-item"><a href="#">Asesoramiento</a></li>
-            </ol>
-          </nav>
-          <div class="row">
-            <div class="col-12 col-lg-8">
-              <div class="mt-2 pt-1">
-                <h1 class="mb-3">Secretaría de Innovación y Transformación Digital</h1>
-                <p class="lead">
-                  Trabajamos en soluciones integrales para mejorar la calidad de vida
-                  de los vecinos y visitantes de la Ciudad,
-                  a partir de la tecnología y la innovación.
-                </p>
+        <div class="list-group-content d-responsive ml-2">
+          <button type="button" class="btn btn-icon tecba-button btn-light">
+            <span class="material-icons-round">menu</span>
+          </button>
+        </div>
 
+        <div class="list-group-content d-responsive ml-2">
+          <button type="button" class="btn btn-icon tecba-button btn-cyan">
+            <span class="material-icons-round">person</span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills">
+            <li class="nav-item d-responsive">
+              <div class="navbar-search">
+                <form class="form-search">
+                  <div class="form-group">
+                    <input type="search" class="form-control form-control-sm input-search tecba-search"
+                      id="header-search-example-4" name="header-search" aria-label="Ingrese su búsqueda"
+                      placeholder="¿En que te podemos ayudar?" />
+                    <button type="button" class="btn btn-dark tecba-button">Buscar</button>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="nav-item d-responsive">
+              <button type="button" class="btn btn-icon tecba-button btn-cyan">
+                <span class="material-icons-round">person</span>
+                Ingresar
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <header class="hero-landing hero-video ob-hero">
+      <video src="./imgs/VideoSecretaria.mp4" autoplay muted loop playsinline></video>
+      <div class="ob-bg"></div>
+      <div class="container py-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Buenos aires</a></li>
+            <li class="breadcrumb-item"><a href="#">Jefatura de gabinete</a></li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="mt-2 pt-1">
+              <h1 class="mb-3">Secretaría de Innovación y Transformación Digital</h1>
+              <p class="lead">
+                Trabajamos en soluciones integrales para mejorar la calidad de vida
+                de los vecinos y visitantes de la Ciudad,
+                a partir de la tecnología y la innovación.
+              </p>
+
+              <div class="container-dropdowns">
                 <div class="dropdown">
                   <button type="button" class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border dropdown-toggle"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="btn-dropdown-text">Desplegable</span>
-                    <!-- <span class="material-icons-round btn-dropdown-icon">expand_more</span> -->
+                    <span class="btn-dropdown-text">Transparencia</span>
                   </button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
                       <span class="material-icons-round">info</span>
                       <span class="item-text">Opción de navegación</span>
-                      <span class="material-icons-round">info</span>
                     </a>
                     <a class="dropdown-item" href="#">
                       <span class="material-icons-round">info</span>
                       <span class="item-text text-right">Opción de navegación</span>
-                      <span class="material-icons-round">info</span>
                     </a>
                     <a class="dropdown-item" href="#" disabled="">
                       <span class="material-icons-round">info</span>
                       <span class="item-text text-right">Opción de navegación</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="dropdown">
+                  <button type="button" class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border dropdown-toggle"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="btn-dropdown-text">Institucional</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
                       <span class="material-icons-round">info</span>
+                      <span class="item-text">Opción de navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="material-icons-round">info</span>
+                      <span class="item-text text-right">Opción de navegación</span>
+                    </a>
+                    <a class="dropdown-item" href="#" disabled="">
+                      <span class="material-icons-round">info</span>
+                      <span class="item-text text-right">Opción de navegación</span>
                     </a>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+  </div>
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
+  <!-- HERO -->
 
+  <main>
+    <article class="pb-5 mb-4">
       <div class="container pt-4">
         <div class="row">
           <div class="col-12 col-lg-12">
@@ -727,20 +858,6 @@
                   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
                   <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
 
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
                   <!-- Conocé los proyectos de TecBA -->
                   <div id="carousel-cards-dark" class="carousel cards slide ob-carousel">
                     <!-- Encabezado con título y botones alineados -->
@@ -821,31 +938,7 @@
                         aria-label="Slide 3"></button>
                     </div>
 
-                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-dark"
-                      data-bs-slide="prev">
-                      <i class='bx bx-chevron-left'></i>
-                      <span class="sr-only">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-dark"
-                      data-bs-slide="next">
-                      <i class='bx bx-chevron-right'></i>
-                      <span class="sr-only">Siguiente</span>
-                    </button> -->
                   </div>
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
-                  <!-- Conocé los proyectos de TecBA -->
                   <!-- Conocé los proyectos de TecBA -->
 
                   <!-- Trámites y servicios digitales -->
