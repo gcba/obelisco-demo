@@ -304,7 +304,7 @@
     /* Conocé los proyectos de TecBA */
     /* Conocé los proyectos de TecBA */
     /* Conocé los proyectos de TecBA */
-    .ob-carousel {
+    .ob-carousel.carousel {
       background-color: transparent;
       padding: 120px 0 32px 0;
 
@@ -349,48 +349,67 @@
         }
       }
 
+      .card-items {
+        padding: 0;
+        display: flex;
+        gap: 24px;
+        flex-wrap: nowrap;
+        align-items: stretch;
+      }
+
       >.carousel-control-prev,
       >.carousel-control-next {
         display: none;
       }
+
+      /* Tarjetas del carrusel */
+      .card.ob-tecba {
+        width: 33%;
+        height: 500px;
+        min-width: 346px;
+        min-height: 500px;
+        flex: 0 0 calc(33.333% - 16px);
+        min-width: 280px;
+        height: auto;
+        min-height: 500px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .card.ob-tecba.ob-tecba-bax {
+        background-image: url("./imgs/ob-tecba-bax.svg");
+      }
+
+      .card.ob-tecba.ob-tecba-boti {
+        background-image: url("./imgs/ob-tecba-boti.svg");
+      }
+
+      .card.ob-tecba.ob-tecba-ciberseguridad {
+        background-image: url("./imgs/ob-tecba-ciberseguridad.svg");
+      }
+
+      /* Tarjetas del carrusel */
+
+
+      @media (width >=992px) {
+        .carousel-inner {
+          max-width: unset;
+        }
+      }
+
+       @media (width >=768px) {
+        .carousel-inner {
+          max-width: unset;
+          padding: 0;
+          margin: 0;
+        }
+      }
     }
 
-    /* .ob-carousel {
-      position: relative;
-      background-color: transparent;
-      padding: 120px 0 32px 0;
 
-      .carousel-control-prev,
-      .carousel-control-next {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: auto;
-        bottom: auto;
-        width: 63px;
-        height: 63px;
-        opacity: 1;
-        border-radius: 50%;
-        stroke: #101E37;
 
-        i {
-          color: #101E37;
-          width: 20px;
-          height: 20px;
-        }
 
-      }
-
-      .carousel-control-next {
-        right: 0;
-        left: auto;
-      }
-
-      .carousel-control-prev {
-        right: 8%;
-        left: auto;
-      }
-    } */
 
     /* Conocé los proyectos de TecBA */
     /* Conocé los proyectos de TecBA */
@@ -727,7 +746,20 @@
                   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
                   <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
 
-
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
                   <!-- Conocé los proyectos de TecBA -->
                   <div id="carousel-cards-dark" class="carousel cards slide ob-carousel">
                     <!-- Encabezado con título y botones alineados -->
@@ -751,45 +783,16 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="card-items">
-                          <div class="card-deck card-column tramites-servicios">
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link stretched-link">TAD</a>
-                                </h3>
-                                <p class="card-text">
-                                  Gestioná todos tus trámites en la Plataforma de Trámites a Distancia (TAD).
-                                </p>
-                              </div>
-                            </div>
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_2_tad.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">BA Colaborativa</a>
-                                </h3>
-                                <p class="card-text">
-                                  Hacé solicitudes y reclamos de manera rápida y sencilla, desde cualquier lugar.
-                                </p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-bax">
+                            <a href="http://"></a>
+                          </div>
 
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_3_datos.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">Datos BA</a>
-                                </h3>
-                                <p class="card-text">Accedé a todos los datos de Gobierno de la Ciudad.</p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-boti">
+                            <a href="http://"></a>
+                          </div>
+
+                          <div class="card ob-tecba ob-tecba-ciberseguridad">
+                            <a href="http://"></a>
                           </div>
 
                         </div>
@@ -797,94 +800,33 @@
 
                       <div class="carousel-item">
                         <div class="card-items">
-                          <div class="card-deck card-column tramites-servicios">
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_4_firma_digital.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">Firma Digital Ciudad</a>
-                                </h3>
-                                <p class="card-text">Generá certificados digitales de forma segura y confiable.</p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-bax">
+                            <a href="http://"></a>
+                          </div>
 
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link stretched-link">TAD</a>
-                                </h3>
-                                <p class="card-text">Gestioná todos tus trámites en la Plataforma de Trámites a
-                                  Distancia
-                                  (TAD).
-                                </p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-boti">
+                            <a href="http://"></a>
+                          </div>
 
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_2_tad.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">BA Colaborativa</a>
-                                </h3>
-                                <p class="card-text">
-                                  Hacé solicitudes y reclamos de manera rápida y sencilla, desde cualquier lugar.
-                                </p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-ciberseguridad">
+                            <a href="http://"></a>
                           </div>
                         </div>
                       </div>
 
                       <div class="carousel-item">
                         <div class="card-items">
-                          <div class="card-deck card-column tramites-servicios">
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_3_datos.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">Datos BA</a>
-                                </h3>
-                                <p class="card-text">Accedé a todos los datos de Gobierno de la Ciudad.</p>
-                              </div>
-                            </div>
-
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_4_firma_digital.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link">Firma Digital Ciudad</a>
-                                </h3>
-                                <p class="card-text">Generá certificados digitales de forma segura y confiable.</p>
-                              </div>
-                            </div>
-
-                            <div class="card">
-                              <div class="card-icon-container">
-                                <img src="./tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
-                              </div>
-                              <div class="card-body">
-                                <h3 class="card-title">
-                                  <a href="#" class="card-title-link stretched-link">TAD</a>
-                                </h3>
-                                <p class="card-text">Gestioná todos tus trámites en la Plataforma de Trámites a
-                                  Distancia
-                                  (TAD).
-                                </p>
-                              </div>
-                            </div>
+                          <div class="card ob-tecba ob-tecba-bax">
+                            <a href="http://"></a>
                           </div>
 
+                          <div class="card ob-tecba ob-tecba-boti">
+                            <a href="http://"></a>
+                          </div>
+
+                          <div class="card ob-tecba ob-tecba-ciberseguridad">
+                            <a href="http://"></a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -909,7 +851,20 @@
                       <span class="sr-only">Siguiente</span>
                     </button> -->
                   </div>
-                  <!-- </div> -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
+                  <!-- Conocé los proyectos de TecBA -->
                   <!-- Conocé los proyectos de TecBA -->
 
                   <!-- Trámites y servicios digitales -->
@@ -919,7 +874,7 @@
                     <div class="card-deck card-column tramites-servicios">
                       <div class="card">
                         <div class="card-icon-container">
-                          <img src="./tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
+                          <img src="./imgs/tramites_servicios_1_ba_colaborativa.svg" alt="" class="card-icon">
                         </div>
                         <div class="card-body">
                           <h3 class="card-title">
@@ -933,7 +888,7 @@
 
                       <div class="card">
                         <div class="card-icon-container">
-                          <img src="./tramites_servicios_2_tad.svg" alt="" class="card-icon">
+                          <img src="./imgs/tramites_servicios_2_tad.svg" alt="" class="card-icon">
                         </div>
                         <div class="card-body">
                           <h3 class="card-title">
@@ -947,7 +902,7 @@
 
                       <div class="card">
                         <div class="card-icon-container">
-                          <img src="./tramites_servicios_3_datos.svg" alt="" class="card-icon">
+                          <img src="./imgs/tramites_servicios_3_datos.svg" alt="" class="card-icon">
                         </div>
                         <div class="card-body">
                           <h3 class="card-title">
@@ -959,7 +914,7 @@
 
                       <div class="card">
                         <div class="card-icon-container">
-                          <img src="./tramites_servicios_4_firma_digital.svg" alt="" class="card-icon">
+                          <img src="./imgs/tramites_servicios_4_firma_digital.svg" alt="" class="card-icon">
                         </div>
                         <div class="card-body">
                           <h3 class="card-title">
@@ -975,7 +930,7 @@
                   <!-- DESTACADO OBELISCO -->
                   <div class="ob-destacado panel-horizontal-content bg-dark my-5">
                     <div class="card card-simple panel-horizontal">
-                      <img src="./img_destacado_obelisco.svg" alt="descripción de imagen" class="card-img" />
+                      <img src="./imgs/img_destacado_obelisco.svg" alt="descripción de imagen" class="card-img" />
                       <div class="card-body">
                         <h2 class="card-title">“Obelisco”, el sistema de diseño de Gobierno de la Ciudad</h2>
                         <p class="card-text">
@@ -1001,7 +956,7 @@
               <div class="responsive-scroll vertical-cards-container" tabindex="0">
                 <div class="card-deck max-cards-3 card-column">
                   <div class="card">
-                    <img src="img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
                       <div class="card-badges">
                         <span class="badge badge-secondary">Etiqueta 1</span>
@@ -1017,7 +972,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
                       <div class="card-badges">
                         <span class="badge badge-secondary">Etiqueta 1</span>
@@ -1033,7 +988,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img src="img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
                       <div class="card-badges">
                         <span class="badge badge-secondary">Etiqueta 1</span>
@@ -1055,11 +1010,15 @@
 
 
             <!-- Información institucional -->
+
+
+
             <div class="mt-5">
               <h2 class="tramites-servicios">Información institucional</h2>
               <section class="institucional-container">
                 <div class="institucional-bloque p-3 rounded-3 gap-3">
-                  <img src="raul.jpg" class="rounded mr-4" alt="descripción alternativa" width="150" height="150">
+                  <img src="./imgs/raul.jpg" class="rounded mr-4" alt="descripción alternativa" width="150"
+                    height="150">
                   <div class="institucional-descripcion">
                     <h4 class="h4">
                       Raúl Piola
