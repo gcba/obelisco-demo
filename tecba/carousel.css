@@ -38,6 +38,15 @@
   display: block;
 }
 
+/* ========= OBELISCO 1 OVERRIDE ========== */
+.carousel-item-next:not(.carousel-item-left),
+.active.carousel-item-right,
+.carousel-item-prev:not(.carousel-item-right),
+.active.carousel-item-left {
+  transform: unset;
+}
+/* ========= OBELISCO 1 OVERRIDE ========== */
+
 .carousel-item-next:not(.carousel-item-start),
 .active.carousel-item-end {
   transform: translateX(100%);
