@@ -391,33 +391,40 @@
           margin: 0;
           padding: 0;
         }
+      }
 
-        .carousel-buttons {
-          display: flex;
-          gap: 12px;
+			.carousel-indicators {
+				height: auto;
+			}
 
-          .carousel-control-prev,
-          .carousel-control-next {
-            position: static;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 63px;
-            height: 63px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
+			.carousel-buttons {
+				display: flex;
+				gap: 12px;
 
-            i {
-              color: #101E37;
-              font-size: 28px;
-            }
+				.carousel-control-prev,
+				.carousel-control-next {
+					width: 63px;
+					height: 63px;
+					border-radius: 50%;
+					background: white;
+					border: solid 2px #101E37;
+					transition: all 0.3s ease;
+					box-sizing: border-box;
+					position: unset;
 
-            &:hover {
-              background: rgba(0, 0, 0, 0.1);
-            }
-          }
-        }
+					span {
+						color: #101E37;
+						font-size: 28px;
+					}
+
+					&:hover {
+						background: rgba(0, 0, 0, 0.1);
+					}
+
+					&:focus {
+						box-shadow: 0 0 0 0.025rem #101E37;
+					}
+				}
       }
 
       .card-items {
@@ -435,10 +442,7 @@
 
       /* Tarjetas del carrusel */
       .card.ob-tecba {
-        width: 33%;
-        height: 500px;
-        min-width: 346px;
-        min-height: 500px;
+				width: 100%;
         flex: 0 0 calc(33.333% - 16px);
         min-width: 280px;
         height: auto;
@@ -446,6 +450,7 @@
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+				box-shadow: unset;
       }
 
       .card.ob-tecba.ob-tecba-bax {
@@ -460,25 +465,63 @@
         background-image: url("./imgs/ob-tecba-ciberseguridad.svg");
       }
 
+			@media (width >= 576px) {
+
+			}
+
       /* Tarjetas del carrusel */
-
-
-      @media (width >=992px) {
-        .carousel-inner {
-          max-width: unset;
-        }
-      }
-
-      @media (width >=768px) {
+			@media (width >=768px) {
         .carousel-inner {
           max-width: unset;
           padding: 0;
           margin: 0;
         }
+
+				.carousel-indicators {
+					justify-content: center;
+				}
+
+				.card.ob-tecba {
+					min-width: calc(33.333% - 16px);
+					min-height: 320px;
+				}
+      }
+
+      @media (width >=976px) {
+        .carousel-inner {
+          max-width: unset;
+        }
+
+				.card.ob-tecba {
+					min-height: 500px;
+				}
       }
     }
 
     /* Conocé los proyectos de TecBA */
+
+		/* ACCESO (link) */
+		.tecba-access {
+			color: #212121;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 24px;
+			text-decoration-line: underline;
+			text-decoration-style: solid;
+			text-decoration-skip-ink: none;
+			text-decoration-thickness: auto;
+			text-underline-offset: auto;
+			text-underline-position: from-font;
+
+			&.access::after {
+				content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="fill: rgba(33, 33, 33, 1);transform: ;msFilter:;"><path d="M7.59375 22.5L6 20.9062L18.6562 8.25H7.5V6H22.5V21H20.25V9.84375L7.59375 22.5Z"/></svg>');
+			}
+
+			&:hover {
+				color: #212121;
+			}
+		}
+		/* ACCESO (link) */
 
     /* Trámites y servicios digitales  */
     h2.tramites-servicios {
@@ -998,25 +1041,118 @@
             <div class="mt-5">
               <div class="content">
                 <div class="field field--type-text-with-summary field--label-hidden field__item">
-                  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-                  <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet" />
-
                   <!-- Conocé los proyectos de TecBA -->
-                  <div id="carousel-cards-dark" class="carousel cards slide ob-carousel">
+									<div id="carousel-cards-mobile" class="carousel slide ob-carousel d-md-none">
+                    <!-- Encabezado con título y botones alineados -->
+                    <div class="carousel-header">
+                      <h2 class="tramites-servicios">Conocé los proyectos de TecBA</h2>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+												<div class="card ob-tecba ob-tecba-bax">
+													<a href="http://"></a>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-boti">
+													<a href="http://"></a>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-ciberseguridad">
+													<a href="http://"></a>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-bax">
+													<a href="http://"></a>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-boti">
+													<a href="http://"></a>
+												</div>
+											</div>
+
+                      <div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-ciberseguridad">
+													<a href="http://"></a>
+												</div>
+                      </div>
+
+                      <div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-bax">
+													<a href="http://"></a>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-boti">
+													<a href="http://"></a>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<div class="card ob-tecba ob-tecba-ciberseguridad">
+													<a href="http://"></a>
+												</div>
+											</div>
+                    </div>
+
+										<div class="d-flex justify-content-between align-items-center pt-3">
+											<div class="carousel-indicators">
+												<button type="button" data-bs-target="#carousel-cards-mobile" data-bs-slide-to="0" class="active"
+													aria-current="true" aria-label="Slide 1"></button>
+												<button type="button" data-bs-target="#carousel-cards-mobile" data-bs-slide-to="1"
+													aria-label="Slide 2"></button>
+												<button type="button" data-bs-target="#carousel-cards-mobile" data-bs-slide-to="2"
+													aria-label="Slide 3"></button>
+												<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="3" class=""
+                        	aria-current="true" aria-label="Slide 4"></button>
+												<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="4"
+													aria-label="Slide 5"></button>
+												<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="5"
+													aria-label="Slide 6"></button>
+													<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="6" class=""
+													aria-current="true" aria-label="Slide 7"></button>
+												<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="7"
+													aria-label="Slide 8"></button>
+												<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="8"
+													aria-label="Slide 9"></button>
+											</div>
+
+											<div class="carousel-buttons">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-mobile"
+                          data-bs-slide="prev">
+                          <span class="material-icons-round">arrow_back</span>
+                          <span class="sr-only">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-mobile"
+                          data-bs-slide="next">
+                          <span class="material-icons-round">arrow_forward</span>
+                          <span class="sr-only">Siguiente</span>
+                        </button>
+                      </div>
+										</div>
+
+                  </div>									
+
+                  <div id="carousel-cards" class="carousel slide ob-carousel d-none d-md-flex">
                     <!-- Encabezado con título y botones alineados -->
                     <div class="carousel-header">
                       <h2 class="tramites-servicios">Conocé los proyectos de TecBA</h2>
 
                       <div class="carousel-buttons">
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-dark"
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards"
                           data-bs-slide="prev">
-                          <i class='bx bx-chevron-left'></i>
+                          <span class="material-icons-round">arrow_back</span>
                           <span class="sr-only">Anterior</span>
                         </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-dark"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards"
                           data-bs-slide="next">
-                          <i class='bx bx-chevron-right'></i>
+                          <span class="material-icons-round">arrow_forward</span>
                           <span class="sr-only">Siguiente</span>
                         </button>
                       </div>
@@ -1073,16 +1209,22 @@
                     </div>
 
                     <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carousel-cards-dark" data-bs-slide-to="0" class="active"
+                      <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carousel-cards-dark" data-bs-slide-to="1"
+                      <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carousel-cards-dark" data-bs-slide-to="2"
+                      <button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                     </div>
 
                   </div>
+
+									<a class="access tecba-access" href="#" target="_blank" rel="noreferrer">Ver todos los proyectos</a>
                   <!-- Conocé los proyectos de TecBA -->
+
+
+
+
 
                   <!-- Trámites y servicios digitales -->
                   <div class="container my-5">
