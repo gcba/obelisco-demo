@@ -360,7 +360,11 @@
 		}
 		/* ACCESO (link) */
 
-
+		.tecba-card {
+			border-radius: 30px;
+			overflow: hidden;
+			box-shadow: 0 0 0 1px #000;
+		}
 
 
   </style>
@@ -780,6 +784,11 @@
                           background-position: center;
                           background-repeat: no-repeat;
                           box-shadow: unset;
+
+													a {
+														width: 100%;
+														height: 100%;
+													}
                         }
 
                         .card.ob-tecba.ob-tecba-bax {
@@ -1289,18 +1298,18 @@
                   <!-- DESTACADO OBELISCO -->
                 </div>
               </div>
-            </div>
+            
 
             <!-- Noticias principales -->
             <div class="mt-5">
               <h2 class="tramites-servicios">Noticias principales</h2>
 
-              <div class="responsive-scroll vertical-cards-container" tabindex="0">
+              <div class="responsive-scroll vertical-cards-container pb-4" tabindex="0">
                 <div class="card-deck max-cards-3 card-column">
-                  <div class="card">
-                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                  <div class="card tecba-card">
+                    <img src="./imgs/noticias-1.png" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
-                      <div class="card-badges">
+                      <div class="card-badges mb-2">
                         <span class="badge badge-secondary">Etiqueta 1</span>
                         <span class="badge badge-secondary">Etiqueta 2</span>
                       </div>
@@ -1309,14 +1318,14 @@
                           Título de la tarjeta con más de una línea
                         </a>
                       </h3>
-                      <p class="card-text">Descripción de la tarjeta</p>
+                      <p class="card-text m-0 mb-1">El Campeonato se disputará hasta el 6 de diciembre...</p>
                       <div class="card-info"><small>Fecha de publicación</small></div>
                     </div>
                   </div>
-                  <div class="card">
-                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                  <div class="card tecba-card">
+                    <img src="./imgs/noticias-2.png" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
-                      <div class="card-badges">
+                      <div class="card-badges mb-2">
                         <span class="badge badge-secondary">Etiqueta 1</span>
                         <span class="badge badge-secondary">Etiqueta 2</span>
                       </div>
@@ -1325,14 +1334,14 @@
                           Título de la tarjeta con más de una línea
                         </a>
                       </h3>
-                      <p class="card-text">Descripción de la tarjeta</p>
+                      <p class="card-text m-0 mb-1">El Campeonato se disputará hasta el 6 de diciembre...</p>
                       <div class="card-info"><small>Fecha de publicación</small></div>
                     </div>
                   </div>
-                  <div class="card">
-                    <img src="./imgs/img-top.jpg" class="card-img-top" alt="descripción de imagen" />
+                  <div class="card tecba-card">
+                    <img src="./imgs/noticias-3.png" class="card-img-top" alt="descripción de imagen" />
                     <div class="card-body">
-                      <div class="card-badges">
+                      <div class="card-badges mb-2">
                         <span class="badge badge-secondary">Etiqueta 1</span>
                         <span class="badge badge-secondary">Etiqueta 2</span>
                       </div>
@@ -1341,12 +1350,14 @@
                           Título de la tarjeta con más de una línea
                         </a>
                       </h3>
-                      <p class="card-text">Descripción de la tarjeta</p>
+                      <p class="card-text m-0 mb-1">El Campeonato se disputará hasta el 6 de diciembre...</p>
                       <div class="card-info"><small>Fecha de publicación</small></div>
                     </div>
                   </div>
                 </div>
               </div>
+
+							<a class="access tecba-access" href="#" target="_blank" rel="noreferrer">Ver todas las noticias</a>
             </div>
             <!-- Noticias principales -->
 
@@ -1441,7 +1452,7 @@
             </div>
             <!-- Información institucional -->
 
-
+</div>
           </div>
         </div>
       </div>
