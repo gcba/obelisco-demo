@@ -161,50 +161,7 @@
     /***********************************************************************************************************************/
     /*ESTILOS TECBA*/
 
-    .main-footer {
-      border-top-left-radius: 100px;
-      border-top-right-radius: 100px;
-      border-top: none !important;
-    }
 
-    ul {
-      padding-left: 0;
-      list-style: none;
-    }
-
-    .list-item-social {
-      border: 1px solid #101E37;
-      border-radius: 30px;
-      padding: 8px 12px;
-    }
-
-    .item-social {
-      color: #101e37 !important;
-    }
-
-    .institucional-bloque {
-      display: block;
-    }
-
-    .institucional-descripcion {
-      margin-top: 20px;
-    }
-
-    @media (width >=768px) {
-
-      .main-footer {
-        border-top-left-radius: 100px;
-        border-top-right-radius: 100px;
-      }
-
-      .institucional-bloque {
-        display: flex;
-      }
-
-      .institucional-descripcion {
-        margin-top: 0px;
-      }
-    }
 
     /* HEADER NAVBAR */
     header.tecba-navbar {
@@ -378,131 +335,7 @@
 
     /* HERO */
 
-    /* Conocé los proyectos de TecBA */
-    .ob-carousel.carousel {
-      background-color: transparent;
-      padding: 32px 0 32px 0;
 
-      .carousel-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 32px;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        .tramites-servicios {
-          margin: 0;
-          padding: 0;
-        }
-      }
-
-			.carousel-indicators {
-				height: auto;
-			}
-
-			.carousel-buttons {
-				display: flex;
-				gap: 12px;
-
-				.carousel-control-prev,
-				.carousel-control-next {
-					width: 63px;
-					height: 63px;
-					border-radius: 50%;
-					background: white;
-					border: solid 2px #101E37;
-					transition: all 0.3s ease;
-					box-sizing: border-box;
-					position: unset;
-
-					span {
-						color: #101E37;
-						font-size: 28px;
-					}
-
-					&:hover {
-						background: rgba(0, 0, 0, 0.1);
-					}
-
-					&:focus {
-						box-shadow: 0 0 0 0.025rem #101E37;
-					}
-				}
-      }
-
-      .card-items {
-        padding: 0;
-        display: flex;
-        gap: 24px;
-        flex-wrap: nowrap;
-        align-items: stretch;
-      }
-
-      >.carousel-control-prev,
-      >.carousel-control-next {
-        display: none;
-      }
-
-      /* Tarjetas del carrusel */
-      .card.ob-tecba {
-				width: 100%;
-        flex: 0 0 calc(33.333% - 16px);
-        min-width: 280px;
-        height: auto;
-        min-height: 500px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-				box-shadow: unset;
-      }
-
-      .card.ob-tecba.ob-tecba-bax {
-        background-image: url("./imgs/ob-tecba-bax.svg");
-      }
-
-      .card.ob-tecba.ob-tecba-boti {
-        background-image: url("./imgs/ob-tecba-boti.svg");
-      }
-
-      .card.ob-tecba.ob-tecba-ciberseguridad {
-        background-image: url("./imgs/ob-tecba-ciberseguridad.svg");
-      }
-
-			@media (width >= 576px) {
-
-			}
-
-      /* Tarjetas del carrusel */
-			@media (width >=768px) {
-        .carousel-inner {
-          max-width: unset;
-          padding: 0;
-          margin: 0;
-        }
-
-				.carousel-indicators {
-					justify-content: center;
-				}
-
-				.card.ob-tecba {
-					min-width: calc(33.333% - 16px);
-					min-height: 320px;
-				}
-      }
-
-      @media (width >=976px) {
-        .carousel-inner {
-          max-width: unset;
-        }
-
-				.card.ob-tecba {
-					min-height: 500px;
-				}
-      }
-    }
-
-    /* Conocé los proyectos de TecBA */
 
 		/* ACCESO (link) */
 		.tecba-access {
@@ -527,204 +360,9 @@
 		}
 		/* ACCESO (link) */
 
-    /* Trámites y servicios digitales  */
-    h2.tramites-servicios {
-      font-size: 32px;
-      margin-bottom: 32px;
-      font-family: "Archivo", sans-serif;
 
-    }
 
-    .card-deck.card-column.tramites-servicios {
-      font-family: "Archivo", sans-serif;
-      gap: 32px;
 
-      .card {
-        width: 253px;
-        min-height: 320px;
-        max-width: 253px;
-        border-radius: 30px;
-        /* necesito ayuda con esto, con el borde*/
-        border: 1px solid #143246;
-        background-color: #E9F2FE;
-        display: flex;
-        flex-direction: column;
-        padding: 32px 15px;
-        /* Evita que el fondo se extienda debajo del borde */
-        background-clip: padding-box;
-        overflow: hidden;
-        margin: 0;
-        gap: 15px;
-
-        .card-icon-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 140px;
-
-          img.card-icon {
-            background-color: transparent;
-            width: 80px;
-            height: 80px;
-            align-self: center;
-            margin: 0 auto;
-          }
-        }
-
-        .card-body {
-          margin: 0;
-          padding: 0 !important;
-          /* margin-top: auto; */
-          display: flex;
-          flex-direction: column;
-          /*el body ocupe todo el espacio restante*/
-          flex: 1;
-
-          h3.card-title {
-            margin-top: 13px;
-            margin-bottom: 16px;
-            font-weight: 400;
-
-            a {
-              text-decoration: none;
-              color: #101E37;
-              font-size: 22px;
-            }
-          }
-
-          .card-text {
-            color: #101E37;
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-          }
-        }
-      }
-
-      @media (max-width: 976px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-        .card {
-          min-width: 33%;
-        }
-      }
-
-      @media (max-width: 592px) {
-        flex-direction: column;
-        gap: 15px;
-
-        .card {
-          width: 100%;
-          max-width: 80%;
-        }
-      }
-
-      @media (max-width: 400px) {
-        .card {
-          width: 100%;
-          max-width: 100%;
-        }
-      }
-    }
-
-    /* Trámites y servicios digitales  */
-
-    /* DESTACADO OBELISCO */
-    div.ob-destacado.bg-dark.panel-horizontal-content {
-      font-family: "Archivo", sans-serif;
-      padding: 64px;
-      max-height: 388px;
-      max-width: 1109px;
-      background-color: #101E37 !important;
-      border-radius: 30px;
-
-      img {
-        width: 404px;
-        height: 228px;
-      }
-
-      .card.panel-horizontal {
-        flex-direction: row-reverse;
-        color: white;
-
-        .card-body {
-          padding: 0;
-          margin: 0;
-
-          h2.card-title {
-            margin: 24px 0 0 0;
-          }
-
-          .card-text {
-            width: 90%;
-            font-size: 20px;
-          }
-
-          .panel-footer {
-            .btn {
-              border-radius: 30px;
-              padding: 12px 20px;
-              color: white;
-              min-width: 193px;
-
-              &.btn-primary {
-                background-color: #336ACC;
-                border: none;
-              }
-
-              &.btn-outline-light {
-                border-color: white;
-              }
-            }
-          }
-        }
-      }
-
-      @media (max-width: 1120px) {
-        padding: 34px;
-        max-height: 100%;
-
-        img {
-          width: 100%;
-          /*  
-          minimo de alto 200px, 
-          si 44vw da menos de 200px usa 180px
-          si 44vw da más de 500px usa 500px
-          si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
-          usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
-          */
-          height: clamp(200px, 44vw, 500px);
-          object-fit: cover;
-        }
-
-        .card.panel-horizontal {
-          width: 100%;
-          flex-direction: column;
-
-          .card-body {
-
-            .card-text {
-              font-size: 18px;
-            }
-          }
-        }
-      }
-
-    }
-
-    /* DESTACADO OBELISCO */
-
-    /* Información institucional */
-    .institucional-container {
-      background-color: #CAF2EC;
-      padding: 32px 40px;
-      border-radius: 30px;
-    }
-
-    /* Información institucional */
   </style>
 </head>
 
@@ -801,7 +439,7 @@
     </header>
 
     <header class="hero-landing hero-video ob-hero">
-      <video src="./imgs/VideoSecretaria.mp4" autoplay muted loop playsinline></video>
+      <video src="video_landing.mp4" autoplay muted loop playsinline></video>
       <div class="ob-bg"></div>
       <div class="container py-5">
         <nav aria-label="breadcrumb">
@@ -827,17 +465,32 @@
                     <span class="btn-dropdown-text">Transparencia</span>
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">
-                      <span class="material-icons-round">info</span>
-                      <span class="item-text">Opción de navegación</span>
+                    <a class="dropdown-item" href="https://buenosaires.gob.ar/gcaba_historico/control-e-integridad">
+                      <span class="item-text">Informes de Auditoría</span>
                     </a>
-                    <a class="dropdown-item" href="#">
-                      <span class="material-icons-round">info</span>
-                      <span class="item-text text-right">Opción de navegación</span>
+                    <a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/presupuesto-ejecutado">
+                      <span class="item-text">Presupuesto</span>
                     </a>
-                    <a class="dropdown-item" href="#" disabled="">
-                      <span class="material-icons-round">info</span>
-                      <span class="item-text text-right">Opción de navegación</span>
+                    <a class="dropdown-item" href="https://buenosaires.gob.ar/gcaba_historico/jefedegobierno/oficina-de-integridad-publica/declaraciones-juradas/jefatura-de-gabinete-de-ministros">
+                      <span class="item-text">Declaraciones juradas</span>
+                    </a>
+                    <a class="dropdown-item" href="https://www.buenosairescompras.gob.ar/Default.aspx">
+                      <span class="item-text">Compras y contrataciones</span>
+                    </a>
+                    <a class="dropdown-item" href="https://boletinoficial.buenosaires.gob.ar/normativa">
+                      <span class="item-text">Normativa</span>
+                    </a>
+                    <a class="dropdown-item" href="https://concursosgcaba.buenosaires.gob.ar/">
+                      <span class="item-text">Concursos de personal</span>
+                    </a>
+                    <a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/sueldo-funcionarios">
+                      <span class="item-text">Sueldos de funcionarios</span>
+                    </a>
+                    <a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/grilla-salarial">
+                      <span class="item-text">Escalas salariales</span>
+                    </a>
+                    <a class="dropdown-item" href="https://data.buenosaires.gob.ar/dataset/autoridades-superiores-funcionarios">
+                      <span class="item-text">Nómina de personal</span>
                     </a>
                   </div>
                 </div>
@@ -1045,10 +698,137 @@
 
             </div>
 
+            <!-- Conocé los proyectos de TecBA -->
             <div class="mt-5">
               <div class="content">
-                <div class="field field--type-text-with-summary field--label-hidden field__item">
-                  <!-- Conocé los proyectos de TecBA -->
+                <div class="field field--type-text-with-summary field--label-hidden field__item">                  
+                  <style type="text/css">
+                        /* Conocé los proyectos de TecBA */
+                      .ob-carousel.carousel {
+                        background-color: transparent;
+                        padding: 32px 0 32px 0;
+
+                        .carousel-header {
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          margin-bottom: 32px;
+                          flex-wrap: wrap;
+                          gap: 20px;
+
+                          .tramites-servicios {
+                            margin: 0;
+                            padding: 0;
+                          }
+                        }
+
+                        .carousel-indicators {
+                          height: auto;
+                        }
+
+                        .carousel-buttons {
+                          display: flex;
+                          gap: 12px;
+
+                          .carousel-control-prev,
+                          .carousel-control-next {
+                            width: 63px;
+                            height: 63px;
+                            border-radius: 50%;
+                            background: white;
+                            border: solid 2px #101E37;
+                            transition: all 0.3s ease;
+                            box-sizing: border-box;
+                            position: unset;
+
+                            span {
+                              color: #101E37;
+                              font-size: 28px;
+                            }
+
+                            &:hover {
+                              background: rgba(0, 0, 0, 0.1);
+                            }
+
+                            &:focus {
+                              box-shadow: 0 0 0 0.025rem #101E37;
+                            }
+                          }
+                        }
+
+                        .card-items {
+                          padding: 0;
+                          display: flex;
+                          gap: 24px;
+                          flex-wrap: nowrap;
+                          align-items: stretch;
+                        }
+
+                        >.carousel-control-prev,
+                        >.carousel-control-next {
+                          display: none;
+                        }
+
+                        /* Tarjetas del carrusel */
+                        .card.ob-tecba {
+                          width: 100%;
+                          flex: 0 0 calc(33.333% - 16px);
+                          min-width: 280px;
+                          height: auto;
+                          min-height: 500px;
+                          background-size: contain;
+                          background-position: center;
+                          background-repeat: no-repeat;
+                          box-shadow: unset;
+                        }
+
+                        .card.ob-tecba.ob-tecba-bax {
+                          background-image: url("./imgs/ob-tecba-bax.svg");
+                        }
+
+                        .card.ob-tecba.ob-tecba-boti {
+                          background-image: url("./imgs/ob-tecba-boti.svg");
+                        }
+
+                        .card.ob-tecba.ob-tecba-ciberseguridad {
+                          background-image: url("./imgs/ob-tecba-ciberseguridad.svg");
+                        }
+
+                        @media (width >= 576px) {
+
+                        }
+
+                        /* Tarjetas del carrusel */
+                        @media (width >=768px) {
+                          .carousel-inner {
+                            max-width: unset;
+                            padding: 0;
+                            margin: 0;
+                          }
+
+                          .carousel-indicators {
+                            justify-content: center;
+                          }
+
+                          .card.ob-tecba {
+                            min-width: calc(33.333% - 16px);
+                            min-height: 320px;
+                          }
+                        }
+
+                        @media (width >=976px) {
+                          .carousel-inner {
+                            max-width: unset;
+                          }
+
+                          .card.ob-tecba {
+                            min-height: 500px;
+                          }
+                        }
+                      }
+                      /* Conocé los proyectos de TecBA */
+                  </style>
+                  
 									<div id="carousel-cards-mobile" class="carousel slide ob-carousel d-md-none">
                     <!-- Encabezado con título y botones alineados -->
                     <div class="carousel-header">
@@ -1228,12 +1008,120 @@
 
 									<a class="access tecba-access" href="#" target="_blank" rel="noreferrer">Ver todos los proyectos</a>
                   <!-- Conocé los proyectos de TecBA -->
-
-
+                </div>
+              </div>
+            </div>
 
 
 
                   <!-- Trámites y servicios digitales -->
+                  <style type="text/css">
+                  /* Trámites y servicios digitales  */
+                    h2.tramites-servicios {
+                      font-size: 32px;
+                      margin-bottom: 32px;
+                      font-family: "Archivo", sans-serif;
+
+                    }
+
+                    .card-deck.card-column.tramites-servicios {
+                      font-family: "Archivo", sans-serif;
+                      gap: 32px;
+
+                      .card {
+                        width: 253px;
+                        min-height: 320px;
+                        max-width: 253px;
+                        border-radius: 30px;
+                        /* necesito ayuda con esto, con el borde*/
+                        border: 1px solid #143246;
+                        background-color: #E9F2FE;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 32px 15px;
+                        /* Evita que el fondo se extienda debajo del borde */
+                        background-clip: padding-box;
+                        overflow: hidden;
+                        margin: 0;
+                        gap: 15px;
+
+                        .card-icon-container {
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          min-height: 140px;
+
+                          img.card-icon {
+                            background-color: transparent;
+                            width: 80px;
+                            height: 80px;
+                            align-self: center;
+                            margin: 0 auto;
+                          }
+                        }
+
+                        .card-body {
+                          margin: 0;
+                          padding: 0 !important;
+                          /* margin-top: auto; */
+                          display: flex;
+                          flex-direction: column;
+                          /*el body ocupe todo el espacio restante*/
+                          flex: 1;
+
+                          h3.card-title {
+                            margin-top: 13px;
+                            margin-bottom: 16px;
+                            font-weight: 400;
+
+                            a {
+                              text-decoration: none;
+                              color: #101E37;
+                              font-size: 22px;
+                            }
+                          }
+
+                          .card-text {
+                            color: #101E37;
+                            font-size: 16px;
+                            margin: 0;
+                            padding: 0;
+                          }
+                        }
+                      }
+
+                      @media (max-width: 976px) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+
+                        .card {
+                          min-width: 33%;
+                        }
+                      }
+
+                      @media (max-width: 592px) {
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .card {
+                          width: 100%;
+                          max-width: 80%;
+                        }
+                      }
+
+                      @media (max-width: 400px) {
+                        .card {
+                          width: 100%;
+                          max-width: 100%;
+                        }
+                      }
+                    }
+
+                    /* Trámites y servicios digitales  */
+                  </style>
+
                   <div class="container my-5">
                     <h2 class="tramites-servicios">Trámites y servicios digitales</h2>
 
@@ -1294,6 +1182,94 @@
                   <!-- Trámites y servicios digitales -->
 
                   <!-- DESTACADO OBELISCO -->
+
+                  <style type="text/css">
+                    /* DESTACADO OBELISCO */
+                    div.ob-destacado.bg-dark.panel-horizontal-content {
+                      font-family: "Archivo", sans-serif;
+                      padding: 64px;
+                      max-height: 388px;
+                      max-width: 1109px;
+                      background-color: #101E37 !important;
+                      border-radius: 30px;
+                  
+                      img {
+                        width: 404px;
+                        height: 228px;
+                      }
+                  
+                      .card.panel-horizontal {
+                        flex-direction: row-reverse;
+                        color: white;
+                  
+                        .card-body {
+                          padding: 0;
+                          margin: 0;
+                  
+                          h2.card-title {
+                            margin: 24px 0 0 0;
+                          }
+                  
+                          .card-text {
+                            width: 90%;
+                            font-size: 20px;
+                          }
+                  
+                          .panel-footer {
+                            .btn {
+                              border-radius: 30px;
+                              padding: 12px 20px;
+                              color: white;
+                              min-width: 193px;
+                  
+                              &.btn-primary {
+                                background-color: #336ACC;
+                                border: none;
+                              }
+                  
+                              &.btn-outline-light {
+                                border-color: white;
+                              }
+                            }
+                          }
+                        }
+                      }
+                  
+                      @media (max-width: 1120px) {
+                        padding: 34px;
+                        max-height: 100%;
+                  
+                        img {
+                          width: 100%;
+                          /*  
+                            minimo de alto 200px, 
+                            si 44vw da menos de 200px usa 180px
+                            si 44vw da más de 500px usa 500px
+                            si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
+                            usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
+                            */
+                          height: clamp(200px, 44vw, 500px);
+                          object-fit: cover;
+                        }
+                  
+                        .card.panel-horizontal {
+                          width: 100%;
+                          flex-direction: column;
+                  
+                          .card-body {
+                  
+                            .card-text {
+                              font-size: 18px;
+                            }
+                          }
+                        }
+                      }
+                  
+                    }
+                  
+                    /* DESTACADO OBELISCO */
+                  </style>
+                   
                   <div class="ob-destacado panel-horizontal-content bg-dark my-5">
                     <div class="card card-simple panel-horizontal">
                       <img src="./imgs/img_destacado_obelisco.svg" alt="descripción de imagen" class="card-img" />
@@ -1376,7 +1352,55 @@
 
 
             <!-- Información institucional -->
+            <style type="text/css">      
 
+              .main-footer {
+                border-top-left-radius: 100px;
+                border-top-right-radius: 100px;
+                border-top: none !important;
+              }
+
+              /* Información institucional */
+
+              .institucional-container {
+                background-color: #CAF2EC;
+                padding: 32px 40px;
+                border-radius: 30px;
+              }
+              ul {
+                padding-left: 0;
+                list-style: none;
+              }
+              .list-item-social {
+                border: 1px solid #101E37;
+                border-radius: 30px;
+                padding: 8px 12px;
+              }
+              .item-social {
+                color: #101e37 !important;
+              }
+              .institucional-bloque {
+                display: block;
+              }
+              .institucional-descripcion {
+                margin-top: 20px;
+              }
+
+              @media (width >=768px) {
+
+                .main-footer {
+                  border-top-left-radius: 100px;
+                  border-top-right-radius: 100px;
+                }
+                .institucional-bloque {
+                  display: flex;
+                }
+                .institucional-descripcion {
+                  margin-top: 0px;
+                }
+              }
+              /* Información institucional */
+            </style>
 
 
             <div class="mt-5">
