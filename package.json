@@ -7,6 +7,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gcba/obelisco-v2": "^1.9.1"
+    "@gcba/obelisco-v2": "file:../Obelisco-V2/gcba-obelisco-v2-0.0.2.tgz"
   }
 }
