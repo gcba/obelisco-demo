@@ -1,5 +1,14 @@
-const footer = `
+const footerIndicador = `
 <h2 class="sr-only">Navegación de pie de página</h2>
+<div class="footer-info">
+  <div class="container">
+    <h3 class="footer-info-text">¿Te fue útil esta página?</h3>
+    <div class="footer-info-actions">
+      <button class="btn btn-outline-primary">Sí, me fue útil</button>
+      <button class="btn btn-outline-primary">No me sirvió</button>
+    </div>
+  </div>
+</div>
 <footer class="main-footer">
   <div class="container">
     <section>
@@ -85,19 +94,19 @@ const footer = `
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
           <img
             class="d-md-none"
-            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-mobile.svg"
+            src="footer/logo-footer-mobile.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="48"
           />
           <img
             class="d-none d-md-inline"
-            src="https://gcba.github.io/Obelisco-V2/images/logo-footer.svg"
+            src="footer/logo-footer.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="40"
           />
           <img
             class="img-vamos-ba"
-            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-ba.svg"
+            src="footer/logo-footer-ba.svg"
             alt="Logo de Vamos Buenos Aires"
           />
         </div>
@@ -146,5 +155,4 @@ const footer = `
 </footer>
 `;
 
-document.body.children[1].insertAdjacentHTML("afterend", footer);
-
+document.body.children[1].insertAdjacentHTML("afterend", footerIndicador);
