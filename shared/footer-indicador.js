@@ -4,8 +4,8 @@ const footerIndicador = `
   <div class="container">
     <h3 class="footer-info-text">¿Te fue útil esta página?</h3>
     <div class="footer-info-actions">
-      <button class="btn btn-outline-primary">Sí, me fue útil</button>
-      <button class="btn btn-outline-primary">No me sirvió</button>
+      <button class="btn btn-outline-light">Sí, me fue útil</button>
+      <button class="btn btn-outline-light">No me sirvió</button>
     </div>
   </div>
 </div>
