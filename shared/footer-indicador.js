@@ -92,23 +92,26 @@ const footerIndicador = `
       <h3 class="sr-only">Información gubernamental</h3>
       <div class="row align-items-center">
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
-          <img
-            class="d-md-none"
-            src="footer/logo-footer-mobile.svg"
-            alt="Logo de Ciudad de Buenos Aires"
+          <img class="d-md-none" 
+            src="../assets/footer/logo-footer-mobile.svg" 
+            alt="Logo de Ciudad de Buenos Aires" 
             height="48"
-          />
-          <img
-            class="d-none d-md-inline"
-            src="footer/logo-footer.svg"
-            alt="Logo de Ciudad de Buenos Aires"
+          >
+          <img class="d-none d-md-inline" 
+            src="../assets/footer/logo-footer.svg" 
+            alt="Logo de Ciudad de Buenos Aires" 
             height="40"
-          />
-          <img
-            class="img-vamos-ba"
-            src="footer/logo-footer-ba.svg"
-            alt="Logo de Vamos Buenos Aires"
-          />
+          >
+          <img class="d-none d-md-inline" 
+            src="../assets/footer/footer_escudo_atractiva.svg" 
+            alt="Logo de Ciudad de Buenos Aires" 
+            height="40"
+          >
+          <img class="d-md-none" 
+            src="../assets/footer/footer_escudo_atractiva_sm.svg" 
+            alt="Logo de Ciudad de Buenos Aires" 
+            height="40"
+          >
         </div>
         <div class="col-12">
           <ul class="list-inline">
