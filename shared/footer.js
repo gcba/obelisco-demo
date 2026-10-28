@@ -83,23 +83,23 @@ const footer = `
       <h3 class="sr-only">Información gubernamental</h3>
       <div class="row align-items-center">
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <img class="d-none d-md-inline" 
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer.svg" 
+            alt="Logo de Ciudad de Buenos Aires" 
+            height="40"
+          >  
           <img class="d-md-none" 
-            src="../assets/footer/logo-footer-mobile.svg" 
+            src="https://gcba.github.io/Obelisco-V2/images/logo-footer-mobile.svg" 
             alt="Logo de Ciudad de Buenos Aires" 
             height="48"
           >
           <img class="d-none d-md-inline" 
-            src="../assets/footer/logo-footer.svg" 
-            alt="Logo de Ciudad de Buenos Aires" 
-            height="40"
-          >
-          <img class="d-none d-md-inline" 
-            src="../assets/footer/footer_escudo_atractiva.svg" 
+            src="https://gcba.github.io/Obelisco-V2/images/footer_escudo_atractiva.svg" 
             alt="Logo de Ciudad de Buenos Aires" 
             height="40"
           >
           <img class="d-md-none" 
-            src="../assets/footer/footer_escudo_atractiva_sm.svg" 
+            src="https://gcba.github.io/Obelisco-V2/images/footer_escudo_atractiva_sm.svg" 
             alt="Logo de Ciudad de Buenos Aires" 
             height="40"
           >
@@ -150,4 +150,3 @@ const footer = `
 `;
 
 document.body.children[1].insertAdjacentHTML("afterend", footer);
-
